@@ -1,25 +1,78 @@
+\subsection{Overview}
+Version 1 was another version that we did not use as the final interface for data collection. However, a few major changes in 
 For version 1 onward, we decided to host our website on Amazon Mechanical Turk (AMT), which is a crowd-sourcing website that hosts different annotation tasks to collect datasets for machine learning. From this point onward, we will use the word \textit{turker} to refer to annotators that we recruit on AMT. We have to design the following sections for the task: 
 \begin{itemize}
     \item the main task to collect data
     \item instructions and requirements to describe the tasks and specify what the annotation should include and what it should not include
     \item a qualification task accompanying the main task to train the turkers to produce high-quality annotations
 \end{itemize}
+After deployment, we realized that a few major problems from this design: (1) due to the subjective nature of drawing, it was hard to understand in what ways some annotators are illustrating the given prompts, thus making it difficult to determine the quality of the annotations; (2) turkers are taking more than 30 minutes for each task, showing that providing both sketches and descriptions are inefficient; (3) some turkers are unable to provide descriptions that align with the objects they meant to annotate for; for example, in one step, they drew both eyes and hair, but they only annotate ``big eyes''.      
+
+\subsection{Interface Design}
 
 \subsubsection{Main Task}
-Compare to version 0, there are these changes: 
+Compare to version 0, we make the following changes to the task interface: 
 \begin{enumerate}
-    \item Since turkers are paid based on time spent on the task, we decided to forsake the functionality related to the recording and replaying the drawing board, due to this time constraints.
+    \item Since turkers are paid based on time spent on the task, we decided to forsake the functionality related to the recording and replaying the drawing board.
     \item Since we decide to not limit the drawings to be compositions of basic geometric objects, we removed the step to select primitive shape preceding drawing each component.
 \end{enumerate}
 
-[Figure x]
-[Figure x2]
+\begin{figure*}[!htb]
+\begin{subfigure}{\textwidth}
+    \centering
+    \includegraphics[width=.8\linewidth]{data_collection/v1_empty_table.png}  
+    \caption{Main task interface at the start of annotation.}
+    \label{v1.main_task.1.a}
+\end{subfigure}
+\newline
+\begin{subfigure}{\textwidth}
+    \centering
+    % include third image
+    \includegraphics[width=.8\linewidth]{data_collection/v1_before_enter_text.png}  
+    \caption{Main task interface before adding textual descriptions for the drawing in the given step. Red arrow and box shows where to click to add the text.}
+    \label{v1.main_task.1.b}
+\end{subfigure}
+\end{figure*}
 
-We illustrate a typical annotation process with version 1's interface in Figure x. 
-The annotator starts with an empty canvas and annotation table, as shown in Figure x.a. For the annotator's convenience, we preserved the \textit{Undo} button and the \textit{Clear} button for erasing strokes and clearing entire canvas, respectively.  
-Then, the annotator draws a [], and they would need to enter into the \textit{Annotation} column and hit \textit{Add} to enter textual description into the annotation table. (The before and after adding the texts are in Figure x.b and x.c respectively.)
+\begin{figure*}[!htb]
+\ContinuedFloat
+\begin{subfigure}{\textwidth}
+    \centering
+    % include third image
+    \includegraphics[width=.8\linewidth]{data_collection/v1_after_enter_text.png}  
+    \caption{Main task interface after adding textual descriptions for the drawing in the given step.}
+    \label{v1.main_task.1.c}
+\end{subfigure}
+\caption{The ``drawing-and-adding'' functionality in Version 1. Repeat the above process for each step in a sketch.}
+\label{v1.main_task.1}
+\end{figure*}
+
+We illustrate a typical annotation process with version 1's interface in Figure \ref{v1.main_task.1}. 
+The annotator starts with an empty canvas and empty table for textual descriptions, as shown in Figure \ref{v1.main_task.1.a}. For the annotator's convenience, we include a \textit{Undo} button and a \textit{Clear} button for erasing strokes and clearing entire canvas.  
+Then, the annotator draws a step in the sketch, and they would need to enter into the \textit{Annotation} column and hit \textit{Add} to enter textual description into the annotation table. (Figure \ref{v1.main_task.1.b} and \ref{v1.main_task.1.c} show what the annotation table looks like before and after adding the texts for a given step.)
 Repeat the drawing-and-adding process until the drawing is done. 
-If the annotator wants to remove an entire object in the drawing, they can use the \textit{Delete} button next to the texts to delete an entire object. An example is shown in Figure x2. \textit{Delete} an annotation together with its drawing on the board. Do not erase overlapping strokes. Constructing something like layers used in Photoshop, so that each step is its separate canvas layer. 
+
+\begin{figure*}[!htb]
+\begin{subfigure}{\textwidth}
+    \centering
+    \includegraphics[width=.8\linewidth]{data_collection/v1_before_delete.png}  
+    \caption{A complete annotation for the prompt \textit{Happy Flower}. Red arrows and boxes point to \textit{Delete} buttons that can be used to delete the steps associated with the textual annotaitons, if the annotator is not satisfied with the steps.}
+    \label{v1.main_task.delete.a}
+\end{subfigure}
+\newline
+\begin{subfigure}{\textwidth}
+    \centering
+    % include third image
+    \includegraphics[width=.8\linewidth]{data_collection/v1_after_delete.png}  
+    \caption{Main task interface after the two steps associated with \textit{first round petal} and \textit{smiley mouth}, respectively.}
+    \label{v1.main_task.delete.b}
+\end{subfigure}
+\caption{Demonstrating the functionality of the \textit{Delete} button.}
+\label{v1.main_task.delete}
+\end{figure*}
+
+
+If the annotator wants to remove an entire object in the drawing, they can use the \textit{Delete} button next to the texts to delete an entire object. An example is shown in Figure \ref{v1.main_task.delete}. \textit{Delete} an annotation together with its drawing on the board. Do not erase overlapping strokes. Constructing something like layers used in Photoshop, so that each step is its separate canvas layer. 
 Adding annotations for each part in the drawing is done through a table. The design of using a table seeks to help annotators to keep track of which steps are annotated. Since in the requirement, we would specify how many steps are required in minimum for the annotation, so the table also helps to enforce DQ \ref{data_design_2} and \ref{data_design_3}. Enabling users to be able to delete each component is also demonstrative of these two DQ's. 
 
 
@@ -53,7 +106,7 @@ The format of the qualification has also went through transformed, as shown in F
 
 [Figure x6]
 
-\subsection{Results}
+\subsection{Deployment Results}
 
 In order to determine how feasible the task is, we first deployed a version among lab members, and we obtained 55 drawings along with their annotations. All 55 drawings are shown in Figure v1.results.2. Some examples of step annotations are shown in Figure v1.results.3.  
 

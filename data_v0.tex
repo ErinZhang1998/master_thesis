@@ -1,6 +1,6 @@
 Since the beginning of data collection, an important question we try to answer is how do we define a semantic unit in the sketch?  
-The end goal is to achieve the kind of interaction shown in the YouTube video \textit{How To Draw A Cute Ice Cream Cone}, and in it, the instructor oftens uses sentences in the form of ``Let's draw a \texttt{X} for the \texttt{Y}'', where \texttt{X} describes the geometric features of the object \texttt{Y}. For example, ``Let's draw \textit{small connected U shapes} for the \textit{bottom of the ice-cream cone}.'' Therefore, at first, we thought of decomposing the drawing process into a sequence of common geometric shapes, and the objects that they represent become the basic semantic units.      
-asdfasd sdfdsfsd
+The end goal is to achieve the kind of interaction shown in the YouTube video \textit{How To Draw A Cute Ice Cream Cone}, and in it, the instructor oftens uses sentences in the form of ``Let's draw a \texttt{X} for \texttt{Y}'', where \texttt{X} describes the geometric features of the object \texttt{Y}. For example, ``Let's draw \textit{small connected U shapes} for the \textit{bottom of the ice-cream cone}.'' Therefore, at first, we thought of decomposing the drawing process into a sequence of common geometric shapes, and the objects that they represent become the basic semantic units.      
+At each step, the annotator is first asked to 
 Version 0 was never deployed. I think at this stage of the data collection, we are trying to decide whether there should be a fixed set of primitive that the users could choose from, so learning the model becomes learning to parameterize, for example, the dimensions of the set of primitives. 
 
 Functionality:
@@ -26,9 +26,11 @@ The first thing you will do is select a primitive from a list, and then you will
 
 {\color{red} \faIcon{question}} Should we use primitive shapes for users to choose from? 
 The reason for considering this aspect is whether during generation we want to learn to change parameters of a fix set of shapes or generate un-constrained strokes. For the first option, we want users to compose a drawing with primitive shapes, much like using   
-In order to learn a more general model, we decided that we want to collect strokes instead of fixed primitive shapes, so we moved onto creating a table that accompanies the drawing board, where the user can choose to annotate each step they draw. We can see in Figure \ref{v0.design}.
+In order to learn a more general model, we decided that we want to collect strokes instead of fixed primitive shapes, so we moved onto creating a table that accompanies the drawing board, where the user can choose to annotate each step they draw. 
 
-\begin{figure*}[h!]
+In Figure \ref{v0.design}. 
+
+\begin{figure*}[ht!]
 \begin{subfigure}{\textwidth}
   \centering
   \includegraphics[width=.8\linewidth]{data_collection/version_0_select_primitive.png}
@@ -41,7 +43,7 @@ In order to learn a more general model, we decided that we want to collect strok
   % include third image
   \includegraphics[width=.8\linewidth]{data_collection/version_0_smiley_flower_with_primitive.png}  
   \caption{Design of main task for final task.}
-  \label{v0.1}
+  \label{v0.2}
 \end{subfigure}
 \caption{Progress of the design two for the main task in version two.}
 \label{v0.design}
