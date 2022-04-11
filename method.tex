@@ -1,0 +1,17 @@
+In order to gain insights about the nature of our dataset, and whether models like CLIP that have been trained on text-image pairs on the million scale can handle and interpret annotations for sketches that we have collected. We report baseline results on the binary classification of CLIP. 
+
+\section{CLIP Finetune}
+
+\subsection{Image Pre-Processing}
+We use the data provided by SPG \citep{spg_paper}, which provides JSON files of the Quick,Draw! sketches in vector format: each sketch is composed of a sequence of $n$ strokes $S_i, i \in [n]$, and $S_i$ is a sequence of vectors $(\delta x,\delta y, p, l)$. $\delta x$ and $\delta y$ are changes in the $x,y$ coordinates with respect to the previous point; for the first point, it is with respect to $(25,25)$. All points are assumed to be drawn on a $256 \times 256$ canvas. $p=1$ if the point is the last point in the current stroke, and $p=0$ otherwise. The SPG dataset provides annotation for semantic segmentation of the sketches, so $l$ is a number representing the semantically meaningful object part.  
+
+We obtained the rendered sketches by using \texttt{Pycairo}, which is a Python module providing bindings for the cairo graphics library. We use a line width of $5$. After rendering, we manually examined the sketches and filter out face sketches that do not have a pair of eyes, a mouth and the face outline; we also filter out angel sketches that are incomplete or have all the parts merged together, possibly due to collection errors in SPG.   
+
+\subsection{Text Pre-Processing}
+We used the \texttt{spacy} package to preprocess the text. \texttt{spacy} provides trained natural language processing pipeline and includes models for, for example, token-to-vector and part-of-speech tagging. We use the \texttt{en\_core\_web\_sm} pipeline and its lemmatizer to reduce words to their basic forms. Moreover, we lower-case all words and remove punctuation, a list of which is provided by \texttt{Python} \texttt{string} package, \texttt{string.punctuation}. We also remove words like \textit{shaped}, \textit{sized}, \textit{and}, \textit{like}, since they act like stop words and do not provide additional visual descriptions of the sketches.    
+
+We load the pretrained model from the \texttt{Python} \texttt{clip} package, specifically the \texttt{ViT-B/32} variant, which uses the Vision Transformer \citep{visiontransformer} as the image encoder; \texttt{B} stands for BERT Base model, and \texttt{32} stands for $32 \times 32$ input patch size. 
+
+\section{Loss Function}
+
+

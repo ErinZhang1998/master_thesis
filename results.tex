@@ -1,0 +1,27 @@
+
+\section{Classification Experiments}
+In this set of experiments, what we do is that if we have a pair of sketches $(s_1,s_2)$, we use the CLIP image encoder (zero-shot/fine-tuned) $f_v$ to extract visual features $v_1$ and $v_2$ for the two sketches, where $v_1,v_2 \in \mathbb{R}^{512}$. We then use the zero-shot/fine-tuned CLIP text encoder to extract the text features for the part descriptions, namely we fill in the template $t = \texttt{[ADJ] [PART NAME]}$, where $\texttt{[ADJ]}$ is filled with the adjective phrases annotations, and $\texttt{[PART NAME]}$ is the name of the part in the sketches. For angels, $\texttt{[PART NAME]}$ is one of \textit{halo}, \textit{eyes}, \textit{nose}, \textit{mouth}, \textit{body}, \textit{outline of face}, \textit{wings}; for face, $\texttt{[PART NAME]}$ is one of \textit{eyes}, \textit{nose}, \textit{mouth}, \textit{hair}, \textit{outline of face}. After filling in the above template, we obtain the part annotations for the two sketches $t_1,t_2$.  
+During data collection, we implicitly juxtapose two sketches, chosen to be as distinct as possible using some heuristic, either from different clusters or whose cosine distance is large, so the process of annotating the two dissimilar sketches is like the annotators are choosing the pair up one annotation with another. Implicitly, the annotators is pairing $s_1$ with $t_1$ and $s_2$ with $t_2$, so we would regard the ground truth pairing to be $(s_1,t_1)$ and $(s_2,t_2)$. We want to see how CLIP does on this task, if it is the annotator for the task, would it be able to generate the same pairing. Define cosine similarity to be        
+
+
+
+\begin{table}[ht!]
+\begin{minipage}{1\textwidth}
+\begin{center}
+{\small
+\begin{tabular}{lrrrr}
+\toprule
+& \multicolumn{2}{c}{Face} & \multicolumn{2}{c}{Angel}\\
+~ & Test & Dev & Test & Dev \\
+\midrule
+zero-shot & 1 & 1 & 1 & 1 \\
+finetuned on face & 1 & 1 & 1 & 1 \\
+finetuned on angel & 1 & 1 & 1 & 1 \\
+finetuned on face $+$ angel & 1 & 1 & 1 & 1\\
+\bottomrule
+\end{tabular}}
+\caption{Statistics of CLIP}
+\label{table:clip_results_table}
+\end{center}
+\end{minipage}
+\end{table}

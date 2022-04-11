@@ -1,0 +1,31 @@
+\contentsline {chapter}{Abstract}{iii}{chapter*.1}%
+\contentsline {chapter}{Acknowledgements}{iv}{chapter*.2}%
+\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Exploring the Problem Space, early October}{2}{section.1.1}%
+\contentsline {subsubsection}{CLIP}{3}{section*.4}%
+\contentsline {chapter}{\numberline {2}Data Collection}{4}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Overview}{4}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Version 0}{5}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Version 1}{6}{section.2.3}%
+\contentsline {subsubsection}{Main Task}{8}{section*.6}%
+\contentsline {subsubsection}{Instruction and Requirement}{8}{section*.7}%
+\contentsline {subsubsection}{Qualification}{9}{section*.8}%
+\contentsline {subsection}{\numberline {2.3.1}Results}{9}{subsection.2.3.1}%
+\contentsline {section}{\numberline {2.4}Version 2}{10}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}Overview}{10}{subsection.2.4.1}%
+\contentsline {subsubsection}{Main Task}{11}{section*.9}%
+\contentsline {subsubsection}{Instructions}{11}{section*.12}%
+\contentsline {subsubsection}{Qualifications}{12}{section*.15}%
+\contentsline {subsection}{\numberline {2.4.2}Results}{13}{subsection.2.4.2}%
+\contentsline {subsubsection}{Pilot 1}{13}{section*.18}%
+\contentsline {section}{\numberline {2.5}Dataset Summary}{13}{section.2.5}%
+\contentsline {chapter}{\numberline {3}Methods}{20}{chapter.3}%
+\contentsline {section}{\numberline {3.1}CLIP Finetune}{20}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Image Pre-Processing}{20}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}Text Pre-Processing}{20}{subsection.3.1.2}%
+\contentsline {section}{\numberline {3.2}Loss Function}{21}{section.3.2}%
+\contentsline {chapter}{\numberline {4}Results \& Analysis}{22}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Classification Experiments}{22}{section.4.1}%
+\contentsline {chapter}{\numberline {5}Related Work}{23}{chapter.5}%
+\contentsline {chapter}{\numberline {6}Conclusion}{26}{chapter.6}%
+\contentsline {chapter}{\numberline {A}True Facts}{27}{appendix.A}%
