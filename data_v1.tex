@@ -87,34 +87,116 @@ We encountered some difficulties when implementing the \textit{Delete} functiona
 \label{v1.instruction}
 \end{figure*}
 
-We illustrated the layout of the main task interface in the instruction, as shown in Figure \ref{v1.instruction}. We begin the instruction by giving a short explantion about the motivation behind collecting this dataset to prime turkers for good-quality annotations, since they would understand more about what the data will be later used for.   
-the better they understand what the data will be used for, the    
-The first thing we spent time considering was how much motivation should we give about the task. Why are we conducting this survey? 
-The second, more important, aspect to consider is what defines a single \textit{step} in the data that we collect. Should the annotator be asked to annotate for each stroke? However, this option is not only time-consuming but also fails to align with how a person would talk when, for example, teaching a child how to draw. Therefore, we decided that the annotator should annotate for each \textit{object} in the drawing. The ambiguity surrounding the word \textit{object} has been the biggest challenge in defining a clear set of requirements for the annotators. For example, when drawing for the prompt \textit{happy face}, one reasonable decomposition is annotating for 4 steps: face, eyes, mouth, and the face contour. However, for someone who draws very detailed eyes, they might want to annotate for the shape of the eye socket and the length of the eye lashes. It seems like there is a wide spectrum of allowed annotations depending on how one would approach drawing for the give prompt. Indeed, the great uncertainty that comes from individuality and personal styles of collecting drawings from turkers would eventually drive us to not collect drawings and simply annotate for sketches found in existing datasets.                    
+We show the layout of the instructions in Figure \ref{v1.instruction}. We begin the instruction by giving a short explantion on the motivation behind collecting this dataset to prime turkers for good-quality annotations, since they would understand more about what the purpose for collecting this dataset. What we struggled the most when drafting the requirements was deciding what would be a single \textit{step} in drawing and how do we clearly explain this definition to the turkers? In Version 0, we relied on common geometric shapes to decompose a drawing into a sequence of steps. In Version 1, we considered asking turkers to annotate for each stroke in the drawing, but we quickly ruled out this option since it was time-consuming, and it did not align with how the instructor taught the child in the \textit{How To Draw a Cute Ice-Cream Cone} video. We decided that turkers should annotate for each \textit{object} in the drawing. The ambiguity around the word \textit{object} has posed the biggest challenge in defining a clear set of requirements. For example, when drawing for the prompt \textit{Happy Face}, one reasonable decomposition is annotating for 4 steps: face, eyes, mouth, and the face contour. However, for someone who draws very detailed eyes, they might want to annotate for the shape of the eye socket and the length of the eye lashes. So what level of specificity should be allowed?  
+There is a wide spectrum of allowed annotations depending on how a person approaches drawing for the give prompt. Indeed, the great variation and uncertainty that comes from individuality and personal styles demonstrated through drawings would eventually drive us to not collect drawings and simply ask for text annotations for sketches found in existing datasets.  
+At the time, we resorted to repeatedly testing the interface with lab mates to refine the requirements. Here is an excerpt from an old version of the instructions, in which we tried to explain a single \textit{step} of the annotation:
+\begin{quotation}
+In each task, we show \textbf{1 prompt} from which we would like to get
+\begin{enumerate}
+    \item A drawing containing 1 \textbf{entity} that you think illustrates the prompt.
+    \item Text annotation for every \textbf{``component''} that makes up the entity.
+    The word ``component'' is intentially vague, and it depends on how you compose your drawing. For example, in the above example, the prompt is ``smiley face'', and during the process of creating a ``smiley face'' entity, we used 4 components: a face, a left eye, a right eye, and a mouth. For each component, you can annotate with ``face'', ``left eye'', ``right eye'', ``mouth'', respectively; you can also annotate with more details describing the shapes of each component: ``face that looks like an arc opening downwards'', ``a left eye that is an arc'', ``a right eye that looks exactly like the left eye'', ``an arc-like mouth''. Try to use creative and descriptive languages. You can draw a component using multiple strokes.
+\end{enumerate}
+\end{quotation}
+We also need to come up with examples explaining each requirement. We select a few major sub-versions of the requirements resulted from circulating the interface within our lab.  
 
-A lot of effort went into defining what is the basic element of the annotation. We tried item, object, component. The goal of the model is to conditioned on previous steps to produce the next part. Figure 3x.a and 3x.b show some previous versions of the instructions. We eventually decided that  
+Requirements and selected examples used in the first release in lab (Item 1 to 3 meant to enforce principal \ref{data_design_1}; Item 4 to 6 for \ref{data_design_2} and \ref{data_design_3}):
+\begin{enumerate}
+\item Do not draw entity that does not respond to the prompt. For example, given the prompt \textit{Smiley Face}, the drawing should not contain irrelevant objects like a house. 
+\item Do not draw more than one entity that responds to the prompt. For example, One should not draw two \textit{Smiley Face} entities, although each \textit{Smiley Face} entity is good. However, you can draw multiple tree objects to illustarte the prompt \textit{Forest}.  
+\item \label{v1_requirement1_3} Do not draw entity that is ambiguous in terms of illustrating the prompt. For example, the drawing (Figure \ref{v1.requirement_1.1}) looks more like a \textit{Sad Face} than \textit{Smiley Face}.
+\item Do not draw one component that contains more information/content than what the annotation for that component describes. (A counterexample is illustrated in Figure \ref{v1.requirement_1.2}.)
+\item Do not split the drawing of a component into multiple steps, unless you can annotate each step separately. (A counterexample is illustrated in Figure \ref{v1.requirement_1.3}.)
+\item Do not annotate a component more than once.
+\end{enumerate}
 
-There is even more effort that went into defining the requirements of the task. This is really the section that we want to use to enforce all the DQ's. The final set of instructions is displayed in Figure x4.
-[Figure x4: final requirements]
+\begin{figure*}[!htb]
+\begin{subfigure}{0.5\textwidth}
+    \centering
+    \includegraphics[width=.4\linewidth]{data_collection/host_amazon/hit_1/bad_smiley_face_ambiguous_face.png}  
+    \caption{An example included in the first version of the requirements, explained in more details in item \ref{v1_requirement1_3}.}
+    \label{v1.requirement_1.1}
+\end{subfigure}
+\end{figure*}
 
-Comparing examples in requirements format:
+\begin{figure*}[!htb]
+\ContinuedFloat
+\begin{subfigure}{\textwidth}
+    \centering
+    \includegraphics[width=.8\linewidth]{data_collection/v1_requirement1_bad1.png}  
+    \caption{Unaligned drawing and text description.}
+    \label{v1.requirement_1.2}
+\end{subfigure}
+\newline
+\begin{subfigure}{\textwidth}
+    \centering
+    \includegraphics[width=.8\linewidth]{data_collection/v1_requirement1_bad2.png}  
+    \caption{An example of misalignment: text description \textit{overflow} into multiple steps.}
+    \label{v1.requirement_1.3}
+\end{subfigure}
+\caption{Screenshots of counterexamples used in first version of the requirements in Version 1.}
+\label{v1.requirement_1}
+\end{figure*}
+% Figure 3x.a and 3x.b show some previous versions of the requirements. We eventually decided that  
 
-Methods to help understand the requirements. 
-Specifying which examples demonstrate which requirements, add next to the questions which requirement the question is testing. 
+% There is even more effort that went into defining the requirements of the task. This is really the section that we want to use to enforce all the DQ's. The final set of instructions is displayed in Figure x4.
+% [Figure x4: final requirements]
 
+% Comparing examples in requirements format:
+
+% Methods to help understand the requirements. 
+% Specifying which examples demonstrate which requirements, add next to the questions which requirement the question is testing. 
+
+Requirements and selected examples used in the second release in lab (Item 4 is meant to enforce principal \ref{data_design_1}; the other items for \ref{data_design_2} and \ref{data_design_3}):
+\begin{enumerate}
+\item Draw \textit{one} item at a time and provide its corresponding annotation. For example, the text annotation says ``left eye'', but two items are drawn: a left eye and a right eye.
+\item The annotation should describe its corresponding item in the drawing \textit{entirely}.
+\item The annotation should name the item.
+\item Desired properties of good drawings:
+\begin{itemize}
+    \item Contain as many items as possible, but be sure that they all contribute to illustrating the prompt. For example, draw more than just two eyes for a face.
+    \item Use shapes creatively. For example, draw a triangle for the left eye, and annotate accordingly with ``triangular left eye that shows suspicion''.
+\end{itemize}
+\item Desired properties of good annotations:
+\begin{itemize}
+    \item Use descriptive languages. For example, ``a left eye that looks an arc facing downward''.
+    \item Include the intention/purpose of drawing an item. Explain in the annotation reasons for drawing the item. For example, ``thumbs-up next to the face that really shows how happy the face is''.
+\end{itemize}
+\end{enumerate}
+
+Requirements and selected examples used in the third release in lab (Item 1 is meant to enforce principal \ref{data_design_1}; the other items for \ref{data_design_2} and \ref{data_design_3}):
+\begin{enumerate}
+\item Each drawing should contain at least 2 steps.
+\item Annotation of each step should include at least the name of the drawn object(s).
+\item If draw multiple copies of the same object, draw each object in a separate step and give different annotations by using, for example, cardinal or ordinal numbers. (An example shown in Figure \ref{v1.requirement_3})
+\item Differentiate between plural and singular forms.
+\item The name of the whole should not be used for its parts. (An example shown in Figure \ref{v1.requirement_3})
+\item The word "right" always refers to this side: $\Longrightarrow$
+\end{enumerate}
+
+\begin{figure*}[!htb]
+\includegraphics[width=.8\linewidth]{data_collection/v1_requirement3_bad1.png}  
+\caption{Screenshots of counterexamples used in third version of the requirements in Version 1.}
+\label{v1.requirement_3}
+\end{figure*}
+
+After a series of smaller changes, we eventually arived at the final version of the requirements for Version 1, as shown in Figure \ref{v1.requirement}. Most of the requirements are dedicated to ensure principle \ref{data_design_2} and \ref{data_design_3}. Requirement 1 ensures that no irrelevant sketches and trivial annotations are provided, and we resort to good faith that the annotators would strive to provide a sketch that illustrates the given prompt. As expected, problems related to ambiguous sketches and unaligned text annotations surfaced after the deployment on AMT, eventually resulting in a complete change in format and lead to Version 2.     
+
+\begin{figure*}[!htb]
+\includegraphics[width=\linewidth]{data_collection/v1_requirement.png}  
+\caption{Screenshots of final version of the requirements in Version 1. The \textcolor{red}{\underline{Bad Example}} links to counter-examples of the requirements, and \textcolor{green}{\underline{Good Example}} links to good examples. When turkers click on the links, they are directed to the examples illustrating the corresponding requirement.}
+\label{v1.requirement}
+\end{figure*}
+
+We also show \textcolor{red}{\underline{Bad Example 2}} in Figure to give an idea of how the examples look like in the final version. Please refer to to view all the examples used in the requirements. 
 
 
 \subsubsection{Qualification}
-
-A qualification test is setup on AMT to train turkers to have better understanding of the task, and it is also used to select a group of turkers who can provide annotations that satisfy all the requirements. The full test is illustrated in Figure x5.
+A qualification test is setup on AMT to train turkers to have better understanding of the task, and it is also used to select a group of turkers who can provide annotations that satisfy all the requirements. Similar to the process of writing the requirements, we went through several rounds of testing with students in the lab to come up with a set of questions that have good correspondence with the requirements. The full test is illustrated in Figure x5.
 
 [Figure x5: final qualification test]
 
-To come up with a set of questions that have good correspondence with the requirements, we went through several rounds of testing with students in the lab.  
-
-The format of the qualification has also went through transformed, as shown in Figure x6. At first, we asked the annotators to select which steps of the annotations satisfy the requirements (Figure x6.a); in order to use repetition to ensure deep understanding of the requirements, we changed to asking a yes/no question for every step, as shown in Figure x6.b.  
-
-[Figure x6]
+% The format of the qualification has also went through transformed, as shown in Figure x6. At first, we asked the annotators to select which steps of the annotations satisfy the requirements (Figure x6.a); in order to use repetition to ensure deep understanding of the requirements, we changed to asking a yes/no question for every step, as shown in Figure x6.b.  
 
 \subsection{Deployment Results}
 

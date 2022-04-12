@@ -11,23 +11,23 @@
 \contentsline {subsection}{\numberline {2.3.2}Interface Design}{8}{subsection.2.3.2}%
 \contentsline {subsubsection}{Main Task}{8}{section*.6}%
 \contentsline {subsubsection}{Instruction and Requirement}{9}{section*.10}%
-\contentsline {subsubsection}{Qualification}{11}{section*.12}%
-\contentsline {subsection}{\numberline {2.3.3}Deployment Results}{12}{subsection.2.3.3}%
-\contentsline {section}{\numberline {2.4}Version 2}{13}{section.2.4}%
-\contentsline {subsection}{\numberline {2.4.1}Overview}{13}{subsection.2.4.1}%
-\contentsline {subsubsection}{Main Task}{14}{section*.13}%
-\contentsline {subsubsection}{Instructions}{14}{section*.16}%
-\contentsline {subsubsection}{Qualifications}{17}{section*.19}%
-\contentsline {subsection}{\numberline {2.4.2}Results}{17}{subsection.2.4.2}%
-\contentsline {subsubsection}{Pilot 1}{17}{section*.22}%
-\contentsline {section}{\numberline {2.5}Dataset Summary}{18}{section.2.5}%
-\contentsline {chapter}{\numberline {3}Methods}{22}{chapter.3}%
-\contentsline {section}{\numberline {3.1}CLIP Finetune}{22}{section.3.1}%
-\contentsline {subsection}{\numberline {3.1.1}Image Pre-Processing}{22}{subsection.3.1.1}%
-\contentsline {subsection}{\numberline {3.1.2}Text Pre-Processing}{22}{subsection.3.1.2}%
-\contentsline {section}{\numberline {3.2}Loss Function}{23}{section.3.2}%
-\contentsline {chapter}{\numberline {4}Results \& Analysis}{24}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Classification Experiments}{24}{section.4.1}%
-\contentsline {chapter}{\numberline {5}Related Work}{25}{chapter.5}%
-\contentsline {chapter}{\numberline {6}Conclusion}{28}{chapter.6}%
-\contentsline {chapter}{\numberline {A}True Facts}{29}{appendix.A}%
+\contentsline {subsubsection}{Qualification}{15}{section*.16}%
+\contentsline {subsection}{\numberline {2.3.3}Deployment Results}{16}{subsection.2.3.3}%
+\contentsline {section}{\numberline {2.4}Version 2}{17}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}Overview}{17}{subsection.2.4.1}%
+\contentsline {subsubsection}{Main Task}{17}{section*.17}%
+\contentsline {subsubsection}{Instructions}{18}{section*.20}%
+\contentsline {subsubsection}{Qualifications}{20}{section*.23}%
+\contentsline {subsection}{\numberline {2.4.2}Results}{21}{subsection.2.4.2}%
+\contentsline {subsubsection}{Pilot 1}{21}{section*.26}%
+\contentsline {section}{\numberline {2.5}Dataset Summary}{21}{section.2.5}%
+\contentsline {chapter}{\numberline {3}Methods}{26}{chapter.3}%
+\contentsline {section}{\numberline {3.1}CLIP Finetune}{26}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Image Pre-Processing}{26}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}Text Pre-Processing}{26}{subsection.3.1.2}%
+\contentsline {section}{\numberline {3.2}Loss Function}{27}{section.3.2}%
+\contentsline {chapter}{\numberline {4}Results \& Analysis}{28}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Classification Experiments}{28}{section.4.1}%
+\contentsline {chapter}{\numberline {5}Related Work}{29}{chapter.5}%
+\contentsline {chapter}{\numberline {6}Conclusion}{32}{chapter.6}%
+\contentsline {chapter}{\numberline {A}True Facts}{33}{appendix.A}%
