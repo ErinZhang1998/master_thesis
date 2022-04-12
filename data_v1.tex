@@ -1,12 +1,17 @@
 \subsection{Overview}
-Version 1 was another version that we did not use as the final interface for data collection. However, a few major changes in 
-For version 1 onward, we decided to host our website on Amazon Mechanical Turk (AMT), which is a crowd-sourcing website that hosts different annotation tasks to collect datasets for machine learning. From this point onward, we will use the word \textit{turker} to refer to annotators that we recruit on AMT. We have to design the following sections for the task: 
-\begin{itemize}
-    \item the main task to collect data
-    \item instructions and requirements to describe the tasks and specify what the annotation should include and what it should not include
+For version 1 onward, we decided to host our website on Amazon Mechanical Turk (AMT), which is a crowd-sourcing website that hosts different machine learning annotation taskss. (In the remaining text, we use the word \textit{turker} to refer to annotators that we recruit on AMT.) 
+We have to design the following sections for the task: 
+\begin{enumerate}
+    \item \label{v1_sec_1} an interface containing the main task
+    \item instructions and requirements to describe the tasks and specify what the annotators should and should not include in the annotations
     \item a qualification task accompanying the main task to train the turkers to produce high-quality annotations
-\end{itemize}
+\end{enumerate}
+Compared to Version 0, which we only dabbled with \ref{v1_sec_1} in the above list, we went through all three stages for Version 1 and eventually deployed a pilot.
 After deployment, we realized that a few major problems from this design: (1) due to the subjective nature of drawing, it was hard to understand in what ways some annotators are illustrating the given prompts, thus making it difficult to determine the quality of the annotations; (2) turkers are taking more than 30 minutes for each task, showing that providing both sketches and descriptions are inefficient; (3) some turkers are unable to provide descriptions that align with the objects they meant to annotate for; for example, in one step, they drew both eyes and hair, but they only annotate ``big eyes''.      
+
+% Version 1 was the first version to be deployed 
+% another version that we did not use as the final interface for data collection. 
+% However, compared to version 0, we (1)
 
 \subsection{Interface Design}
 
@@ -29,7 +34,7 @@ Compare to version 0, we make the following changes to the task interface:
     \centering
     % include third image
     \includegraphics[width=.8\linewidth]{data_collection/v1_before_enter_text.png}  
-    \caption{Main task interface before adding textual descriptions for the drawing in the given step. Red arrow and box shows where to click to add the text.}
+    \caption{Main task interface before adding text descriptions for the drawing in the given step. Red arrow and box show where to click to add the text.}
     \label{v1.main_task.1.b}
 \end{subfigure}
 \end{figure*}
@@ -40,17 +45,19 @@ Compare to version 0, we make the following changes to the task interface:
     \centering
     % include third image
     \includegraphics[width=.8\linewidth]{data_collection/v1_after_enter_text.png}  
-    \caption{Main task interface after adding textual descriptions for the drawing in the given step.}
+    \caption{Main task interface after adding text descriptions for the drawing in the given step.}
     \label{v1.main_task.1.c}
 \end{subfigure}
 \caption{The ``drawing-and-adding'' functionality in Version 1. Repeat the above process for each step in a sketch.}
 \label{v1.main_task.1}
 \end{figure*}
 
-We illustrate a typical annotation process with version 1's interface in Figure \ref{v1.main_task.1}. 
-The annotator starts with an empty canvas and empty table for textual descriptions, as shown in Figure \ref{v1.main_task.1.a}. For the annotator's convenience, we include a \textit{Undo} button and a \textit{Clear} button for erasing strokes and clearing entire canvas.  
-Then, the annotator draws a step in the sketch, and they would need to enter into the \textit{Annotation} column and hit \textit{Add} to enter textual description into the annotation table. (Figure \ref{v1.main_task.1.b} and \ref{v1.main_task.1.c} show what the annotation table looks like before and after adding the texts for a given step.)
+We illustrate a typical annotation process with Version 1's interface in Figure \ref{v1.main_task.1}. 
+The annotator starts with an empty canvas and empty table for textual descriptions, as shown in Figure \ref{v1.main_task.1.a}. For the annotator's convenience, we include a \textit{Undo} button and a \textit{Clear} button for erasing strokes and clearing the entire canvas.  
+Then, the annotator draws a step in the sketch, and they would need to enter the text description for this step into the \textit{Annotation} column and hit \textit{Add} to display it as a new row in the annotation table. (Figure \ref{v1.main_task.1.b} and \ref{v1.main_task.1.c} show what the annotation table looks like before and after adding the texts for a given step.) If the annotator wants to remove an entire step, the objects in the drawing and the text description, they can use the \textit{Delete} button next to the texts to do so. An example is shown in Figure \ref{v1.main_task.delete}.
 Repeat the drawing-and-adding process until the drawing is done. 
+The design of a table for adding and deleting text annotations intends to encourage turkers to break their drawing into a series of semantically meaningful parts, responding to principal \ref{data_design_2} and \ref{data_design_3}.  Enabling users to be able to delete each component is also demonstrative of these two principals. 
+
 
 \begin{figure*}[!htb]
 \begin{subfigure}{\textwidth}
@@ -62,7 +69,6 @@ Repeat the drawing-and-adding process until the drawing is done.
 \newline
 \begin{subfigure}{\textwidth}
     \centering
-    % include third image
     \includegraphics[width=.8\linewidth]{data_collection/v1_after_delete.png}  
     \caption{Main task interface after the two steps associated with \textit{first round petal} and \textit{smiley mouth}, respectively.}
     \label{v1.main_task.delete.b}
@@ -71,16 +77,20 @@ Repeat the drawing-and-adding process until the drawing is done.
 \label{v1.main_task.delete}
 \end{figure*}
 
-
-If the annotator wants to remove an entire object in the drawing, they can use the \textit{Delete} button next to the texts to delete an entire object. An example is shown in Figure \ref{v1.main_task.delete}. \textit{Delete} an annotation together with its drawing on the board. Do not erase overlapping strokes. Constructing something like layers used in Photoshop, so that each step is its separate canvas layer. 
-Adding annotations for each part in the drawing is done through a table. The design of using a table seeks to help annotators to keep track of which steps are annotated. Since in the requirement, we would specify how many steps are required in minimum for the annotation, so the table also helps to enforce DQ \ref{data_design_2} and \ref{data_design_3}. Enabling users to be able to delete each component is also demonstrative of these two DQ's. 
-
-
+We encountered some difficulties when implementing the \textit{Delete} functionality. At the beginning, we treated erasing strokes as drawing the same strokes but in white color; however, when strokes overlap each other, overwriting with white strokes would break other strokes into segments. Therefore, we designed the drawing canvas to use layers like Photoshop, so that deleting strokes would be the same as deleting an entire layer, thus leaving other strokes intact.   
 
 \subsubsection{Instruction and Requirement}
-For the instructions, we mainly just illustrated the layout of the main task interface, as shown in Figure x3.
-[Figure x3: including progress of previous instructions]
-The first thing we spent time considering was how much motivation should we give about the task. Why are we conducting this survey? The second, more important, aspect to consider is what defines a single \textit{step} in the data that we collect. Should the annotator be asked to annotate for each stroke? However, this option is not only time-consuming but also fails to align with how a person would talk when, for example, teaching a child how to draw. Therefore, we decided that the annotator should annotate for each \textit{object} in the drawing. The ambiguity surrounding the word \textit{object} has been the biggest challenge in defining a clear set of requirements for the annotators. For example, when drawing for the prompt \textit{happy face}, one reasonable decomposition is annotating for 4 steps: face, eyes, mouth, and the face contour. However, for someone who draws very detailed eyes, they might want to annotate for the shape of the eye socket and the length of the eye lashes. It seems like there is a wide spectrum of allowed annotations depending on how one would approach drawing for the give prompt. Indeed, the great uncertainty that comes from individuality and personal styles of collecting drawings from turkers would eventually drive us to not collect drawings and simply annotate for sketches found in existing datasets.                    
+
+\begin{figure*}[!htb]    
+\includegraphics[width=\linewidth]{data_collection/v1_instruction.png} 
+\caption{Instruction section of Version 1.}
+\label{v1.instruction}
+\end{figure*}
+
+We illustrated the layout of the main task interface in the instruction, as shown in Figure \ref{v1.instruction}. We begin the instruction by giving a short explantion about the motivation behind collecting this dataset to prime turkers for good-quality annotations, since they would understand more about what the data will be later used for.   
+the better they understand what the data will be used for, the    
+The first thing we spent time considering was how much motivation should we give about the task. Why are we conducting this survey? 
+The second, more important, aspect to consider is what defines a single \textit{step} in the data that we collect. Should the annotator be asked to annotate for each stroke? However, this option is not only time-consuming but also fails to align with how a person would talk when, for example, teaching a child how to draw. Therefore, we decided that the annotator should annotate for each \textit{object} in the drawing. The ambiguity surrounding the word \textit{object} has been the biggest challenge in defining a clear set of requirements for the annotators. For example, when drawing for the prompt \textit{happy face}, one reasonable decomposition is annotating for 4 steps: face, eyes, mouth, and the face contour. However, for someone who draws very detailed eyes, they might want to annotate for the shape of the eye socket and the length of the eye lashes. It seems like there is a wide spectrum of allowed annotations depending on how one would approach drawing for the give prompt. Indeed, the great uncertainty that comes from individuality and personal styles of collecting drawings from turkers would eventually drive us to not collect drawings and simply annotate for sketches found in existing datasets.                    
 
 A lot of effort went into defining what is the basic element of the annotation. We tried item, object, component. The goal of the model is to conditioned on previous steps to produce the next part. Figure 3x.a and 3x.b show some previous versions of the instructions. We eventually decided that  
 
