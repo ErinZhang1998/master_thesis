@@ -251,8 +251,15 @@ To see the full test, refer to: \url{https://erinzhang1998.github.io/portfolio/a
 
 % [Figure v1.results.2: 55 drawings from lab deployment (see jupyter notebook oct\_28\_trial\_analysis)]
 % [Figure v1.results.3: 3 examples?]
-
-To come up with a set of prompts to test for the first pilot, we want to come up with prompts in the forms of \textit{adjective}$\times$\textit{noun}. The list of adjectives includes: \textit{happy}, \textit{sad}, \textit{surprised},\textit{sleepy},\textit{lovestruck},\textit{evil}; the list of nouns includes: \textit{person}, \textit{kid}, \textit{cat}, \textit{bear}, \textit{dog}, \textit{sheep}, \textit{jellyfish}, \textit{cup of boba}, \textit{apple}, \textit{burger}, \textit{sun}, \textit{moon}, \textit{star}. We hope to test whether annotators can draw for abstract prompts like. Morever, we wish to see whether steps can be clearly annotated for these abstract prompts. It was also motivated by the fact that current AI-generated artwork like those produced by DALL-E often test its methods with abstract prompts, and the hope was that our collaborative agent can also respond to these prompts through interactive drawing.   
+To deploy our first pilot, we need to come up with a set of prompts that are in the forms of \textit{adjective}$\times$\textit{noun}. The list of adjectives includes: 
+\textit{happy, sad, surprised, sleepy, lovestruck, evil};
+% \textit{happy}, \textit{sad}, \textit{surprised},\textit{sleepy},\textit{lovestruck},\textit{evil}; 
+the list of nouns includes: 
+\textit{person, kid, cat, bear, dog, sheep, jellyfish, cup of boba, apple, burger, sun, moon, star}.
+% \textit{person}, \textit{kid}, \textit{cat}, \textit{bear}, \textit{dog}, \textit{sheep}, \textit{jellyfish}, \textit{cup of boba}, \textit{apple}, \textit{burger}, \textit{sun}, \textit{moon}, \textit{star}. 
+We hope to test what drawings and text descriptions annotators would provide for prompts that ask for imaginative beings not in this world, such as \textit{evil apple} or \textit{lovestruck moon}. Our first reason for doing so was that current text-to-image synthesis models, such as DALL-E and GPT-3, can produce creative artwork from abstract prompts that include novel compositions of unrelated concepts; we want to create a dataset that has the capacity to support learning models that can similarly respond to these imaginative prompts through interactive drawing. 
+[!] Moreover, if we backtrack to version 0 for a second, the reason why we considered basic geometric shapes was because we are interested in how humans are able to transfer the usage of a circle to different context: a large circle could be a face, an eye, a big piece of cherry, or a moon, so transferring the same visual concept to different sketches. Also there is an aspect of transferring the same language to different context, such as in what ways the adjectives demonstrate the same concept across different object and in what ways they adapt and show different visual qualities when used on different objects.   
+% The compositional nature of language allows us to put together concepts to describe both real and imaginary things. We find that DALL·E also has the ability to combine disparate ideas to synthesize objects, some of which are unlikely to exist in the real world. We explore this ability in two instances: transferring qualities from various concepts to animals, and designing products by taking inspiration from unrelated concepts.
 
 [Figure v1.results.4: drawings from the amt pilot]
 
