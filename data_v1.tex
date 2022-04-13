@@ -1,5 +1,6 @@
 \subsection{Overview}
-For version 1 onward, we decided to host our website on Amazon Mechanical Turk (AMT), which is a crowd-sourcing website that hosts different machine learning annotation taskss. (In the remaining text, we use the word \textit{turker} to refer to annotators that we recruit on AMT.) 
+For version 1 onward, we decided to host our website on Amazon Mechanical Turk (AMT), which is a crowd-sourcing website that hosts different machine learning annotation taskss. In the remaining text, we use the word \textit{turker} to refer to annotators that we recruit on AMT; we will also use the word \textit{HIT}, Human Intelligence Task, to refer to a task hosted on AMT. Please refer to \href{https://www.mturk.com/worker/help#:~:text=A%20Human%20Intelligence%20Task%2C%20or,be%20completed%20by%20Worker%20customers.}{AMT FAQs} for official definition and answers to questions related to AMT. 
+ 
 We have to design the following sections for the task: 
 \begin{enumerate}
     \item \label{v1_sec_1} an interface containing the main task
@@ -180,7 +181,7 @@ Requirements and selected examples used in the third release in lab (Item 1 is m
 \label{v1.requirement_3}
 \end{figure*}
 
-After a series of smaller changes, we eventually arived at the final version of the requirements for Version 1, as shown in Figure \ref{v1.requirement}. Most of the requirements are dedicated to ensure principle \ref{data_design_2} and \ref{data_design_3}. Requirement 1 ensures that no irrelevant sketches and trivial annotations are provided, and we resort to good faith that the annotators would strive to provide a sketch that illustrates the given prompt. As expected, problems related to ambiguous sketches and unaligned text annotations surfaced after the deployment on AMT, eventually resulting in a complete change in format and lead to Version 2.     
+After a series of smaller changes, we eventually arived at the final version of the requirements for Version 1, as shown in Figure \ref{v1.requirement}. Most of the requirements are dedicated to ensure principle \ref{data_design_2} and \ref{data_design_3}. Requirement 1 ensures that no irrelevant sketches and trivial annotations are provided, and we resort to good faith that the annotators would provide a sketch that illustrates the given prompt. As expected, problems related to ambiguous sketches and unaligned text annotations surfaced after the deployment on AMT, eventually resulting in a complete change in format and lead to Version 2.     
 
 \begin{figure*}[!htb]
 \includegraphics[width=\linewidth]{data_collection/v1_requirement.png}  
@@ -188,22 +189,68 @@ After a series of smaller changes, we eventually arived at the final version of 
 \label{v1.requirement}
 \end{figure*}
 
-We also show \textcolor{red}{\underline{Bad Example 2}} in Figure to give an idea of how the examples look like in the final version. Please refer to to view all the examples used in the requirements. 
+\begin{figure*}[!htb]
+\begin{subfigure}{\textwidth}
+\centering
+\includegraphics[width=.8\linewidth]{data_collection/v1_badeg_1.png}  
+\end{subfigure}
+\newline
+\begin{subfigure}{\textwidth}
+\centering
+\includegraphics[width=.8\linewidth]{data_collection/v1_badeg_2.png}  
+\end{subfigure}
+\newline
+\begin{subfigure}{\textwidth}
+\centering
+\includegraphics[width=.8\linewidth]{data_collection/v1_badeg_3.png}  
+\end{subfigure}
+\newline
+\begin{subfigure}{\textwidth}
+\centering
+\includegraphics[width=.8\linewidth]{data_collection/v1_badeg_4.png}  
+\end{subfigure}
+\caption{Screenshots of an example in final version of the requirements in Version 1.}
+\label{v1.badeg}
+\end{figure*}
 
+We also show \textcolor{red}{\underline{Bad Example 2}} in Figure \ref{v1.badeg} as an instance of the examples used in the final requirements. To view all the examples, refer to: \url{https://erinzhang1998.github.io/portfolio/amazon_anno}. 
 
 \subsubsection{Qualification}
-A qualification test is setup on AMT to train turkers to have better understanding of the task, and it is also used to select a group of turkers who can provide annotations that satisfy all the requirements. Similar to the process of writing the requirements, we went through several rounds of testing with students in the lab to come up with a set of questions that have good correspondence with the requirements. The full test is illustrated in Figure x5.
 
-[Figure x5: final qualification test]
+\begin{figure*}[!htb]
+\includegraphics[width=\linewidth]{data_collection/v1_qual_header.png}  
+\caption{Screenshots of the navigation bar in the qualification test of Version 1.}
+\label{v1.qualification.nav}
+\end{figure*}
 
-% The format of the qualification has also went through transformed, as shown in Figure x6. At first, we asked the annotators to select which steps of the annotations satisfy the requirements (Figure x6.a); in order to use repetition to ensure deep understanding of the requirements, we changed to asking a yes/no question for every step, as shown in Figure x6.b.  
+\begin{figure*}[!htb]
+\begin{subfigure}{\textwidth}
+\centering
+\includegraphics[width=.8\linewidth]{data_collection/v1_qual_q9_1.png}  
+\end{subfigure}
+\newline
+\begin{subfigure}{\textwidth}
+\centering
+\includegraphics[width=.8\linewidth]{data_collection/v1_qual_q9_2.png}  
+\end{subfigure}
+\caption{Screenshots of question 9 in the qualification test of Version 1.}
+\label{v1.qualification.q9}
+\end{figure*}
+
+We setup a qualification test on AMT to (1) train turkers to have better understanding of the task and (2) to select turkers who can provide annotations that satisfy all the requirements. Similar to the process of writing the requirements, we went through several rounds of testing with students in the lab to come up with a set of questions that have good correspondence with the requirements. The qualification test starts with the same instruction and requirements that will be used in the final HIT, thus allowing turkers to familiarize themselves with the requirements; moreover, this give them a chance to ask for clarifications before the final HIT. The test leads with a navigation bar (Figure \ref{v1.qualification.nav}) to make it convenient for turkers to switch between questions; originally, we displayed all questions in one page, but some people found it time-consuming to scroll from the later questions back up to the instructions, so we decided to display one question at a time. 
+% We have refined the format of the qualification as we gathered feedback from people in the lab; we show a subset of the intermediate versions in Figure.
+We show one question from the final qualification in Figure \ref{v1.qualification.q9}. We replicate the exact main task interface in the qualification test, and turkers need to determine whether every step of the mock annotation satisfies all the requirements; we also include hints on which requirement the question is testing for to encourage turkers to revisit the requirements and form better understanding of the task.  
+To see the full test, refer to: \url{https://erinzhang1998.github.io/portfolio/amazon_qual}.
+
+% [Figure x5: final qualification test]
+%  At first, we asked the annotators to select which steps of the annotations satisfy the requirements (Figure x6.a); in order to use repetition to ensure deep understanding of the requirements, we changed to asking a yes/no question for every step, as shown in Figure x6.b.  
 
 \subsection{Deployment Results}
 
-In order to determine how feasible the task is, we first deployed a version among lab members, and we obtained 55 drawings along with their annotations. All 55 drawings are shown in Figure v1.results.2. Some examples of step annotations are shown in Figure v1.results.3.  
+% In order to determine how feasible the task is, we first deployed a version among lab members, and we obtained 55 drawings along with their annotations. All 55 drawings are shown in Figure v1.results.2. Some examples of step annotations are shown in Figure v1.results.3.  
 
-[Figure v1.results.2: 55 drawings from lab deployment (see jupyter notebook oct\_28\_trial\_analysis)]
-[Figure v1.results.3: 3 examples?]
+% [Figure v1.results.2: 55 drawings from lab deployment (see jupyter notebook oct\_28\_trial\_analysis)]
+% [Figure v1.results.3: 3 examples?]
 
 To come up with a set of prompts to test for the first pilot, we want to come up with prompts in the forms of \textit{adjective}$\times$\textit{noun}. The list of adjectives includes: \textit{happy}, \textit{sad}, \textit{surprised},\textit{sleepy},\textit{lovestruck},\textit{evil}; the list of nouns includes: \textit{person}, \textit{kid}, \textit{cat}, \textit{bear}, \textit{dog}, \textit{sheep}, \textit{jellyfish}, \textit{cup of boba}, \textit{apple}, \textit{burger}, \textit{sun}, \textit{moon}, \textit{star}. We hope to test whether annotators can draw for abstract prompts like. Morever, we wish to see whether steps can be clearly annotated for these abstract prompts. It was also motivated by the fact that current AI-generated artwork like those produced by DALL-E often test its methods with abstract prompts, and the hope was that our collaborative agent can also respond to these prompts through interactive drawing.   
 
