@@ -1,0 +1,35 @@
+\contentsline {chapter}{Abstract}{iii}{chapter*.1}%
+\contentsline {chapter}{Acknowledgements}{iv}{chapter*.2}%
+\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}%
+\contentsline {subsubsection}{CLIP}{3}{section*.4}%
+\contentsline {chapter}{\numberline {2}Data Collection}{4}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Overview}{4}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Version 0}{5}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Version 1}{7}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Overview}{7}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}Interface Design}{8}{subsection.2.3.2}%
+\contentsline {subsubsection}{Main Task}{8}{section*.6}%
+\contentsline {subsubsection}{Instruction and Requirement}{10}{section*.10}%
+\contentsline {subsubsection}{Qualification}{16}{section*.17}%
+\contentsline {subsection}{\numberline {2.3.3}Deployment Results}{16}{subsection.2.3.3}%
+\contentsline {section}{\numberline {2.4}Version 2}{17}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}Overview}{17}{subsection.2.4.1}%
+\contentsline {subsubsection}{Main Task}{18}{section*.20}%
+\contentsline {subsubsection}{Instructions}{18}{section*.23}%
+\contentsline {subsubsection}{Qualifications}{19}{section*.26}%
+\contentsline {subsection}{\numberline {2.4.2}Results}{19}{subsection.2.4.2}%
+\contentsline {subsubsection}{Pilot 1}{19}{section*.29}%
+\contentsline {section}{\numberline {2.5}Dataset Summary}{20}{section.2.5}%
+\contentsline {chapter}{\numberline {3}Methods}{29}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Task Definition}{29}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Metric}{30}{section.3.2}%
+\contentsline {section}{\numberline {3.3}CLIP Finetune}{30}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Image Pre-Processing}{30}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}Text Pre-Processing}{31}{subsection.3.3.2}%
+\contentsline {section}{\numberline {3.4}Loss Function}{31}{section.3.4}%
+\contentsline {section}{\numberline {3.5}Data Augmentation}{31}{section.3.5}%
+\contentsline {chapter}{\numberline {4}Results \& Analysis}{32}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Classification Experiments}{32}{section.4.1}%
+\contentsline {chapter}{\numberline {5}Related Work}{33}{chapter.5}%
+\contentsline {chapter}{\numberline {6}Conclusion}{36}{chapter.6}%
+\contentsline {chapter}{\numberline {A}True Facts}{37}{appendix.A}%

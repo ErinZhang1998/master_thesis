@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.4.10)  13 APR 2022 23:45
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.4.11)  14 APR 2022 12:07
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/Users/erinz/Documents/MasterThesis/main.tex
-(/Users/erinz/Documents/MasterThesis/main.tex
+**/home/erinzhang/Documents/master_thesis/main.tex
+(/home/erinzhang/Documents/master_thesis/main.tex
 LaTeX2e <2021-11-15> patch level 1
 L3 programming layer <2022-02-24> (/usr/local/texlive/2022/texmf-dist/tex/latex/base/report.cls
 Document Class: report 2021/10/04 v1.4n Standard LaTeX document class
@@ -383,29 +383,35 @@ Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
 \c@blind@randommax=\count313
 \c@blind@pangramcount=\count314
 \c@blind@pangrammax=\count315
+) (/usr/local/texlive/2022/texmf-dist/tex/latex/bbm-macros/bbm.sty
+Package: bbm 1999/03/15 V 1.2 provides fonts for set symbols - TH
+LaTeX Font Info:    Overwriting math alphabet `\mathbbm' in version `bold'
+(Font)                  U/bbm/m/n --> U/bbm/bx/n on input line 33.
+LaTeX Font Info:    Overwriting math alphabet `\mathbbmss' in version `bold'
+(Font)                  U/bbmss/m/n --> U/bbmss/bx/n on input line 35.
 )
-Package hyperref Info: Option `colorlinks' set `false' on input line 51.
+Package hyperref Info: Option `colorlinks' set `false' on input line 53.
  (./main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
  (/usr/local/texlive/2022/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count316
@@ -431,7 +437,7 @@ File: english.apc 2013/07/21 v6.03 apacite language file
 LaTeX Info: Redefining \BPBI on input line 129.
 LaTeX Info: Redefining \BHBI on input line 130.
 )
-Package hyperref Info: Link coloring OFF on input line 55.
+Package hyperref Info: Link coloring OFF on input line 57.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
  (/usr/local/texlive/2022/texmf-dist/tex/latex/refcount/refcount.sty
@@ -441,9 +447,10 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count323
 )
-LaTeX Info: Redefining \ref on input line 55.
-LaTeX Info: Redefining \pageref on input line 55.
-LaTeX Info: Redefining \nameref on input line 55.
+LaTeX Info: Redefining \ref on input line 57.
+LaTeX Info: Redefining \pageref on input line 57.
+LaTeX Info: Redefining \nameref on input line 57.
+ (./main.out) (./main.out)
 \@outlinefile=\write3
 \openout3 = `main.out'.
 
@@ -453,11 +460,11 @@ Package caption Info: End \AtBeginDocument code.
  [1
 
 {/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-LaTeX Font Info:    Trying to load font information for U+msa on input line 66.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 68.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 66.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 68.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [2] [3
@@ -466,13 +473,13 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 ] [4
 
-]
+] (./main.toc [5
+
+])
 \tf@toc=\write4
 \openout4 = `main.toc'.
 
- [5
-
-]
+ [6]
 Chapter 1.
 (./background.tex [1
 
@@ -481,37 +488,15 @@ Chapter 1.
 Chapter 2.
 (./data.tex [4
 
-]
-
-LaTeX Warning: Reference `data_design_1' on page 5 undefined on input line 25.
-
-(./data_v0.tex [5]
-
-LaTeX Warning: Reference `data_design_1' on page 6 undefined on input line 17.
-
-
-LaTeX Warning: Reference `data_design_2' on page 6 undefined on input line 19.
-
-
-LaTeX Warning: Reference `data_design_1' on page 6 undefined on input line 21.
-
-
-LaTeX Warning: Reference `data_design_2' on page 6 undefined on input line 21.
-
-
-LaTeX Warning: Reference `data_design_3' on page 6 undefined on input line 24.
-
+] (./data_v0.tex [5]
 LaTeX Font Info:    Trying to load font information for U+fontawesomefree2 on input line 27.
-(/usr/local/texlive/2022/texmf-dist/tex/latex/fontawesome5/ufontawesomefree2.fd)
-
-LaTeX Warning: Reference `v0.design' on page 6 undefined on input line 31.
-
-<data_collection/version_0_select_primitive.png, id=65, 1213.03188pt x 706.64pt>
+ (/usr/local/texlive/2022/texmf-dist/tex/latex/fontawesome5/ufontawesomefree2.fd)
+<data_collection/version_0_select_primitive.png, id=205, 1213.03188pt x 706.64pt>
 File: data_collection/version_0_select_primitive.png Graphic file (type png)
 <use data_collection/version_0_select_primitive.png>
 Package pdftex.def Info: data_collection/version_0_select_primitive.png  used on input line 36.
 (pdftex.def)             Requested size: 346.89731pt x 202.08456pt.
-<data_collection/version_0_smiley_flower_with_primitive.png, id=67, 1189.44376pt x 706.64pt>
+<data_collection/version_0_smiley_flower_with_primitive.png, id=207, 1189.44376pt x 706.64pt>
 File: data_collection/version_0_smiley_flower_with_primitive.png Graphic file (type png)
 <use data_collection/version_0_smiley_flower_with_primitive.png>
 Package pdftex.def Info: data_collection/version_0_smiley_flower_with_primitive.png  used on input line 44.
@@ -520,65 +505,37 @@ Package pdftex.def Info: data_collection/version_0_smiley_flower_with_primitive.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [6] [7 <./data_collection/version_0_select_primitive.png> <./data_collection/version_0_smiley_flower_with_primitive.png>]
-
-LaTeX Warning: Reference `v1_sec_1' on page 8 undefined on input line 10.
-
-<data_collection/v1_empty_table.png, id=85, 1120.185pt x 543.53062pt>
+<data_collection/v1_empty_table.png, id=225, 1120.185pt x 543.53062pt>
 File: data_collection/v1_empty_table.png Graphic file (type png)
 <use data_collection/v1_empty_table.png>
 Package pdftex.def Info: data_collection/v1_empty_table.png  used on input line 29.
 (pdftex.def)             Requested size: 346.89731pt x 168.31857pt.
-<data_collection/v1_before_enter_text.png, id=86, 1110.64937pt x 534.49687pt>
+<data_collection/v1_before_enter_text.png, id=226, 1110.64937pt x 534.49687pt>
 File: data_collection/v1_before_enter_text.png Graphic file (type png)
 <use data_collection/v1_before_enter_text.png>
 Package pdftex.def Info: data_collection/v1_before_enter_text.png  used on input line 37.
 (pdftex.def)             Requested size: 346.89731pt x 166.94014pt.
-<data_collection/v1_after_enter_text.png, id=87, 1118.1775pt x 537.00626pt>
+<data_collection/v1_after_enter_text.png, id=227, 1118.1775pt x 537.00626pt>
 File: data_collection/v1_after_enter_text.png Graphic file (type png)
 <use data_collection/v1_after_enter_text.png>
 Package pdftex.def Info: data_collection/v1_after_enter_text.png  used on input line 48.
 (pdftex.def)             Requested size: 346.89731pt x 166.59312pt.
-
-LaTeX Warning: Reference `v1.main_task.1' on page 8 undefined on input line 56.
-
-
-LaTeX Warning: Reference `v1.main_task.1.a' on page 8 undefined on input line 57.
-
-
-LaTeX Warning: Reference `v1.main_task.1.b' on page 8 undefined on input line 58.
-
-
-LaTeX Warning: Reference `v1.main_task.1.c' on page 8 undefined on input line 58.
-
-
-LaTeX Warning: Reference `v1.main_task.delete' on page 8 undefined on input line 58.
-
-
-LaTeX Warning: Reference `data_design_2' on page 8 undefined on input line 60.
-
-
-LaTeX Warning: Reference `data_design_3' on page 8 undefined on input line 60.
-
-[8]
-<data_collection/v1_before_delete.png, id=101, 1103.62312pt x 531.9875pt>
+ [8]
+<data_collection/v1_before_delete.png, id=249, 1103.62312pt x 531.9875pt>
 File: data_collection/v1_before_delete.png Graphic file (type png)
 <use data_collection/v1_before_delete.png>
 Package pdftex.def Info: data_collection/v1_before_delete.png  used on input line 66.
 (pdftex.def)             Requested size: 346.89731pt x 167.21977pt.
-<data_collection/v1_after_delete.png, id=102, 1099.10625pt x 533.995pt>
+<data_collection/v1_after_delete.png, id=250, 1099.10625pt x 533.995pt>
 File: data_collection/v1_after_delete.png Graphic file (type png)
 <use data_collection/v1_after_delete.png>
 Package pdftex.def Info: data_collection/v1_after_delete.png  used on input line 73.
 (pdftex.def)             Requested size: 346.89731pt x 168.53523pt.
-<data_collection/v1_instruction.png, id=103, 1103.62312pt x 321.2pt>
+<data_collection/v1_instruction.png, id=251, 1103.62312pt x 321.2pt>
 File: data_collection/v1_instruction.png Graphic file (type png)
 <use data_collection/v1_instruction.png>
 Package pdftex.def Info: data_collection/v1_instruction.png  used on input line 86.
 (pdftex.def)             Requested size: 433.62pt x 126.2036pt.
-
-
-LaTeX Warning: Reference `v1.instruction' on page 9 undefined on input line 91.
-
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -586,86 +543,29 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [10 <./data_collection/v1_after_enter_text.png>] [11 <./data_collection/v1_before_delete.png> <./data_collection/v1_after_delete.png>]
-
-LaTeX Warning: Reference `data_design_1' on page 12 undefined on input line 104.
-
-
-LaTeX Warning: Reference `data_design_2' on page 12 undefined on input line 104.
-
-
-LaTeX Warning: Reference `data_design_3' on page 12 undefined on input line 104.
-
-
-LaTeX Warning: Reference `v1.requirement_1.1' on page 12 undefined on input line 108.
-
-
-LaTeX Warning: Reference `v1.requirement_1.2' on page 12 undefined on input line 109.
-
-
-LaTeX Warning: Reference `v1.requirement_1.3' on page 12 undefined on input line 110.
-
-<data_collection/host_amazon/hit_1/bad_smiley_face_ambiguous_face.png, id=128, 963.6pt x 722.7pt>
+<data_collection/host_amazon/hit_1/bad_smiley_face_ambiguous_face.png, id=281, 963.6pt x 722.7pt>
 File: data_collection/host_amazon/hit_1/bad_smiley_face_ambiguous_face.png Graphic file (type png)
 <use data_collection/host_amazon/hit_1/bad_smiley_face_ambiguous_face.png>
 Package pdftex.def Info: data_collection/host_amazon/hit_1/bad_smiley_face_ambiguous_face.png  used on input line 117.
 (pdftex.def)             Requested size: 86.72267pt x 65.04019pt.
-
-LaTeX Warning: Reference `v1_requirement1_3' on page 12 undefined on input line 118.
-
-
-LaTeX Warning: Reference `v1_requirement1_3' on page 12 undefined on input line 118.
-
-<data_collection/v1_requirement1_bad1.png, id=129, 1089.57062pt x 624.3325pt>
+<data_collection/v1_requirement1_bad1.png, id=284, 1089.57062pt x 624.3325pt>
 File: data_collection/v1_requirement1_bad1.png Graphic file (type png)
 <use data_collection/v1_requirement1_bad1.png>
 Package pdftex.def Info: data_collection/v1_requirement1_bad1.png  used on input line 127.
 (pdftex.def)             Requested size: 346.89731pt x 198.77113pt.
-<data_collection/v1_requirement1_bad2.png, id=130, 982.16937pt x 654.94687pt>
+<data_collection/v1_requirement1_bad2.png, id=285, 982.16937pt x 654.94687pt>
 File: data_collection/v1_requirement1_bad2.png Graphic file (type png)
 <use data_collection/v1_requirement1_bad2.png>
 Package pdftex.def Info: data_collection/v1_requirement1_bad2.png  used on input line 134.
 (pdftex.def)             Requested size: 346.89731pt x 231.32352pt.
-
-LaTeX Warning: Reference `data_design_1' on page 12 undefined on input line 151.
-
-
-LaTeX Warning: Reference `data_design_2' on page 12 undefined on input line 151.
-
-
-LaTeX Warning: Reference `data_design_3' on page 12 undefined on input line 151.
-
-[12 <./data_collection/v1_instruction.png>]
-
-LaTeX Warning: Reference `data_design_1' on page 13 undefined on input line 168.
-
-
-LaTeX Warning: Reference `data_design_2' on page 13 undefined on input line 168.
-
-
-LaTeX Warning: Reference `data_design_3' on page 13 undefined on input line 168.
-
-
-LaTeX Warning: Reference `v1.requirement_3' on page 13 undefined on input line 172.
-
-
-LaTeX Warning: Reference `v1.requirement_3' on page 13 undefined on input line 174.
-
-<data_collection/v1_requirement3_bad1.png, id=144, 806.01125pt x 399.4925pt>
+ [12 <./data_collection/v1_instruction.png>]
+<data_collection/v1_requirement3_bad1.png, id=308, 806.01125pt x 399.4925pt>
 File: data_collection/v1_requirement3_bad1.png Graphic file (type png)
 <use data_collection/v1_requirement3_bad1.png>
 Package pdftex.def Info: data_collection/v1_requirement3_bad1.png  used on input line 179.
 (pdftex.def)             Requested size: 346.89731pt x 171.9369pt.
-
-LaTeX Warning: Reference `v1.requirement' on page 13 undefined on input line 184.
-
-
-LaTeX Warning: Reference `data_design_2' on page 13 undefined on input line 184.
-
-
-LaTeX Warning: Reference `data_design_3' on page 13 undefined on input line 184.
-
-[13 <./data_collection/host_amazon/hit_1/bad_smiley_face_ambiguous_face.png>]
-<data_collection/v1_requirement.png, id=164, 1076.02pt x 610.28pt>
+ [13 <./data_collection/host_amazon/hit_1/bad_smiley_face_ambiguous_face.png>]
+<data_collection/v1_requirement.png, id=331, 1076.02pt x 610.28pt>
 File: data_collection/v1_requirement.png Graphic file (type png)
 <use data_collection/v1_requirement.png>
 Package pdftex.def Info: data_collection/v1_requirement.png  used on input line 187.
@@ -674,95 +574,52 @@ Package pdftex.def Info: data_collection/v1_requirement.png  used on input line 
 Underfull \vbox (badness 2556) has occurred while \output is active []
 
  [14 <./data_collection/v1_requirement1_bad1.png> <./data_collection/v1_requirement1_bad2.png>]
-<data_collection/v1_badeg_1.png, id=173, 1093.08376pt x 455.7025pt>
+<data_collection/v1_badeg_1.png, id=339, 1093.08376pt x 455.7025pt>
 File: data_collection/v1_badeg_1.png Graphic file (type png)
 <use data_collection/v1_badeg_1.png>
 Package pdftex.def Info: data_collection/v1_badeg_1.png  used on input line 195.
 (pdftex.def)             Requested size: 346.89731pt x 144.61787pt.
-<data_collection/v1_badeg_2.png, id=174, 1085.05376pt x 431.6125pt>
+<data_collection/v1_badeg_2.png, id=340, 1085.05376pt x 431.6125pt>
 File: data_collection/v1_badeg_2.png Graphic file (type png)
 <use data_collection/v1_badeg_2.png>
 Package pdftex.def Info: data_collection/v1_badeg_2.png  used on input line 200.
 (pdftex.def)             Requested size: 346.89731pt x 137.98709pt.
-<data_collection/v1_badeg_3.png, id=175, 1085.05376pt x 431.6125pt>
+<data_collection/v1_badeg_3.png, id=341, 1085.05376pt x 431.6125pt>
 File: data_collection/v1_badeg_3.png Graphic file (type png)
 <use data_collection/v1_badeg_3.png>
 Package pdftex.def Info: data_collection/v1_badeg_3.png  used on input line 205.
 (pdftex.def)             Requested size: 346.89731pt x 137.98709pt.
-<data_collection/v1_badeg_4.png, id=176, 1085.05376pt x 431.6125pt>
+<data_collection/v1_badeg_4.png, id=342, 1085.05376pt x 431.6125pt>
 File: data_collection/v1_badeg_4.png Graphic file (type png)
 <use data_collection/v1_badeg_4.png>
 Package pdftex.def Info: data_collection/v1_badeg_4.png  used on input line 210.
 (pdftex.def)             Requested size: 346.89731pt x 137.98709pt.
-
-
-LaTeX Warning: Reference `v1.badeg' on page 15 undefined on input line 216.
-
-<data_collection/v1_qual_header.png, id=178, 1095.09125pt x 284.06125pt>
+<data_collection/v1_qual_header.png, id=345, 1095.09125pt x 284.06125pt>
 File: data_collection/v1_qual_header.png Graphic file (type png)
 <use data_collection/v1_qual_header.png>
 Package pdftex.def Info: data_collection/v1_qual_header.png  used on input line 221.
 (pdftex.def)             Requested size: 433.62pt x 112.47818pt.
-[15 <./data_collection/v1_requirement3_bad1.png> <./data_collection/v1_requirement.png>]
-<data_collection/v1_qual_q9_1.png, id=188, 856.19875pt x 454.69875pt>
+ [15 <./data_collection/v1_requirement3_bad1.png> <./data_collection/v1_requirement.png>]
+<data_collection/v1_qual_q9_1.png, id=354, 856.19875pt x 454.69875pt>
 File: data_collection/v1_qual_q9_1.png Graphic file (type png)
 <use data_collection/v1_qual_q9_1.png>
 Package pdftex.def Info: data_collection/v1_qual_q9_1.png  used on input line 229.
 (pdftex.def)             Requested size: 346.89731pt x 184.22136pt.
-<data_collection/v1_qual_q9_2.png, id=189, 856.19875pt x 408.52625pt>
+<data_collection/v1_qual_q9_2.png, id=355, 856.19875pt x 408.52625pt>
 File: data_collection/v1_qual_q9_2.png Graphic file (type png)
 <use data_collection/v1_qual_q9_2.png>
 Package pdftex.def Info: data_collection/v1_qual_q9_2.png  used on input line 234.
 (pdftex.def)             Requested size: 346.89731pt x 165.51456pt.
-
-
-LaTeX Warning: Reference `v1.qualification.nav' on page 16 undefined on input line 240.
-
-
-LaTeX Warning: Reference `v1.qualification.q9' on page 16 undefined on input line 242.
-
-[16]
-
-LaTeX Warning: Reference `data_design_1' on page 17 undefined on input line 271.
-
-
-LaTeX Warning: Reference `data_design_2' on page 17 undefined on input line 274.
-
-
-LaTeX Warning: Reference `data_design_3' on page 17 undefined on input line 274.
-
-) (./data_v2.tex
-
-LaTeX Warning: Reference `v2.main_task.1' on page 17 undefined on input line 12.
-
-
-LaTeX Warning: Reference `v2.main_task.1.a' on page 17 undefined on input line 14.
-
-
-LaTeX Warning: Reference `v2.main_task.1.b' on page 17 undefined on input line 14.
-
-
-LaTeX Warning: Reference `v2.main_task.1.c' on page 17 undefined on input line 14.
-
-
-LaTeX Warning: Reference `v2.main_task.1.d' on page 17 undefined on input line 14.
-
-
-LaTeX Warning: Reference `v2.main_task.1.a' on page 17 undefined on input line 15.
-
-
-LaTeX Warning: Reference `v2.main_task.1.b' on page 17 undefined on input line 15.
-
-
+ [16]) (./data_v2.tex
 Underfull \vbox (badness 1466) has occurred while \output is active []
 
  [17]
-<data_collection/pilot_02_01_annotation_1.png, id=203, 1921.1775pt x 1318.9275pt>
+<data_collection/pilot_02_01_annotation_1.png, id=380, 1921.1775pt x 1318.9275pt>
 File: data_collection/pilot_02_01_annotation_1.png Graphic file (type png)
 <use data_collection/pilot_02_01_annotation_1.png>
 Package pdftex.def Info: data_collection/pilot_02_01_annotation_1.png  used on input line 21.
 (pdftex.def)             Requested size: 346.89731pt x 238.14134pt.
-<data_collection/pilot_02_04_annotation.png, id=204, 2109.8825pt x 1200.485pt>
+<data_collection/pilot_02_04_annotation.png, id=381, 2109.8825pt x 1200.485pt>
 File: data_collection/pilot_02_04_annotation.png Graphic file (type png)
 <use data_collection/pilot_02_04_annotation.png>
 Package pdftex.def Info: data_collection/pilot_02_04_annotation.png  used on input line 29.
@@ -775,11 +632,7 @@ File: data_collection/pilot_02_04_annotation.png Graphic file (type png)
 <use data_collection/pilot_02_04_annotation.png>
 Package pdftex.def Info: data_collection/pilot_02_04_annotation.png  used on input line 48.
 (pdftex.def)             Requested size: 346.89731pt x 197.3754pt.
-
-
-LaTeX Warning: Reference `v2.requirement.1' on page 18 undefined on input line 61.
-
-<pantanal.jpeg, id=205, 1204.5pt x 903.375pt>
+<pantanal.jpeg, id=383, 1204.5pt x 903.375pt>
 File: pantanal.jpeg Graphic file (type jpg)
 <use pantanal.jpeg>
 Package pdftex.def Info: pantanal.jpeg  used on input line 66.
@@ -830,34 +683,24 @@ Package pdftex.def Info: pantanal.jpeg  used on input line 107.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [18]
-
-LaTeX Warning: Reference `v2.qualification.1' on page 19 undefined on input line 116.
-
 File: pantanal.jpeg Graphic file (type jpg)
 <use pantanal.jpeg>
 Package pdftex.def Info: pantanal.jpeg  used on input line 119.
 (pdftex.def)             Requested size: 346.89731pt x 260.16629pt.
 
+
 LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-LaTeX Warning: Reference `v2.qualification.success_rate' on page 19 undefined on input line 124.
-
-
-LaTeX Warning: Reference `v2.workertime' on page 19 undefined on input line 145.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [19]) (./final_data.tex
-
-Package natbib Warning: Citation `spg_paper' on page 20 undefined on input line 1.
-
-<dataset_image/word_freq_face.png, id=222, 1209.51875pt x 1122.1925pt>
+<dataset_image/word_freq_face.png, id=410, 1209.51875pt x 1122.1925pt>
 File: dataset_image/word_freq_face.png Graphic file (type png)
 <use dataset_image/word_freq_face.png>
 Package pdftex.def Info: dataset_image/word_freq_face.png  used on input line 4.
 (pdftex.def)             Requested size: 433.62pt x 402.31091pt.
+
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
@@ -926,934 +769,55 @@ Underfull \hbox (badness 10000) in paragraph at lines 43--43
 []|\OT1/cmr/m/n/9 Number of con-
  []
 
-
-LaTeX Warning: Reference `table:dataset_stats_byparts' on page 20 undefined on input line 54.
-
-
-LaTeX Warning: Reference `table:dataset_stats1' on page 20 undefined on input line 54.
-
 )) [20] [21] [22 <./data_collection/v1_badeg_1.png> <./data_collection/v1_badeg_2.png> <./data_collection/v1_badeg_3.png> <./data_collection/v1_badeg_4.png>] [23 <./data_collection/v1_qual_header.png> <./data_collection/v1_qual_q9_1.png> <./data_collection/v1_qual_q9_2.png>] [24 <./data_collection/pilot_02_01_annotation_1.png> <./data_collection/pilot_02_04_annotation.png>] [25] [26 <./pantanal.jpeg>] [27] [28 <./dataset_image/word_freq_face.png>]
 Chapter 3.
-(./method.tex
-
-Package natbib Warning: Citation `spg_paper' on page 29 undefined on input line 6.
-
-[29
+(./method.tex [29
 
 ]
+LaTeX Font Info:    Trying to load font information for U+bbm on input line 14.
+ (/usr/local/texlive/2022/texmf-dist/tex/latex/bbm-macros/ubbm.fd
+File: ubbm.fd 1999/03/15 V 1.2 Font definition for bbm font - TH
+)
+Underfull \vbox (badness 1325) has occurred while \output is active []
 
-Package natbib Warning: Citation `visiontransformer' on page 30 undefined on input line 13.
-
-) [30]
+ [30]) [31]
 Chapter 4.
-(./results.tex
-./results.tex:43: Misplaced \noalign.
-\bottomrule ->\noalign 
-                       {\ifnum 0=`}\fi \@aboverulesep =\aboverulesep \global...
-l.43 \bottomrule
-                
-I expect to see \noalign only after the \cr of
-an alignment. Proceed, and I'll ignore this case.
+(./results.tex) [32
 
-./results.tex:44: Missing } inserted.
-<inserted text> 
-                }
-l.44 \end
-         {tabular}}
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
+]
+Chapter 5.
+(./related_work.tex [33
 
-./results.tex:44: Missing \endgroup inserted.
-<inserted text> 
-                \endgroup 
-l.44 \end
-         {tabular}}
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
+]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-./results.tex:44: Missing } inserted.
-<inserted text> 
-                }
-l.44 \end
-         {tabular}}
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
+ [34]) [35]
+Chapter 6.
+[36
 
-./results.tex:44: Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.44 \end
-         {tabular}}
-I'm guessing that you meant to end an alignment here.
+]
+Appendix A.
+(./main.bbl [37
 
-./results.tex:44: Missing } inserted.
-<inserted text> 
-                }
-l.44 \end
-         {tabular}}
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
+] [38
 
-./results.tex:44: Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.44 \end
-         {tabular}}
-I'm guessing that you meant to end an alignment here.
-
-./results.tex:44: Misplaced \cr.
-<inserted text> \cr 
-                    
-l.44 \end
-         {tabular}}
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-./results.tex:44: Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.44 \end
-         {tabular}}
-I'm guessing that you meant to end an alignment here.
-
-./results.tex:44: Misplaced \cr.
-<inserted text> \cr 
-                    
-l.44 \end
-         {tabular}}
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-./results.tex:44: Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.44 \end
-         {tabular}}
-I'm guessing that you meant to end an alignment here.
-
-./results.tex:44: Misplaced \cr.
-<inserted text> \cr 
-                    
-l.44 \end
-         {tabular}}
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-./results.tex:44: Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.44 \end
-         {tabular}}
-I'm guessing that you meant to end an alignment here.
-
-./results.tex:44: Misplaced \cr.
-<inserted text> \cr 
-                    
-l.44 \end
-         {tabular}}
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-./results.tex:44: Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.44 \end
-         {tabular}}
-I'm guessing that you meant to end an alignment here.
-
-./results.tex:44: Misplaced \cr.
-<inserted text> \cr 
-                    
-l.44 \end
-         {tabular}}
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-./results.tex:44: Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.44 \end
-         {tabular}}
-I'm guessing that you meant to end an alignment here.
-
-./results.tex:44: Misplaced \cr.
-<inserted text> \cr 
-                    
-l.44 \end
-         {tabular}}
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-./results.tex:44: Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.44 \end
-         {tabular}}
-I'm guessing that you meant to end an alignment here.
-
-./results.tex:44: Misplaced \cr.
-<inserted text> \cr 
-                    
-l.44 \end
-         {tabular}}
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-./results.tex:44: Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.44 \end
-         {tabular}}
-I'm guessing that you meant to end an alignment here.
-
-./results.tex:44: Misplaced \cr.
-<inserted text> \cr 
-                    
-l.44 \end
-         {tabular}}
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-./results.tex:44: Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.44 \end
-         {tabular}}
-I'm guessing that you meant to end an alignment here.
-
-./results.tex:44: Misplaced \cr.
-<inserted text> \cr 
-                    
-l.44 \end
-         {tabular}}
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-./results.tex:44: Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.44 \end
-         {tabular}}
-I'm guessing that you meant to end an alignment here.
-
-./results.tex:44: Misplaced \cr.
-<inserted text> \cr 
-                    
-l.44 \end
-         {tabular}}
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-./results.tex:44: Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.44 \end
-         {tabular}}
-I'm guessing that you meant to end an alignment here.
-
-./results.tex:44: Misplaced \cr.
-<inserted text> \cr 
-                    
-l.44 \end
-         {tabular}}
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-./results.tex:44: Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.44 \end
-         {tabular}}
-I'm guessing that you meant to end an alignment here.
-
-./results.tex:44: Misplaced \cr.
-<inserted text> \cr 
-                    
-l.44 \end
-         {tabular}}
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-./results.tex:44: Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.44 \end
-         {tabular}}
-I'm guessing that you meant to end an alignment here.
-
-./results.tex:44: Misplaced \cr.
-<inserted text> \cr 
-                    
-l.44 \end
-         {tabular}}
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-./results.tex:44: Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.44 \end
-         {tabular}}
-I'm guessing that you meant to end an alignment here.
-
-./results.tex:44: Misplaced \cr.
-<inserted text> \cr 
-                    
-l.44 \end
-         {tabular}}
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-./results.tex:44: Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.44 \end
-         {tabular}}
-I'm guessing that you meant to end an alignment here.
-
-./results.tex:44: Misplaced \cr.
-<inserted text> \cr 
-                    
-l.44 \end
-         {tabular}}
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-./results.tex:44: Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.44 \end
-         {tabular}}
-I'm guessing that you meant to end an alignment here.
-
-./results.tex:44: Misplaced \cr.
-<inserted text> \cr 
-                    
-l.44 \end
-         {tabular}}
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-./results.tex:44: Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.44 \end
-         {tabular}}
-I'm guessing that you meant to end an alignment here.
-
-./results.tex:44: Misplaced \cr.
-<inserted text> \cr 
-                    
-l.44 \end
-         {tabular}}
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-./results.tex:44: Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.44 \end
-         {tabular}}
-I'm guessing that you meant to end an alignment here.
-
-./results.tex:44: Misplaced \cr.
-<inserted text> \cr 
-                    
-l.44 \end
-         {tabular}}
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-./results.tex:44: Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.44 \end
-         {tabular}}
-I'm guessing that you meant to end an alignment here.
-
-./results.tex:44: Misplaced \cr.
-<inserted text> \cr 
-                    
-l.44 \end
-         {tabular}}
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-./results.tex:44: Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.44 \end
-         {tabular}}
-I'm guessing that you meant to end an alignment here.
-
-./results.tex:44: Misplaced \cr.
-<inserted text> \cr 
-                    
-l.44 \end
-         {tabular}}
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-./results.tex:44: Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.44 \end
-         {tabular}}
-I'm guessing that you meant to end an alignment here.
-
-./results.tex:44: Misplaced \cr.
-<inserted text> \cr 
-                    
-l.44 \end
-         {tabular}}
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-./results.tex:44: Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.44 \end
-         {tabular}}
-I'm guessing that you meant to end an alignment here.
-
-./results.tex:44: Misplaced \cr.
-<inserted text> \cr 
-                    
-l.44 \end
-         {tabular}}
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-./results.tex:44: Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.44 \end
-         {tabular}}
-I'm guessing that you meant to end an alignment here.
-
-./results.tex:44: Misplaced \cr.
-<inserted text> \cr 
-                    
-l.44 \end
-         {tabular}}
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-./results.tex:44: Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.44 \end
-         {tabular}}
-I'm guessing that you meant to end an alignment here.
-
-./results.tex:44: Misplaced \cr.
-<inserted text> \cr 
-                    
-l.44 \end
-         {tabular}}
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-./results.tex:44: Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.44 \end
-         {tabular}}
-I'm guessing that you meant to end an alignment here.
-
-./results.tex:44: Misplaced \cr.
-<inserted text> \cr 
-                    
-l.44 \end
-         {tabular}}
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-./results.tex:44: Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.44 \end
-         {tabular}}
-I'm guessing that you meant to end an alignment here.
-
-./results.tex:44: Misplaced \cr.
-<inserted text> \cr 
-                    
-l.44 \end
-         {tabular}}
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-./results.tex:44: Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.44 \end
-         {tabular}}
-I'm guessing that you meant to end an alignment here.
-
-./results.tex:44: Misplaced \cr.
-<inserted text> \cr 
-                    
-l.44 \end
-         {tabular}}
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-./results.tex:44: Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.44 \end
-         {tabular}}
-I'm guessing that you meant to end an alignment here.
-
-./results.tex:44: Misplaced \cr.
-<inserted text> \cr 
-                    
-l.44 \end
-         {tabular}}
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-./results.tex:44: Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.44 \end
-         {tabular}}
-I'm guessing that you meant to end an alignment here.
-
-./results.tex:44: Misplaced \cr.
-<inserted text> \cr 
-                    
-l.44 \end
-         {tabular}}
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-./results.tex:44: Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.44 \end
-         {tabular}}
-I'm guessing that you meant to end an alignment here.
-
-./results.tex:44: Misplaced \cr.
-<inserted text> \cr 
-                    
-l.44 \end
-         {tabular}}
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-./results.tex:44: Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.44 \end
-         {tabular}}
-I'm guessing that you meant to end an alignment here.
-
-./results.tex:44: Misplaced \cr.
-<inserted text> \cr 
-                    
-l.44 \end
-         {tabular}}
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-./results.tex:44: Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.44 \end
-         {tabular}}
-I'm guessing that you meant to end an alignment here.
-
-./results.tex:44: Misplaced \cr.
-<inserted text> \cr 
-                    
-l.44 \end
-         {tabular}}
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-./results.tex:44: Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.44 \end
-         {tabular}}
-I'm guessing that you meant to end an alignment here.
-
-./results.tex:44: Misplaced \cr.
-<inserted text> \cr 
-                    
-l.44 \end
-         {tabular}}
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-./results.tex:44: Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.44 \end
-         {tabular}}
-I'm guessing that you meant to end an alignment here.
-
-./results.tex:44: Misplaced \cr.
-<inserted text> \cr 
-                    
-l.44 \end
-         {tabular}}
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-./results.tex:44: Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.44 \end
-         {tabular}}
-I'm guessing that you meant to end an alignment here.
-
-./results.tex:44: Misplaced \cr.
-<inserted text> \cr 
-                    
-l.44 \end
-         {tabular}}
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-./results.tex:44: Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.44 \end
-         {tabular}}
-I'm guessing that you meant to end an alignment here.
-
-./results.tex:44: Misplaced \cr.
-<inserted text> \cr 
-                    
-l.44 \end
-         {tabular}}
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-./results.tex:44: Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.44 \end
-         {tabular}}
-I'm guessing that you meant to end an alignment here.
-
-./results.tex:44: Misplaced \cr.
-<inserted text> \cr 
-                    
-l.44 \end
-         {tabular}}
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-./results.tex:44: Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.44 \end
-         {tabular}}
-I'm guessing that you meant to end an alignment here.
-
-./results.tex:44: Misplaced \cr.
-<inserted text> \cr 
-                    
-l.44 \end
-         {tabular}}
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-./results.tex:44: Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.44 \end
-         {tabular}}
-I'm guessing that you meant to end an alignment here.
-
-./results.tex:44: Misplaced \cr.
-<inserted text> \cr 
-                    
-l.44 \end
-         {tabular}}
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-./results.tex:44: Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.44 \end
-         {tabular}}
-I'm guessing that you meant to end an alignment here.
-
-./results.tex:44: Misplaced \cr.
-<inserted text> \cr 
-                    
-l.44 \end
-         {tabular}}
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-./results.tex:44: Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.44 \end
-         {tabular}}
-I'm guessing that you meant to end an alignment here.
-
-./results.tex:44: Misplaced \cr.
-<inserted text> \cr 
-                    
-l.44 \end
-         {tabular}}
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-./results.tex:44: Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.44 \end
-         {tabular}}
-I'm guessing that you meant to end an alignment here.
-
-./results.tex:44: Misplaced \cr.
-<inserted text> \cr 
-                    
-l.44 \end
-         {tabular}}
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-./results.tex:44: Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.44 \end
-         {tabular}}
-I'm guessing that you meant to end an alignment here.
-
-./results.tex:44: Misplaced \cr.
-<inserted text> \cr 
-                    
-l.44 \end
-         {tabular}}
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-./results.tex:44: Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.44 \end
-         {tabular}}
-I'm guessing that you meant to end an alignment here.
-
-./results.tex:44: Misplaced \cr.
-<inserted text> \cr 
-                    
-l.44 \end
-         {tabular}}
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-./results.tex:44: Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.44 \end
-         {tabular}}
-I'm guessing that you meant to end an alignment here.
-
-./results.tex:44: Misplaced \cr.
-<inserted text> \cr 
-                    
-l.44 \end
-         {tabular}}
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-./results.tex:44: Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.44 \end
-         {tabular}}
-I'm guessing that you meant to end an alignment here.
-
-./results.tex:44: Misplaced \cr.
-<inserted text> \cr 
-                    
-l.44 \end
-         {tabular}}
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-./results.tex:44: Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.44 \end
-         {tabular}}
-I'm guessing that you meant to end an alignment here.
-
-./results.tex:44: Misplaced \cr.
-<inserted text> \cr 
-                    
-l.44 \end
-         {tabular}}
-(That makes 100 errors; please try again.) 
+]) [39] (./main.aux)
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: 8BF82EE6ED0B2F3AFA4F050230D6899B;3206.
+ ) 
 Here is how much of TeX's memory you used:
- 16851 strings out of 478268
- 296721 string characters out of 5846347
- 602893 words of memory out of 5000000
- 34681 multiletter control sequences out of 15000+600000
- 479292 words of font info for 66 fonts, out of 8000000 for 9000
+ 17053 strings out of 478268
+ 300606 string characters out of 5846353
+ 610113 words of memory out of 5000000
+ 34828 multiletter control sequences out of 15000+600000
+ 479644 words of font info for 70 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 108i,12n,106p,2007b,577s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 108i,12n,106p,2011b,547s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ </home/erinzhang/.texlive2022/texmf-var/fonts/pk/ljfour/public/bbm/bbm10.600pk>{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/fontawesome5/fa5free2.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/local/texlive/2022/texmf-dist/fonts/type1/public/fontawesome5/FontAwesome5Free-Solid.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
+Output written on main.pdf (45 pages, 3116701 bytes).
+PDF statistics:
+ 665 PDF objects out of 1000 (max. 8388607)
+ 533 compressed objects within 6 object streams
+ 144 named destinations out of 1000 (max. 500000)
+ 337 words of extra memory for PDF output out of 10000 (max. 10000000)
 
-./results.tex:44:  ==> Fatal error occurred, no output PDF file produced!
