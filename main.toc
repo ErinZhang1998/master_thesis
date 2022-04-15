@@ -19,16 +19,19 @@
 \contentsline {subsection}{\numberline {2.4.2}Results}{21}{subsection.2.4.2}%
 \contentsline {subsubsection}{Pilot 1}{21}{section*.28}%
 \contentsline {section}{\numberline {2.5}Dataset Summary}{22}{section.2.5}%
-\contentsline {chapter}{\numberline {3}Methods}{30}{chapter.3}%
+\contentsline {chapter}{\numberline {3}Modeling}{30}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Task Definition}{31}{section.3.1}%
 \contentsline {section}{\numberline {3.2}Metric}{32}{section.3.2}%
-\contentsline {section}{\numberline {3.3}CLIP Finetune}{32}{section.3.3}%
-\contentsline {subsection}{\numberline {3.3.1}Image Pre-Processing}{32}{subsection.3.3.1}%
-\contentsline {subsection}{\numberline {3.3.2}Text Pre-Processing}{33}{subsection.3.3.2}%
-\contentsline {section}{\numberline {3.4}Loss Function}{33}{section.3.4}%
-\contentsline {section}{\numberline {3.5}Data Augmentation}{34}{section.3.5}%
-\contentsline {chapter}{\numberline {4}Results \& Analysis}{35}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Classification Experiments}{35}{section.4.1}%
-\contentsline {chapter}{\numberline {5}Related Work}{36}{chapter.5}%
-\contentsline {chapter}{\numberline {6}Conclusion}{40}{chapter.6}%
-\contentsline {chapter}{\numberline {A}True Facts}{41}{appendix.A}%
+\contentsline {section}{\numberline {3.3}Method}{32}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Language Transformer}{32}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}Vision Transformer}{33}{subsection.3.3.2}%
+\contentsline {subsection}{\numberline {3.3.3}Pre-Training with Contrastive Objective and Natural Language Supervision}{33}{subsection.3.3.3}%
+\contentsline {subsection}{\numberline {3.3.4}Image Pre-Processing}{34}{subsection.3.3.4}%
+\contentsline {subsection}{\numberline {3.3.5}Text Pre-Processing}{34}{subsection.3.3.5}%
+\contentsline {section}{\numberline {3.4}Loss Function}{34}{section.3.4}%
+\contentsline {section}{\numberline {3.5}Data Augmentation}{35}{section.3.5}%
+\contentsline {chapter}{\numberline {4}Results \& Analysis}{36}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Classification Experiments}{36}{section.4.1}%
+\contentsline {chapter}{\numberline {5}Related Work}{37}{chapter.5}%
+\contentsline {chapter}{\numberline {6}Conclusion}{41}{chapter.6}%
+\contentsline {chapter}{\numberline {A}True Facts}{42}{appendix.A}%

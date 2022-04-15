@@ -6,7 +6,6 @@ The abstract nature of sketches brings both challenges and simplication of the p
     \item How well does current vision-language joint embeddings capture the abstract sketch representation? We are interested in this question because (1) CLIP is not trained with sketches and is trained mostly with RGB images; (2) humans are able to generalize concepts like small, large  
 \end{enumerate}
 
-
 We utilize CLIP to gain more insights into our dataset, beyond simple counting statistics. Given the nature of our dataset: a large variety of words but most words have very few occurrences, small number of images, text descriptions are contrastively collected by juxtaposing two images with opposite features, similar descriptions used for different purpose in different context. How does CLIP respond to this dataset, how well does CLIP embeddings align with our intuitions about these tasks? Specifically, for transferring the same word to be used in different context, or usage of words that are not the common meaning of words, how well can CLIP handle them, since it is trained on millions of images? Even though CLIP is not on the sketch domain, CLIP was trained on a large number of images on the internet, and there are GAN methods that have taken advantag eof CLIP embeddings to guide image generation: ClipDraw, StylCLIP, CLIP-NADA.      
 
 \section{Task Definition}
@@ -22,9 +21,33 @@ Therefore, given that our entire pipeline is $f$, $f(j) \in [2]$ output which of
 Given $n$ pairs of two sketches and two part annotations, the same pairs that were provided by the annotators, we calculate an accuracy-like metric:
 $$ acc = \frac{\sum_{k=1}^{n} \sum_{j=1}^2 \mathbbm{1}{(f(j) = j)}}{2n} $$
 
-\section{CLIP Finetune}
+\section{Method}
 
 We load the pretrained model from the \texttt{Python} \texttt{clip} package, specifically the \texttt{ViT-B/32} variant, which uses the Vision Transformer \citep{visiontransformer} as the image encoder; \texttt{B} stands for BERT Base model, and \texttt{32} stands for $32 \times 32$ input patch size. 
+
+\subsection{Language Transformer}
+We used the transformer model introduced in \cite{textTransformer} as the text encoder. Traditionally, RNNs (long short-term memory LSTM and gated reccurent recurrent network GRU) are used for language modeling, and although attention mechanism is used previously with RNN     
+
+\subsection{Vision Transformer}
+
+
+\subsection{Pre-Training with Contrastive Objective and Natural Language Supervision}
+learning an open set of visual concepts from natural language
+natural language supervision compared to standard crowd-sourced labeling for image classification
+
+\begin{figure*}[!htb]
+\includegraphics[width=0.7\linewidth]{modeling/CLIP.png}  
+\caption{CLIP uses contrastive pre-training instead of generative objective to learn joint vision-language embeddings.}
+\label{modeling.clip.pretrainingobj}
+\end{figure*}
+
+It is difficult to predict the exact captions for an image, since there is usually a wide variety of text descriptions co-occuring with images, so instead CLIP turns to contrastive objectives and solves the problem of determining which text and image should be matched together. 
+As shown in Figure \ref{modeling.clip.pretrainingobj}, during pre-training, for a batch of $N$ (text,image) pairs, CLIP obtains $N$ image features and $N$ text features from the encoders. It then calculates the cosine similarities between each of the $N \times N$ pairings of the image and text features. The values are used as logit scores for calculating symmetric cross-entropy loss used to train the network.      
+
+
+CLIP is trained on 400 million (image, text) pairs collected form a variety of publicly available sources on the Internet.
+
+The query list that is used to compile these (image,text) pairs is the union of (1) words that occur $\geq 100$ times in English Wikipedia; (2) names of Wikipedia articles whose search volume is above certain threshold; (2) high pointwise mutual information (PMI) bi-grams, and (4) $117,000$ WordNet synsets, or sets of cognitive synonyms. 
 
 \subsection{Image Pre-Processing}
 We use the data provided by SPG \citep{spg_paper}, which provides JSON files of the Quick,Draw! sketches in vector format: each sketch is composed of a sequence of $n$ strokes $S_i, i \in [n]$, and $S_i$ is a sequence of vectors $(\delta x,\delta y, p, l)$. $\delta x$ and $\delta y$ are changes in the $x,y$ coordinates with respect to the previous point; for the first point, it is with respect to $(25,25)$. All points are assumed to be drawn on a $256 \times 256$ canvas. $p=1$ if the point is the last point in the current stroke, and $p=0$ otherwise. The SPG dataset provides annotation for semantic segmentation of the sketches, so $l$ is a number representing the semantically meaningful object part.  
