@@ -23,10 +23,30 @@ $$ acc = \frac{\sum_{k=1}^{n} \sum_{j=1}^2 \mathbbm{1}{(f(j) = j)}}{2n} $$
 
 \section{Method}
 
-We load the pretrained model from the \texttt{Python} \texttt{clip} package, specifically the \texttt{ViT-B/32} variant, which uses the Vision Transformer \citep{visiontransformer} as the image encoder; \texttt{B} stands for BERT Base model, and \texttt{32} stands for $32 \times 32$ input patch size. 
+We utilized the \texttt{Python} \texttt{clip} package and load their pre-trained CLIP model, specifically the \texttt{ViT-B/32} variant, which uses the Vision Transformer \citep{visiontransformer} as the image encoder; \texttt{B} stands for \textit{Base} model, and \texttt{32} stands for $32 \times 32$ input patch size. CLIP has two main parts: a text encoder and an image encoder, and both are transformer based. We will divide this section into explaining the two encoders. When introducing the text encoder, we will briefly introduce the encoder-decoder recurrent neural networks (RNN), which are the state-of-the-art method predating transformers, and their shortcomings in terms of inefficiency handling long sequences; we then introduce the self-attention mechanism and transformer models. In this way, we have better understanding of the advantages of modeling large corpus with transformer models. 
+Transformers are first tested in natural language processing tasks and then adapted to vision tasks, 
 
-\subsection{Language Transformer}
-We used the transformer model introduced in \cite{textTransformer} as the text encoder. Traditionally, RNNs (long short-term memory LSTM and gated reccurent recurrent network GRU) are used for language modeling, and although attention mechanism is used previously with RNN     
+\subsection{Text Encoder}
+
+\paragraph{Before Transformer: Recurent Neural Networks}
+Traditionally, recurrent neural network's (RNN), such as long short-term memory (LSTM) and gated reccurent unit (GRU) recurrent network, are used in language modeling.
+The sequential nature of RNN's precluded them efficient parallelization and resulted in difficulty modeling longer sequences \citep{attentionAllYouNeed}. 
+\citet{encoderDecoderRNN} and \citet{encoderDecoderRNN2} introduced the framework of using neural networks, specifically 
+RNNs, for language modeling. The framework works as follows:  
+if given a sequence of $T$ words $\mathbf{x} =  (x_1,x_2,\dots, x_{T})$, an RNN encoder compute a sequence of hidden states $h_t = f(h_{t-1}, x_t)$, where $h_{t-1}$ is the previous hidden state, and $x_t$ is the current input. It then compresses all the $T$ hidden states into one context vector $c = q(\{h_1,\dots,h_T\})$, where $q$ is some nonlinear function. Therefore, summarizing the input sequence into a representation is carried out in a sequential manner.  
+The decoding process is sequential too: $c$ and outputs from previous time steps are used to generate the output of the current step $t$, $y_t = g(c, h_t^{'}, y_1,\dots,y_{t-1})$, where $g$ is some nonlinear transformation, and $h_t^{'}$ is the hidden state in the decoder \citep{encoderDecoderRNN,encoderDecoderRNN2}.
+In this way, the encoder-decoder RNN architecture models the output sentence sequence $\mathbf{y}$ as the product of conditionals of each time step: $\mathbf{y} = \prod_{t=1}^T p(y_t | c,y_1,\dots,y_{t-1})$.  
+During both encoding and decoding, the RNN architecture constrains the modeling to be sequential \citep{attentionRNN}. Moreover, the sequential nature of RNN limits the ability to model long-range dependencies among parts of the sentences, which is crucial in many cases. 
+
+\paragraph{RNN with Attention}
+The attention mechanism, the foudational building block of Transformer, has been used with RNN's before. 
+Introduced in \citet{attentionRNN}, attention is used to alleviate the problem of compressing all information extracted from the input sequence in one fixed context vector $c$ to compute the output at every time step. In the aforementioned 
+$y_t = g(c, h_t^{'}, y_1,\dots,y_{t-1})$, \citet{attentionRNN} altered the fixed $c$ into an hidden state dependent $c_t$, and it is computed as the weighted sum of the encoder hidden states $h_j$: $c_t = \sum_{j=1}^{T} \alpha_{tj} h_j$. The weight $\alpha_{tj}$ represents how well $h_j$, the hidden state corresponding to the $j$-th word in the input, align with the decoder hidden state $h_{t-1}^{'}$ just before the current decoding step $t$. In this way, $c_t$ summarize the input in an output-dependent way, making inputs that associate with $y_t$ more closely contribute more to modeling $ p(y_t | c_t,y_1,\dots,y_{t-1})$.   
+
+\paragraph{Transformer: Attention is All You Need}
+CLIP uses 
+\citet{attentionAllYouNeed} introduces the Transformer model, which relies only on the self-attention mechanism to compute a representation for the input sequence.  
+The self-attention mechanism is at the core of the transformer model, which is composed of stacked layers of multi-head self-attention mechanism followed by point-wise feed-forwward layers.   
 
 \subsection{Vision Transformer}
 

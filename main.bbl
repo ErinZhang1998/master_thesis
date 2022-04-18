@@ -1,6 +1,38 @@
 \begin{thebibliography}{}
 
 \bibitem [\protect \citeauthoryear {%
+Bahdanau%
+, Cho%
+\BCBL {}\ \BBA {} Bengio%
+}{%
+Bahdanau%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2014}}%
+}]{%
+attentionRNN}
+\APACinsertmetastar {%
+attentionRNN}%
+\begin{APACrefauthors}%
+Bahdanau, D.%
+, Cho, K.%
+\BCBL {}\ \BBA {} Bengio, Y.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2014}{}{}.
+\newblock
+\APACrefbtitle {Neural Machine Translation by Jointly Learning to Align and
+  Translate.} {Neural machine translation by jointly learning to align and
+  translate.}
+\newblock
+\APACaddressPublisher{}{arXiv}.
+\newblock
+\begin{APACrefURL} \url{https://arxiv.org/abs/1409.0473} \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.48550/ARXIV.1409.0473} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Bau%
 \ \protect \BOthers {.}}{%
 Bau%
@@ -28,6 +60,40 @@ Bau, D.%
 \newblock
 \APACjournalVolNumPages{ACM Transactions on Graphics (Proceedings of ACM
   SIGGRAPH)}{38}{4}{}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Cho%
+\ \protect \BOthers {.}}{%
+Cho%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2014}}%
+}]{%
+encoderDecoderRNN}
+\APACinsertmetastar {%
+encoderDecoderRNN}%
+\begin{APACrefauthors}%
+Cho, K.%
+, van Merrienboer, B.%
+, Gulcehre, C.%
+, Bahdanau, D.%
+, Bougares, F.%
+, Schwenk, H.%
+\BCBL {}\ \BBA {} Bengio, Y.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2014}{}{}.
+\newblock
+\APACrefbtitle {Learning Phrase Representations using RNN Encoder-Decoder for
+  Statistical Machine Translation.} {Learning phrase representations using rnn
+  encoder-decoder for statistical machine translation.}
+\newblock
+\APACaddressPublisher{}{arXiv}.
+\newblock
+\begin{APACrefURL} \url{https://arxiv.org/abs/1406.1078} \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.48550/ARXIV.1406.1078} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -182,15 +248,46 @@ Reed, S.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Sutskever%
+, Vinyals%
+\BCBL {}\ \BBA {} Le%
+}{%
+Sutskever%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2014}}%
+}]{%
+encoderDecoderRNN2}
+\APACinsertmetastar {%
+encoderDecoderRNN2}%
+\begin{APACrefauthors}%
+Sutskever, I.%
+, Vinyals, O.%
+\BCBL {}\ \BBA {} Le, Q\BPBI V.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2014}{}{}.
+\newblock
+\APACrefbtitle {Sequence to Sequence Learning with Neural Networks.} {Sequence
+  to sequence learning with neural networks.}
+\newblock
+\APACaddressPublisher{}{arXiv}.
+\newblock
+\begin{APACrefURL} \url{https://arxiv.org/abs/1409.3215} \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.48550/ARXIV.1409.3215} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Vaswani%
 \ \protect \BOthers {.}}{%
 Vaswani%
 \ \protect \BOthers {.}}{%
 {\protect \APACyear {2017}}%
 }]{%
-textTransformer}
+attentionAllYouNeed}
 \APACinsertmetastar {%
-textTransformer}%
+attentionAllYouNeed}%
 \begin{APACrefauthors}%
 Vaswani, A.%
 , Shazeer, N.%
