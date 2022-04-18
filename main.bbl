@@ -216,6 +216,66 @@ Li, K.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Radford%
+\ \protect \BOthers {.}}{%
+Radford%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2021}}%
+}]{%
+CLIPpaper}
+\APACinsertmetastar {%
+CLIPpaper}%
+\begin{APACrefauthors}%
+Radford, A.%
+, Kim, J\BPBI W.%
+, Hallacy, C.%
+, Ramesh, A.%
+, Goh, G.%
+, Agarwal, S.%
+\BDBL {}Sutskever, I.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2021}{}{}.
+\newblock
+\APACrefbtitle {Learning Transferable Visual Models From Natural Language
+  Supervision.} {Learning transferable visual models from natural language
+  supervision.}
+\newblock
+\APACaddressPublisher{}{arXiv}.
+\newblock
+\begin{APACrefURL} \url{https://arxiv.org/abs/2103.00020} \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.48550/ARXIV.2103.00020} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Radford%
+\ \protect \BOthers {.}}{%
+Radford%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2019}}%
+}]{%
+Radford2019LanguageMA}
+\APACinsertmetastar {%
+Radford2019LanguageMA}%
+\begin{APACrefauthors}%
+Radford, A.%
+, Wu, J.%
+, Child, R.%
+, Luan, D.%
+, Amodei, D.%
+\BCBL {}\ \BBA {} Sutskever, I.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2019}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Language Models are Unsupervised Multitask Learners}
+  {Language models are unsupervised multitask learners}.{\BBCQ}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Reed%
 \ \protect \BOthers {.}}{%
 Reed%

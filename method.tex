@@ -24,7 +24,7 @@ $$ acc = \frac{\sum_{k=1}^{n} \sum_{j=1}^2 \mathbbm{1}{(f(j) = j)}}{2n} $$
 \section{Method}
 
 We utilized the \texttt{Python} \texttt{clip} package and load their pre-trained CLIP model, specifically the \texttt{ViT-B/32} variant, which uses the Vision Transformer \citep{visiontransformer} as the image encoder; \texttt{B} stands for \textit{Base} model, and \texttt{32} stands for $32 \times 32$ input patch size. CLIP has two main parts: a text encoder and an image encoder, and both are transformer based. We will divide this section into explaining the two encoders. When introducing the text encoder, we will briefly introduce the encoder-decoder recurrent neural networks (RNN), which are the state-of-the-art method predating transformers, and their shortcomings in terms of inefficiency handling long sequences; we then introduce the self-attention mechanism and transformer models. In this way, we have better understanding of the advantages of modeling large corpus with transformer models. 
-Transformers are first tested in natural language processing tasks and then adapted to vision tasks, 
+Transformers are first tested in natural language processing tasks and then adapted to vision tasks,
 
 \subsection{Text Encoder}
 
@@ -39,14 +39,67 @@ In this way, the encoder-decoder RNN architecture models the output sentence seq
 During both encoding and decoding, the RNN architecture constrains the modeling to be sequential \citep{attentionRNN}. Moreover, the sequential nature of RNN limits the ability to model long-range dependencies among parts of the sentences, which is crucial in many cases. 
 
 \paragraph{RNN with Attention}
-The attention mechanism, the foudational building block of Transformer, has been used with RNN's before. 
+The attention mechanism, the foudational building block of transformer, has been used with RNN's before. 
 Introduced in \citet{attentionRNN}, attention is used to alleviate the problem of compressing all information extracted from the input sequence in one fixed context vector $c$ to compute the output at every time step. In the aforementioned 
 $y_t = g(c, h_t^{'}, y_1,\dots,y_{t-1})$, \citet{attentionRNN} altered the fixed $c$ into an hidden state dependent $c_t$, and it is computed as the weighted sum of the encoder hidden states $h_j$: $c_t = \sum_{j=1}^{T} \alpha_{tj} h_j$. The weight $\alpha_{tj}$ represents how well $h_j$, the hidden state corresponding to the $j$-th word in the input, align with the decoder hidden state $h_{t-1}^{'}$ just before the current decoding step $t$. In this way, $c_t$ summarize the input in an output-dependent way, making inputs that associate with $y_t$ more closely contribute more to modeling $ p(y_t | c_t,y_1,\dots,y_{t-1})$.   
 
 \paragraph{Transformer: Attention is All You Need}
-CLIP uses 
-\citet{attentionAllYouNeed} introduces the Transformer model, which relies only on the self-attention mechanism to compute a representation for the input sequence.  
-The self-attention mechanism is at the core of the transformer model, which is composed of stacked layers of multi-head self-attention mechanism followed by point-wise feed-forwward layers.   
+\begin{figure*}[!htb]
+\begin{subfigure}{0.5\textwidth}
+    \centering
+    \includegraphics[width=0.5\linewidth]{modeling/transformer.png}  
+    \caption{Encoder architecture used in original Transformer paper \citep{attentionAllYouNeed}.}
+    \label{modeling.transformer.origEncoder}
+\end{subfigure}
+\begin{subfigure}{0.5\textwidth}
+    \centering
+    \includegraphics[width=0.5\linewidth]{modeling/transformer.png}   
+    \caption{Encoder architecture of CLIP \citep{CLIPpaper}.}
+    \label{modeling.attention.clipEncoder}
+\end{subfigure}
+\caption{Transformer architecture.}
+\label{modeling.transformer}
+\end{figure*}
+
+The text encoder of CLIP is based on the transformer architecture introduced in \citet{attentionAllYouNeed}, and transformer relies only on the self-attention mechanism to compute a representation for the input sequence. In this way, it alleviates the computation efficiency and long-range dependencies problems witnessed in recurrent layers.  
+Figure \ref{modeling.transformer.origEncoder} and \ref{modeling.attention} are the same figures used in \cite{attentionAllYouNeed} to illustrate the transformer architecture. In Figure \ref{modeling.transformer.origEncoder}, \cite{attentionAllYouNeed} gives an overview of the encoder architecture; tokenized texts go through an embedding layer, and the input embeddings are summed with learned position embeddings that inject information on order of the sequence. 
+% and incorporated modification suggested in \citet{Radford2019LanguageMA}
+The input is computed using Byte Pair Encoding (BPE) with a $49,152$ vocabulary. As explained in \cite{Radford2019LanguageMA}, BPE, a sub-word tokenization scheme, strikes a good balance between word-level and character-level word embeddings, since one works well with common words and the other with rare sequences.
+The input is then passed through stacked layers multi-head attention (MHA) mechanism followed by point-wise feed-forward networks (FFN). 
+In the version of CLIP that we use, the text encoder is a 12-layer transformer, and the model dimenison is $512$, $d_{model} = 512$, meaning that output of the initial embedding layers, MHA, FFN all have dimension $512$.  
+Compare to the formulation $LayerNorm(x + Sublayer(x))$ used in \cite{attentionAllYouNeed} (Figure \ref{modeling.transformer.origEncoder}), the CLIP text encoder uses $x + Sublayer(LayerNorm(x))$ (Figure \ref{modeling.attention.clipEncoder}), where $Sublayer$ refers to either MHA or FFN, so each layer still contains residual connection and layer normalization, but the order is switched. 
+
+
+\begin{figure*}[!htb]
+\begin{subfigure}{0.5\textwidth}
+    \centering
+    \includegraphics[width=.3\linewidth]{modeling/selfAttention.png}  
+    \caption{.}
+    \label{modeling.attention.dot}
+\end{subfigure}
+\begin{subfigure}{0.5\textwidth}
+    \centering
+    \includegraphics[width=.5\linewidth]{modeling/multiHeadAttention.png}  
+    \caption{.}
+    \label{modeling.attention.multihead}
+\end{subfigure}
+\caption{Screenshots of counterexamples used in first version of the requirements in Version 1.}
+\label{modeling.attention}
+\end{figure*}
+
+As illustrated in Figure \ref{modeling.attention.multihead}, given query, key, value matricies $Q,K,V$ (in our case, all three matrices equal to the input text embeddings), transformer uses different linear projections to create multi-head attention, and \citet{attentionAllYouNeed} explains the benefit of multi-head attention as allowing the model to attend simultaneously to multiple representation subspaces of the input.      
+
+\begin{equation} \label{mha}
+\begin{split}
+    MultiHead(Q,K,V) & = Concat({head}_1,\dots,{head}_h)W^O \\
+    {head}_i & = Attention(QW_i^{Q}, KW_i^{K}, VW_i^{V}) \\
+    Attention(Q,K,V) & = softmax(\dfrac{QK^T}{\sqrt{d_k}})V 
+\end{split}
+\end{equation}
+
+$\text{ViT-B}/32$ uses a version with $h = 8$ attention heads, so $W_i^{Q}, W_i^{K} \in \mathbb{R}^{d_{model} \times d_k}$ and $W_i^{V} \in \mathbb{R}^{d_{model} \times d_v}$, where $d_k = d_v = \dfrac{d_{model}}{h} = \frac{512}{8} = 64$. 
+At the end of the multi-head attention mechanism, the weighted combination of values from each head is concatenated together and passed through a linear layer, represented here as $W^O \in \mathbb{R}^{(d_v \times h) \times d_v}$. 
+CLIP uses the ``Scaled Dot-Product Attention'' in \cite{attentionAllYouNeed}, illustrated in details in Figure \ref{modeling.attention.dot}. The dot products between query and key determine the weights that are used to sum the values; in this way, we have a contextualized representation; compared to convolutions that use static kernels, attention weights are dynamic.   
 
 \subsection{Vision Transformer}
 
