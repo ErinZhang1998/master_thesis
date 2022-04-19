@@ -102,11 +102,24 @@ At the end of the multi-head attention mechanism, the weighted combination of va
 CLIP uses the ``Scaled Dot-Product Attention'' in \cite{attentionAllYouNeed}, illustrated in details in Figure \ref{modeling.attention.dot}. The dot products between query and key determine the weights that are used to sum the values; in this way, we have a contextualized representation; compared to convolutions that use static kernels, attention weights are dynamic.   
 
 \subsection{Vision Transformer}
+\begin{figure*}[!htb]
+\centering
+\includegraphics[width=0.7\linewidth]{modeling/visionTransformer.png}  
+\caption{Vision Transformer (ViT) architecture \citep{ViT}.}
+\label{modeling.visionTransformer}
+\end{figure*}
+
+The image encoder of CLIP uses Vision Transformer (ViT) introduced in \cite{ViT}. The architecture of ViT is very similar to the original transformer introduced in \cite{attentionAllYouNeed}. 
+In order to reuse the transformer model, ViT needs to first turn an image of size $H\times W \times C$, ($H$, $W$, $C$ stands for image height, width, channel size, respectively), into a sequence of ``tokens'', similar to the text input.  
+To do so, \cite{ViT} reshapes the image to size $N \times (P^2 \cdot C)$, where $N$ is the number of patches and $P$ the patch size; the reshaped image can be seen as a sequence of $N$ image tokens, each having a dimension of $P^2 \cdot C$. Each image token is then passed through a linear layer to be mapped to dimension $D$, similar to the model dimension $d_{model}$ earlier. 
+In the version of CLIP that we used, $H = W = 224$, $C = 3$, $P = 32$, and $D = 768$. 
+As explained in \cite{ViT}, before passing into the transformer, we also need to prepend a \texttt{[class]} token at the front the sequence, whose embedding at the last layer of the transformer will be used as the representation for the entire image. In this way, each image is represented as a sequence of $7\times 7 + 1 = 50$ tokens, illustrated as purple boxes in Figure \ref{modeling.visionTransformer}. The pink boxes that are right next to the patch embeddings represent position embeddings, with a similar function to encoder sequence order information as in the text transformer. 
+For the CLIP image encoder, layer normalization is applied to the input before passing into the transformer and to the output at the last layer.
+
 
 
 \subsection{Pre-Training with Contrastive Objective and Natural Language Supervision}
-learning an open set of visual concepts from natural language
-natural language supervision compared to standard crowd-sourced labeling for image classification
+learning an open set of visual concepts from natural language natural language supervision compared to standard crowd-sourced labeling for image classification
 
 \begin{figure*}[!htb]
 \includegraphics[width=0.7\linewidth]{modeling/CLIP.png}  

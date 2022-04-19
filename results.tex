@@ -47,3 +47,18 @@ finetuned on face $+$ angel & 0.71 & 0.70 & 0.67 & 0.69 \\
 \end{center}
 \end{minipage} 
 \end{table}
+
+Most pairs of words that people have used to differentiate the two sketches, most of the contrastive pairs of descriptions has decreased similarity.
+On average, in GLoVE, the distance between the contrastive words is 0.9. 
+Compared to pre-trained CLIP, the average distance is 0.9. The two distance is roughly similar. 
+However, word embedding calculated by CLIP fine-tuned on both face and angel category, the distance is 0.7. The average percentage of change is 14 percent increase in distance. Most contrastive words have moved further each other, resulting in the increase in accuracy.
+
+We can calculate the cosine similarity between every pair of words in our corpus. Before fine-tuning, for each word $w_i$, it has a $S_i$ of top-$k$ most similar words. What can changes in $S_i$ inform us of the dataset?  
+
+What does it mean to calculate the largest ``mover'' in our dataset? The words can only relative to one another.  
+% Words that have moved closer and words that have moved apart from one another. I am not sure what is the point of doing this type of analysis. What can this analysis be used on? How is this related to robotics or vision-language in general? 
+
+If the ultimate goal of using CLIP is to use it to guide the generation of each part, does the fine-tuned CLIP have this capacity? 
+
+Each caption introduces a visual concept. 
+% We are essentially saying that the big eyes concept look like this: . Large, round halo. Large, round body. Large round eyes. To some extent, the phrase ``large, round'' means different thing or infer different kinds of sketches. A large, round halo can never be as big as the body. Implicitly, the halo should be placed somewhere above the angel's body. You can see very clearly that in CLIPDraw, the objective is to maiximize the similarity between the encoded drawings and the encoded objective. 

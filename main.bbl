@@ -1,6 +1,31 @@
 \begin{thebibliography}{}
 
 \bibitem [\protect \citeauthoryear {%
+Allado-McDowell%
+\ \BBA {} Okojie%
+}{%
+Allado-McDowell%
+\ \BBA {} Okojie%
+}{%
+{\protect \APACyear {2020}}%
+}]{%
+allado-mcdowell_okojie_2020}
+\APACinsertmetastar {%
+allado-mcdowell_okojie_2020}%
+\begin{APACrefauthors}%
+Allado-McDowell, K.%
+\BCBT {}\ \BBA {} Okojie, I.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{2020}.
+\newblock
+\APACrefbtitle {Pharmako-ai} {Pharmako-ai}.
+\newblock
+\APACaddressPublisher{}{Ignota}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Bahdanau%
 , Cho%
 \BCBL {}\ \BBA {} Bengio%
@@ -63,6 +88,39 @@ Bau, D.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Brown%
+\ \protect \BOthers {.}}{%
+Brown%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2020}}%
+}]{%
+gpt3}
+\APACinsertmetastar {%
+gpt3}%
+\begin{APACrefauthors}%
+Brown, T\BPBI B.%
+, Mann, B.%
+, Ryder, N.%
+, Subbiah, M.%
+, Kaplan, J.%
+, Dhariwal, P.%
+\BDBL {}Amodei, D.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2020}{}{}.
+\newblock
+\APACrefbtitle {Language Models are Few-Shot Learners.} {Language models are
+  few-shot learners.}
+\newblock
+\APACaddressPublisher{}{arXiv}.
+\newblock
+\begin{APACrefURL} \url{https://arxiv.org/abs/2005.14165} \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.48550/ARXIV.2005.14165} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Cho%
 \ \protect \BOthers {.}}{%
 Cho%
@@ -102,7 +160,7 @@ Dosovitskiy%
 Dosovitskiy%
 \ \protect \BOthers {.}}{%
 {\protect \APACyear {2020}}%
-}]{%
+{\protect \APACexlab {{\protect \BCnt {1}}}}}]{%
 visiontransformer}
 \APACinsertmetastar {%
 visiontransformer}%
@@ -117,7 +175,41 @@ Dosovitskiy, A.%
 \end{APACrefauthors}%
 \unskip\
 \newblock
-\APACrefYearMonthDay{2020}{}{}.
+\APACrefYearMonthDay{2020{\protect \BCnt {1}}}{}{}.
+\newblock
+\APACrefbtitle {An Image is Worth 16x16 Words: Transformers for Image
+  Recognition at Scale.} {An image is worth 16x16 words: Transformers for image
+  recognition at scale.}
+\newblock
+\APACaddressPublisher{}{arXiv}.
+\newblock
+\begin{APACrefURL} \url{https://arxiv.org/abs/2010.11929} \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.48550/ARXIV.2010.11929} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Dosovitskiy%
+\ \protect \BOthers {.}}{%
+Dosovitskiy%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2020}}%
+{\protect \APACexlab {{\protect \BCnt {2}}}}}]{%
+ViT}
+\APACinsertmetastar {%
+ViT}%
+\begin{APACrefauthors}%
+Dosovitskiy, A.%
+, Beyer, L.%
+, Kolesnikov, A.%
+, Weissenborn, D.%
+, Zhai, X.%
+, Unterthiner, T.%
+\BDBL {}Houlsby, N.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2020{\protect \BCnt {2}}}{}{}.
 \newblock
 \APACrefbtitle {An Image is Worth 16x16 Words: Transformers for Image
   Recognition at Scale.} {An image is worth 16x16 words: Transformers for image
