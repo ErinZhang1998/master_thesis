@@ -1,15 +1,15 @@
 
-We survey two areas of related work: text-to-image synthesis and sketch representation learning. There is a long line of works on generating realistic images by learning their underlying distributions, especially on employing generative adversarial networks (GAN). 
-Related to our work is a set of works on generating images from text descriptions or use texts to manipulate image styles, but they often work with a constraint set of language, with the exception of industrial-scale generative models with billions of parameters trained from text-image dataset on the hundred million scale. \todo[size=\small, color=purple!40]{[X] not very satisfied with this sentence.}%
+We survey two areas of related work: \todo[size=\small, color=green!20]{change here} text-to-image synthesis and sketch representation learning. There is a long line of works on generating realistic images by learning their underlying distributions, especially on employing generative adversarial networks (GAN). 
+Related to our work is a set of works on generating images from text descriptions or use texts to manipulate image styles, but they often work with a constraint set of language, with the exception of industrial-scale generative models with billions of parameters trained from text-image dataset on the hundred million scale. \todo[size=\small, color=green!20]{[X] not very satisfied with this sentence.}%
 Most of these work focus on datasets of photo-realistic images, and our work instead centers around sketches, which are abstract since certain features of the objects in the sketches are illustrated figuratively and contain sparse information, as most part of the image is empty. 
 Therefore, we also look into the field of sketch representation learning: what methods have been employed and what datasets are constructed.   
 
-\section{Image Synthesis from Text Prompts}
+% \section{Image Synthesis from Text Prompts}
 
 
-\section{Sketch Representation Learning}
+% \section{Sketch Representation Learning}
 
-\subsection{Sketch Dataset}
+\section{Sketch Dataset}
 Since our work seeks to collect a dataset of (sketch parts, text description), we survey exisiting sketch datasets and find that they either lack language descriptions, for the entire sketch or for parts in a sketch, or they do not contain semantic object annotations. 
 
 \paragraph{TU-Berlin}
@@ -29,9 +29,28 @@ Quick,Draw! dataset, but the original Quick,Draw! dataset does not provide label
 The Sketch Perceptual Grouping (SPG) dataset \citep{spg_paper} and the SketchSeg dataset \citep{sketchsegDataset} contain annotations for semantic segmentation, meaning that each stroke in a sketch is paired with a semantic label; for example, strokes in a sketch for the \textit{face} category are assigned one of the following labels: \textit{eyes, nose, mouth, ear, hair, moustache, outline of face}. 
 The SPG dataset annotates for $25,000$ Quick,Draw! sketches, belonging to 25 (out of 345) categories, and it selects 800 out of the original $100,000$ sketches in each category for annotation. 
 The SketchSeg dataset builds upon the SPG dataset by using a recurrent neural work to generate additional sketches stemmed from one sketch in SPG; since each stroke in the generated sketch corresponds to a stroke in the original sketch, it automatically has part annotations. However, since the quality of the generated sketch is dependent upon the generative model, we choose the original SPG dataset, which is also publicly available. The SPG dataset does not contain text descriptions like our dataset, so although they can be used to build a collaborative drawing system, such system would not have the capacity to respond to natural language commands from users, and our work is interested in learning collaborative robots that can communicate freely with people.    
+%DoodlerGAN
 
-\section{Sketch Representation Learning}
+\section{Collaborative Drawing}
+%ShadowDraw
 
+\paragraph{Sketch-RNN}
+Along with the Quick,Draw! dataset, \cite{ha2017neural} introduces Sketch-RNN and provides a web demo of collaborative drawing, where users can select a category and draw the first few strokes of a sketch, and the model will complete the rest of the sketch\footnote{You can access the demo from this website \url{https://magenta.tensorflow.org/sketch-rnn-demo}}. Sketch-RNN uses a variational autoencoder (VAE) with bi-directional RNN encoder and RNN decoder. 
+\cite{ha2017neural} uses a vector format to represent the sketches: each sketch is a set of strokes, and each stroke is a sequence of points, so the smooth curve is approximated with piecewise linear splines created by connecting adjacent points in the sequence. Each point is a 5-component vector, $(\delta x, \delta y, p_1, p_2, p_3)$: the first two components represent changes in the $(x,y)$ coordinate of the current point compared to the last one; the last three make up a one-hot vector representing current state of the sketch. Let $s = \begin{bmatrix}p_1 & p_2 & p_3\end{bmatrix}$,
+$ s = \begin{bmatrix}1 & 0 & 0\end{bmatrix}$, if the current point will be connected with the next point;
+$s = \begin{bmatrix}0 & 1 & 0\end{bmatrix}$, if the current point is the last point in the current stroke, so the pen is expected to be lifted next;
+$s = \begin{bmatrix}0 & 0 & 1\end{bmatrix}$, if the current point is the last point in the sketch.     
+The RNN encoder take this sequence as input and uses the final hidden state $h$ of the RNN to parameterize a Gaussian distributions of size $N_z$, from which a latent random variable $z \in \mathbb{R}^{N_z}$ is sampled. The latent $z$ will be used to (1) initialize the hidden state $h_0$ of the RNN decoder and (2) be concatenated with the vector at each time step to be fed as input into the decoder.  
+The RNN decoder predicts parameters for distributions (Gaussian mixture model for sampling $\delta x, \delta y$ and categorical distribution for sampling $p_1,p_2,p_2$) at each time step from the hidden states of the RNN. Since the decoder works in an autoregressive manner, meaning that points in a sketch are passed one by one into the RNN, the decoder can \textit{encode} the first few strokes provided by the users into the hidden vector, which is conditioned on for later steps to produce distributions of points that make up the rest of the sketch. 
+Subsequent works on sketch representation learning can be grouped into those that represent the input in this stroke-point vector format and those that treat the entire sketch as a raster image. 
+Although our work uses the Quick,Draw! sketches, we render the vectors into raster images in order to use CLIP and its vision-language joint embeddings, since compared to Sketch-RNN, we need to incorporate text descriptions of the sketch parts, and it is challenging to align semantic information in text with distributions of the $x,y$ coordinates. 
+
+\paragraph{DoodlerGAN} 
+DoodlerGAN \citep{doodlerGAN} is a more recent work on collaborative drawing and represents sketches as raster images; it uses Generative Adversarial Network (GAN) to model the sketches \footnote{Try the DoodlerGAN demo here: \url{http://doodlergan.cloudcv.org/}}. Compared to Sketch-RNN, which can only complete the missing parts of sketches once users are done with their parts, DoodlerGAN generates sketches using a part-based approach so that users and the system can take multiple turns to create sketches more collaboratively. 
+Moreover, as indicated by \cite{doodlerGAN}, compared to vector inputs, raster images can take better advantage of information from spatial structure of the parts and ignore effects of shifting coordinates by focusing more on relationships among the sketch parts.   
+
+
+SketchBirds
 
 % In the space of sketch representation learning. After we have settled on human-robot collaborative sketching, we surveyed the field for existing sketch datasets and what they contain, what they lack, and what gap does our work fill. 
 Past works have learned sketch representations from a wide variety of tasks: sketch recognition, sketch generation from image, image generation from sketches, sketch retrieval of 3D objects, sketch retrieval of images, semantic segmentation of sketches, etc. 
@@ -43,7 +62,6 @@ Similar to images, sketches have hierarchical structure, and we
 
 The hope is that we can leverage previous work on sketch representation learning to gain insights about sketches and how to learn good representations of them. What is unique about sketches compared to regular RGB images from, for example, ImageNet is that (1) sketches are abstract characterisation of the objects, and although humans can recognize and understand a sketch perfectly, they do not necessarily bear big resemblance to their image counterpart; therefore, methods that work well on RGB images, especially generative models like GAN that have successfully generated wide range of images from texts, a realm that we care about, it is not necessarily the case that they can generalize well to our dataset.  
 
-On the other hand we have interactive drawing, and the seminal work in the realm is the Sketch-RNN work by \citep{ha2017neural}. There are several interesting aspect about this work. Firstly, it represents the sketches by strokes and the strokes by sampling points on the curve instead of pixel images. This vector representation versus raster representation for sketches is an interesting decision in terms of how to best interpret the sketches. Since Sketch-RNN learns the distribution [], it can take in the points from strokes done by users, and then predict the rest of the sketches. This distribution is learnt from the massive dataset Quick!Draw collected from a game hosted by Google. In comparison to Quick!Draw dataset, although our dataset is also based on sketches from Quick!Draw,     
 
 
 
@@ -65,8 +83,6 @@ StyleGAN-NADA: CLIP Guided Domain Adaptation of Image Generators
 Of course, there are other techniques to generate images from texts, namely, leverage large pretrained model such as GPT-3. GPT-3 and DALL-E are particular nowadays for researchers to replicate on their own and try to query the immense feature space for creative art pieces. However, the abstract art style work is not our focus, and while creativity is an interesting future direction, we emphasize the collaborative aspect more than creativity. 
 
 %%%%%%%%%%%% outputting basic semantically meaningful components
-Another recent work done with GAN is DoodlerGAN.  
-
 In the larger realm of RGB images:
 Therefore, our dataset will be a good benchmark for how well these models work at capturing the individual semantic components of an object. The reason that we claim this is that some work on GAN's have try to look at how to manipulate certain regions in the images by manipulating the latent space. While this line of work also try to look at how .This area of the work is around facial feature editting. Work such as Semantic Photo Manipulation with a Generative Image Prior \citep{Bau:Ganpaint:2019}, has an interactive interface where the user can use stroke to indicate where in the image they would want a certain object, and the GAN will generate the objects in that location. ``semantic image editing tasks, including synthesizing new objects consistent with background, removing unwanted objects, and changing the appearance of an object''. semantic edit on an object. They would apply a semantic vector space operation in the latent space. How our work is different from this work is that: how well the methods can work on sketches and how well can the edits can done through language. [?] Moreover, it seems like we need to have an image already in order to do the manipulation, but for our ideal tasks, we start from a blank canvas.
 

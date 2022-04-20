@@ -251,6 +251,38 @@ Eitz, M.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Ge%
+, Goswami%
+, Zitnick%
+\BCBL {}\ \BBA {} Parikh%
+}{%
+Ge%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2020}}%
+}]{%
+doodlerGAN}
+\APACinsertmetastar {%
+doodlerGAN}%
+\begin{APACrefauthors}%
+Ge, S.%
+, Goswami, V.%
+, Zitnick, C\BPBI L.%
+\BCBL {}\ \BBA {} Parikh, D.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2020}{}{}.
+\newblock
+\APACrefbtitle {Creative Sketch Generation.} {Creative sketch generation.}
+\newblock
+\APACaddressPublisher{}{arXiv}.
+\newblock
+\begin{APACrefURL} \url{https://arxiv.org/abs/2011.10039} \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.48550/ARXIV.2011.10039} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Ha%
 \ \BBA {} Eck%
 }{%
