@@ -1,12 +1,12 @@
 # Fdb version 3
-["bibtex main"] 1650462711 "main.aux" "main.bbl" "main" 1650462716
+["bibtex main"] 1650472802 "main.aux" "main.bbl" "main" 1650473521
   "/usr/local/texlive/2022/texmf-dist/bibtex/bst/apacite/apacite.bst" 1374530685 141073 9d7b79dbf9d91133318126032cff8c27 ""
-  "main.aux" 1650462715 26067 d7767e4fb59267ba7d255293bc0816a7 "pdflatex"
+  "main.aux" 1650473521 26072 751e16883eb9c0c3f67287fa6f3c425a "pdflatex"
   "thesiscite.bib" 1650461802 13852 e956ccd8edfe3a4404e0632d1ff0934d ""
   (generated)
   "main.bbl"
   "main.blg"
-["pdflatex"] 1650462712 "/home/erinzhang/Documents/master_thesis/main.tex" "main.pdf" "main" 1650462716
+["pdflatex"] 1650473517 "/home/erinzhang/Documents/master_thesis/main.tex" "main.pdf" "main" 1650473521
   "/home/erinzhang/.texlive2022/texmf-var/fonts/pk/ljfour/public/bbm/bbm10.600pk" 1649946230 6964 3d5c10d2e1556865b1da2078e4f1bd99 ""
   "/home/erinzhang/Documents/master_thesis/main.tex" 1650457190 2153 f44ceb5c386448effc04aa20d4a9eb34 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
@@ -260,11 +260,11 @@
   "dataset_image/word_freq_face.png" 1649768908 49841 eefe708b66c8aa0fc8fa9d51861e9c96 ""
   "final_data.tex" 1649768908 2644 0541336b6ac3662740a56a509ebea920 ""
   "future.tex" 1650457190 707 f77e65243e9633d9fbd6ef760be39a68 ""
-  "main.aux" 1650462715 26067 d7767e4fb59267ba7d255293bc0816a7 "pdflatex"
-  "main.bbl" 1650462712 17659 999067f9ad0959427c3efe30aeb73d14 "bibtex main"
-  "main.out" 1650462715 4236 931d1852cff85df55e449630d244af21 "pdflatex"
+  "main.aux" 1650473521 26072 751e16883eb9c0c3f67287fa6f3c425a "pdflatex"
+  "main.bbl" 1650472802 17659 999067f9ad0959427c3efe30aeb73d14 "bibtex main"
+  "main.out" 1650473521 4236 931d1852cff85df55e449630d244af21 "pdflatex"
   "main.tex" 1650457190 2153 f44ceb5c386448effc04aa20d4a9eb34 ""
-  "main.toc" 1650462715 3438 abd519bc3c323a18ce77dc47599dd8d8 "pdflatex"
+  "main.toc" 1650473521 3440 5122407635e12e178245d0511d87832e "pdflatex"
   "method.tex" 1650457190 21164 89ec9e27de326efc7f6fae982f921ab5 ""
   "modeling/CLIP.png" 1650032694 103101 c6b24c48b4ead1b3b907b211a32c5236 ""
   "modeling/multiHeadAttention.png" 1512519816 65853 b0a44500743ea73508e8941561e82e2c ""
@@ -272,7 +272,7 @@
   "modeling/transformer.png" 1650295269 62446 ebdba131952857dd4943d354c25d9ad3 ""
   "modeling/visionTransformer.png" 1650301474 324591 0970f882974b60ae0a282c76d8e5544d ""
   "pantanal.jpeg" 1649768908 533000 0ea7b1dfed28674dfcd9ce47ea0a2e53 ""
-  "related_work.tex" 1650462707 17625 4d3cea3c79a3fb823d6616a573a8c339 ""
+  "related_work.tex" 1650473517 18874 a6db2e736eda9afbd2642c81b492a5ac ""
   "results.tex" 1650457190 3075 173ddb89fb3ddd968dee8d38a7b1e318 ""
   "suthesis-ug.sty" 1649768908 10189 25ba473640b16f380057f19d9f0dbd2a ""
   (generated)
