@@ -14,45 +14,45 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: thesiscite.bib
 apacite.bst [2013/07/21 v6.03 APA bibliography style]
 Warning--No address in WahCUB_200_2011
-You've used 20 entries,
+You've used 23 entries,
             6951 wiz_defined-function locations,
-            1381 strings with 15461 characters,
-and the built_in function-call counts, 43437 in all, are:
-= -- 5156
-> -- 511
-< -- 1868
-+ -- 2104
-- -- 41
-* -- 2768
-:= -- 7274
-add.period$ -- 91
-call.type$ -- 20
-change.case$ -- 357
+            1405 strings with 16195 characters,
+and the built_in function-call counts, 50050 in all, are:
+= -- 5977
+> -- 582
+< -- 2163
++ -- 2419
+- -- 47
+* -- 3182
+:= -- 8373
+add.period$ -- 105
+call.type$ -- 23
+change.case$ -- 411
 chr.to.int$ -- 0
-cite$ -- 41
-duplicate$ -- 1576
-empty$ -- 1834
-format.name$ -- 976
-if$ -- 8300
+cite$ -- 47
+duplicate$ -- 1785
+empty$ -- 2092
+format.name$ -- 1095
+if$ -- 9582
 int.to.chr$ -- 0
-int.to.str$ -- 64
+int.to.str$ -- 73
 missing$ -- 0
-newline$ -- 597
-num.names$ -- 160
-pop$ -- 1405
+newline$ -- 685
+num.names$ -- 184
+pop$ -- 1527
 preamble$ -- 1
-purify$ -- 80
+purify$ -- 94
 quote$ -- 0
-skip$ -- 2152
+skip$ -- 2588
 stack$ -- 0
-substring$ -- 2360
-swap$ -- 784
-text.length$ -- 65
+substring$ -- 2722
+swap$ -- 901
+text.length$ -- 80
 text.prefix$ -- 0
 top$ -- 1
-type$ -- 1728
+type$ -- 2032
 warning$ -- 1
-while$ -- 331
+while$ -- 372
 width$ -- 0
-write$ -- 791
+write$ -- 906
 (There was 1 warning)

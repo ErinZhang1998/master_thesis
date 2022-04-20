@@ -1,39 +1,47 @@
 \contentsline {chapter}{Abstract}{iii}{chapter*.1}%
 \contentsline {chapter}{Acknowledgements}{iv}{chapter*.2}%
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}%
-\contentsline {chapter}{\numberline {2}Data Collection}{3}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Overview}{3}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Version 0}{4}{section.2.2}%
-\contentsline {section}{\numberline {2.3}Version 1}{6}{section.2.3}%
-\contentsline {subsection}{\numberline {2.3.1}Overview}{6}{subsection.2.3.1}%
-\contentsline {subsection}{\numberline {2.3.2}Interface Design}{8}{subsection.2.3.2}%
-\contentsline {subsubsection}{Main Task}{8}{section*.5}%
-\contentsline {subsubsection}{Instruction and Requirement}{9}{section*.9}%
-\contentsline {subsubsection}{Qualification}{15}{section*.16}%
-\contentsline {subsection}{\numberline {2.3.3}Deployment Results}{16}{subsection.2.3.3}%
-\contentsline {section}{\numberline {2.4}Version 2}{17}{section.2.4}%
-\contentsline {subsection}{\numberline {2.4.1}Overview}{17}{subsection.2.4.1}%
-\contentsline {subsubsection}{Main Task}{18}{section*.19}%
-\contentsline {subsubsection}{Instructions}{18}{section*.22}%
-\contentsline {subsubsection}{Qualifications}{19}{section*.25}%
-\contentsline {subsection}{\numberline {2.4.2}Results}{20}{subsection.2.4.2}%
-\contentsline {subsubsection}{Pilot 1}{20}{section*.28}%
-\contentsline {section}{\numberline {2.5}Dataset Summary}{21}{section.2.5}%
-\contentsline {chapter}{\numberline {3}Modeling}{29}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Task Definition}{30}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Metric}{31}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Method}{31}{section.3.3}%
-\contentsline {subsection}{\numberline {3.3.1}Text Encoder}{31}{subsection.3.3.1}%
-\contentsline {paragraph}{Before Transformer: Recurent Neural Networks}{31}{section*.33}%
-\contentsline {paragraph}{RNN with Attention}{32}{section*.34}%
-\contentsline {paragraph}{Transformer: Attention is All You Need}{32}{figure.caption.36}%
-\contentsline {subsection}{\numberline {3.3.2}Vision Transformer}{34}{subsection.3.3.2}%
-\contentsline {subsection}{\numberline {3.3.3}Pre-Training with Contrastive Objective and Natural Language Supervision}{35}{subsection.3.3.3}%
-\contentsline {subsection}{\numberline {3.3.4}Image Pre-Processing}{36}{subsection.3.3.4}%
-\contentsline {subsection}{\numberline {3.3.5}Text Pre-Processing}{37}{subsection.3.3.5}%
-\contentsline {section}{\numberline {3.4}Loss Function}{37}{section.3.4}%
-\contentsline {section}{\numberline {3.5}Data Augmentation}{38}{section.3.5}%
-\contentsline {chapter}{\numberline {4}Results \& Analysis}{39}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Classification Experiments}{39}{section.4.1}%
-\contentsline {chapter}{\numberline {5}Related Work}{41}{chapter.5}%
-\contentsline {chapter}{\numberline {6}Conclusion}{45}{chapter.6}%
+\contentsline {chapter}{\numberline {2}Related Work}{3}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Image Synthesis from Text Prompts}{4}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Sketch Representation Learning}{4}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Sketch Dataset}{4}{subsection.2.2.1}%
+\contentsline {paragraph}{TU-Berlin}{4}{section*.5}%
+\contentsline {paragraph}{Datasets with Text Descriptions}{4}{section*.6}%
+\contentsline {paragraph}{Quick,Draw! Dataset}{5}{section*.7}%
+\contentsline {paragraph}{Datasets with Semantic Part Annotations}{5}{section*.8}%
+\contentsline {section}{\numberline {2.3}Sketch Representation Learning}{6}{section.2.3}%
+\contentsline {chapter}{\numberline {3}Data Collection}{9}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Overview}{9}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Version 0}{10}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Version 1}{12}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Overview}{12}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}Interface Design}{14}{subsection.3.3.2}%
+\contentsline {subsubsection}{Main Task}{14}{section*.10}%
+\contentsline {subsubsection}{Instruction and Requirement}{15}{section*.14}%
+\contentsline {subsubsection}{Qualification}{21}{section*.21}%
+\contentsline {subsection}{\numberline {3.3.3}Deployment Results}{22}{subsection.3.3.3}%
+\contentsline {section}{\numberline {3.4}Version 2}{23}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}Overview}{23}{subsection.3.4.1}%
+\contentsline {subsubsection}{Main Task}{24}{section*.24}%
+\contentsline {subsubsection}{Instructions}{24}{section*.27}%
+\contentsline {subsubsection}{Qualifications}{25}{section*.30}%
+\contentsline {subsection}{\numberline {3.4.2}Results}{26}{subsection.3.4.2}%
+\contentsline {subsubsection}{Pilot 1}{26}{section*.33}%
+\contentsline {section}{\numberline {3.5}Dataset Summary}{27}{section.3.5}%
+\contentsline {chapter}{\numberline {4}Modeling}{35}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Task Definition}{36}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Metric}{37}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Method}{37}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Text Encoder}{37}{subsection.4.3.1}%
+\contentsline {paragraph}{Before Transformer: Recurent Neural Networks}{37}{section*.38}%
+\contentsline {paragraph}{RNN with Attention}{38}{section*.39}%
+\contentsline {paragraph}{Transformer: Attention is All You Need}{38}{figure.caption.41}%
+\contentsline {subsection}{\numberline {4.3.2}Vision Transformer}{40}{subsection.4.3.2}%
+\contentsline {subsection}{\numberline {4.3.3}Pre-Training with Contrastive Objective and Natural Language Supervision}{41}{subsection.4.3.3}%
+\contentsline {subsection}{\numberline {4.3.4}Image Pre-Processing}{42}{subsection.4.3.4}%
+\contentsline {subsection}{\numberline {4.3.5}Text Pre-Processing}{43}{subsection.4.3.5}%
+\contentsline {section}{\numberline {4.4}Loss Function}{43}{section.4.4}%
+\contentsline {section}{\numberline {4.5}Data Augmentation}{44}{section.4.5}%
+\contentsline {chapter}{\numberline {5}Results \& Analysis}{45}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Classification Experiments}{45}{section.5.1}%
+\contentsline {chapter}{\numberline {6}Future Work}{47}{chapter.6}%

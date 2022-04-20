@@ -157,3 +157,11 @@ $$L = \dfrac{1}{2} (L(X_v, Y_v) + L(X_t, Y_t))$$
 
 \section{Data Augmentation}
 As mentioned above, our dataset has a small number of sketches: 572 face sketches and 787 angel sketches.  
+
+
+
+% Text representation. 
+% We have RNN to model the sequence of strokes. Can we still use RNN to model the sequence of words? Does the length of the sentence matter? If we only have adjectives, how can we effectively model these words? 
+% What are methods that can model the semantics of these words alone? 
+% Where can we find existing representations of these words? How are traditional text-image synthesis methods modeling the words? 
+% Reed et al. [28] obtain the text encoding of a textual description by using a pre-trained character-level convolutional recurrent neural network (char-CNN-RNN). The char-CNN-RNN is pretrained to learn a correspondence function between text and image based on the class labels. 

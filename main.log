@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.4.10)  19 APR 2022 14:32
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.4.10)  20 APR 2022 00:07
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -389,55 +389,262 @@ LaTeX Font Info:    Overwriting math alphabet `\mathbbm' in version `bold'
 (Font)                  U/bbm/m/n --> U/bbm/bx/n on input line 33.
 LaTeX Font Info:    Overwriting math alphabet `\mathbbmss' in version `bold'
 (Font)                  U/bbmss/m/n --> U/bbmss/bx/n on input line 35.
+) (/usr/local/texlive/2022/texmf-dist/tex/latex/todonotes/todonotes.sty
+Package: todonotes 2021/06/04 v1.1.5 Todonotes source and documentation.
+Package: todonotes 2021/06/04
+ (/usr/local/texlive/2022/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2020/11/24 v1.1c Standard LaTeX ifthen package (DPC)
+) (/usr/local/texlive/2022/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2020/11/20 v2.8 package option processing (HA)
+ (/usr/local/texlive/2022/texmf-dist/tex/generic/xkeyval/xkeyval.tex (/usr/local/texlive/2022/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+\XKV@toks=\toks28
+\XKV@tempa@toks=\toks29
 )
-Package hyperref Info: Option `colorlinks' set `false' on input line 53.
+\XKV@depth=\count316
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+)) (/usr/local/texlive/2022/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty (/usr/local/texlive/2022/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty (/usr/local/texlive/2022/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
+\pgfutil@everybye=\toks30
+\pgfutil@tempdima=\dimen184
+\pgfutil@tempdimb=\dimen185
+ (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-lists.tex)) (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
+\pgfutil@abb=\box58
+) (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/pgf.revision.tex)
+Package: pgfrcs 2021/05/15 v3.1.9a (3.1.9a)
+))
+Package: pgf 2021/05/15 v3.1.9a (3.1.9a)
+ (/usr/local/texlive/2022/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty (/usr/local/texlive/2022/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+Package: pgfsys 2021/05/15 v3.1.9a (3.1.9a)
+ (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks31
+\pgfkeys@temptoks=\toks32
+ (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.code.tex
+\pgfkeys@tmptoks=\toks33
+))
+\pgf@x=\dimen186
+\pgf@y=\dimen187
+\pgf@xa=\dimen188
+\pgf@ya=\dimen189
+\pgf@xb=\dimen190
+\pgf@yb=\dimen191
+\pgf@xc=\dimen192
+\pgf@yc=\dimen193
+\pgf@xd=\dimen194
+\pgf@yd=\dimen195
+\w@pgf@writea=\write3
+\r@pgf@reada=\read2
+\c@pgf@counta=\count317
+\c@pgf@countb=\count318
+\c@pgf@countc=\count319
+\c@pgf@countd=\count320
+\t@pgf@toka=\toks34
+\t@pgf@tokb=\toks35
+\t@pgf@tokc=\toks36
+\pgf@sys@id@count=\count321
+ (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
+File: pgf.cfg 2021/05/15 v3.1.9a (3.1.9a)
+)
+Driver file for pgf: pgfsys-pdftex.def
+ (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-pdftex.def
+File: pgfsys-pdftex.def 2021/05/15 v3.1.9a (3.1.9a)
+ (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.def
+File: pgfsys-common-pdf.def 2021/05/15 v3.1.9a (3.1.9a)
+))) (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
+File: pgfsyssoftpath.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfsyssoftpath@smallbuffer@items=\count322
+\pgfsyssoftpath@bigbuffer@items=\count323
+) (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
+File: pgfsysprotocol.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)) (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+Package: pgfcore 2021/05/15 v3.1.9a (3.1.9a)
+ (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex) (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
+\pgfmath@dimen=\dimen196
+\pgfmath@count=\count324
+\pgfmath@box=\box59
+\pgfmath@toks=\toks37
+\pgfmath@stack@operand=\toks38
+\pgfmath@stack@operation=\toks39
+) (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code.tex) (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonometric.code.tex) (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.code.tex) (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison.code.tex) (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.tex) (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code.tex) (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex) (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerarithmetics.code.tex))) (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count325
+)) (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/math/pgfint.code.tex) (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
+File: pgfcorepoints.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@picminx=\dimen197
+\pgf@picmaxx=\dimen198
+\pgf@picminy=\dimen199
+\pgf@picmaxy=\dimen256
+\pgf@pathminx=\dimen257
+\pgf@pathmaxx=\dimen258
+\pgf@pathminy=\dimen259
+\pgf@pathmaxy=\dimen260
+\pgf@xx=\dimen261
+\pgf@xy=\dimen262
+\pgf@yx=\dimen263
+\pgf@yy=\dimen264
+\pgf@zx=\dimen265
+\pgf@zy=\dimen266
+) (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.code.tex
+File: pgfcorepathconstruct.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@path@lastx=\dimen267
+\pgf@path@lasty=\dimen268
+) (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code.tex
+File: pgfcorepathusage.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@shorten@end@additional=\dimen269
+\pgf@shorten@start@additional=\dimen270
+) (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex
+File: pgfcorescopes.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfpic=\box60
+\pgf@hbox=\box61
+\pgf@layerbox@main=\box62
+\pgf@picture@serial@count=\count326
+) (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code.tex
+File: pgfcoregraphicstate.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgflinewidth=\dimen271
+) (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformations.code.tex
+File: pgfcoretransformations.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@pt@x=\dimen272
+\pgf@pt@y=\dimen273
+\pgf@pt@temp=\dimen274
+) (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
+File: pgfcorequick.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+) (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.tex
+File: pgfcoreobjects.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+) (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing.code.tex
+File: pgfcorepathprocessing.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+) (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex
+File: pgfcorearrows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfarrowsep=\dimen275
+) (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
+File: pgfcoreshade.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@max=\dimen276
+\pgf@sys@shading@range@num=\count327
+\pgf@shadingcount=\count328
+) (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
+File: pgfcoreimage.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+ (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex
+File: pgfcoreexternal.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfexternal@startupbox=\box63
+)) (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.tex
+File: pgfcorelayers.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+) (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.code.tex
+File: pgfcoretransparency.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+) (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.tex
+File: pgfcorepatterns.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+) (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/basiclayer/pgfcorerdf.code.tex
+File: pgfcorerdf.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+))) (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
+File: pgfmoduleshapes.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfnodeparttextbox=\box64
+) (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
+File: pgfmoduleplot.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+) (/usr/local/texlive/2022/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty
+Package: pgfcomp-version-0-65 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@nodesepstart=\dimen277
+\pgf@nodesepend=\dimen278
+) (/usr/local/texlive/2022/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18.sty
+Package: pgfcomp-version-1-18 2021/05/15 v3.1.9a (3.1.9a)
+)) (/usr/local/texlive/2022/texmf-dist/tex/latex/pgf/utilities/pgffor.sty (/usr/local/texlive/2022/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex)) (/usr/local/texlive/2022/texmf-dist/tex/latex/pgf/math/pgfmath.sty (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)) (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+Package: pgffor 2021/05/15 v3.1.9a (3.1.9a)
+ (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
+\pgffor@iter=\dimen279
+\pgffor@skip=\dimen280
+\pgffor@stack=\toks40
+\pgffor@toks=\toks41
+)) (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
+Package: tikz 2021/05/15 v3.1.9a (3.1.9a)
+ (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers.code.tex
+File: pgflibraryplothandlers.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@plot@mark@count=\count329
+\pgfplotmarksize=\dimen281
+)
+\tikz@lastx=\dimen282
+\tikz@lasty=\dimen283
+\tikz@lastxsaved=\dimen284
+\tikz@lastysaved=\dimen285
+\tikz@lastmovetox=\dimen286
+\tikz@lastmovetoy=\dimen287
+\tikzleveldistance=\dimen288
+\tikzsiblingdistance=\dimen289
+\tikz@figbox=\box65
+\tikz@figbox@bg=\box66
+\tikz@tempbox=\box67
+\tikz@tempbox@bg=\box68
+\tikztreelevel=\count330
+\tikznumberofchildren=\count331
+\tikznumberofcurrentchild=\count332
+\tikz@fig@count=\count333
+ (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
+File: pgfmodulematrix.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfmatrixcurrentrow=\count334
+\pgfmatrixcurrentcolumn=\count335
+\pgf@matrix@numberofcolumns=\count336
+)
+\tikz@expandcount=\count337
+ (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+))) (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarypositioning.code.tex
+File: tikzlibrarypositioning.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+) (/usr/local/texlive/2022/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count338
+\calc@Bcount=\count339
+\calc@Adimen=\dimen290
+\calc@Bdimen=\dimen291
+\calc@Askip=\skip66
+\calc@Bskip=\skip67
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count340
+\calc@Cskip=\skip68
+)
+\c@@todonotes@numberoftodonotes=\count341
+)
+Package hyperref Info: Option `colorlinks' set `false' on input line 54.
  (./main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 58.
-LaTeX Font Info:    ... okay on input line 58.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 58.
-LaTeX Font Info:    ... okay on input line 58.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 58.
-LaTeX Font Info:    ... okay on input line 58.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 58.
-LaTeX Font Info:    ... okay on input line 58.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 58.
-LaTeX Font Info:    ... okay on input line 58.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 58.
-LaTeX Font Info:    ... okay on input line 58.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 58.
-LaTeX Font Info:    ... okay on input line 58.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 58.
-LaTeX Font Info:    ... okay on input line 58.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 58.
-LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
  (/usr/local/texlive/2022/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count316
-\scratchdimen=\dimen184
-\scratchbox=\box58
-\nofMPsegments=\count317
-\nofMParguments=\count318
-\everyMPshowfont=\toks28
-\MPscratchCnt=\count319
-\MPscratchDim=\dimen185
-\MPnumerator=\count320
-\makeMPintoPDFobject=\count321
-\everyMPtoPDFconversion=\toks29
+\scratchcounter=\count342
+\scratchdimen=\dimen292
+\scratchbox=\box69
+\nofMPsegments=\count343
+\nofMParguments=\count344
+\everyMPshowfont=\toks42
+\MPscratchCnt=\count345
+\MPscratchDim=\dimen293
+\MPnumerator=\count346
+\makeMPintoPDFobject=\count347
+\everyMPtoPDFconversion=\toks43
 ) (/usr/local/texlive/2022/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-\c@maskedRefs=\count322
+\c@maskedRefs=\count348
  (/usr/local/texlive/2022/texmf-dist/tex/latex/apacite/english.apc
 File: english.apc 2013/07/21 v6.03 apacite language file
 LaTeX Info: Redefining \BPBI on input line 129.
 LaTeX Info: Redefining \BHBI on input line 130.
 )
-Package hyperref Info: Link coloring OFF on input line 58.
+Package hyperref Info: Link coloring OFF on input line 59.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
  (/usr/local/texlive/2022/texmf-dist/tex/latex/refcount/refcount.sty
@@ -445,26 +652,30 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ) (/usr/local/texlive/2022/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count323
+\c@section@level=\count349
 )
-LaTeX Info: Redefining \ref on input line 58.
-LaTeX Info: Redefining \pageref on input line 58.
-LaTeX Info: Redefining \nameref on input line 58.
+LaTeX Info: Redefining \ref on input line 59.
+LaTeX Info: Redefining \pageref on input line 59.
+LaTeX Info: Redefining \nameref on input line 59.
  (./main.out) (./main.out)
-\@outlinefile=\write3
-\openout3 = `main.out'.
+\@outlinefile=\write4
+\openout4 = `main.out'.
 
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: End \AtBeginDocument code.
- [1
+
+
+Package todonotes Warning: The length marginparwidth is less than 2cm and will most likely cause issues with the appearance of inserted todonotes. The issue can be solved by adding a line like \setlength {\marginparwidth }{2cm} prior to loading the todonotes package. on input line 59.
+
+[1
 
 {/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-LaTeX Font Info:    Trying to load font information for U+msa on input line 69.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 70.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 69.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 70.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [2] [3
@@ -473,16 +684,16 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 ] [4
 
-] (./main.toc
-Underfull \vbox (badness 2503) has occurred while \output is active []
+] (./main.toc [5
 
- [5
+]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-])
-\tf@toc=\write4
-\openout4 = `main.toc'.
+ [6])
+\tf@toc=\write5
+\openout5 = `main.toc'.
 
- [6]
+ [7]
 Chapter 1.
 (./background.tex
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -492,134 +703,152 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 ]) [2]
 Chapter 2.
-(./data.tex [3
+(./related_work.tex
+Package hyperref Info: bookmark level for unknown todo defaults to 0 on input line 3.
 
-] (./data_v0.tex [4] [5]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [3
+
+] [4]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [5]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [6]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [7]) [8]
+Chapter 3.
+(./data.tex [9
+
+] (./data_v0.tex [10] [11]
 LaTeX Font Info:    Trying to load font information for U+fontawesomefree2 on input line 27.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/fontawesome5/ufontawesomefree2.fd)
-<data_collection/version_0_select_primitive.png, id=221, 1213.03188pt x 706.64pt>
+<data_collection/version_0_select_primitive.png, id=336, 1213.03188pt x 706.64pt>
 File: data_collection/version_0_select_primitive.png Graphic file (type png)
 <use data_collection/version_0_select_primitive.png>
 Package pdftex.def Info: data_collection/version_0_select_primitive.png  used on input line 36.
 (pdftex.def)             Requested size: 346.89731pt x 202.08456pt.
-<data_collection/version_0_smiley_flower_with_primitive.png, id=223, 1189.44376pt x 706.64pt>
+<data_collection/version_0_smiley_flower_with_primitive.png, id=338, 1189.44376pt x 706.64pt>
 File: data_collection/version_0_smiley_flower_with_primitive.png Graphic file (type png)
 <use data_collection/version_0_smiley_flower_with_primitive.png>
 Package pdftex.def Info: data_collection/version_0_smiley_flower_with_primitive.png  used on input line 44.
 (pdftex.def)             Requested size: 346.89731pt x 206.08485pt.
-) (./data_v1.tex [6]
+) (./data_v1.tex [12]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [7 <./data_collection/version_0_select_primitive.png> <./data_collection/version_0_smiley_flower_with_primitive.png>]
-<data_collection/v1_empty_table.png, id=244, 1120.185pt x 543.53062pt>
+ [13 <./data_collection/version_0_select_primitive.png> <./data_collection/version_0_smiley_flower_with_primitive.png>]
+<data_collection/v1_empty_table.png, id=358, 1120.185pt x 543.53062pt>
 File: data_collection/v1_empty_table.png Graphic file (type png)
 <use data_collection/v1_empty_table.png>
 Package pdftex.def Info: data_collection/v1_empty_table.png  used on input line 29.
 (pdftex.def)             Requested size: 346.89731pt x 168.31857pt.
-<data_collection/v1_before_enter_text.png, id=245, 1110.64937pt x 534.49687pt>
+<data_collection/v1_before_enter_text.png, id=359, 1110.64937pt x 534.49687pt>
 File: data_collection/v1_before_enter_text.png Graphic file (type png)
 <use data_collection/v1_before_enter_text.png>
 Package pdftex.def Info: data_collection/v1_before_enter_text.png  used on input line 37.
 (pdftex.def)             Requested size: 346.89731pt x 166.94014pt.
-<data_collection/v1_after_enter_text.png, id=246, 1118.1775pt x 537.00626pt>
+<data_collection/v1_after_enter_text.png, id=360, 1118.1775pt x 537.00626pt>
 File: data_collection/v1_after_enter_text.png Graphic file (type png)
 <use data_collection/v1_after_enter_text.png>
 Package pdftex.def Info: data_collection/v1_after_enter_text.png  used on input line 48.
 (pdftex.def)             Requested size: 346.89731pt x 166.59312pt.
-<data_collection/v1_before_delete.png, id=254, 1103.62312pt x 531.9875pt>
+<data_collection/v1_before_delete.png, id=368, 1103.62312pt x 531.9875pt>
 File: data_collection/v1_before_delete.png Graphic file (type png)
 <use data_collection/v1_before_delete.png>
 Package pdftex.def Info: data_collection/v1_before_delete.png  used on input line 66.
 (pdftex.def)             Requested size: 346.89731pt x 167.21977pt.
-<data_collection/v1_after_delete.png, id=255, 1099.10625pt x 533.995pt>
+<data_collection/v1_after_delete.png, id=369, 1099.10625pt x 533.995pt>
 File: data_collection/v1_after_delete.png Graphic file (type png)
 <use data_collection/v1_after_delete.png>
 Package pdftex.def Info: data_collection/v1_after_delete.png  used on input line 73.
 (pdftex.def)             Requested size: 346.89731pt x 168.53523pt.
-<data_collection/v1_instruction.png, id=256, 1103.62312pt x 321.2pt>
+<data_collection/v1_instruction.png, id=370, 1103.62312pt x 321.2pt>
 File: data_collection/v1_instruction.png Graphic file (type png)
 <use data_collection/v1_instruction.png>
 Package pdftex.def Info: data_collection/v1_instruction.png  used on input line 86.
 (pdftex.def)             Requested size: 433.62pt x 126.2036pt.
- [8]
+ [14]
 Underfull \vbox (badness 6775) has occurred while \output is active []
 
- [9 <./data_collection/v1_empty_table.png> <./data_collection/v1_before_enter_text.png>] [10 <./data_collection/v1_after_enter_text.png>]
+ [15 <./data_collection/v1_empty_table.png> <./data_collection/v1_before_enter_text.png>] [16 <./data_collection/v1_after_enter_text.png>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [11 <./data_collection/v1_before_delete.png> <./data_collection/v1_after_delete.png>]
-<data_collection/host_amazon/hit_1/bad_smiley_face_ambiguous_face.png, id=296, 963.6pt x 722.7pt>
+ [17 <./data_collection/v1_before_delete.png> <./data_collection/v1_after_delete.png>]
+<data_collection/host_amazon/hit_1/bad_smiley_face_ambiguous_face.png, id=410, 963.6pt x 722.7pt>
 File: data_collection/host_amazon/hit_1/bad_smiley_face_ambiguous_face.png Graphic file (type png)
 <use data_collection/host_amazon/hit_1/bad_smiley_face_ambiguous_face.png>
 Package pdftex.def Info: data_collection/host_amazon/hit_1/bad_smiley_face_ambiguous_face.png  used on input line 117.
 (pdftex.def)             Requested size: 86.72267pt x 65.04019pt.
-<data_collection/v1_requirement1_bad1.png, id=299, 1089.57062pt x 624.3325pt>
+<data_collection/v1_requirement1_bad1.png, id=413, 1089.57062pt x 624.3325pt>
 File: data_collection/v1_requirement1_bad1.png Graphic file (type png)
 <use data_collection/v1_requirement1_bad1.png>
 Package pdftex.def Info: data_collection/v1_requirement1_bad1.png  used on input line 127.
 (pdftex.def)             Requested size: 346.89731pt x 198.77113pt.
-<data_collection/v1_requirement1_bad2.png, id=300, 982.16937pt x 654.94687pt>
+<data_collection/v1_requirement1_bad2.png, id=414, 982.16937pt x 654.94687pt>
 File: data_collection/v1_requirement1_bad2.png Graphic file (type png)
 <use data_collection/v1_requirement1_bad2.png>
 Package pdftex.def Info: data_collection/v1_requirement1_bad2.png  used on input line 134.
 (pdftex.def)             Requested size: 346.89731pt x 231.32352pt.
- [12 <./data_collection/v1_instruction.png> <./data_collection/host_amazon/hit_1/bad_smiley_face_ambiguous_face.png>] [13 <./data_collection/v1_requirement1_bad1.png> <./data_collection/v1_requirement1_bad2.png>]
-<data_collection/v1_requirement3_bad1.png, id=335, 806.01125pt x 399.4925pt>
+ [18 <./data_collection/v1_instruction.png> <./data_collection/host_amazon/hit_1/bad_smiley_face_ambiguous_face.png>] [19 <./data_collection/v1_requirement1_bad1.png> <./data_collection/v1_requirement1_bad2.png>]
+<data_collection/v1_requirement3_bad1.png, id=448, 806.01125pt x 399.4925pt>
 File: data_collection/v1_requirement3_bad1.png Graphic file (type png)
 <use data_collection/v1_requirement3_bad1.png>
 Package pdftex.def Info: data_collection/v1_requirement3_bad1.png  used on input line 179.
 (pdftex.def)             Requested size: 346.89731pt x 171.9369pt.
-<data_collection/v1_requirement.png, id=339, 1076.02pt x 610.28pt>
+<data_collection/v1_requirement.png, id=452, 1076.02pt x 610.28pt>
 File: data_collection/v1_requirement.png Graphic file (type png)
 <use data_collection/v1_requirement.png>
 Package pdftex.def Info: data_collection/v1_requirement.png  used on input line 187.
 (pdftex.def)             Requested size: 433.62pt x 245.93285pt.
-<data_collection/v1_badeg_1.png, id=340, 1093.08376pt x 455.7025pt>
+<data_collection/v1_badeg_1.png, id=453, 1093.08376pt x 455.7025pt>
 File: data_collection/v1_badeg_1.png Graphic file (type png)
 <use data_collection/v1_badeg_1.png>
 Package pdftex.def Info: data_collection/v1_badeg_1.png  used on input line 195.
 (pdftex.def)             Requested size: 346.89731pt x 144.61787pt.
-<data_collection/v1_badeg_2.png, id=341, 1085.05376pt x 431.6125pt>
+<data_collection/v1_badeg_2.png, id=454, 1085.05376pt x 431.6125pt>
 File: data_collection/v1_badeg_2.png Graphic file (type png)
 <use data_collection/v1_badeg_2.png>
 Package pdftex.def Info: data_collection/v1_badeg_2.png  used on input line 200.
 (pdftex.def)             Requested size: 346.89731pt x 137.98709pt.
-<data_collection/v1_badeg_3.png, id=342, 1085.05376pt x 431.6125pt>
+<data_collection/v1_badeg_3.png, id=455, 1085.05376pt x 431.6125pt>
 File: data_collection/v1_badeg_3.png Graphic file (type png)
 <use data_collection/v1_badeg_3.png>
 Package pdftex.def Info: data_collection/v1_badeg_3.png  used on input line 205.
 (pdftex.def)             Requested size: 346.89731pt x 137.98709pt.
-<data_collection/v1_badeg_4.png, id=343, 1085.05376pt x 431.6125pt>
+<data_collection/v1_badeg_4.png, id=456, 1085.05376pt x 431.6125pt>
 File: data_collection/v1_badeg_4.png Graphic file (type png)
 <use data_collection/v1_badeg_4.png>
 Package pdftex.def Info: data_collection/v1_badeg_4.png  used on input line 210.
 (pdftex.def)             Requested size: 346.89731pt x 137.98709pt.
-<data_collection/v1_qual_header.png, id=346, 1095.09125pt x 284.06125pt>
+<data_collection/v1_qual_header.png, id=459, 1095.09125pt x 284.06125pt>
 File: data_collection/v1_qual_header.png Graphic file (type png)
 <use data_collection/v1_qual_header.png>
 Package pdftex.def Info: data_collection/v1_qual_header.png  used on input line 221.
 (pdftex.def)             Requested size: 433.62pt x 112.47818pt.
- [14]
-<data_collection/v1_qual_q9_1.png, id=363, 856.19875pt x 454.69875pt>
+ [20]
+<data_collection/v1_qual_q9_1.png, id=476, 856.19875pt x 454.69875pt>
 File: data_collection/v1_qual_q9_1.png Graphic file (type png)
 <use data_collection/v1_qual_q9_1.png>
 Package pdftex.def Info: data_collection/v1_qual_q9_1.png  used on input line 229.
 (pdftex.def)             Requested size: 346.89731pt x 184.22136pt.
-<data_collection/v1_qual_q9_2.png, id=364, 856.19875pt x 408.52625pt>
+<data_collection/v1_qual_q9_2.png, id=477, 856.19875pt x 408.52625pt>
 File: data_collection/v1_qual_q9_2.png Graphic file (type png)
 <use data_collection/v1_qual_q9_2.png>
 Package pdftex.def Info: data_collection/v1_qual_q9_2.png  used on input line 234.
 (pdftex.def)             Requested size: 346.89731pt x 165.51456pt.
- [15 <./data_collection/v1_requirement3_bad1.png> <./data_collection/v1_requirement.png>] [16]) (./data_v2.tex
+ [21 <./data_collection/v1_requirement3_bad1.png> <./data_collection/v1_requirement.png>] [22]) (./data_v2.tex
 Underfull \vbox (badness 3009) has occurred while \output is active []
 
- [17]
-<data_collection/pilot_02_01_annotation_1.png, id=395, 1921.1775pt x 1318.9275pt>
+ [23]
+<data_collection/pilot_02_01_annotation_1.png, id=508, 1921.1775pt x 1318.9275pt>
 File: data_collection/pilot_02_01_annotation_1.png Graphic file (type png)
 <use data_collection/pilot_02_01_annotation_1.png>
 Package pdftex.def Info: data_collection/pilot_02_01_annotation_1.png  used on input line 21.
 (pdftex.def)             Requested size: 346.89731pt x 238.14134pt.
-<data_collection/pilot_02_04_annotation.png, id=396, 2109.8825pt x 1200.485pt>
+<data_collection/pilot_02_04_annotation.png, id=509, 2109.8825pt x 1200.485pt>
 File: data_collection/pilot_02_04_annotation.png Graphic file (type png)
 <use data_collection/pilot_02_04_annotation.png>
 Package pdftex.def Info: data_collection/pilot_02_04_annotation.png  used on input line 29.
@@ -632,8 +861,8 @@ File: data_collection/pilot_02_04_annotation.png Graphic file (type png)
 <use data_collection/pilot_02_04_annotation.png>
 Package pdftex.def Info: data_collection/pilot_02_04_annotation.png  used on input line 48.
 (pdftex.def)             Requested size: 346.89731pt x 197.3754pt.
- [18]
-<pantanal.jpeg, id=406, 1204.5pt x 903.375pt>
+ [24]
+<pantanal.jpeg, id=520, 1204.5pt x 903.375pt>
 File: pantanal.jpeg Graphic file (type jpg)
 <use pantanal.jpeg>
 Package pdftex.def Info: pantanal.jpeg  used on input line 66.
@@ -693,8 +922,8 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [19] [20]) (./final_data.tex
-<dataset_image/word_freq_face.png, id=429, 1209.51875pt x 1122.1925pt>
+ [25] [26]) (./final_data.tex
+<dataset_image/word_freq_face.png, id=540, 1209.51875pt x 1122.1925pt>
 File: dataset_image/word_freq_face.png Graphic file (type png)
 <use dataset_image/word_freq_face.png>
 Package pdftex.def Info: dataset_image/word_freq_face.png  used on input line 4.
@@ -768,22 +997,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 43--43
 []|\OT1/cmr/m/n/9 Number of con-
  []
 
-)) [21] [22 <./data_collection/v1_badeg_1.png> <./data_collection/v1_badeg_2.png> <./data_collection/v1_badeg_3.png> <./data_collection/v1_badeg_4.png>] [23 <./data_collection/v1_qual_header.png> <./data_collection/v1_qual_q9_1.png> <./data_collection/v1_qual_q9_2.png>] [24 <./data_collection/pilot_02_01_annotation_1.png> <./data_collection/pilot_02_04_annotation.png>] [25] [26 <./pantanal.jpeg>] [27] [28 <./dataset_image/word_freq_face.png>]
-Chapter 3.
+)) [27] [28 <./data_collection/v1_badeg_1.png> <./data_collection/v1_badeg_2.png> <./data_collection/v1_badeg_3.png> <./data_collection/v1_badeg_4.png>] [29 <./data_collection/v1_qual_header.png> <./data_collection/v1_qual_q9_1.png> <./data_collection/v1_qual_q9_2.png>] [30 <./data_collection/pilot_02_01_annotation_1.png> <./data_collection/pilot_02_04_annotation.png>] [31] [32 <./pantanal.jpeg>] [33] [34 <./dataset_image/word_freq_face.png>]
+Chapter 4.
 (./method.tex
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [29
+ [35
 
 ]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [30]
+ [36]
 LaTeX Font Info:    Trying to load font information for U+bbm on input line 22.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/bbm-macros/ubbm.fd
 File: ubbm.fd 1999/03/15 V 1.2 Font definition for bbm font - TH
-) [31]
-<modeling/transformer.png, id=518, 744.7825pt x 1428.33624pt>
+) [37]
+<modeling/transformer.png, id=628, 744.7825pt x 1428.33624pt>
 File: modeling/transformer.png Graphic file (type png)
 <use modeling/transformer.png>
 Package pdftex.def Info: modeling/transformer.png  used on input line 50.
@@ -797,13 +1026,13 @@ Overfull \hbox (2.22221pt too wide) in paragraph at lines 48--60
 [][] [] 
  []
 
-[32]
-<modeling/selfAttention.png, id=555, 107.2005pt x 212.9556pt>
+[38]
+<modeling/selfAttention.png, id=665, 107.2005pt x 212.9556pt>
 File: modeling/selfAttention.png Graphic file (type png)
 <use modeling/selfAttention.png>
 Package pdftex.def Info: modeling/selfAttention.png  used on input line 76.
 (pdftex.def)             Requested size: 65.04366pt x 129.21384pt.
-<modeling/multiHeadAttention.png, id=556, 201.1515pt x 308.8338pt>
+<modeling/multiHeadAttention.png, id=666, 201.1515pt x 308.8338pt>
 File: modeling/multiHeadAttention.png Graphic file (type png)
 <use modeling/multiHeadAttention.png>
 Package pdftex.def Info: modeling/multiHeadAttention.png  used on input line 82.
@@ -816,58 +1045,45 @@ Overfull \hbox (2.22221pt too wide) in paragraph at lines 74--86
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [33 <./modeling/transformer.png>]
-<modeling/visionTransformer.png, id=569, 799.3062pt x 403.62794pt>
+ [39 <./modeling/transformer.png>]
+<modeling/visionTransformer.png, id=679, 799.3062pt x 403.62794pt>
 File: modeling/visionTransformer.png Graphic file (type png)
 <use modeling/visionTransformer.png>
 Package pdftex.def Info: modeling/visionTransformer.png  used on input line 107.
 (pdftex.def)             Requested size: 303.53267pt x 153.2755pt.
- [34 <./modeling/selfAttention.png> <./modeling/multiHeadAttention.png>]
-<modeling/CLIP.png, id=595, 1088.065pt x 763.85374pt>
+ [40 <./modeling/selfAttention.png> <./modeling/multiHeadAttention.png>]
+<modeling/CLIP.png, id=704, 1088.065pt x 763.85374pt>
 File: modeling/CLIP.png Graphic file (type png)
 <use modeling/CLIP.png>
 Package pdftex.def Info: modeling/CLIP.png  used on input line 125.
 (pdftex.def)             Requested size: 303.53267pt x 213.085pt.
- [35 <./modeling/visionTransformer.png>] [36 <./modeling/CLIP.png>]) [37] [38]
-Chapter 4.
-(./results.tex [39
-
-]) [40]
+ [41 <./modeling/visionTransformer.png>] [42 <./modeling/CLIP.png>]) [43] [44]
 Chapter 5.
-(./related_work.tex
-Underfull \vbox (badness 10000) has occurred while \output is active []
+(./results.tex [45
 
- [41
-
-]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [42]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [43]) [44]
+]) [46]
 Chapter 6.
-(./main.bbl [45
+(./future.tex) (./main.bbl [47
 
-] [46
+] [48
 
-]) [47] (./main.aux)
+] [49]) [50] (./main.aux)
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: BEE2FCB133BAE63AE2BAF26E37FE29CC;3798.
+(rerunfilecheck)             Checksum: DF773C1367EB37236BC7035959641B55;4595.
  ) 
 Here is how much of TeX's memory you used:
- 17166 strings out of 478268
- 303074 string characters out of 5846347
- 611629 words of memory out of 5000000
- 34904 multiletter control sequences out of 15000+600000
- 480883 words of font info for 74 fonts, out of 8000000 for 9000
+ 27935 strings out of 478268
+ 539667 string characters out of 5846347
+ 812705 words of memory out of 5000000
+ 45418 multiletter control sequences out of 15000+600000
+ 482594 words of font info for 81 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 108i,17n,106p,1689b,554s stack positions out of 10000i,1000n,20000p,200000b,200000s
- </Users/erinz/Library/texlive/2022/texmf-var/fonts/pk/ljfour/public/bbm/bbm10.600pk>{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/fontawesome5/fa5free2.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/local/texlive/2022/texmf-dist/fonts/type1/public/fontawesome5/FontAwesome5Free-Solid.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on main.pdf (53 pages, 3651819 bytes).
+ 108i,17n,106p,1505b,964s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ </Users/erinz/Library/texlive/2022/texmf-var/fonts/pk/ljfour/public/bbm/bbm10.600pk>{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/fontawesome5/fa5free2.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/local/texlive/2022/texmf-dist/fonts/type1/public/fontawesome5/FontAwesome5Free-Solid.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
+Output written on main.pdf (57 pages, 3687873 bytes).
 PDF statistics:
- 834 PDF objects out of 1000 (max. 8388607)
- 669 compressed objects within 7 object streams
- 171 named destinations out of 1000 (max. 500000)
- 378 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 919 PDF objects out of 1000 (max. 8388607)
+ 743 compressed objects within 8 object streams
+ 188 named destinations out of 1000 (max. 500000)
+ 422 words of extra memory for PDF output out of 10000 (max. 10000000)
 
