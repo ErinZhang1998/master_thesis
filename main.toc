@@ -31,8 +31,8 @@
 \contentsline {section}{\numberline {4.1}Task Definition}{37}{section.4.1}%
 \contentsline {section}{\numberline {4.2}Metric}{38}{section.4.2}%
 \contentsline {section}{\numberline {4.3}Method}{38}{section.4.3}%
-\contentsline {subsection}{\numberline {4.3.1}Text Encoder}{38}{subsection.4.3.1}%
-\contentsline {paragraph}{Before Transformer: Recurent Neural Networks}{38}{section*.41}%
+\contentsline {subsection}{\numberline {4.3.1}Text Encoder}{39}{subsection.4.3.1}%
+\contentsline {paragraph}{Before Transformer: Recurent Neural Networks}{39}{section*.41}%
 \contentsline {paragraph}{RNN with Attention}{39}{section*.42}%
 \contentsline {paragraph}{Transformer: Attention is All You Need}{39}{figure.caption.44}%
 \contentsline {subsection}{\numberline {4.3.2}Vision Transformer}{41}{subsection.4.3.2}%

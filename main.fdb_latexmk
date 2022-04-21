@@ -1,12 +1,12 @@
 # Fdb version 3
-["bibtex main"] 1650472802 "main.aux" "main.bbl" "main" 1650473521
+["bibtex main"] 1650578536 "main.aux" "main.bbl" "main" 1650581506
   "/usr/local/texlive/2022/texmf-dist/bibtex/bst/apacite/apacite.bst" 1374530685 141073 9d7b79dbf9d91133318126032cff8c27 ""
-  "main.aux" 1650473521 26072 751e16883eb9c0c3f67287fa6f3c425a "pdflatex"
+  "main.aux" 1650581506 26093 86ac3fc18e0d3937624eb97a47192484 "pdflatex"
   "thesiscite.bib" 1650461802 13852 e956ccd8edfe3a4404e0632d1ff0934d ""
   (generated)
   "main.bbl"
   "main.blg"
-["pdflatex"] 1650473517 "/home/erinzhang/Documents/master_thesis/main.tex" "main.pdf" "main" 1650473521
+["pdflatex"] 1650581502 "/home/erinzhang/Documents/master_thesis/main.tex" "main.pdf" "main" 1650581506
   "/home/erinzhang/.texlive2022/texmf-var/fonts/pk/ljfour/public/bbm/bbm10.600pk" 1649946230 6964 3d5c10d2e1556865b1da2078e4f1bd99 ""
   "/home/erinzhang/Documents/master_thesis/main.tex" 1650457190 2153 f44ceb5c386448effc04aa20d4a9eb34 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
@@ -260,12 +260,12 @@
   "dataset_image/word_freq_face.png" 1649768908 49841 eefe708b66c8aa0fc8fa9d51861e9c96 ""
   "final_data.tex" 1649768908 2644 0541336b6ac3662740a56a509ebea920 ""
   "future.tex" 1650457190 707 f77e65243e9633d9fbd6ef760be39a68 ""
-  "main.aux" 1650473521 26072 751e16883eb9c0c3f67287fa6f3c425a "pdflatex"
-  "main.bbl" 1650472802 17659 999067f9ad0959427c3efe30aeb73d14 "bibtex main"
-  "main.out" 1650473521 4236 931d1852cff85df55e449630d244af21 "pdflatex"
+  "main.aux" 1650581506 26093 86ac3fc18e0d3937624eb97a47192484 "pdflatex"
+  "main.bbl" 1650578536 17659 999067f9ad0959427c3efe30aeb73d14 "bibtex main"
+  "main.out" 1650581506 4236 931d1852cff85df55e449630d244af21 "pdflatex"
   "main.tex" 1650457190 2153 f44ceb5c386448effc04aa20d4a9eb34 ""
-  "main.toc" 1650473521 3440 5122407635e12e178245d0511d87832e "pdflatex"
-  "method.tex" 1650457190 21164 89ec9e27de326efc7f6fae982f921ab5 ""
+  "main.toc" 1650581506 3440 cb97396c9c65bd95abd64f591030e64b "pdflatex"
+  "method.tex" 1650581502 22776 e65204f68d926785a79f7880f7e4437d ""
   "modeling/CLIP.png" 1650032694 103101 c6b24c48b4ead1b3b907b211a32c5236 ""
   "modeling/multiHeadAttention.png" 1512519816 65853 b0a44500743ea73508e8941561e82e2c ""
   "modeling/selfAttention.png" 1512519816 26323 d8c8c9f4378f7b8788998a92d7672d8e ""
