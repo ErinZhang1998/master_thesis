@@ -340,6 +340,41 @@ Li, K.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Patashnik%
+, Wu%
+, Shechtman%
+, Cohen-Or%
+\BCBL {}\ \BBA {} Lischinski%
+}{%
+Patashnik%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2021}}%
+}]{%
+styleCLIPPaper}
+\APACinsertmetastar {%
+styleCLIPPaper}%
+\begin{APACrefauthors}%
+Patashnik, O.%
+, Wu, Z.%
+, Shechtman, E.%
+, Cohen-Or, D.%
+\BCBL {}\ \BBA {} Lischinski, D.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2021}{}{}.
+\newblock
+\APACrefbtitle {StyleCLIP: Text-Driven Manipulation of StyleGAN Imagery.}
+  {Styleclip: Text-driven manipulation of stylegan imagery.}
+\newblock
+\APACaddressPublisher{}{arXiv}.
+\newblock
+\begin{APACrefURL} \url{https://arxiv.org/abs/2103.17249} \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.48550/ARXIV.2103.17249} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Qi%
 \ \BBA {} Tan%
 }{%

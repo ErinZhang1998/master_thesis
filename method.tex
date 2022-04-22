@@ -18,6 +18,9 @@ Given $(s_1,s_2)$, we use CLIP image encoder (zero-shot/fine-tuned) $f_v$ to ext
 We obtain embeddings for the part annotations by encoding them through CLIP text encoder $f_t$: $f_t(t_1) \in {R}^{512}$, and $f_t(t_2) \in {R}^{512}$. We then calculate cosine similarity between all four pairs of $(f_v(s_i), f_t(t_j))$, $i,j \in [2]$, where consine similarity between two vectors $u,v$ is defined as $S_c(u,v) = \dfrac{u \cdot v}{\|u\| \|v\|}$. 
 \begin{equation}
     \begin{split}
+        I_1, I_2 \\
+        T_1, T_2 \\
+        S_c(I_i,T_j) & = \dfrac{I_i \cdot T_j}{\|I_i\| \|T_j\|} \\
         S_c(u,v) & = \dfrac{u \cdot v}{\|u\| \|v\|} \\
         f(j) & = \max_{i} S_c(f_v(s_i), f_t(t_j)) \hspace{2em} i \in [2]
     \end{split}
@@ -131,7 +134,7 @@ learning an open set of visual concepts from natural language natural language s
 
 \begin{figure*}[!htb]
 \includegraphics[width=0.7\linewidth]{modeling/CLIP.png}  
-\caption{CLIP uses contrastive pre-training instead of generative objective to learn joint vision-language embeddings.}
+\caption{CLIP uses contrastive pre-training instead of generative objective to learn joint vision-language embeddings. This image is taken from Figure 1 in the original CLIP paper \citep{CLIPpaper}.}
 \label{modeling.clip.pretrainingobj}
 \end{figure*}
 
@@ -166,7 +169,7 @@ We then use dot-product to generate.
     I_1^{'},\dots, I_N^{'} \\
     T_1^{'},\dots, T_N^{'} \\
     I_1,\dots, I_N \\
-    T_1,\dots, T_N 
+    T_1,\dots, T_N \\
 \end{split}
 \end{equation}
 

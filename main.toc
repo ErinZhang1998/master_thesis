@@ -34,10 +34,10 @@
 \contentsline {subsection}{\numberline {4.3.1}Text Encoder}{39}{subsection.4.3.1}%
 \contentsline {paragraph}{Before Transformer: Recurent Neural Networks}{39}{section*.41}%
 \contentsline {paragraph}{RNN with Attention}{39}{section*.42}%
-\contentsline {paragraph}{Transformer: Attention is All You Need}{39}{figure.caption.44}%
-\contentsline {subsection}{\numberline {4.3.2}Vision Transformer}{41}{subsection.4.3.2}%
-\contentsline {subsection}{\numberline {4.3.3}Pre-Training with Contrastive Objective and Natural Language Supervision}{42}{subsection.4.3.3}%
-\contentsline {subsection}{\numberline {4.3.4}Image Pre-Processing}{43}{subsection.4.3.4}%
+\contentsline {paragraph}{Transformer: Attention is All You Need}{40}{figure.caption.44}%
+\contentsline {subsection}{\numberline {4.3.2}Vision Transformer}{42}{subsection.4.3.2}%
+\contentsline {subsection}{\numberline {4.3.3}Pre-Training with Contrastive Objective and Natural Language Supervision}{43}{subsection.4.3.3}%
+\contentsline {subsection}{\numberline {4.3.4}Image Pre-Processing}{44}{subsection.4.3.4}%
 \contentsline {subsection}{\numberline {4.3.5}Text Pre-Processing}{44}{subsection.4.3.5}%
 \contentsline {section}{\numberline {4.4}Loss Function}{44}{section.4.4}%
 \contentsline {section}{\numberline {4.5}Data Augmentation}{45}{section.4.5}%
