@@ -205,7 +205,7 @@ smaller print.
 \def\secondreader#1{\gdef\@secondreader{#1}}
 \def\submitdate#1{\gdef\@submitdate{#1}}
 \def\languagemajor#1{\gdef\@languagemajor{#1}} \def\@language{babel}
-\def\@title{}\def\@author{}\def\@dept{Civil & Environmental Engineering}
+\def\@title{}\def\@author{}\def\@dept{School of Computer Science}
 \def\@principaladvisor{}
 \def\@firstreader{*}
 \def\@secondreader{*}
@@ -215,7 +215,7 @@ smaller print.
   July\or August\or September\or October\or November\or December\fi
   \space \number\the\year}
 \def\@standardend{}
-\def\@standardsub{submitted to the department of\\ \expandafter{\@dept}}
+\def\@standardsub{Submitted to the department of\\ \expandafter{\@dept}}
                 
 \let\@whichend=\@standardend
 \let\@whichsub=\@standardsub
@@ -229,20 +229,26 @@ smaller print.
         \end{center}
         \vfill
 \begin{center}
-            \rm \@author\\
+\rm \large{\@author}\\
             \vspace{5mm}
-            Stanford University\\ \rm  \@submitdate\\
+            Carnegie Mellon University\\ 
+            Pittsburgh, PA 15213 \\
+            \rm  \@submitdate\\
 \end{center}
 \vfill
 \begin{center}
 \large
-                An honors thesis \expandafter\@whichsub \\ in partial fulfillment of the requirements for the undergraduate\\ honors program\\
-                \expandafter{\@whichend}
-        \end{center}
-        \vspace{10mm}
-    \begin{center}
-        Advisor: \rm \@principaladvisor\\
-    \end{center}\vskip.5in\newpage}
+Thesis Committee: \\
+\rm Oliver Kroemer \\
+Yonatan Bisk \\
+Jean Oh \\
+\end{center}
+\vspace{5mm}
+\begin{center}
+Submitted in partial fulfillment of the requirements for\\
+the degree of Master of Science in Computer Science.\\
+\expandafter{\@whichend}
+\end{center}\vskip.5in\newpage}
 
 \newlength{\signaturespace}
 \setlength{\signaturespace}{.5in}

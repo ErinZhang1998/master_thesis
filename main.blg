@@ -16,43 +16,43 @@ apacite.bst [2013/07/21 v6.03 APA bibliography style]
 Warning--No address in WahCUB_200_2011
 You've used 24 entries,
             6951 wiz_defined-function locations,
-            1411 strings with 16372 characters,
-and the built_in function-call counts, 51856 in all, are:
-= -- 6191
-> -- 605
-< -- 2230
-+ -- 2492
-- -- 49
-* -- 3291
-:= -- 8644
-add.period$ -- 110
+            1416 strings with 16541 characters,
+and the built_in function-call counts, 51411 in all, are:
+= -- 6103
+> -- 608
+< -- 2213
++ -- 2461
+- -- 48
+* -- 3249
+:= -- 8562
+add.period$ -- 111
 call.type$ -- 24
-change.case$ -- 428
+change.case$ -- 412
 chr.to.int$ -- 0
 cite$ -- 49
-duplicate$ -- 1854
-empty$ -- 2180
-format.name$ -- 1136
-if$ -- 9948
+duplicate$ -- 1838
+empty$ -- 2168
+format.name$ -- 1138
+if$ -- 9862
 int.to.chr$ -- 0
-int.to.str$ -- 76
+int.to.str$ -- 72
 missing$ -- 0
-newline$ -- 717
+newline$ -- 725
 num.names$ -- 192
 pop$ -- 1604
 preamble$ -- 1
 purify$ -- 98
 quote$ -- 0
-skip$ -- 2671
+skip$ -- 2646
 stack$ -- 0
-substring$ -- 2802
-swap$ -- 933
+substring$ -- 2758
+swap$ -- 923
 text.length$ -- 82
 text.prefix$ -- 0
 top$ -- 1
 type$ -- 2112
 warning$ -- 1
-while$ -- 386
+while$ -- 384
 width$ -- 0
-write$ -- 949
+write$ -- 966
 (There was 1 warning)

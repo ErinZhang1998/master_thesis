@@ -28,20 +28,14 @@
 \contentsline {subsubsection}{Pilot 1}{27}{section*.36}%
 \contentsline {section}{\numberline {3.4}Dataset Summary}{28}{section.3.4}%
 \contentsline {chapter}{\numberline {4}Modeling}{36}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Task Definition}{37}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Metric}{38}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Method}{38}{section.4.3}%
-\contentsline {subsection}{\numberline {4.3.1}Text Encoder}{39}{subsection.4.3.1}%
-\contentsline {paragraph}{Before Transformer: Recurent Neural Networks}{39}{section*.41}%
-\contentsline {paragraph}{RNN with Attention}{39}{section*.42}%
-\contentsline {paragraph}{Transformer: Attention is All You Need}{40}{figure.caption.44}%
-\contentsline {subsection}{\numberline {4.3.2}Vision Transformer}{42}{subsection.4.3.2}%
-\contentsline {subsection}{\numberline {4.3.3}Pre-Training with Contrastive Objective and Natural Language Supervision}{43}{subsection.4.3.3}%
-\contentsline {subsection}{\numberline {4.3.4}Image Pre-Processing}{44}{subsection.4.3.4}%
-\contentsline {subsection}{\numberline {4.3.5}Text Pre-Processing}{44}{subsection.4.3.5}%
-\contentsline {section}{\numberline {4.4}Loss Function}{44}{section.4.4}%
-\contentsline {section}{\numberline {4.5}Data Augmentation}{45}{section.4.5}%
-\contentsline {chapter}{\numberline {5}Results \& Analysis}{46}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Classification Experiment}{46}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Word Similarity Experiment}{48}{section.5.2}%
-\contentsline {chapter}{\numberline {6}Future Work}{50}{chapter.6}%
+\contentsline {section}{\numberline {4.1}Task Definition}{36}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Method}{37}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Pre-training and Fine-tuning with Contrastive Objective}{38}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Text Encoder}{40}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.3}Vision Transformer}{42}{subsection.4.2.3}%
+\contentsline {subsection}{\numberline {4.2.4}Image Pre-Processing}{43}{subsection.4.2.4}%
+\contentsline {subsection}{\numberline {4.2.5}Text Pre-Processing}{43}{subsection.4.2.5}%
+\contentsline {chapter}{\numberline {5}Results \& Analysis}{44}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Classification Experiment}{44}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Word Similarity Experiment}{46}{section.5.2}%
+\contentsline {chapter}{\numberline {6}Future Work}{49}{chapter.6}%

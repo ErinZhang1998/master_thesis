@@ -49,6 +49,23 @@ Fine-tuning on both categories results in slightly better performance than fine-
 
 \section{Word Similarity Experiment} \label{results.cosinesim}
 
+\begin{figure*}[!htb]
+\begin{subfigure}{0.5\textwidth}
+    \centering
+    \includegraphics[width=0.5\linewidth]{results/contrasting_pair2_color_19.png}  
+    % \caption{.}
+    % \label{results.contrasting.sketches.2}
+\end{subfigure}
+\begin{subfigure}{0.5\textwidth}
+    \centering
+    \includegraphics[width=0.5\linewidth]{results/contrasting_pair2_color_102.png}   
+    % \caption{.}
+    % \label{results.contrasting.sketches.1}
+\end{subfigure}
+\caption{An example pair of sketches with different eyes that was presented to annotators. We do not pre-define a list of attributes and ask the annotators to determine whether the sketches are different in these attributes; instead, we highlight the parts in colors and implicitly prompt them to pick up on the differences. As expected, most annotations naturally include the size and shape differences. From the descriptions, we can extract pairs of \textit{antonyms} used to indicate opposite visual concepts. In this case, the annotation was \textit{large circular eyes} for the sketch on the left and \textit{tiny solid eyes} for the one on the right.}
+\label{results.contrasting.sketches}
+\end{figure*}
+
 \begin{table}[htb!]
 \begin{minipage}{1\textwidth}
 \begin{center}
@@ -79,31 +96,14 @@ open & circular & 47 \\
 curve & small & 46 \\
 \bottomrule
 \end{tabular}}
-\caption{20 most frequent pairs of constrasting descriptors.}
-\label{results.clip.sim}
+\caption{20 pairs of descriptors most frequently used by annotators to differentiate parts in face and angel sketches. There are a total of 9823 pairs, and 7194, or $73.2\%$, pairs are used only once in the dataset.}
+\label{results.clip.top20.sim}
 \end{center}
 \end{minipage} 
 \end{table}
 
-\begin{figure*}[!htb]
-\begin{subfigure}{0.5\textwidth}
-    \centering
-    \includegraphics[width=0.5\linewidth]{results/contrasting_pair2_color_19.png}  
-    % \caption{.}
-    % \label{results.contrasting.sketches.2}
-\end{subfigure}
-\begin{subfigure}{0.5\textwidth}
-    \centering
-    \includegraphics[width=0.5\linewidth]{results/contrasting_pair2_color_102.png}   
-    % \caption{.}
-    % \label{results.contrasting.sketches.1}
-\end{subfigure}
-\caption{.}
-\label{results.contrasting.sketches}
-\end{figure*}
-
 In order to learn more about how have relationships between word embeddings changed through fine-tuning, we use cosine similarity as a metric to measure how close two words are. During annotation, we present two sketches with contrasting parts (for example, a face with big eyes and another with small eyes, like Figure \ref{results.contrasting.sketches}) to the annotators and ask them for descriptions of the parts. We do not explicitly tell them that the eyes are different in sizes, yet it is highly likely that they would provide descriptors that can indicate this visual differences.  
-We extract all tuples of words from a pair of contrasting descriptions. In the case of Figure \ref{results.contrasting.sketches}, one annotator provide the descriptions \textit{large circular eyes} for the sketch on the left and \textit{tiny solid eyes} for the other; from these two descriptions, we can extract $4$ pairs of contrasting descriptors: (\textit{large, tiny}), (\textit{large, solid}), (\textit{circular, tiny}), and (\textit{circular, solid}). 
+We extract all tuples of words from a pair of contrasting descriptions. In the case of Figure \ref{results.contrasting.sketches}, one annotator provide the descriptions \textit{large circular eyes} for the sketch on the left and \textit{tiny solid eyes} for the other; from these two descriptions, we can extract $4$ pairs of contrasting descriptors: (\textit{large, tiny}), (\textit{large, solid}), (\textit{circular, tiny}), and (\textit{circular, solid}). There are a total of $9,823$ pairs, and the top 20 most frequent pairs are shown in Table \ref{results.clip.top20.sim}. For example, the pair \textit{small} and \textit{large} are use $228$ times by annotators to contrast certain parts in the two sketches across face and angel sketches. 
 We consider two words in each pair as ``antonyms'', because they are used to represent two \textit{opposite} visual concepts in the two sketches.   
 It is in cases like this that our common understanding of synonym and antonym falls short: (\textit{large, tiny}) might align with most people's idea of two words opposite in meaning, and (\textit{large, solid}) do not appear as antithesis of each other, but the pair is used for the purpose of differentiating the sketches. Therefore, from a pragmatic perspective, these words are antonyms in our dataset. 
 
@@ -115,6 +115,7 @@ It is in cases like this that our common understanding of synonym and antonym fa
 \toprule
 ~ & avg cosine sim \\
 \midrule 
+% GloVE & 0.259 \\
 % BERT & 0.925 \\
 zero-shot & 0.833 \\
 finetuned on face & 0.752 \\
@@ -129,10 +130,16 @@ finetuned on face $+$ angel & 0.691 \\
 
 After fine-tuning CLIP to learn to contrast sketches with these descriptions, we expect that the similarity between contrasting words to decrease. Indeed, as shown in Table \ref{results.wordsim}, we see a trend that as CLIP learns from more pairs of (sketch, part description) in our dataset, the word embeddings of contrasting words become dissimilar.  
 
-Across the entire dataset, for the $1450\times 1450$ pairs of   
+Across the entire dataset, there are $\binom{1450}{2}$, about 1 million, pairs of words, whether they are used in contrasting descriptions or not, and $99.9\%$ of the pairs decreased in cosine similarity, from pre-trained CLIP to CLIP fine-tuned on face and angel sketches. One possible explanation is that we collected our data by presenting two sketches with contrasting features, but it could also be a general trend of CLIP fine-tuning on additional datasets, and we need future studies to give an definitive answer.
+
+We only see increase in cosine similarity in $824$ pairs of words. When we look at the top 20 pairs of words with the most increase in cosine similarity, we see that 18 pairs include the word \textit{slash}, which appears only once in our entire dataset. The increase is less than $0.06$, compared to a decrease of $0.65$ for the pair that has the largest decrease in similarity. If we only look at pairs of words that are among the 250 most frequent words, pairs whose cosine similarity has increased the most are \textit{arrow, smiley}, \textit{circle, arrow}, \textit{trilateral, triangular}. However, the increase is still too marginal, $\approx 0.02$, for us to conclude anything meaningful about the text embeddings of the fine-tuned CLIP model. 
+Therefore, we cannot provide reasons for the marginal increase, and it is likely to be a chance event due to rare occurrences.   
+ 
+
+        
 
 
-% Most pairs of words that people have used to differentiate the two sketches, most of the contrastive pairs of descriptions has decreased similarity. \citep{styleCLIPPaper}
+
 % On average, in GLoVE, the distance between the contrastive words is 0.9. 
 % Compared to pre-trained CLIP, the average distance is 0.9. The two distance is roughly similar. 
 % However, word embedding calculated by CLIP fine-tuned on both face and angel category, the distance is 0.7. The average percentage of change is 14 percent increase in distance. Most contrastive words have moved further each other, resulting in the increase in accuracy.
