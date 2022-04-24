@@ -1,12 +1,12 @@
 # Fdb version 3
-["bibtex main"] 1650598257 "main.aux" "main.bbl" "main" 1650598261
+["bibtex main"] 1650773236 "main.aux" "main.bbl" "main" 1650775025
   "/usr/local/texlive/2022/texmf-dist/bibtex/bst/apacite/apacite.bst" 1374530685 141073 9d7b79dbf9d91133318126032cff8c27 ""
-  "main.aux" 1650598260 26460 51baf523d2a8831c2bc58a2abf75670f "pdflatex"
+  "main.aux" 1650775025 28193 94eb4ce9347ec7e816bd70b0cd5cf373 "pdflatex"
   "thesiscite.bib" 1650598241 14477 ed902fe25f4ceb93458266c4c6f5b4c2 ""
   (generated)
   "main.bbl"
   "main.blg"
-["pdflatex"] 1650598257 "/home/erinzhang/Documents/master_thesis/main.tex" "main.pdf" "main" 1650598261
+["pdflatex"] 1650775021 "/home/erinzhang/Documents/master_thesis/main.tex" "main.pdf" "main" 1650775025
   "/home/erinzhang/.texlive2022/texmf-var/fonts/pk/ljfour/public/bbm/bbm10.600pk" 1649946230 6964 3d5c10d2e1556865b1da2078e4f1bd99 ""
   "/home/erinzhang/Documents/master_thesis/main.tex" 1650457190 2153 f44ceb5c386448effc04aa20d4a9eb34 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
@@ -230,7 +230,7 @@
   "/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1649682837 4410336 7d30a02e9fa9a16d7d1f8d037ba69641 ""
   "/usr/local/texlive/2022/texmf-var/web2c/pdftex/pdflatex.fmt" 1649682861 2826443 b4ad670d40cab57d6f8f91bcbbfbba5a ""
   "/usr/local/texlive/2022/texmf.cnf" 1649682833 455 5b996dcaa0eb4ef14a83b026bc0a008c ""
-  "background.tex" 1650457190 5897 e46a0cf5960a72121fe64c41f7f12622 ""
+  "background.tex" 1650635712 5897 e46a0cf5960a72121fe64c41f7f12622 ""
   "data.tex" 1650458913 206 48b2d8184dd768502ab454cddf5b0404 ""
   "data_collection/host_amazon/hit_1/bad_smiley_face_ambiguous_face.png" 1649768908 16797 6844268952a1a3cc8762f56aea9d9b74 ""
   "data_collection/pilot_02_01_annotation_1.png" 1649768908 310071 bbfc2d8758349ea3ce85294ff8c5d0ac ""
@@ -259,13 +259,14 @@
   "data_v2.tex" 1649768908 12464 a9f53967c92e3b9aee8ea26ced6e2776 ""
   "dataset_image/word_freq_face.png" 1649768908 49841 eefe708b66c8aa0fc8fa9d51861e9c96 ""
   "final_data.tex" 1649768908 2644 0541336b6ac3662740a56a509ebea920 ""
-  "future.tex" 1650457190 707 f77e65243e9633d9fbd6ef760be39a68 ""
-  "main.aux" 1650598260 26460 51baf523d2a8831c2bc58a2abf75670f "pdflatex"
-  "main.bbl" 1650598257 18469 71761c859329bad8bcfa714fb720319d "bibtex main"
-  "main.out" 1650598260 4236 931d1852cff85df55e449630d244af21 "pdflatex"
+  "future.tex" 1650774412 2493 e93ad54516965ad07d07f714ca14d31a ""
+  "future/future_nose_variety_392.png" 1650772439 15398 e7c22f7d157c8c032b123ba473f45bb0 ""
+  "main.aux" 1650775025 28193 94eb4ce9347ec7e816bd70b0cd5cf373 "pdflatex"
+  "main.bbl" 1650773236 17659 999067f9ad0959427c3efe30aeb73d14 "bibtex main"
+  "main.out" 1650775025 4422 778414ee65c37e16f8610851ed317b15 "pdflatex"
   "main.tex" 1650457190 2153 f44ceb5c386448effc04aa20d4a9eb34 ""
-  "main.toc" 1650598260 3440 8e5cc925529055a3ac8e8c9e7a771851 "pdflatex"
-  "method.tex" 1650582837 22965 119877e2fbd3951eb2faca843f14b908 ""
+  "main.toc" 1650775025 3526 863412b7e992d26d2ab7574834a7f994 "pdflatex"
+  "method.tex" 1650727175 23014 41196bb328f8f76c7cde75c57ecf87f5 ""
   "modeling/CLIP.png" 1650032694 103101 c6b24c48b4ead1b3b907b211a32c5236 ""
   "modeling/multiHeadAttention.png" 1512519816 65853 b0a44500743ea73508e8941561e82e2c ""
   "modeling/selfAttention.png" 1512519816 26323 d8c8c9f4378f7b8788998a92d7672d8e ""
@@ -273,7 +274,9 @@
   "modeling/visionTransformer.png" 1650301474 324591 0970f882974b60ae0a282c76d8e5544d ""
   "pantanal.jpeg" 1649768908 533000 0ea7b1dfed28674dfcd9ce47ea0a2e53 ""
   "related_work.tex" 1650473517 18874 a6db2e736eda9afbd2642c81b492a5ac ""
-  "results.tex" 1650598248 3102 c6445647afc4a05c5a17545894051840 ""
+  "results.tex" 1650775021 10674 c2e28f9ef47e83a25cf24c9f2586b24c ""
+  "results/contrasting_pair2_color_102.png" 1650767826 12772 c9ed5c52124f8b95f33456394eeef48a ""
+  "results/contrasting_pair2_color_19.png" 1650767797 15233 bb0b598ba20121dd82eddff80f41996c ""
   "suthesis-ug.sty" 1649768908 10189 25ba473640b16f380057f19d9f0dbd2a ""
   (generated)
   "main.aux"

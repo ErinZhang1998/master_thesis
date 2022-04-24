@@ -8,7 +8,7 @@ The abstract nature of sketches brings both challenges and simplication of the p
 
 We utilize CLIP to gain more insights into our dataset, beyond simple counting statistics. Given the nature of our dataset: a large variety of words but most words have very few occurrences, small number of images, text descriptions are contrastively collected by juxtaposing two images with opposite features, similar descriptions used for different purpose in different context. How does CLIP respond to this dataset, how well does CLIP embeddings align with our intuitions about these tasks? Specifically, for transferring the same word to be used in different context, or usage of words that are not the common meaning of words, how well can CLIP handle them, since it is trained on millions of images? Even though CLIP is not on the sketch domain, CLIP was trained on a large number of images on the internet, and there are GAN methods that have taken advantag eof CLIP embeddings to guide image generation: ClipDraw, StylCLIP, CLIP-NADA.      
 
-\section{Task Definition}
+\section{Task Definition} \label{modeling.task.def}
 Given two sketches $(s_1,s_2)$ and their part annotations $(t_1,t_2)$, determine which sketch $t_1$ should pair with, similarly for $t_2$. 
 During data collection, we implicitly juxtapose two sketches, chosen to be as distinct as possible using some heuristic, either from different clusters or whose cosine distance is large, so the process of annotating the two dissimilar sketches is like the annotators are choosing the pair up one annotation with another. Implicitly, the annotators is pairing $s_1$ with $t_1$ and $s_2$ with $t_2$, so we would regard the ground truth pairing to be $(s_1,t_1)$ and $(s_2,t_2)$. We want to see how CLIP does on this task, if it is the annotator for the task, would it be able to generate the same pairing. Define cosine similarity to be.  
 
@@ -129,7 +129,7 @@ For the CLIP image encoder, layer normalization is applied to the input before p
 
 
 
-\subsection{Pre-Training with Contrastive Objective and Natural Language Supervision}
+\subsection{Pre-Training with Contrastive Objective and Natural Language Supervision} \label{clip.objective}
 learning an open set of visual concepts from natural language natural language supervision compared to standard crowd-sourced labeling for image classification
 
 \begin{figure*}[!htb]

@@ -42,5 +42,6 @@
 \contentsline {section}{\numberline {4.4}Loss Function}{44}{section.4.4}%
 \contentsline {section}{\numberline {4.5}Data Augmentation}{45}{section.4.5}%
 \contentsline {chapter}{\numberline {5}Results \& Analysis}{46}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Classification Experiments}{46}{section.5.1}%
-\contentsline {chapter}{\numberline {6}Future Work}{48}{chapter.6}%
+\contentsline {section}{\numberline {5.1}Classification Experiment}{46}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Word Similarity Experiment}{48}{section.5.2}%
+\contentsline {chapter}{\numberline {6}Future Work}{50}{chapter.6}%
