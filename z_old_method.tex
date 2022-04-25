@@ -35,3 +35,43 @@ During both encoding and decoding, the RNN architecture constrains the modeling 
 The attention mechanism, the foudational building block of transformer, has been used with RNN's before. 
 Introduced in \citet{attentionRNN}, attention is used to alleviate the problem of compressing all information extracted from the input sequence in one fixed context vector $c$ to compute the output at every time step. In the aforementioned 
 $y_t = g(c, h_t^{'}, y_1,\dots,y_{t-1})$, \citet{attentionRNN} altered the fixed $c$ into an hidden state dependent $c_t$, and it is computed as the weighted sum of the encoder hidden states $h_j$: $c_t = \sum_{j=1}^{T} \alpha_{tj} h_j$. The weight $\alpha_{tj}$ represents how well $h_j$, the hidden state corresponding to the $j$-th word in the input, align with the decoder hidden state $h_{t-1}^{'}$ just before the current decoding step $t$. In this way, $c_t$ summarize the input in an output-dependent way, making inputs that associate with $y_t$ more closely contribute more to modeling $ p(y_t | c_t,y_1,\dots,y_{t-1})$. 
+
+
+
+It then calculates the cosine similarities between each of the $N \times N$ pairings of the image and text features. The values are used as logit scores for calculating symmetric cross-entropy loss used to train the network. 
+
+
+CLIP is trained on 400 million (image, text) pairs collected form a variety of publicly available sources on the Internet.
+
+The query list that is used to compile these (image,text) pairs is the union of (1) words that occur $\geq 100$ times in English Wikipedia; (2) names of Wikipedia articles whose search volume is above certain threshold; (2) high pointwise mutual information (PMI) bi-grams, and (4) $117,000$ WordNet synsets, or sets of cognitive synonyms. 
+
+
+% Let $I_f \in \mathbb{R}^{N \times 512}$ be image embedding for the $N$ images in the batch outputted by the image encoder; similarly, 
+% let $T_f \in \mathbb{R}^{N \times 512}$ be text embedding for the $N$ captions in the batch outputted by the text encoder. 
+% We then use dot-product to generate.
+% \begin{equation}
+% \begin{split}
+%     \text{image encoder: } E_i \\
+%     \text{text encoder: } E_t \\
+%     I_1^{'},\dots, I_N^{'} \\
+%     T_1^{'},\dots, T_N^{'} \\
+%     I_1,\dots, I_N \\
+%     T_1,\dots, T_N \\
+% \end{split}
+% \end{equation}
+  
+% image logits $X_v$ over the text descriptions and text logits $X_t$ over the images. 
+
+
+
+
+
+
+ 
+
+
+    
+
+
+
+

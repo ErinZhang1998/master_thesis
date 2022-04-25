@@ -30,12 +30,11 @@
 \contentsline {chapter}{\numberline {4}Modeling}{36}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Task Definition}{36}{section.4.1}%
 \contentsline {section}{\numberline {4.2}Method}{37}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}Pre-training and Fine-tuning with Contrastive Objective}{38}{subsection.4.2.1}%
-\contentsline {subsection}{\numberline {4.2.2}Text Encoder}{40}{subsection.4.2.2}%
-\contentsline {subsection}{\numberline {4.2.3}Vision Transformer}{42}{subsection.4.2.3}%
-\contentsline {subsection}{\numberline {4.2.4}Image Pre-Processing}{43}{subsection.4.2.4}%
-\contentsline {subsection}{\numberline {4.2.5}Text Pre-Processing}{43}{subsection.4.2.5}%
-\contentsline {chapter}{\numberline {5}Results \& Analysis}{44}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Classification Experiment}{44}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Word Similarity Experiment}{46}{section.5.2}%
-\contentsline {chapter}{\numberline {6}Future Work}{49}{chapter.6}%
+\contentsline {subsection}{\numberline {4.2.1}Contrastive Objective}{37}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Text Encoder}{39}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.3}Vision Transformer}{41}{subsection.4.2.3}%
+\contentsline {subsection}{\numberline {4.2.4}Fine-Tuning CLIP}{42}{subsection.4.2.4}%
+\contentsline {chapter}{\numberline {5}Results \& Analysis}{45}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Classification Experiment}{45}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Word Similarity Experiment}{47}{section.5.2}%
+\contentsline {chapter}{\numberline {6}Future Work}{50}{chapter.6}%
