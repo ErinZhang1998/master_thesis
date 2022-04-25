@@ -1,22 +1,36 @@
-
- 
-% Robotics have advanced significantly in the past 30 years, and while at the beginning, robots work in factories on assembly line tasks and are far from our daily lives, they have been moving closer to us and into our homes: from iRobot roomba that can sweep floors to Labrador assistive robots that can navigate around and retrieve heavy loads. 
-% In the future, we would want to communicate with robots and collaborate with them on tasks, similar to how we smoothly interact with other people in completing daily chores.   
-% Out of the many tasks that we can collaborate with robots on, this thesis focuses on drawing. 
 Creative AI, such as using deep learning models to generate paintings and music, has been a popular research domain. Since creative activities are representative of unique human intelligence, numerous works have attempted to replicate the creative process on machines.
 For example, Pharmako-AI \citep{allado-mcdowell_okojie_2020} is a book co-written by K Allado-McDowell and GPT-3 \citep{gpt3} through exchanges between the human and the language model. 
-Works like DALL-E, GLIDE, and DALL-E 2 tackle the problem of synthesizing images from text prompts, or short language descriptions, and these generative models have produced many imaginative and inspring art pieces \citep{dallePaper,glidePaper,dalle2Paper}. 
-% Since creative activities are carried out not only in solitude, we attempt to investigate at the intersection of human-robot interaction (HRI) and creative AI. 
-Similar to how people communicate ideas to each other, our research is motivated by the goal of producing creative machines that can interact and collaborate with people. 
-% As humans, we sparked each other's imagination. Song writers compose songs together, painters seek inspiration from their peers. We communicate our ideas to others, and it would be nice if creative machines can communicate with us. The idea that machines have by themselves a creative voice and a way of executing, interpreting, expanding on the short language prompt is enigmatic.  
-% There have not been a lack of work on drawing and creative art. Proliferous amount of work on generative models, not mentioning the countless GAN-based generative models, such as StyleGAN. With the emergence of CLIP, work like StyleCLIP utilizes the rich joint embeddings space of vision and language to create art works. 
+Works like DALL-E, GLIDE, and DALL-E 2 tackle the problem of synthesizing images from short language descriptions, and these generative models have produced many imaginative and inspring art pieces \citep{dallePaper,glidePaper,dalle2Paper}.
+These work are often motivated by the vision to create machines that can interact with people and augment human creativity.  
+Our work is driven by a similar vision: how can we build systems that can be creative like humans so that AI agents and people can pariticpate in creative activities together and inspire each other. 
 
-There is a wide range of research directions to pursue in the domain of drawing with robot; on one end, by focusing more on challenges with robot-arm manipulation, one can investigate constructing highly realistic paintings through precise execution of a variety of painting tools. 
-In this work, we focus on generating simple icon-like sketches, similar to the doodles collected through the Quick,Draw! game, which asks participants to draw an object under 20 seconds\footnote{To play the game: \url{https://quickdraw.withgoogle.com/}} \citep{ha2017neural}. 
-To realize collaboration on drawing, we want to focus on language understanding for robotics and enabling people to participate in the creative process of aforementioned generative models. Doodling avoids learning sophisticated art techniques and allow people without art background to command the robot to draw simple graphics. Our project is interested in learning how people use language creatively to describe the sketches they want to create with a robot. 
-Therefore, one of our main challenges is building a drawing system that can respond to unconstrained language commands, so that, in the future, users of home robots do not have to limit themselves to a set of instructions and can have more natural interactions with the robots.     
+\begin{figure*}[!htb]
+\centering
+\includegraphics[width=.3\linewidth]{introduction/sketch_composition.png}  
+\caption{.}
+\label{introduction.composition}
+\end{figure*}
 
-% More so, we are motivated by how kids draw. Children start drawing from an early age, even before their language system has fully established, they are using symbols to represent things they experience in this world. It is almost an instinctual activity that is carved into our nature. A clear progression from simple scribbles to sophisticated composition of shapes. What is more inspiring is how children are able to describe to adults their creations and in these exchanges, metaphorical expressions emerges, indicating that they understand the interaction of abstract shapes and concrete objects. This activity of projecting the high dimensional real-world experience down to the two-dimensional canvas showcases the achievement of human creativity. The completed processes that hide beneath the simple stroke lines of children art are yet to be understood. Inspired by this intriguing activity, we want to build robots that can draw with us, take as input our descriptions of the objects being drawn, and understand sentences like I want to show a large head for the angel. We want humans and machines to all be part of the creative process.   
+Instead of studying how to generate realistic art works from a wide range of domains like DALL-E, we approach creativity from a different angle and investigate composition of basic visual concepts to create different object sketches. 
+An example is illustrated in Figure \ref{introduction.composition}: a triangle can be a boat sail, a ice-cream cone, a cat ear, a house roof, a tree canopy, a mountain, etc. The same triangle is morphed to become different parts in sketches of different objects. 
+In a similar way, words in language are also applied in different contexts, and their meanings shift depending on the usage. For example, the word \textit{large} in \textit{a large scoop of ice-cream} and \textit{a large cat face} implies size at different scales and conjure up different imagery. The large scoop of ice-cream is probably oveflowing from the little cone underneath with the melting ice-cream dripping from the side, while the large cat face implies a chubby round face compared to the cute pointy ears at the top. 
 
+Can we build systems that can compose basic parts in a similar manner and transfer their descriptions 
+In this thesis, we look at semantic parts in sketches (for example, a sketch of ice-cream contains two semantic parts: a scoop of ice-cream and a cone) and how people describe 
 
-% What inspired us to choose sketch was a session we conducted with another student studying Graphics. Initially, we set up the session to get a sense of how difficult it was to teach someone to draw with only language commands, and along the way, we discovered that generating real-looking sketches are very difficult without visual demonstrations from the instructors, but creating emoji-looking icons is more do-able. What is more interesting is that, icons are intrinsically abstract in that general geometric shapes like circles and rectangles are used for different objects and convey different meanings in different context. For example, a person can draw a circle to represent a left eye or to represent a face. Moreover, a face can be of different shapes: circular, oval, triangular, etc. This abstract nature of icon-like sketches is something interesting that we wish to explore, so we want to collect a dataset of sketches done by humans but, most importantly, we want to track the steps people take to complete them so that we can achieve the goal of drawing together with a robot.    
+% [B]
+They might not look exactly like their natural image correspondence. 
+Sketches abstract away the details in natural images but do not fall short in illustrating properties of the objects. Its abstractness allows for more creativity.
+Human can compose simple geometric shapes to create figures that represent a wide variety of objects and concepts in the world. Icons and emojis are in this category: the amount of information these symbols convey contrasts with the simplicity of the figures. 
+
+% [B]
+Sketches illustrate the core features. We are skilled at abstracting away the details but capture the most essence of the object to make them distinguishable.
+
+% [B] 
+The ability to still get the idea across with such simple toolkit proves human creativity. We don't need complicated detailed realistic sketches, a few simple strokes are able to convey what we want to say. This type of creativity is innate. It is a creativity that we are born with: we start doodling as kids. We start scribbling on walls before knowing that we are re-creating our experience onto a canvas. It is the sort of creativity that lies on every one of us, and there is no high bar or artistic requirement to express this kind of creativity.
+
+% [B]
+Language creates space for imagination. Language creates room for creativity. The ambiguity in language. Large face. How large. Curved wings abstract away the details of the wings.
+
+% [B]
+Language transfer

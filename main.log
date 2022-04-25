@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.4.11)  24 APR 2022 21:15
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.4.11)  24 APR 2022 23:30
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -697,10 +697,16 @@ Overfull \hbox (8.75388pt too wide) detected at line 70
 
  [6]
 Chapter 1.
-(./background.tex [1
+(./background.tex
+<introduction/sketch_composition.png, id=183, 625.33624pt x 456.70625pt>
+File: introduction/sketch_composition.png Graphic file (type png)
+<use introduction/sketch_composition.png>
+Package pdftex.def Info: introduction/sketch_composition.png  used on input line 9.
+(pdftex.def)             Requested size: 130.08731pt x 95.00519pt.
+ [1
 
 
-]) [2]
+ <./introduction/sketch_composition.png>]) [2]
 Chapter 2.
 (./related_work.tex
 Package hyperref Info: bookmark level for unknown todo defaults to 0 on input line 2.
@@ -730,7 +736,7 @@ File: data_collection/version_0_select_primitive.png Graphic file (type png)
 <use data_collection/version_0_select_primitive.png>
 Package pdftex.def Info: data_collection/version_0_select_primitive.png  used on input line 64.
 (pdftex.def)             Requested size: 346.89731pt x 202.08456pt.
-<data_collection/version_0_smiley_flower_with_primitive.png, id=337, 1189.44376pt x 706.64pt>
+<data_collection/version_0_smiley_flower_with_primitive.png, id=336, 1189.44376pt x 706.64pt>
 File: data_collection/version_0_smiley_flower_with_primitive.png Graphic file (type png)
 <use data_collection/version_0_smiley_flower_with_primitive.png>
 Package pdftex.def Info: data_collection/version_0_smiley_flower_with_primitive.png  used on input line 72.
@@ -739,33 +745,33 @@ Package pdftex.def Info: data_collection/version_0_smiley_flower_with_primitive.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [14 <./data_collection/version_0_select_primitive.png> <./data_collection/version_0_smiley_flower_with_primitive.png>]
-<data_collection/v1_empty_table.png, id=357, 1120.185pt x 543.53062pt>
+<data_collection/v1_empty_table.png, id=356, 1120.185pt x 543.53062pt>
 File: data_collection/v1_empty_table.png Graphic file (type png)
 <use data_collection/v1_empty_table.png>
 Package pdftex.def Info: data_collection/v1_empty_table.png  used on input line 29.
 (pdftex.def)             Requested size: 346.89731pt x 168.31857pt.
-<data_collection/v1_before_enter_text.png, id=358, 1110.64937pt x 534.49687pt>
+<data_collection/v1_before_enter_text.png, id=357, 1110.64937pt x 534.49687pt>
 File: data_collection/v1_before_enter_text.png Graphic file (type png)
 <use data_collection/v1_before_enter_text.png>
 Package pdftex.def Info: data_collection/v1_before_enter_text.png  used on input line 37.
 (pdftex.def)             Requested size: 346.89731pt x 166.94014pt.
-<data_collection/v1_after_enter_text.png, id=359, 1118.1775pt x 537.00626pt>
+<data_collection/v1_after_enter_text.png, id=358, 1118.1775pt x 537.00626pt>
 File: data_collection/v1_after_enter_text.png Graphic file (type png)
 <use data_collection/v1_after_enter_text.png>
 Package pdftex.def Info: data_collection/v1_after_enter_text.png  used on input line 48.
 (pdftex.def)             Requested size: 346.89731pt x 166.59312pt.
  [15 <./data_collection/v1_empty_table.png> <./data_collection/v1_before_enter_text.png>]
-<data_collection/v1_before_delete.png, id=377, 1103.62312pt x 531.9875pt>
+<data_collection/v1_before_delete.png, id=376, 1103.62312pt x 531.9875pt>
 File: data_collection/v1_before_delete.png Graphic file (type png)
 <use data_collection/v1_before_delete.png>
 Package pdftex.def Info: data_collection/v1_before_delete.png  used on input line 66.
 (pdftex.def)             Requested size: 346.89731pt x 167.21977pt.
-<data_collection/v1_after_delete.png, id=378, 1099.10625pt x 533.995pt>
+<data_collection/v1_after_delete.png, id=377, 1099.10625pt x 533.995pt>
 File: data_collection/v1_after_delete.png Graphic file (type png)
 <use data_collection/v1_after_delete.png>
 Package pdftex.def Info: data_collection/v1_after_delete.png  used on input line 73.
 (pdftex.def)             Requested size: 346.89731pt x 168.53523pt.
-<data_collection/v1_instruction.png, id=379, 1103.62312pt x 321.2pt>
+<data_collection/v1_instruction.png, id=378, 1103.62312pt x 321.2pt>
 File: data_collection/v1_instruction.png Graphic file (type png)
 <use data_collection/v1_instruction.png>
 Package pdftex.def Info: data_collection/v1_instruction.png  used on input line 86.
@@ -777,17 +783,17 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 3514) has occurred while \output is active []
 
  [17 <./data_collection/v1_before_delete.png> <./data_collection/v1_after_delete.png>] [18 <./data_collection/v1_instruction.png>]
-<data_collection/host_amazon/hit_1/bad_smiley_face_ambiguous_face.png, id=410, 963.6pt x 722.7pt>
+<data_collection/host_amazon/hit_1/bad_smiley_face_ambiguous_face.png, id=409, 963.6pt x 722.7pt>
 File: data_collection/host_amazon/hit_1/bad_smiley_face_ambiguous_face.png Graphic file (type png)
 <use data_collection/host_amazon/hit_1/bad_smiley_face_ambiguous_face.png>
 Package pdftex.def Info: data_collection/host_amazon/hit_1/bad_smiley_face_ambiguous_face.png  used on input line 117.
 (pdftex.def)             Requested size: 86.72267pt x 65.04019pt.
-<data_collection/v1_requirement1_bad1.png, id=413, 1089.57062pt x 624.3325pt>
+<data_collection/v1_requirement1_bad1.png, id=412, 1089.57062pt x 624.3325pt>
 File: data_collection/v1_requirement1_bad1.png Graphic file (type png)
 <use data_collection/v1_requirement1_bad1.png>
 Package pdftex.def Info: data_collection/v1_requirement1_bad1.png  used on input line 127.
 (pdftex.def)             Requested size: 346.89731pt x 198.77113pt.
-<data_collection/v1_requirement1_bad2.png, id=414, 982.16937pt x 654.94687pt>
+<data_collection/v1_requirement1_bad2.png, id=413, 982.16937pt x 654.94687pt>
 File: data_collection/v1_requirement1_bad2.png Graphic file (type png)
 <use data_collection/v1_requirement1_bad2.png>
 Package pdftex.def Info: data_collection/v1_requirement1_bad2.png  used on input line 134.
@@ -796,59 +802,59 @@ Package pdftex.def Info: data_collection/v1_requirement1_bad2.png  used on input
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [20 <./data_collection/v1_requirement1_bad1.png> <./data_collection/v1_requirement1_bad2.png>]
-<data_collection/v1_requirement3_bad1.png, id=447, 806.01125pt x 399.4925pt>
+<data_collection/v1_requirement3_bad1.png, id=446, 806.01125pt x 399.4925pt>
 File: data_collection/v1_requirement3_bad1.png Graphic file (type png)
 <use data_collection/v1_requirement3_bad1.png>
 Package pdftex.def Info: data_collection/v1_requirement3_bad1.png  used on input line 179.
 (pdftex.def)             Requested size: 346.89731pt x 171.9369pt.
  [21 <./data_collection/v1_requirement3_bad1.png>]
-<data_collection/v1_requirement.png, id=465, 1076.02pt x 610.28pt>
+<data_collection/v1_requirement.png, id=464, 1076.02pt x 610.28pt>
 File: data_collection/v1_requirement.png Graphic file (type png)
 <use data_collection/v1_requirement.png>
 Package pdftex.def Info: data_collection/v1_requirement.png  used on input line 187.
 (pdftex.def)             Requested size: 433.62pt x 245.93285pt.
-<data_collection/v1_badeg_1.png, id=466, 1093.08376pt x 455.7025pt>
+<data_collection/v1_badeg_1.png, id=465, 1093.08376pt x 455.7025pt>
 File: data_collection/v1_badeg_1.png Graphic file (type png)
 <use data_collection/v1_badeg_1.png>
 Package pdftex.def Info: data_collection/v1_badeg_1.png  used on input line 195.
 (pdftex.def)             Requested size: 346.89731pt x 144.61787pt.
-<data_collection/v1_badeg_2.png, id=467, 1085.05376pt x 431.6125pt>
+<data_collection/v1_badeg_2.png, id=466, 1085.05376pt x 431.6125pt>
 File: data_collection/v1_badeg_2.png Graphic file (type png)
 <use data_collection/v1_badeg_2.png>
 Package pdftex.def Info: data_collection/v1_badeg_2.png  used on input line 200.
 (pdftex.def)             Requested size: 346.89731pt x 137.98709pt.
-<data_collection/v1_badeg_3.png, id=468, 1085.05376pt x 431.6125pt>
+<data_collection/v1_badeg_3.png, id=467, 1085.05376pt x 431.6125pt>
 File: data_collection/v1_badeg_3.png Graphic file (type png)
 <use data_collection/v1_badeg_3.png>
 Package pdftex.def Info: data_collection/v1_badeg_3.png  used on input line 205.
 (pdftex.def)             Requested size: 346.89731pt x 137.98709pt.
-<data_collection/v1_badeg_4.png, id=469, 1085.05376pt x 431.6125pt>
+<data_collection/v1_badeg_4.png, id=468, 1085.05376pt x 431.6125pt>
 File: data_collection/v1_badeg_4.png Graphic file (type png)
 <use data_collection/v1_badeg_4.png>
 Package pdftex.def Info: data_collection/v1_badeg_4.png  used on input line 210.
 (pdftex.def)             Requested size: 346.89731pt x 137.98709pt.
-<data_collection/v1_qual_header.png, id=472, 1095.09125pt x 284.06125pt>
+<data_collection/v1_qual_header.png, id=471, 1095.09125pt x 284.06125pt>
 File: data_collection/v1_qual_header.png Graphic file (type png)
 <use data_collection/v1_qual_header.png>
 Package pdftex.def Info: data_collection/v1_qual_header.png  used on input line 221.
 (pdftex.def)             Requested size: 433.62pt x 112.47818pt.
-<data_collection/v1_qual_q9_1.png, id=473, 856.19875pt x 454.69875pt>
+<data_collection/v1_qual_q9_1.png, id=472, 856.19875pt x 454.69875pt>
 File: data_collection/v1_qual_q9_1.png Graphic file (type png)
 <use data_collection/v1_qual_q9_1.png>
 Package pdftex.def Info: data_collection/v1_qual_q9_1.png  used on input line 229.
 (pdftex.def)             Requested size: 346.89731pt x 184.22136pt.
-<data_collection/v1_qual_q9_2.png, id=474, 856.19875pt x 408.52625pt>
+<data_collection/v1_qual_q9_2.png, id=473, 856.19875pt x 408.52625pt>
 File: data_collection/v1_qual_q9_2.png Graphic file (type png)
 <use data_collection/v1_qual_q9_2.png>
 Package pdftex.def Info: data_collection/v1_qual_q9_2.png  used on input line 234.
 (pdftex.def)             Requested size: 346.89731pt x 165.51456pt.
  [22 <./data_collection/v1_requirement.png>] [23]) (./data_v2.tex [24]
-<data_collection/pilot_02_01_annotation_1.png, id=507, 1921.1775pt x 1318.9275pt>
+<data_collection/pilot_02_01_annotation_1.png, id=506, 1921.1775pt x 1318.9275pt>
 File: data_collection/pilot_02_01_annotation_1.png Graphic file (type png)
 <use data_collection/pilot_02_01_annotation_1.png>
 Package pdftex.def Info: data_collection/pilot_02_01_annotation_1.png  used on input line 21.
 (pdftex.def)             Requested size: 346.89731pt x 238.14134pt.
-<data_collection/pilot_02_04_annotation.png, id=508, 2109.8825pt x 1200.485pt>
+<data_collection/pilot_02_04_annotation.png, id=507, 2109.8825pt x 1200.485pt>
 File: data_collection/pilot_02_04_annotation.png Graphic file (type png)
 <use data_collection/pilot_02_04_annotation.png>
 Package pdftex.def Info: data_collection/pilot_02_04_annotation.png  used on input line 29.
@@ -862,7 +868,7 @@ File: data_collection/pilot_02_04_annotation.png Graphic file (type png)
 Package pdftex.def Info: data_collection/pilot_02_04_annotation.png  used on input line 48.
 (pdftex.def)             Requested size: 346.89731pt x 197.3754pt.
  [25]
-<pantanal.jpeg, id=519, 1204.5pt x 903.375pt>
+<pantanal.jpeg, id=518, 1204.5pt x 903.375pt>
 File: pantanal.jpeg Graphic file (type jpg)
 <use pantanal.jpeg>
 Package pdftex.def Info: pantanal.jpeg  used on input line 66.
@@ -926,7 +932,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [26]) [27] (./final_data.tex
-<dataset_image/word_freq_face.png, id=539, 1209.51875pt x 1122.1925pt>
+<dataset_image/word_freq_face.png, id=538, 1209.51875pt x 1122.1925pt>
 File: dataset_image/word_freq_face.png Graphic file (type png)
 <use dataset_image/word_freq_face.png>
 Package pdftex.def Info: dataset_image/word_freq_face.png  used on input line 4.
@@ -1003,12 +1009,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 43--43
 )) [28] [29 <./data_collection/v1_badeg_1.png> <./data_collection/v1_badeg_2.png> <./data_collection/v1_badeg_3.png> <./data_collection/v1_badeg_4.png>] [30 <./data_collection/v1_qual_header.png> <./data_collection/v1_qual_q9_1.png> <./data_collection/v1_qual_q9_2.png>] [31 <./data_collection/pilot_02_01_annotation_1.png> <./data_collection/pilot_02_04_annotation.png>] [32] [33 <./pantanal.jpeg>] [34] [35 <./dataset_image/word_freq_face.png>]
 Chapter 4.
 (./method.tex
-<modeling/angel340.png, id=588, 256.96pt x 256.96pt>
+<modeling/angel340.png, id=587, 256.96pt x 256.96pt>
 File: modeling/angel340.png Graphic file (type png)
 <use modeling/angel340.png>
 Package pdftex.def Info: modeling/angel340.png  used on input line 8.
 (pdftex.def)             Requested size: 108.405pt x 108.40472pt.
-<modeling/angel389.png, id=589, 256.96pt x 256.96pt>
+<modeling/angel389.png, id=588, 256.96pt x 256.96pt>
 File: modeling/angel389.png Graphic file (type png)
 <use modeling/angel389.png>
 Package pdftex.def Info: modeling/angel389.png  used on input line 14.
@@ -1021,7 +1027,7 @@ Overfull \hbox (2.22221pt too wide) in paragraph at lines 6--18
 [36
 
  <./modeling/angel340.png (PNG copy)> <./modeling/angel389.png (PNG copy)>]
-<modeling/CLIP.png, id=609, 1088.065pt x 722.7pt>
+<modeling/CLIP.png, id=608, 1088.065pt x 722.7pt>
 File: modeling/CLIP.png Graphic file (type png)
 <use modeling/CLIP.png>
 Package pdftex.def Info: modeling/CLIP.png  used on input line 61.
@@ -1030,12 +1036,12 @@ Package pdftex.def Info: modeling/CLIP.png  used on input line 61.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [38]
-<modeling/transformer.png, id=638, 744.7825pt x 1428.33624pt>
+<modeling/transformer.png, id=637, 744.7825pt x 1428.33624pt>
 File: modeling/transformer.png Graphic file (type png)
 <use modeling/transformer.png>
 Package pdftex.def Info: modeling/transformer.png  used on input line 125.
 (pdftex.def)             Requested size: 108.405pt x 207.89896pt.
-<modeling/clip_text_transformer.png, id=643, 241.6227pt x 481.0773pt>
+<modeling/clip_text_transformer.png, id=642, 241.6227pt x 481.0773pt>
 File: modeling/clip_text_transformer.png Graphic file (type png)
 <use modeling/clip_text_transformer.png>
 Package pdftex.def Info: modeling/clip_text_transformer.png  used on input line 132.
@@ -1046,12 +1052,12 @@ Overfull \hbox (18.67079pt too wide) in paragraph at lines 123--136
  []
 
 [39 <./modeling/transformer.png> <./modeling/clip_text_transformer.png>]
-<modeling/selfAttention.png, id=671, 107.2005pt x 212.9556pt>
+<modeling/selfAttention.png, id=670, 107.2005pt x 212.9556pt>
 File: modeling/selfAttention.png Graphic file (type png)
 <use modeling/selfAttention.png>
 Package pdftex.def Info: modeling/selfAttention.png  used on input line 149.
 (pdftex.def)             Requested size: 65.04366pt x 129.21384pt.
-<modeling/multiHeadAttention.png, id=672, 201.1515pt x 308.8338pt>
+<modeling/multiHeadAttention.png, id=671, 201.1515pt x 308.8338pt>
 File: modeling/multiHeadAttention.png Graphic file (type png)
 <use modeling/multiHeadAttention.png>
 Package pdftex.def Info: modeling/multiHeadAttention.png  used on input line 153.
@@ -1065,7 +1071,7 @@ Overfull \hbox (2.22221pt too wide) in paragraph at lines 147--155
 Underfull \vbox (badness 1394) has occurred while \output is active []
 
  [40 <./modeling/selfAttention.png> <./modeling/multiHeadAttention.png>]
-<modeling/visionTransformer.png, id=700, 799.3062pt x 403.62794pt>
+<modeling/visionTransformer.png, id=699, 799.3062pt x 403.62794pt>
 File: modeling/visionTransformer.png Graphic file (type png)
 <use modeling/visionTransformer.png>
 Package pdftex.def Info: modeling/visionTransformer.png  used on input line 200.
@@ -1088,12 +1094,12 @@ Chapter 5.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [46]
-<results/contrasting_pair2_color_19.png, id=760, 341.275pt x 341.275pt>
+<results/contrasting_pair2_color_19.png, id=759, 341.275pt x 341.275pt>
 File: results/contrasting_pair2_color_19.png Graphic file (type png)
 <use results/contrasting_pair2_color_19.png>
 Package pdftex.def Info: results/contrasting_pair2_color_19.png  used on input line 55.
 (pdftex.def)             Requested size: 108.405pt x 108.40308pt.
-<results/contrasting_pair2_color_102.png, id=761, 341.275pt x 341.275pt>
+<results/contrasting_pair2_color_102.png, id=760, 341.275pt x 341.275pt>
 File: results/contrasting_pair2_color_102.png Graphic file (type png)
 <use results/contrasting_pair2_color_102.png>
 Package pdftex.def Info: results/contrasting_pair2_color_102.png  used on input line 61.
@@ -1112,7 +1118,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [48]) [49]
 Chapter 6.
 (./future.tex
-<future/future_nose_variety_392.png, id=784, 341.275pt x 341.275pt>
+<future/future_nose_variety_392.png, id=783, 341.275pt x 341.275pt>
 File: future/future_nose_variety_392.png Graphic file (type png)
 <use future/future_nose_variety_392.png>
 Package pdftex.def Info: future/future_nose_variety_392.png  used on input line 4.
@@ -1129,18 +1135,18 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 56F6F25985EB61567E4BEA977D576C40;3618.
  ) 
 Here is how much of TeX's memory you used:
- 28024 strings out of 478268
- 542000 string characters out of 5846353
- 816005 words of memory out of 5000000
- 45484 multiletter control sequences out of 15000+600000
+ 28033 strings out of 478268
+ 542308 string characters out of 5846353
+ 816039 words of memory out of 5000000
+ 45491 multiletter control sequences out of 15000+600000
  481355 words of font info for 77 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  108i,17n,106p,1509b,964s stack positions out of 10000i,1000n,20000p,200000b,200000s
  </home/erinzhang/.texlive2022/texmf-var/fonts/pk/ljfour/public/bbm/bbm10.600pk>{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/fontawesome5/fa5free2.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/local/texlive/2022/texmf-dist/fonts/type1/public/fontawesome5/FontAwesome5Free-Solid.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on main.pdf (60 pages, 3802005 bytes).
+Output written on main.pdf (60 pages, 3812785 bytes).
 PDF statistics:
- 986 PDF objects out of 1000 (max. 8388607)
- 789 compressed objects within 8 object streams
+ 985 PDF objects out of 1000 (max. 8388607)
+ 786 compressed objects within 8 object streams
  204 named destinations out of 1000 (max. 500000)
- 404 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 409 words of extra memory for PDF output out of 10000 (max. 10000000)
 
