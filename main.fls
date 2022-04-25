@@ -1136,6 +1136,7 @@ INPUT ./introduction/sketch_composition.png
 INPUT introduction/sketch_composition.png
 INPUT ./introduction/sketch_composition.png
 INPUT ./introduction/sketch_composition.png
+INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmr9.tfm
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmti10.tfm
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmsl10.tfm
 INPUT ./related_work.tex
@@ -1145,7 +1146,6 @@ INPUT related_work.tex
 INPUT ./related_work.tex
 INPUT ./related_work.tex
 INPUT related_work.tex
-INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmr9.tfm
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmr8.tfm

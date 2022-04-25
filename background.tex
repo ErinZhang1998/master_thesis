@@ -7,20 +7,22 @@ Our work is driven by a similar vision: how can we build systems that can be cre
 \begin{figure*}[!htb]
 \centering
 \includegraphics[width=.3\linewidth]{introduction/sketch_composition.png}  
-\caption{.}
+\caption{Sketches of different objects with the triangle shape. The objects are, from top and in clockwise order: ice-cream, cat, house, pine tree, mountain, and boat.}
 \label{introduction.composition}
 \end{figure*}
 
-Instead of studying how to generate realistic art works from a wide range of domains like DALL-E, we approach creativity from a different angle and investigate composition of basic visual concepts to create different object sketches. 
-An example is illustrated in Figure \ref{introduction.composition}: a triangle can be a boat sail, a ice-cream cone, a cat ear, a house roof, a tree canopy, a mountain, etc. The same triangle is morphed to become different parts in sketches of different objects. 
-In a similar way, words in language are also applied in different contexts, and their meanings shift depending on the usage. For example, the word \textit{large} in \textit{a large scoop of ice-cream} and \textit{a large cat face} implies size at different scales and conjure up different imagery. The large scoop of ice-cream is probably oveflowing from the little cone underneath with the melting ice-cream dripping from the side, while the large cat face implies a chubby round face compared to the cute pointy ears at the top. 
+Instead of studying how to generate realistic art works from a wide range of domains like DALL-E\todo[size=\small, color=green!20]{``a wide range of domain''?}, we approach creativity from a different angle and investigate composition of basic visual concepts to create different object sketches.
+An example is illustrated in Figure \ref{introduction.composition}: a triangle can be a boat sail, a ice-cream cone, a cat ear, a house roof, a tree canopy, a mountain, etc. The same triangle is adapted to become different parts in sketches of different objects. 
+While sketches do not contain all the details in natural images, they can still capture the essential features of different objects, making them simple yet widely recognizable. The abstractness allows for more creativity. 
 
-Can we build systems that can compose basic parts in a similar manner and transfer their descriptions 
-In this thesis, we look at semantic parts in sketches (for example, a sketch of ice-cream contains two semantic parts: a scoop of ice-cream and a cone) and how people describe 
+In a similar way, language descriptors can be composed to form new concepts. For example, a \textit{large round} cat face versus a \textit{large squircle} cat face. The two faces share the same attribute \textit{large}, but one is more circular. Of course, cat face is not the only object that can be \textit{large round} or \textit{large squircle}; what object are you thinking right now that can have these attributes?
+Moreover, a concept can be described in different ways. \textit{What visual features does this cat sketch have?} Some people might pick up on its usual size; others might notice its slightly edged chin, and there are still others that focus on the long whiskers curving upwards. People are likely to provide a variety of responses.  
+% Word meanings shift depending on the context they are applied in. For example, the word \textit{large} in \textit{a large scoop of ice-cream} and \textit{a large cat face} implies size at different scales and conjure up different imagery. The \textit{large} scoop of ice-cream is probably oveflowing from the little cone underneath with the melting ice-cream dripping from the side, while the \textit{large} cat face implies a chubby round face compared to the cute pointy ears at the top.          
+
+We want to build systems that can compose basic parts in a creative manner and understand how words are combined and adapted to describe different objects.  
+In this thesis, we are interested in semantic parts in sketches and how people describe them. For example, a face sketch may contain four semantic parts: eyes, nose, mouth, and face contour, that can be drawn using various geometric shapes with different features.    
 
 % [B]
-They might not look exactly like their natural image correspondence. 
-Sketches abstract away the details in natural images but do not fall short in illustrating properties of the objects. Its abstractness allows for more creativity.
 Human can compose simple geometric shapes to create figures that represent a wide variety of objects and concepts in the world. Icons and emojis are in this category: the amount of information these symbols convey contrasts with the simplicity of the figures. 
 
 % [B]
