@@ -1,14 +1,20 @@
 
 \subsection{Overview}
-In response to the pilot results, we reconsider the data collection pipeline to reduce the uncertainty around collecting drawings that illustrate the prompts and textual descriptions well-aligned with each step in the drawing. Firstly, in order to alleviate the burden of drawing from the annotators, we examined existing sketch datasets, and information regarding the advantages and disadvantages are shown in Table v2.datasets.1.   
-[Table v2.datasets.1: pros and cons, stats of different sketch datasets]
+In response to the pilot results, we reconsider the data collection pipeline. The most important objective is to collect text descriptions well-aligned with semantic parts in sketches. 
+We examined existing sketch datasets, and information regarding the advantages and disadvantages are explained in Section \ref{relatedWorkChapter}.    
 
-Between Sketch Perceptual Grouping (SPG) and SketchSeg, both containing annotaiton for semantically meaningful parts in sketches, SPG annotates for QuickDraw sketches while SketchSeg collects its own sketches. We picked SPG, since it will be easier in the future to extend our datasets given the large QuickDraw reservoir of sketches. Moreover, SketchSeg dataset contains a \textit{fourleg} category that includes many different kinds of animals, such as horse, sheep, and cow, but the QuickDraw categories are more fine-grained, so form a model learning perspective, SPG will also be more generalizable. Therefore, to combine our previous goal, collecting sketches that illustrate certain \textit{adjective}$\times$\textit{noun} prompts, we decided to provide annotators with the sketches from QuickDraw and ask them to annotate for each semantically meaningful part provided in the SPG Dataset. 
+To shorten the time spent on sketching, we decided to use sketches in the QuickDraw dataset. 
+To solve the problem of misaligned text descriptions and drawings, we used semantic part annotations from the Sketch Perceptual Grouping (SPG) dataset, which assigns semantic part labels for each stroke in $20,000$ sketches from the QuickDraw dataset.  
+% Between  and SketchSeg, both containing annotaiton for semantically meaningful parts in sketches, 
+% SPG annotates for QuickDraw sketches while SketchSeg collects its own sketches. We picked SPG, since it will be easier in the future to extend our datasets given the large QuickDraw reservoir of sketches. 
+% Moreover, SketchSeg dataset contains a \textit{fourleg} category that includes many different kinds of animals, such as horse, sheep, and cow, but the QuickDraw categories are more fine-grained, so form a model learning perspective, SPG will also be more generalizable. 
+% Therefore, to combine our previous goal, collecting sketches that illustrate certain \textit{adjective}$\times$\textit{noun} prompts, we decided to provide annotators with the sketches from QuickDraw and ask them to annotate for each semantically meaningful part provided in the SPG Dataset. 
+
 
 In order to avoid dealing with discrepancies between performance of fellow graduate students and that of the turkers, we deployed a short pilot test of the new version and identified the suitable format and areas that need written requirement for the turkers to avoid these mistakes.   
 Therefore, the transformation of the task format is driven by mistakes we have seen during the pilot trials. 
 
-\subsubsection{Main Task}
+\subsubsection{Main Task Interface}
 In Figure \ref{v2.main_task.1}, we show the transformation from our first pilot of version to the final task that is deployed to collect the entire dataset. 
 Overall, we used non-gray colors to highlight the parts in the sketch that we want annotations, another design to help with annotation speed. 
 For simplicity, we restricts the annotations from whole sentences (Figure \ref{v2.main_task.1.a}) to only adjective phrases (Figure \ref{v2.main_task.1.b}, \ref{v2.main_task.1.c}, \ref{v2.main_task.1.d}). The benefit of juxtaposing two sketches and simultaneous annotate for two sketches is that annotators are implicitly encouraged to provide descriptions that identify features of the objects that differentiate the two sketches. This method is also proposed to facilitate the annotation process and to take less time, since it is easier to differentiate and perform a contrasting task than to generate descriptions from a single sketch. 
