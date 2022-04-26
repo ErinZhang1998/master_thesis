@@ -1,5 +1,7 @@
 \subsection{Overview}
-For version 1 onward, we decided to host our website on Amazon Mechanical Turk (AMT), which is a crowd-sourcing website that hosts different machine learning annotation taskss. In the remaining text, we use the word \textit{turker} to refer to annotators that we recruit on AMT; we will also use the word \textit{HIT}, Human Intelligence Task, to refer to a task hosted on AMT. Please refer to \href{https://www.mturk.com/worker/help#:~:text=A%20Human%20Intelligence%20Task%2C%20or,be%20completed%20by%20Worker%20customers.}{AMT FAQs} for official definition and answers to questions related to AMT. 
+When we first started designing our data collection interface, we wanted to collect sketches for prompts similar to the ones used in DALL-E \citep{dallePaper}: creative composition of attributes and objects that are not commonly associated with the attirbutes. For example, \textit{evil cup of bubble tea} and \textit{happy moon}. In addition to sketches, we also require annotators to decompose their drawings into steps and provide descriptions for each step. We hope to discover combination of simples shapes like examples in Figure \ref{introduction.composition}, and because the imaginative prompts would result in creative sketches, the part descriptions would also include unexpected usage of words.     
+
+We deploy the data collection interface on Amazon Mechanical Turk (AMT), which is a crowd-sourcing website that hosts different machine learning annotation tasks. In the remaining text, we use the word \textit{turker} to refer to annotators we recruit on AMT; we will also use the word \textit{HIT}, Human Intelligence Task, to refer to a task hosted on AMT. Please refer to \href{https://www.mturk.com/worker/help#:~:text=A%20Human%20Intelligence%20Task%2C%20or,be%20completed%20by%20Worker%20customers.}{AMT FAQs} for official definition and answers to questions related to AMT. 
  
 We have to design the following sections for the task: 
 \begin{enumerate}
@@ -7,12 +9,8 @@ We have to design the following sections for the task:
     \item instructions and requirements to describe the tasks and specify what the annotators should and should not include in the annotations
     \item a qualification task accompanying the main task to train the turkers to produce high-quality annotations
 \end{enumerate}
-Compared to Version 0, which we only dabbled with \ref{v1_sec_1} in the above list, we went through all three stages for Version 1 and eventually deployed a pilot.
+% Compared to Version 0, which we only dabbled with \ref{v1_sec_1} in the above list, we went through all three stages for Version 1 and eventually deployed a pilot.
 After deployment, we realized that a few major problems from this design: (1) due to the subjective nature of drawing, it was hard to understand in what ways some annotators are illustrating the given prompts, thus making it difficult to determine the quality of the annotations; (2) turkers are taking more than 30 minutes for each task, showing that providing both sketches and descriptions are inefficient; (3) some turkers are unable to provide descriptions that align with the objects they meant to annotate for; for example, in one step, they drew both eyes and hair, but they only annotate ``big eyes''.      
-
-% Version 1 was the first version to be deployed 
-% another version that we did not use as the final interface for data collection. 
-% However, compared to version 0, we (1)
 
 \subsection{Interface Design}
 

@@ -32,10 +32,10 @@ In the new version, we present two sketches at a time to annotators, where the s
 % The general trend of the data collection process is that we try to simplify the data collection interface and reduce the number of criteria that we need to satisfy, since each introduces a factor of uncertainty. 
 
 % Since the beginning of data collection, we try to answer the question, what is a semantic part in sketches?   
-
-% The end goal is to achieve the kind of interaction shown in the YouTube video \textit{How To Draw A Cute Ice Cream Cone}, and in it, the instructor oftens uses sentences in the form of ``Let's draw a \texttt{X} for \texttt{Y}'', where \texttt{X} describes the geometric features of the object \texttt{Y}. For example, ``Let's draw \textit{small connected U shapes} for the \textit{bottom of the ice-cream cone}.'' Therefore, at first, we thought of decomposing the drawing process into a sequence of common geometric shapes, and the objects that they represent become the basic semantic units.   
-
+% The end goal is to achieve the kind of interaction shown in the YouTube video \textit{How To Draw A Cute Ice Cream Cone}, and in it, the instructor oftens uses sentences in the form of ``Let's draw a \texttt{X} for \texttt{Y}'', where \texttt{X} describes the geometric features of the object \texttt{Y}. For example, ``Let's draw \textit{small connected U shapes} for the \textit{bottom of the ice-cream cone}.'' 
+% Therefore, at first, we thought of decomposing the drawing process into a sequence of common geometric shapes, and the objects that they represent become the basic semantic units.   
 % there should be a fixed set of primitive that the users could choose from, so learning the model becomes learning to parameterize, for example, the dimensions of the set of primitives. 
+% Why was I so fixated on the primitives, because the abstractness of the icons is what interested me the most. 
 
 % Functionality:
 % \begin{itemize}
@@ -52,11 +52,12 @@ In the new version, we present two sketches at a time to annotators, where the s
 % We begin with a very crude version, and then we decide to add features that can allow us to realize the DQ \ref{data_design_1} and \ref{data_design_2}.
 
 % The actual Version 0 has the following flow:
-% There is a practice board, you can try to practice drawing so that the actual drawing submit has good quality and respond to the prompt (reflecting DQ \ref{data_design_3}). Then hit \textit{Ready to Record}, again baking the sequence into the design of the website will help us to enforce collecting a dataset of steps. Another purpose is to help the annotators decide beforehand what are the necessary primitives used in the process. Why was I so fixated on the primitives, because the abstractness of the icons is what interested me the most. The entire research journey was very explorative, it sorted of started with a sense of \textit{oh, this question or aspect of how humans do things is interesting, I wish robot can do the same}. And what is that thing that I thought was interesting, it was how Rain and I were able to draw the icons and the interactions. 
+% There is a practice board, you can try to practice drawing so that the actual drawing submit has good quality and respond to the prompt (reflecting DQ \ref{data_design_3}). Then hit \textit{Ready to Record}, again baking the sequence into the design of the website will help us to enforce collecting a dataset of steps. Another purpose is to help the annotators decide beforehand what are the necessary primitives used in the process. 
+% The entire research journey was very explorative, it sorted of started with a sense of \textit{oh, this question or aspect of how humans do things is interesting, I wish robot can do the same}. And what is that thing that I thought was interesting, it was how Rain and I were able to draw the icons and the interactions. 
 % The first thing you will do is select a primitive from a list, and then you will draw the step that contains the primitives. Hit \textit{Next} to move on to drawing the next primitive. There are will be a little tag at the bottom showing what is the primitive that corresponds to the step that is drawn on the board. Repeat until finished and hit \textit{Done}. At the end, again, \textit{Play}, \textit{Submit}, or \textit{Cancel} to start over. 
 
 % {\color{red} \faIcon{question}} Should we use primitive shapes for users to choose from? 
-% The reason for considering this aspect is whether during generation we want to learn to change parameters of a fix set of shapes or generate un-constrained strokes. For the first option, we want users to compose a drawing with primitive shapes, much like using   
+% The reason for considering this aspect is whether during generation we want to learn to change parameters of a fix set of shapes or generate un-constrained strokes. For the first option, we want users to compose a drawing with primitive shapes   
 % In order to learn a more general model, we decided that we want to collect strokes instead of fixed primitive shapes, so we moved onto creating a table that accompanies the drawing board, where the user can choose to annotate each step they draw. 
 
 % In Figure \ref{v0.design}. 

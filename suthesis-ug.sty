@@ -51,7 +51,7 @@ suthesis-ug documentation.}}{}
 
 
 % Use 1.3 times the normal baseline-to-baseline skip
-\setstretch{1.3}
+\setstretch{1.2}
 
 
 %%%%%
@@ -225,26 +225,27 @@ smaller print.
         \thispagestyle{empty}%
         \null\vskip1in%
         \begin{center}
-                \large\uppercase\expandafter{\@title}
+                \huge\uppercase\expandafter{\@title}
         \end{center}
         \vfill
 \begin{center}
-\rm \large{\@author}\\
-            \vspace{5mm}
-            Carnegie Mellon University\\ 
-            Pittsburgh, PA 15213 \\
-            \rm  \@submitdate\\
+\rm {\large \@author}\\
+\vspace{5mm}
+Carnegie Mellon University\\ 
+Pittsburgh, PA 15213 \\
+\rm  \@submitdate\\
 \end{center}
 \vfill
 \begin{center}
 \large
-Thesis Committee: \\
-\rm Oliver Kroemer \\
-Yonatan Bisk \\
+{\bf Thesis Committee}\\
+\rm Oliver Kroemer, advisor, chair \\
+Yonatan Bisk, advisor, co-chair \\
 Jean Oh \\
 \end{center}
 \vspace{5mm}
 \begin{center}
+\it
 Submitted in partial fulfillment of the requirements for\\
 the degree of Master of Science in Computer Science.\\
 \expandafter{\@whichend}
@@ -293,8 +294,8 @@ the degree of Master of Science in Computer Science.\\
         \pagenumbering{roman}
         \pagestyle{plain}
         \titlep
-        \signaturepage
-        \cleardoublepage
+        % \signaturepage
+        % \cleardoublepage
     
 }
         
