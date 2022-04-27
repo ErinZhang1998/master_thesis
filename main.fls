@@ -1506,6 +1506,16 @@ INPUT ./dataset_image/word_freq_face.png
 INPUT dataset_image/word_freq_face.png
 INPUT ./dataset_image/word_freq_face.png
 INPUT ./dataset_image/word_freq_face.png
+INPUT ./data_collection/summary/spikyface.png
+INPUT ./data_collection/summary/spikyface.png
+INPUT data_collection/summary/spikyface.png
+INPUT ./data_collection/summary/spikyface.png
+INPUT ./data_collection/summary/spikyface.png
+INPUT ./data_collection/summary/spikyangel.png
+INPUT ./data_collection/summary/spikyangel.png
+INPUT data_collection/summary/spikyangel.png
+INPUT ./data_collection/summary/spikyangel.png
+INPUT ./data_collection/summary/spikyangel.png
 INPUT ./method.tex
 INPUT ./method.tex
 INPUT ./method.tex

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.4.11)  27 APR 2022 00:51
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.4.11)  27 APR 2022 10:18
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1011,15 +1011,91 @@ File: dataset_image/word_freq_face.png Graphic file (type png)
 <use dataset_image/word_freq_face.png>
 Package pdftex.def Info: dataset_image/word_freq_face.png  used on input line 56.
 (pdftex.def)             Requested size: 433.62pt x 402.31091pt.
-)) [20] [21 <./data_collection/v1_badeg_1.png> <./data_collection/v1_badeg_2.png> <./data_collection/v1_badeg_3.png> <./data_collection/v1_badeg_4.png>] [22 <./data_collection/v1_qual_header.png> <./data_collection/v1_qual_q9_1.png> <./data_collection/v1_qual_q9_2.png>] [23 <./data_collection/version2/v2annofeb1.png> <./data_collection/version2/v2annofeb4.png>] [24 <./data_collection/version2/v2anno.png>] [25 <./data_collection/version2/v2annoPop.png> <./data_collection/version2/v2requirement.png>] [26 <./data_collection/version2/v2example2.png> <./data_collection/version2/v2example1.png>] [27 <./data_collection/version2/v2qualQ3.png>] [28 <./dataset_image/word_freq_face.png>]
+
+Overfull \hbox (2.62775pt too wide) in paragraph at lines 81--81
+[]|\OT1/cmr/m/n/9 eyes| 
+ []
+
+
+Overfull \hbox (3.65205pt too wide) in paragraph at lines 81--81
+[]|\OT1/cmr/m/n/9 nose| 
+ []
+
+
+Overfull \hbox (7.70828pt too wide) in paragraph at lines 81--81
+[]|\OT1/cmr/m/n/9 mouth| 
+ []
+
+
+Overfull \hbox (2.07637pt too wide) in paragraph at lines 81--81
+[]|\OT1/cmr/m/n/9 hair| 
+ []
+
+
+Overfull \hbox (1.80206pt too wide) in paragraph at lines 81--81
+[]|\OT1/cmr/m/n/9 face| 
+ []
+
+
+Overfull \hbox (3.08331pt too wide) in paragraph at lines 81--81
+[]|\OT1/cmr/m/n/9 halo| 
+ []
+
+
+Overfull \hbox (2.62775pt too wide) in paragraph at lines 81--81
+[]|\OT1/cmr/m/n/9 eyes| 
+ []
+
+
+Overfull \hbox (3.65205pt too wide) in paragraph at lines 81--81
+[]|\OT1/cmr/m/n/9 nose| 
+ []
+
+
+Overfull \hbox (7.70828pt too wide) in paragraph at lines 81--81
+[]|\OT1/cmr/m/n/9 mouth| 
+ []
+
+
+Overfull \hbox (1.80206pt too wide) in paragraph at lines 81--81
+[]|\OT1/cmr/m/n/9 face| 
+ []
+
+
+Overfull \hbox (6.42357pt too wide) in paragraph at lines 81--81
+[]|\OT1/cmr/m/n/9 body| 
+ []
+
+
+Overfull \hbox (8.78745pt too wide) in paragraph at lines 81--82
+[]|\OT1/cmr/m/n/9 wings| 
+ []
+
+[20]
+<data_collection/summary/spikyface.png, id=492, 681.54625pt x 832.10875pt>
+File: data_collection/summary/spikyface.png Graphic file (type png)
+<use data_collection/summary/spikyface.png>
+Package pdftex.def Info: data_collection/summary/spikyface.png  used on input line 106.
+(pdftex.def)             Requested size: 195.12767pt x 238.2327pt.
+<data_collection/summary/spikyangel.png, id=493, 681.54625pt x 995.72pt>
+File: data_collection/summary/spikyangel.png Graphic file (type png)
+<use data_collection/summary/spikyangel.png>
+Package pdftex.def Info: data_collection/summary/spikyangel.png  used on input line 113.
+(pdftex.def)             Requested size: 216.81pt x 316.75293pt.
+
+Overfull \hbox (18.67079pt too wide) in paragraph at lines 104--117
+[][]   [] 
+ []
+
+)) [21] [22 <./data_collection/v1_badeg_1.png> <./data_collection/v1_badeg_2.png> <./data_collection/v1_badeg_3.png> <./data_collection/v1_badeg_4.png>] [23 <./data_collection/v1_qual_header.png> <./data_collection/v1_qual_q9_1.png> <./data_collection/v1_qual_q9_2.png>] [24 <./data_collection/version2/v2annofeb1.png> <./data_collection/version2/v2annofeb4.png>] [25 <./data_collection/version2/v2anno.png>] [26 <./data_collection/version2/v2annoPop.png> <./data_collection/version2/v2requirement.png>] [27 <./data_collection/version2/v2example2.png> <./data_collection/version2/v2example1.png>] [28 <./data_collection/version2/v2qualQ3.png>] [29 <./dataset_image/word_freq_face.png>] [30 <./data_collection/summary/spikyface.png> <./data_collection/summary/spikyangel.png>]
 Chapter 4.
 (./method.tex
-<modeling/angel340.png, id=540, 256.96pt x 256.96pt>
+<modeling/angel340.png, id=555, 256.96pt x 256.96pt>
 File: modeling/angel340.png Graphic file (type png)
 <use modeling/angel340.png>
 Package pdftex.def Info: modeling/angel340.png  used on input line 8.
 (pdftex.def)             Requested size: 108.405pt x 108.40472pt.
-<modeling/angel389.png, id=541, 256.96pt x 256.96pt>
+<modeling/angel389.png, id=556, 256.96pt x 256.96pt>
 File: modeling/angel389.png Graphic file (type png)
 <use modeling/angel389.png>
 Package pdftex.def Info: modeling/angel389.png  used on input line 14.
@@ -1029,24 +1105,24 @@ Overfull \hbox (2.22221pt too wide) in paragraph at lines 6--18
 [][] [] 
  []
 
-[29
+[31
 
  <./modeling/angel340.png (PNG copy)> <./modeling/angel389.png (PNG copy)>]
-<modeling/CLIP.png, id=559, 1088.065pt x 722.7pt>
+<modeling/CLIP.png, id=574, 1088.065pt x 722.7pt>
 File: modeling/CLIP.png Graphic file (type png)
 <use modeling/CLIP.png>
 Package pdftex.def Info: modeling/CLIP.png  used on input line 61.
 (pdftex.def)             Requested size: 303.53267pt x 201.60474pt.
- [30 <./modeling/CLIP.png>]
+ [32 <./modeling/CLIP.png>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [31]
-<modeling/transformer.png, id=587, 744.7825pt x 1428.33624pt>
+ [33]
+<modeling/transformer.png, id=603, 744.7825pt x 1428.33624pt>
 File: modeling/transformer.png Graphic file (type png)
 <use modeling/transformer.png>
 Package pdftex.def Info: modeling/transformer.png  used on input line 125.
 (pdftex.def)             Requested size: 108.405pt x 207.89896pt.
-<modeling/clip_text_transformer.png, id=592, 241.6227pt x 481.0773pt>
+<modeling/clip_text_transformer.png, id=608, 241.6227pt x 481.0773pt>
 File: modeling/clip_text_transformer.png Graphic file (type png)
 <use modeling/clip_text_transformer.png>
 Package pdftex.def Info: modeling/clip_text_transformer.png  used on input line 132.
@@ -1056,13 +1132,13 @@ Overfull \hbox (18.67079pt too wide) in paragraph at lines 123--136
 [][]   [] 
  []
 
-[32 <./modeling/transformer.png> <./modeling/clip_text_transformer.png>]
-<modeling/selfAttention.png, id=622, 107.2005pt x 212.9556pt>
+[34 <./modeling/transformer.png> <./modeling/clip_text_transformer.png>]
+<modeling/selfAttention.png, id=637, 107.2005pt x 212.9556pt>
 File: modeling/selfAttention.png Graphic file (type png)
 <use modeling/selfAttention.png>
 Package pdftex.def Info: modeling/selfAttention.png  used on input line 149.
 (pdftex.def)             Requested size: 65.04366pt x 129.21384pt.
-<modeling/multiHeadAttention.png, id=623, 201.1515pt x 308.8338pt>
+<modeling/multiHeadAttention.png, id=638, 201.1515pt x 308.8338pt>
 File: modeling/multiHeadAttention.png Graphic file (type png)
 <use modeling/multiHeadAttention.png>
 Package pdftex.def Info: modeling/multiHeadAttention.png  used on input line 153.
@@ -1075,33 +1151,33 @@ Overfull \hbox (2.22221pt too wide) in paragraph at lines 147--155
 
 Underfull \vbox (badness 2197) has occurred while \output is active []
 
- [33 <./modeling/selfAttention.png> <./modeling/multiHeadAttention.png>]
-<modeling/visionTransformer.png, id=651, 799.3062pt x 403.62794pt>
+ [35 <./modeling/selfAttention.png> <./modeling/multiHeadAttention.png>]
+<modeling/visionTransformer.png, id=666, 799.3062pt x 403.62794pt>
 File: modeling/visionTransformer.png Graphic file (type png)
 <use modeling/visionTransformer.png>
 Package pdftex.def Info: modeling/visionTransformer.png  used on input line 200.
 (pdftex.def)             Requested size: 303.53267pt x 153.2755pt.
- [34 <./modeling/visionTransformer.png>] [35]
+ [36 <./modeling/visionTransformer.png>] [37]
 LaTeX Font Info:    Trying to load font information for U+bbm on input line 258.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/bbm-macros/ubbm.fd
 File: ubbm.fd 1999/03/15 V 1.2 Font definition for bbm font - TH
-)) [36]
+)) [38]
 Chapter 5.
 (./results.tex
 Underfull \vbox (badness 1082) has occurred while \output is active []
 
- [37
+ [39
 
 ]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [38]
-<results/contrasting_pair2_color_19.png, id=706, 341.275pt x 341.275pt>
+ [40]
+<results/contrasting_pair2_color_19.png, id=721, 341.275pt x 341.275pt>
 File: results/contrasting_pair2_color_19.png Graphic file (type png)
 <use results/contrasting_pair2_color_19.png>
 Package pdftex.def Info: results/contrasting_pair2_color_19.png  used on input line 55.
 (pdftex.def)             Requested size: 108.405pt x 108.40308pt.
-<results/contrasting_pair2_color_102.png, id=707, 341.275pt x 341.275pt>
+<results/contrasting_pair2_color_102.png, id=722, 341.275pt x 341.275pt>
 File: results/contrasting_pair2_color_102.png Graphic file (type png)
 <use results/contrasting_pair2_color_102.png>
 Package pdftex.def Info: results/contrasting_pair2_color_102.png  used on input line 61.
@@ -1114,13 +1190,13 @@ Overfull \hbox (2.22221pt too wide) in paragraph at lines 53--65
 
 Underfull \vbox (badness 1199) has occurred while \output is active []
 
- [39 <./results/contrasting_pair2_color_19.png> <./results/contrasting_pair2_color_102.png>]
+ [41 <./results/contrasting_pair2_color_19.png> <./results/contrasting_pair2_color_102.png>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [40]) [41]
+ [42]) [43]
 Chapter 6.
 (./future.tex
-<future/future_nose_variety_392.png, id=729, 341.275pt x 341.275pt>
+<future/future_nose_variety_392.png, id=745, 341.275pt x 341.275pt>
 File: future/future_nose_variety_392.png Graphic file (type png)
 <use future/future_nose_variety_392.png>
 Package pdftex.def Info: future/future_nose_variety_392.png  used on input line 4.
@@ -1128,12 +1204,12 @@ Package pdftex.def Info: future/future_nose_variety_392.png  used on input line 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [42
+ [44
 
- <./future/future_nose_variety_392.png>]) [43]
+ <./future/future_nose_variety_392.png>]) [45]
 Appendix A.
 (./appendix_data_v1.tex
-<data_collection/host_amazon/hit_1/bad_smiley_face_ambiguous_face.png, id=743, 963.6pt x 722.7pt>
+<data_collection/host_amazon/hit_1/bad_smiley_face_ambiguous_face.png, id=759, 963.6pt x 722.7pt>
 File: data_collection/host_amazon/hit_1/bad_smiley_face_ambiguous_face.png Graphic file (type png)
 <use data_collection/host_amazon/hit_1/bad_smiley_face_ambiguous_face.png>
 Package pdftex.def Info: data_collection/host_amazon/hit_1/bad_smiley_face_ambiguous_face.png  used on input line 16.
@@ -1141,33 +1217,33 @@ Package pdftex.def Info: data_collection/host_amazon/hit_1/bad_smiley_face_ambig
 
 Underfull \vbox (badness 2653) has occurred while \output is active []
 
- [44
+ [46
 
 ]
-<data_collection/v1_requirement1_bad1.png, id=756, 1089.57062pt x 624.3325pt>
+<data_collection/v1_requirement1_bad1.png, id=771, 1089.57062pt x 624.3325pt>
 File: data_collection/v1_requirement1_bad1.png Graphic file (type png)
 <use data_collection/v1_requirement1_bad1.png>
 Package pdftex.def Info: data_collection/v1_requirement1_bad1.png  used on input line 37.
 (pdftex.def)             Requested size: 346.89731pt x 198.77113pt.
-<data_collection/v1_requirement1_bad2.png, id=757, 982.16937pt x 654.94687pt>
+<data_collection/v1_requirement1_bad2.png, id=772, 982.16937pt x 654.94687pt>
 File: data_collection/v1_requirement1_bad2.png Graphic file (type png)
 <use data_collection/v1_requirement1_bad2.png>
 Package pdftex.def Info: data_collection/v1_requirement1_bad2.png  used on input line 44.
 (pdftex.def)             Requested size: 346.89731pt x 231.32352pt.
- [45 <./data_collection/host_amazon/hit_1/bad_smiley_face_ambiguous_face.png>]
+ [47 <./data_collection/host_amazon/hit_1/bad_smiley_face_ambiguous_face.png>]
 Overfull \hbox (121.02374pt too wide) has occurred while \output is active
-\OT1/cmr/m/n/10 46 \OT1/cmr/m/sl/10 APPENDIX A.  DESIGNING THE REQUIREMENT SECTION FOR THE PROMPT-GUIDED SKETCH TEXT DATASET
+\OT1/cmr/m/n/10 48 \OT1/cmr/m/sl/10 APPENDIX A.  DESIGNING THE REQUIREMENT SECTION FOR THE PROMPT-GUIDED SKETCH TEXT DATASET
  []
 
-[46 <./data_collection/v1_requirement1_bad1.png> <./data_collection/v1_requirement1_bad2.png>]
-<data_collection/v1_requirement3_bad1.png, id=785, 806.01125pt x 399.4925pt>
+[48 <./data_collection/v1_requirement1_bad1.png> <./data_collection/v1_requirement1_bad2.png>]
+<data_collection/v1_requirement3_bad1.png, id=800, 806.01125pt x 399.4925pt>
 File: data_collection/v1_requirement3_bad1.png Graphic file (type png)
 <use data_collection/v1_requirement3_bad1.png>
 Package pdftex.def Info: data_collection/v1_requirement3_bad1.png  used on input line 89.
 (pdftex.def)             Requested size: 346.89731pt x 171.9369pt.
-) (./main.bbl [47 <./data_collection/v1_requirement3_bad1.png>] [48
+) (./main.bbl [49 <./data_collection/v1_requirement3_bad1.png>] [50
 
-] [49]) [50] (./main.aux * soulpos - computing points - it may take a few seconds *
+] [51]) [52] (./main.aux * soulpos - computing points - it may take a few seconds *
 \openout4 = `main.upb'.
 
  (./main.upa))
@@ -1175,18 +1251,18 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 9548F4BE7EB528A1A1AA9F3CD7EFE79F;4018.
  ) 
 Here is how much of TeX's memory you used:
- 32673 strings out of 478268
- 649444 string characters out of 5846353
- 914139 words of memory out of 5000000
- 50076 multiletter control sequences out of 15000+600000
+ 32694 strings out of 478268
+ 650104 string characters out of 5846353
+ 930818 words of memory out of 5000000
+ 50090 multiletter control sequences out of 15000+600000
  481668 words of font info for 78 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  108i,17n,106p,1336b,963s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc} </home/erinzhang/.texlive2022/texmf-var/fonts/pk/ljfour/public/bbm/bbm10.600pk>{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/fontawesome5/fa5free2.enc}</usr/local/texlive/2022/texmf-dist/fonts/type1/public/fontawesome5/FontAwesome5Free-Solid.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on main.pdf (55 pages, 3357089 bytes).
+Output written on main.pdf (57 pages, 3592529 bytes).
 PDF statistics:
- 990 PDF objects out of 1000 (max. 8388607)
- 776 compressed objects within 8 object streams
- 190 named destinations out of 1000 (max. 500000)
- 429 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1006 PDF objects out of 1200 (max. 8388607)
+ 786 compressed objects within 8 object streams
+ 194 named destinations out of 1000 (max. 500000)
+ 439 words of extra memory for PDF output out of 10000 (max. 10000000)
 
