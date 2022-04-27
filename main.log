@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.4.11)  26 APR 2022 21:11
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.4.11)  27 APR 2022 00:13
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -772,7 +772,7 @@ Underfull \vbox (badness 4048) has occurred while \output is active []
 Chapter 1.
 (./background.tex
 Package hyperref Info: bookmark level for unknown lpcsec defaults to 0 on input line 6.
-<introduction/sketch_composition.png, id=183, 625.33624pt x 456.70625pt>
+<introduction/sketch_composition.png, id=188, 625.33624pt x 456.70625pt>
 File: introduction/sketch_composition.png Graphic file (type png)
 <use introduction/sketch_composition.png>
 Package pdftex.def Info: introduction/sketch_composition.png  used on input line 10.
@@ -794,7 +794,7 @@ Package marginnote Warning: Consecutive odd pages found.
 (marginnote)                changing the page numbering on page 1.
 
 Package marginnote Info: Using workaround for absolute page number on input line 18.
-<introduction/catFace.png, id=200, 457.71pt x 294.09875pt>
+<introduction/catFace.png, id=205, 457.71pt x 294.09875pt>
 File: introduction/catFace.png Graphic file (type png)
 <use introduction/catFace.png>
 Package pdftex.def Info: introduction/catFace.png  used on input line 21.
@@ -822,27 +822,27 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [11
 
 ]
-<data_collection/v1_empty_table.png, id=351, 1120.185pt x 543.53062pt>
+<data_collection/v1_empty_table.png, id=356, 1120.185pt x 543.53062pt>
 File: data_collection/v1_empty_table.png Graphic file (type png)
 <use data_collection/v1_empty_table.png>
 Package pdftex.def Info: data_collection/v1_empty_table.png  used on input line 19.
 (pdftex.def)             Requested size: 325.215pt x 157.80229pt.
-<data_collection/v1_before_enter_text.png, id=352, 1110.64937pt x 534.49687pt>
+<data_collection/v1_before_enter_text.png, id=357, 1110.64937pt x 534.49687pt>
 File: data_collection/v1_before_enter_text.png Graphic file (type png)
 <use data_collection/v1_before_enter_text.png>
 Package pdftex.def Info: data_collection/v1_before_enter_text.png  used on input line 25.
 (pdftex.def)             Requested size: 325.215pt x 156.50893pt.
-<data_collection/v1_after_enter_text.png, id=353, 1118.1775pt x 537.00626pt>
+<data_collection/v1_after_enter_text.png, id=358, 1118.1775pt x 537.00626pt>
 File: data_collection/v1_after_enter_text.png Graphic file (type png)
 <use data_collection/v1_after_enter_text.png>
 Package pdftex.def Info: data_collection/v1_after_enter_text.png  used on input line 31.
 (pdftex.def)             Requested size: 325.215pt x 156.18669pt.
-<data_collection/v1_before_delete.png, id=354, 1103.62312pt x 531.9875pt>
+<data_collection/v1_before_delete.png, id=359, 1103.62312pt x 531.9875pt>
 File: data_collection/v1_before_delete.png Graphic file (type png)
 <use data_collection/v1_before_delete.png>
 Package pdftex.def Info: data_collection/v1_before_delete.png  used on input line 40.
 (pdftex.def)             Requested size: 346.89731pt x 167.21977pt.
-<data_collection/v1_after_delete.png, id=355, 1099.10625pt x 533.995pt>
+<data_collection/v1_after_delete.png, id=360, 1099.10625pt x 533.995pt>
 File: data_collection/v1_after_delete.png Graphic file (type png)
 <use data_collection/v1_after_delete.png>
 Package pdftex.def Info: data_collection/v1_after_delete.png  used on input line 45.
@@ -851,134 +851,109 @@ Package pdftex.def Info: data_collection/v1_after_delete.png  used on input line
 Underfull \vbox (badness 2293) has occurred while \output is active []
 
  [13 <./data_collection/v1_empty_table.png> <./data_collection/v1_before_enter_text.png> <./data_collection/v1_after_enter_text.png>]
-<data_collection/v1_instruction.png, id=373, 1103.62312pt x 321.2pt>
+<data_collection/v1_instruction.png, id=378, 1103.62312pt x 321.2pt>
 File: data_collection/v1_instruction.png Graphic file (type png)
 <use data_collection/v1_instruction.png>
 Package pdftex.def Info: data_collection/v1_instruction.png  used on input line 63.
 (pdftex.def)             Requested size: 433.62pt x 126.2036pt.
  [14 <./data_collection/v1_before_delete.png> <./data_collection/v1_after_delete.png>]
-<data_collection/v1_requirement.png, id=388, 1076.02pt x 610.28pt>
+<data_collection/v1_requirement.png, id=393, 1076.02pt x 610.28pt>
 File: data_collection/v1_requirement.png Graphic file (type png)
 <use data_collection/v1_requirement.png>
 Package pdftex.def Info: data_collection/v1_requirement.png  used on input line 86.
 (pdftex.def)             Requested size: 433.62pt x 245.93285pt.
-<data_collection/v1_badeg_1.png, id=389, 1093.08376pt x 455.7025pt>
+<data_collection/v1_badeg_1.png, id=394, 1093.08376pt x 455.7025pt>
 File: data_collection/v1_badeg_1.png Graphic file (type png)
 <use data_collection/v1_badeg_1.png>
 Package pdftex.def Info: data_collection/v1_badeg_1.png  used on input line 94.
 (pdftex.def)             Requested size: 346.89731pt x 144.61787pt.
-<data_collection/v1_badeg_2.png, id=390, 1085.05376pt x 431.6125pt>
+<data_collection/v1_badeg_2.png, id=395, 1085.05376pt x 431.6125pt>
 File: data_collection/v1_badeg_2.png Graphic file (type png)
 <use data_collection/v1_badeg_2.png>
 Package pdftex.def Info: data_collection/v1_badeg_2.png  used on input line 99.
 (pdftex.def)             Requested size: 346.89731pt x 137.98709pt.
-<data_collection/v1_badeg_3.png, id=391, 1085.05376pt x 431.6125pt>
+<data_collection/v1_badeg_3.png, id=396, 1085.05376pt x 431.6125pt>
 File: data_collection/v1_badeg_3.png Graphic file (type png)
 <use data_collection/v1_badeg_3.png>
 Package pdftex.def Info: data_collection/v1_badeg_3.png  used on input line 104.
 (pdftex.def)             Requested size: 346.89731pt x 137.98709pt.
-<data_collection/v1_badeg_4.png, id=392, 1085.05376pt x 431.6125pt>
+<data_collection/v1_badeg_4.png, id=397, 1085.05376pt x 431.6125pt>
 File: data_collection/v1_badeg_4.png Graphic file (type png)
 <use data_collection/v1_badeg_4.png>
 Package pdftex.def Info: data_collection/v1_badeg_4.png  used on input line 109.
 (pdftex.def)             Requested size: 346.89731pt x 137.98709pt.
  (./data_v1_qual.tex
-<data_collection/v1_qual_header.png, id=393, 1095.09125pt x 284.06125pt>
+<data_collection/v1_qual_header.png, id=398, 1095.09125pt x 284.06125pt>
 File: data_collection/v1_qual_header.png Graphic file (type png)
 <use data_collection/v1_qual_header.png>
 Package pdftex.def Info: data_collection/v1_qual_header.png  used on input line 5.
 (pdftex.def)             Requested size: 433.62pt x 112.47818pt.
-<data_collection/v1_qual_q9_1.png, id=394, 856.19875pt x 454.69875pt>
+<data_collection/v1_qual_q9_1.png, id=399, 856.19875pt x 454.69875pt>
 File: data_collection/v1_qual_q9_1.png Graphic file (type png)
 <use data_collection/v1_qual_q9_1.png>
 Package pdftex.def Info: data_collection/v1_qual_q9_1.png  used on input line 13.
 (pdftex.def)             Requested size: 346.89731pt x 184.22136pt.
-<data_collection/v1_qual_q9_2.png, id=395, 856.19875pt x 408.52625pt>
+<data_collection/v1_qual_q9_2.png, id=400, 856.19875pt x 408.52625pt>
 File: data_collection/v1_qual_q9_2.png Graphic file (type png)
 <use data_collection/v1_qual_q9_2.png>
 Package pdftex.def Info: data_collection/v1_qual_q9_2.png  used on input line 18.
 (pdftex.def)             Requested size: 346.89731pt x 165.51456pt.
  [15 <./data_collection/v1_instruction.png>]) (./data_v1_deploy.tex [16 <./data_collection/v1_requirement.png>])) (./data_v2.tex [17]
-<data_collection/pilot_02_01_annotation_1.png, id=420, 1921.1775pt x 1318.9275pt>
-File: data_collection/pilot_02_01_annotation_1.png Graphic file (type png)
-<use data_collection/pilot_02_01_annotation_1.png>
-Package pdftex.def Info: data_collection/pilot_02_01_annotation_1.png  used on input line 21.
-(pdftex.def)             Requested size: 346.89731pt x 238.14134pt.
-<data_collection/pilot_02_04_annotation.png, id=421, 2109.8825pt x 1200.485pt>
-File: data_collection/pilot_02_04_annotation.png Graphic file (type png)
-<use data_collection/pilot_02_04_annotation.png>
-Package pdftex.def Info: data_collection/pilot_02_04_annotation.png  used on input line 29.
-(pdftex.def)             Requested size: 346.89731pt x 197.3754pt.
-File: data_collection/pilot_02_04_annotation.png Graphic file (type png)
-<use data_collection/pilot_02_04_annotation.png>
-Package pdftex.def Info: data_collection/pilot_02_04_annotation.png  used on input line 40.
-(pdftex.def)             Requested size: 346.89731pt x 197.3754pt.
-File: data_collection/pilot_02_04_annotation.png Graphic file (type png)
-<use data_collection/pilot_02_04_annotation.png>
-Package pdftex.def Info: data_collection/pilot_02_04_annotation.png  used on input line 48.
-(pdftex.def)             Requested size: 346.89731pt x 197.3754pt.
+<data_collection/version2/v2annofeb1.png, id=425, 1761.58125pt x 1096.095pt>
+File: data_collection/version2/v2annofeb1.png Graphic file (type png)
+<use data_collection/version2/v2annofeb1.png>
+Package pdftex.def Info: data_collection/version2/v2annofeb1.png  used on input line 20.
+(pdftex.def)             Requested size: 346.89731pt x 215.83665pt.
+<data_collection/version2/v2annofeb4.png, id=426, 1839.87375pt x 1035.87pt>
+File: data_collection/version2/v2annofeb4.png Graphic file (type png)
+<use data_collection/version2/v2annofeb4.png>
+Package pdftex.def Info: data_collection/version2/v2annofeb4.png  used on input line 27.
+(pdftex.def)             Requested size: 346.89731pt x 195.29996pt.
+<data_collection/version2/v2anno.png, id=429, 1563.8425pt x 1074.0125pt>
+File: data_collection/version2/v2anno.png Graphic file (type png)
+<use data_collection/version2/v2anno.png>
+Package pdftex.def Info: data_collection/version2/v2anno.png  used on input line 44.
+(pdftex.def)             Requested size: 346.89731pt x 238.23366pt.
+<data_collection/version2/v2annoPop.png, id=438, 2734.215pt x 1527.7075pt>
+File: data_collection/version2/v2annoPop.png Graphic file (type png)
+<use data_collection/version2/v2annoPop.png>
+Package pdftex.def Info: data_collection/version2/v2annoPop.png  used on input line 69.
+(pdftex.def)             Requested size: 433.62pt x 242.27028pt.
  [18]
-<pantanal.jpeg, id=436, 1204.5pt x 903.375pt>
-File: pantanal.jpeg Graphic file (type jpg)
-<use pantanal.jpeg>
-Package pdftex.def Info: pantanal.jpeg  used on input line 80.
-(pdftex.def)             Requested size: 173.44865pt x 130.08315pt.
-File: pantanal.jpeg Graphic file (type jpg)
-<use pantanal.jpeg>
-Package pdftex.def Info: pantanal.jpeg  used on input line 86.
-(pdftex.def)             Requested size: 173.44865pt x 130.08315pt.
-File: pantanal.jpeg Graphic file (type jpg)
-<use pantanal.jpeg>
-Package pdftex.def Info: pantanal.jpeg  used on input line 93.
-(pdftex.def)             Requested size: 173.44865pt x 130.08315pt.
-File: pantanal.jpeg Graphic file (type jpg)
-<use pantanal.jpeg>
-Package pdftex.def Info: pantanal.jpeg  used on input line 99.
-(pdftex.def)             Requested size: 173.44865pt x 130.08315pt.
-File: pantanal.jpeg Graphic file (type jpg)
-<use pantanal.jpeg>
-Package pdftex.def Info: pantanal.jpeg  used on input line 106.
-(pdftex.def)             Requested size: 173.44865pt x 130.08315pt.
-File: pantanal.jpeg Graphic file (type jpg)
-<use pantanal.jpeg>
-Package pdftex.def Info: pantanal.jpeg  used on input line 112.
-(pdftex.def)             Requested size: 173.44865pt x 130.08315pt.
+<data_collection/version2/v2requirement.png, id=451, 1800.7275pt x 491.8375pt>
+File: data_collection/version2/v2requirement.png Graphic file (type png)
+<use data_collection/version2/v2requirement.png>
+Package pdftex.def Info: data_collection/version2/v2requirement.png  used on input line 82.
+(pdftex.def)             Requested size: 433.62pt x 118.43365pt.
+<data_collection/version2/v2example2.png, id=454, 1901.1025pt x 1419.3025pt>
+File: data_collection/version2/v2example2.png Graphic file (type png)
+<use data_collection/version2/v2example2.png>
+Package pdftex.def Info: data_collection/version2/v2example2.png  used on input line 90.
+(pdftex.def)             Requested size: 346.89731pt x 258.97182pt.
+<data_collection/version2/v2example1.png, id=455, 1897.0875pt x 1278.7775pt>
+File: data_collection/version2/v2example1.png Graphic file (type png)
+<use data_collection/version2/v2example1.png>
+Package pdftex.def Info: data_collection/version2/v2example1.png  used on input line 96.
+(pdftex.def)             Requested size: 346.89731pt x 233.81886pt.
 
-Overfull \hbox (2.22221pt too wide) in paragraph at lines 78--116
-[][] [] 
+Overfull \hbox (2.22221pt too wide) in paragraph at lines 88--98
+ [] 
  []
-
-
-Overfull \hbox (2.22221pt too wide) in paragraph at lines 78--116
-[] [] 
- []
-
-
-Overfull \hbox (2.22221pt too wide) in paragraph at lines 78--116
-[] [] 
- []
-
-File: pantanal.jpeg Graphic file (type jpg)
-<use pantanal.jpeg>
-Package pdftex.def Info: pantanal.jpeg  used on input line 121.
-(pdftex.def)             Requested size: 346.89731pt x 260.16629pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
 
 (./data_v2_qual.tex
-File: pantanal.jpeg Graphic file (type jpg)
-<use pantanal.jpeg>
-Package pdftex.def Info: pantanal.jpeg  used on input line 5.
-(pdftex.def)             Requested size: 346.89731pt x 260.16629pt.
+<data_collection/version2/v2qualQ3.png, id=462, 2079.77pt x 1108.14pt>
+File: data_collection/version2/v2qualQ3.png Graphic file (type png)
+<use data_collection/version2/v2qualQ3.png>
+Package pdftex.def Info: data_collection/version2/v2qualQ3.png  used on input line 11.
+(pdftex.def)             Requested size: 433.62pt x 231.0423pt.
+) (./data_v2_deploy.tex
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-) (./data_v2_deploy.tex [19])) (./final_data.tex
+ [19])) (./final_data.tex
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [20]
-<dataset_image/word_freq_face.png, id=458, 1209.51875pt x 1122.1925pt>
+<dataset_image/word_freq_face.png, id=485, 1209.51875pt x 1122.1925pt>
 File: dataset_image/word_freq_face.png Graphic file (type png)
 <use dataset_image/word_freq_face.png>
 Package pdftex.def Info: dataset_image/word_freq_face.png  used on input line 4.
@@ -1052,15 +1027,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 43--43
 []|\OT1/cmr/m/n/9 Number of con-
  []
 
-)) [21] [22 <./data_collection/v1_badeg_1.png> <./data_collection/v1_badeg_2.png> <./data_collection/v1_badeg_3.png> <./data_collection/v1_badeg_4.png>] [23 <./data_collection/v1_qual_header.png> <./data_collection/v1_qual_q9_1.png> <./data_collection/v1_qual_q9_2.png>] [24 <./data_collection/pilot_02_01_annotation_1.png> <./data_collection/pilot_02_04_annotation.png>] [25] [26 <./pantanal.jpeg>] [27] [28 <./dataset_image/word_freq_face.png>]
+)) [21] [22 <./data_collection/v1_badeg_1.png> <./data_collection/v1_badeg_2.png> <./data_collection/v1_badeg_3.png> <./data_collection/v1_badeg_4.png>] [23 <./data_collection/v1_qual_header.png> <./data_collection/v1_qual_q9_1.png> <./data_collection/v1_qual_q9_2.png>] [24 <./data_collection/version2/v2annofeb1.png> <./data_collection/version2/v2annofeb4.png>] [25 <./data_collection/version2/v2anno.png>] [26 <./data_collection/version2/v2annoPop.png> <./data_collection/version2/v2requirement.png>] [27 <./data_collection/version2/v2example2.png> <./data_collection/version2/v2example1.png>] [28 <./data_collection/version2/v2qualQ3.png>] [29 <./dataset_image/word_freq_face.png>]
 Chapter 4.
 (./method.tex
-<modeling/angel340.png, id=506, 256.96pt x 256.96pt>
+<modeling/angel340.png, id=544, 256.96pt x 256.96pt>
 File: modeling/angel340.png Graphic file (type png)
 <use modeling/angel340.png>
 Package pdftex.def Info: modeling/angel340.png  used on input line 8.
 (pdftex.def)             Requested size: 108.405pt x 108.40472pt.
-<modeling/angel389.png, id=507, 256.96pt x 256.96pt>
+<modeling/angel389.png, id=545, 256.96pt x 256.96pt>
 File: modeling/angel389.png Graphic file (type png)
 <use modeling/angel389.png>
 Package pdftex.def Info: modeling/angel389.png  used on input line 14.
@@ -1070,24 +1045,24 @@ Overfull \hbox (2.22221pt too wide) in paragraph at lines 6--18
 [][] [] 
  []
 
-[29
+[30
 
  <./modeling/angel340.png (PNG copy)> <./modeling/angel389.png (PNG copy)>]
-<modeling/CLIP.png, id=525, 1088.065pt x 722.7pt>
+<modeling/CLIP.png, id=563, 1088.065pt x 722.7pt>
 File: modeling/CLIP.png Graphic file (type png)
 <use modeling/CLIP.png>
 Package pdftex.def Info: modeling/CLIP.png  used on input line 61.
 (pdftex.def)             Requested size: 303.53267pt x 201.60474pt.
- [30 <./modeling/CLIP.png>]
+ [31 <./modeling/CLIP.png>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [31]
-<modeling/transformer.png, id=553, 744.7825pt x 1428.33624pt>
+ [32]
+<modeling/transformer.png, id=592, 744.7825pt x 1428.33624pt>
 File: modeling/transformer.png Graphic file (type png)
 <use modeling/transformer.png>
 Package pdftex.def Info: modeling/transformer.png  used on input line 125.
 (pdftex.def)             Requested size: 108.405pt x 207.89896pt.
-<modeling/clip_text_transformer.png, id=558, 241.6227pt x 481.0773pt>
+<modeling/clip_text_transformer.png, id=597, 241.6227pt x 481.0773pt>
 File: modeling/clip_text_transformer.png Graphic file (type png)
 <use modeling/clip_text_transformer.png>
 Package pdftex.def Info: modeling/clip_text_transformer.png  used on input line 132.
@@ -1097,13 +1072,13 @@ Overfull \hbox (18.67079pt too wide) in paragraph at lines 123--136
 [][]   [] 
  []
 
-[32 <./modeling/transformer.png> <./modeling/clip_text_transformer.png>]
-<modeling/selfAttention.png, id=587, 107.2005pt x 212.9556pt>
+[33 <./modeling/transformer.png> <./modeling/clip_text_transformer.png>]
+<modeling/selfAttention.png, id=626, 107.2005pt x 212.9556pt>
 File: modeling/selfAttention.png Graphic file (type png)
 <use modeling/selfAttention.png>
 Package pdftex.def Info: modeling/selfAttention.png  used on input line 149.
 (pdftex.def)             Requested size: 65.04366pt x 129.21384pt.
-<modeling/multiHeadAttention.png, id=588, 201.1515pt x 308.8338pt>
+<modeling/multiHeadAttention.png, id=627, 201.1515pt x 308.8338pt>
 File: modeling/multiHeadAttention.png Graphic file (type png)
 <use modeling/multiHeadAttention.png>
 Package pdftex.def Info: modeling/multiHeadAttention.png  used on input line 153.
@@ -1116,33 +1091,33 @@ Overfull \hbox (2.22221pt too wide) in paragraph at lines 147--155
 
 Underfull \vbox (badness 2197) has occurred while \output is active []
 
- [33 <./modeling/selfAttention.png> <./modeling/multiHeadAttention.png>]
-<modeling/visionTransformer.png, id=617, 799.3062pt x 403.62794pt>
+ [34 <./modeling/selfAttention.png> <./modeling/multiHeadAttention.png>]
+<modeling/visionTransformer.png, id=655, 799.3062pt x 403.62794pt>
 File: modeling/visionTransformer.png Graphic file (type png)
 <use modeling/visionTransformer.png>
 Package pdftex.def Info: modeling/visionTransformer.png  used on input line 200.
 (pdftex.def)             Requested size: 303.53267pt x 153.2755pt.
- [34 <./modeling/visionTransformer.png>] [35]
+ [35 <./modeling/visionTransformer.png>] [36]
 LaTeX Font Info:    Trying to load font information for U+bbm on input line 258.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/bbm-macros/ubbm.fd
 File: ubbm.fd 1999/03/15 V 1.2 Font definition for bbm font - TH
-)) [36]
+)) [37]
 Chapter 5.
 (./results.tex
 Underfull \vbox (badness 1082) has occurred while \output is active []
 
- [37
+ [38
 
 ]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [38]
-<results/contrasting_pair2_color_19.png, id=672, 341.275pt x 341.275pt>
+ [39]
+<results/contrasting_pair2_color_19.png, id=710, 341.275pt x 341.275pt>
 File: results/contrasting_pair2_color_19.png Graphic file (type png)
 <use results/contrasting_pair2_color_19.png>
 Package pdftex.def Info: results/contrasting_pair2_color_19.png  used on input line 55.
 (pdftex.def)             Requested size: 108.405pt x 108.40308pt.
-<results/contrasting_pair2_color_102.png, id=673, 341.275pt x 341.275pt>
+<results/contrasting_pair2_color_102.png, id=711, 341.275pt x 341.275pt>
 File: results/contrasting_pair2_color_102.png Graphic file (type png)
 <use results/contrasting_pair2_color_102.png>
 Package pdftex.def Info: results/contrasting_pair2_color_102.png  used on input line 61.
@@ -1155,13 +1130,13 @@ Overfull \hbox (2.22221pt too wide) in paragraph at lines 53--65
 
 Underfull \vbox (badness 1199) has occurred while \output is active []
 
- [39 <./results/contrasting_pair2_color_19.png> <./results/contrasting_pair2_color_102.png>]
+ [40 <./results/contrasting_pair2_color_19.png> <./results/contrasting_pair2_color_102.png>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [40]) [41]
+ [41]) [42]
 Chapter 6.
 (./future.tex
-<future/future_nose_variety_392.png, id=695, 341.275pt x 341.275pt>
+<future/future_nose_variety_392.png, id=734, 341.275pt x 341.275pt>
 File: future/future_nose_variety_392.png Graphic file (type png)
 <use future/future_nose_variety_392.png>
 Package pdftex.def Info: future/future_nose_variety_392.png  used on input line 4.
@@ -1169,12 +1144,12 @@ Package pdftex.def Info: future/future_nose_variety_392.png  used on input line 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [42
+ [43
 
- <./future/future_nose_variety_392.png>]) [43]
+ <./future/future_nose_variety_392.png>]) [44]
 Appendix A.
 (./appendix_data_v1.tex
-<data_collection/host_amazon/hit_1/bad_smiley_face_ambiguous_face.png, id=708, 963.6pt x 722.7pt>
+<data_collection/host_amazon/hit_1/bad_smiley_face_ambiguous_face.png, id=748, 963.6pt x 722.7pt>
 File: data_collection/host_amazon/hit_1/bad_smiley_face_ambiguous_face.png Graphic file (type png)
 <use data_collection/host_amazon/hit_1/bad_smiley_face_ambiguous_face.png>
 Package pdftex.def Info: data_collection/host_amazon/hit_1/bad_smiley_face_ambiguous_face.png  used on input line 16.
@@ -1182,52 +1157,57 @@ Package pdftex.def Info: data_collection/host_amazon/hit_1/bad_smiley_face_ambig
 
 Underfull \vbox (badness 2653) has occurred while \output is active []
 
- [44
+ [45
 
 ]
-<data_collection/v1_requirement1_bad1.png, id=722, 1089.57062pt x 624.3325pt>
+<data_collection/v1_requirement1_bad1.png, id=760, 1089.57062pt x 624.3325pt>
 File: data_collection/v1_requirement1_bad1.png Graphic file (type png)
 <use data_collection/v1_requirement1_bad1.png>
 Package pdftex.def Info: data_collection/v1_requirement1_bad1.png  used on input line 37.
 (pdftex.def)             Requested size: 346.89731pt x 198.77113pt.
-<data_collection/v1_requirement1_bad2.png, id=723, 982.16937pt x 654.94687pt>
+<data_collection/v1_requirement1_bad2.png, id=761, 982.16937pt x 654.94687pt>
 File: data_collection/v1_requirement1_bad2.png Graphic file (type png)
 <use data_collection/v1_requirement1_bad2.png>
 Package pdftex.def Info: data_collection/v1_requirement1_bad2.png  used on input line 44.
 (pdftex.def)             Requested size: 346.89731pt x 231.32352pt.
- [45 <./data_collection/host_amazon/hit_1/bad_smiley_face_ambiguous_face.png>]
+
 Overfull \hbox (121.02374pt too wide) has occurred while \output is active
 \OT1/cmr/m/n/10 46 \OT1/cmr/m/sl/10 APPENDIX A.  DESIGNING THE REQUIREMENT SECTION FOR THE PROMPT-GUIDED SKETCH TEXT DATASET
  []
 
-[46 <./data_collection/v1_requirement1_bad1.png> <./data_collection/v1_requirement1_bad2.png>]
-<data_collection/v1_requirement3_bad1.png, id=751, 806.01125pt x 399.4925pt>
+[46 <./data_collection/host_amazon/hit_1/bad_smiley_face_ambiguous_face.png>] [47 <./data_collection/v1_requirement1_bad1.png> <./data_collection/v1_requirement1_bad2.png>]
+<data_collection/v1_requirement3_bad1.png, id=789, 806.01125pt x 399.4925pt>
 File: data_collection/v1_requirement3_bad1.png Graphic file (type png)
 <use data_collection/v1_requirement3_bad1.png>
 Package pdftex.def Info: data_collection/v1_requirement3_bad1.png  used on input line 89.
 (pdftex.def)             Requested size: 346.89731pt x 171.9369pt.
-) (./main.bbl [47 <./data_collection/v1_requirement3_bad1.png>] [48
+) (./main.bbl
+Overfull \hbox (121.02374pt too wide) has occurred while \output is active
+\OT1/cmr/m/n/10 48 \OT1/cmr/m/sl/10 APPENDIX A.  DESIGNING THE REQUIREMENT SECTION FOR THE PROMPT-GUIDED SKETCH TEXT DATASET
+ []
 
-] [49]) [50] (./main.aux * soulpos - computing points - it may take a few seconds *
+[48 <./data_collection/v1_requirement3_bad1.png>] [49
+
+] [50]) [51] (./main.aux * soulpos - computing points - it may take a few seconds *
 \openout4 = `main.upb'.
 
  (./main.upa))
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 95E9907859C12F26FDF5F5351C14FB07;3970.
+(rerunfilecheck)             Checksum: DDBEF11A4E50CD6BFC6EEF0B651EDEC2;4115.
  ) 
 Here is how much of TeX's memory you used:
- 32660 strings out of 478268
- 648523 string characters out of 5846353
- 911328 words of memory out of 5000000
- 50063 multiletter control sequences out of 15000+600000
+ 32684 strings out of 478268
+ 649627 string characters out of 5846353
+ 912069 words of memory out of 5000000
+ 50080 multiletter control sequences out of 15000+600000
  481668 words of font info for 78 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  108i,17n,106p,1336b,963s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc} </home/erinzhang/.texlive2022/texmf-var/fonts/pk/ljfour/public/bbm/bbm10.600pk>{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/fontawesome5/fa5free2.enc}</usr/local/texlive/2022/texmf-dist/fonts/type1/public/fontawesome5/FontAwesome5Free-Solid.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on main.pdf (55 pages, 3694957 bytes).
+Output written on main.pdf (56 pages, 3358314 bytes).
 PDF statistics:
- 956 PDF objects out of 1000 (max. 8388607)
- 762 compressed objects within 8 object streams
- 192 named destinations out of 1000 (max. 500000)
- 404 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 995 PDF objects out of 1000 (max. 8388607)
+ 780 compressed objects within 8 object streams
+ 194 named destinations out of 1000 (max. 500000)
+ 437 words of extra memory for PDF output out of 10000 (max. 10000000)
 
