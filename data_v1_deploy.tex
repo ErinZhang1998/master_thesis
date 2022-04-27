@@ -2,28 +2,25 @@
 \subsection{Deployment Results}
 % In order to determine how feasible the task is, we first deployed a version among lab members, and we obtained 55 drawings along with their annotations. All 55 drawings are shown in Figure v1.results.2. Some examples of step annotations are shown in Figure v1.results.3.  
 % [Figure v1.results.2: 55 drawings from lab deployment (see jupyter notebook oct\_28\_trial\_analysis)]
-% [Figure v1.results.3: 3 examples?]
+% [Figure v1.results.3: 3 examples of drawings with steps?]
 In our first pilot, we used prompts in the forms of \textit{adjective}$\times$\textit{noun}. 
 The list of adjectives includes: \textit{happy, sad, surprised, sleepy, love-struck, evil}; the list of nouns includes: 
 \textit{person, kid, cat, bear, dog, sheep, jellyfish, cup of bubble tea, apple, burger, sun, moon, star}. 
 We want to see what sketches and text descriptions annotators would provide for prompts that ask for imaginative beings not in this world and include novel compositions of unrelated concepts, such as \textit{evil apple} or \textit{love-struck moon}. 
 With these creative prompts, we hope to collect data that contain interesting compositions of the same geometric shapes and descriptions across different objects. 
 We can then learn models that can, for example, generate circles to be different parts in different objects: eyes, moon, cherries, and angel halo. 
-% Also, there is an aspect of transferring the same language to different context, such as in what ways the adjectives demonstrate the same concept across different object and in what ways they adapt and show different visual qualities when used on different objects. 
 
-Since we only deployed , we were able to manually examine every sketch, and we found many creative sketches. 
-Turkers take a long time, about 30 minutes on average, to complete one sketch and its text annotations. 
+Since we only collected 55 sketches, we were able to manually examine every sketch, and we found many creative sketches [FIGURE]. 
+However, one issue was that turkers took a long time, on average 30 minutes, to complete one sketch and provide descriptions. 
 
+The second problem was that it was difficult to understand how some annotators interpreted the prompts through their sketches. [FIGURE]
+Indeed, sketching is by its nature very subjective, a common challenge in creative AI.    
 
-% What surprised us was the amount of time turkers spent on the task. Histograms of time each annotator spent on the task is illustrated in Figure v1.results.1. Statistics of the distributions are shown in Table v1.results.1. 
-% The discrepancy might be caused by the fact that lab members with their background in computer science have implicit understandings of what kind of quality data are needed to train ML models.   
+The third problem, the most concerning one, was that the part descriptions did not align well with the sketches: some annotators failed to describe every part they drew in a step, or they described parts not in the annotated step. [FIGURE]    
+
 
 % [Figure v1.results.4: drawings from the amt pilot]
 % [Figure v1.results.1: a: oct 28 lab deployment. b: dec 28 amt deployment]
 % [Table v1.results.1: comparing the statistics of lab vs. amt deployment]
-
-Drawing does not illustrate the prompt well. The quality of the drawings are greatly influenced by how well the annotator can understand the prompts. Drawing is by its nature very subjective, so when we were examining through the sketches that we collected, we were not able to understand in what ways some sketches convey the prompts. 
-[Figure v1.results.4: some examples of sketches that cannot illustrate the prompt from our perspective]
-
-% In violation of DQ \ref{data_design_2} and \ref{data_design_3}. Another problem was that annotators often fail to describe every part they drew in one step, or the descriptions miss some parts in the step, or the description does not align well with the drawings.   
-% [Figure v1.results.5: some examples of misaligned descriptions]
+% Histograms of time each annotator spent on the task is illustrated in Figure v1.results.1. Statistics of the distributions are shown in Table v1.results.1. 
+% The discrepancy might be caused by the fact that lab members with their background in computer science have implicit understandings of what kind of quality data are needed to train ML models.   
