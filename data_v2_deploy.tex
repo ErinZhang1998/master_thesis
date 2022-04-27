@@ -1,34 +1,31 @@
 
-\subsection{Results}
+% \subsection{Results}
 
-\subsubsection{Pilot 1}
-In order to work out the data collection process, we chose the angel category and try to manually examine the sketches and categorize them based on 
+% \subsubsection{Pilot 1}
+% In order to work out the data collection process, we chose the angel category and try to manually examine the sketches and categorize them based on 
 
+% One purpose of the pilot is to estimate the amount of money that we need to spend for each task, and from Table \ref{v2.workertime}, we see that []
+% \begin{table*}[!htb]
+% \begin{minipage}[b]{1\textwidth}
+% \centering
+% \begin{tabular}{l|rrrrr}
+% \toprule
+% ~ & Max. & Min. & Mean & Med. & Std. \\
+% \midrule
+% Feb 01 Pilot  & 1 & 2 & 2 & 2 & 2   \\
+% Feb 04 Pilot  & 1 & 2 & 2 & 2 & 2  \\
+% Feb 08 Pilot  & 1 & 2 & 2 & 2 & 2  \\
+% Official Collection  & 1 & 2 & 2 & 2 & 2  \\
+% \bottomrule
+% \end{tabular}
+% \caption{Comparing time statistics of pilot task}
+% \label{v2.workertime}
+% \end{minipage}
+% \end{table*}
 
-One purpose of the pilot is to estimate the amount of money that we need to spend for each task, and from Table \ref{v2.workertime}, we see that []
-\begin{table*}[!htb]
-\begin{minipage}[b]{1\textwidth}
-\centering
-\begin{tabular}{l|rrrrr}
-\toprule
-~ & Max. & Min. & Mean & Med. & Std. \\
-\midrule
-Feb 01 Pilot  & 1 & 2 & 2 & 2 & 2   \\
-Feb 04 Pilot  & 1 & 2 & 2 & 2 & 2  \\
-Feb 08 Pilot  & 1 & 2 & 2 & 2 & 2  \\
-Official Collection  & 1 & 2 & 2 & 2 & 2  \\
-\bottomrule
-\end{tabular}
-\caption{Comparing time statistics of pilot task}
-\label{v2.workertime}
-\end{minipage}
-\end{table*}
+% For the data collection process, we decide to collect for the face category of the QuickDraw dataset, and the reason for it was mainly to echo the choice of many SOTA generative modeling works that are done on the CelebA dataset. It seems that face generation is quite a starting point for many of the generative modeling work. We have also surveyed some text-to-image synthesis methods that use datasets like (1) CUB dataset (2) MNIST (3) Omniglot. Several sketch datasets include the one from DoodlerGAN and SketchBirds. A lot of the datasets focus on one or two categories, so we decide to do the same to ensure that with our budge, we can collect a dataset that contains enough signal to train a generative ML model. 
 
-For the data collection process, we decide to collect for the face category of the QuickDraw dataset, and the reason for it was mainly to echo the choice of many SOTA generative modeling works that are done on the CelebA dataset. It seems that face generation is quite a starting point for many of the generative modeling work. We have also surveyed some text-to-image synthesis methods that use datasets like (1) CUB dataset (2) MNIST (3) Omniglot. Several sketch datasets include the one from DoodlerGAN and SketchBirds. A lot of the datasets focus on one or two categories, so we decide to do the same to ensure that with our budge, we can collect a dataset that contains enough signal to train a generative ML model. 
+% Clustering the faces, we strive to present to the annotators pairs of faces that are distinct as possible in order help them to provide good annotations. It is easier for them to grasp and understand the features of the objects if two sketches are presented in a contrasting way. 
 
-Clustering the faces, we strive to present to the annotators pairs of faces that are distinct as possible in order help them to provide good annotations. It is easier for them to grasp and understand the features of the objects if two sketches are presented in a contrasting way. 
-
-
-
-If we use CLIP to extract the visual features for the entire face sketch.
+% If we use CLIP to extract the visual features for the entire face sketch.
 

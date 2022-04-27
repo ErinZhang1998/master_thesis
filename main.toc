@@ -24,18 +24,16 @@
 \contentsline {subsubsection}{Main Task Interface}{18}{section*.28}%
 \contentsline {subsubsection}{Instruction and Requirement}{18}{section*.29}%
 \contentsline {subsubsection}{Qualification}{19}{section*.33}%
-\contentsline {subsection}{\numberline {3.2.3}Results}{20}{subsection.3.2.3}%
-\contentsline {subsubsection}{Pilot 1}{20}{section*.35}%
-\contentsline {section}{\numberline {3.3}Dataset Summary}{21}{section.3.3}%
-\contentsline {chapter}{\numberline {4}Modeling}{30}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Task Definition}{30}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Method}{31}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}Contrastive Objective}{31}{subsection.4.2.1}%
-\contentsline {subsection}{\numberline {4.2.2}Text Encoder}{33}{subsection.4.2.2}%
-\contentsline {subsection}{\numberline {4.2.3}Vision Transformer}{35}{subsection.4.2.3}%
-\contentsline {subsection}{\numberline {4.2.4}Fine-Tuning CLIP}{36}{subsection.4.2.4}%
-\contentsline {chapter}{\numberline {5}Results \& Analysis}{38}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Classification Experiment}{38}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Word Similarity Experiment}{40}{section.5.2}%
-\contentsline {chapter}{\numberline {6}Future Work}{43}{chapter.6}%
-\contentsline {chapter}{\numberline {A}Designing the Requirement Section for the Prompt-Guided Sketch Text Dataset}{45}{appendix.A}%
+\contentsline {section}{\numberline {3.3}Dataset Summary}{19}{section.3.3}%
+\contentsline {chapter}{\numberline {4}Modeling}{29}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Task Definition}{29}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Method}{30}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Contrastive Objective}{30}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Text Encoder}{32}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.3}Vision Transformer}{34}{subsection.4.2.3}%
+\contentsline {subsection}{\numberline {4.2.4}Fine-Tuning CLIP}{35}{subsection.4.2.4}%
+\contentsline {chapter}{\numberline {5}Results \& Analysis}{37}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Classification Experiment}{37}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Word Similarity Experiment}{39}{section.5.2}%
+\contentsline {chapter}{\numberline {6}Future Work}{42}{chapter.6}%
+\contentsline {chapter}{\numberline {A}Designing the Requirement Section for the Prompt-Guided Sketch Text Dataset}{44}{appendix.A}%
