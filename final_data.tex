@@ -63,8 +63,41 @@ In Table \ref{table:dataset_stats_byparts}, we present dataset statistics broken
 % \subsection{Compare with DoodlerGAN Dataset}
 The \textit{Creative Birds} and \textit{Creative Creatures} datasets collected by DoodlerGAN \citep{doodlerGAN} contain 2 categories, like ours, but there are 9k sketches in each category, and ours contains one tenth as many. Although we fall short on the number of sketches and the variety of sketching styles, we approach creativity from a completely different angle: we focus on how people compose similar basic shapes to create sketches of different categories and adapt similar language to describe different sketch parts, as explained in Section \ref{introductionChapter} and Figure \ref{introduction.composition}.  
 
-Our face sketches contain 5 different parts, and angel sketches has 7 parts; there are 7 parts in Creative Birds and 16 parts in Creative Creatures. Again, we do not annotate for as many parts as DoodlerGAN if compared directly with their dataset. However, in our dataset, every part in every sketch has at least 2 different language annotations describing the visual features, while DoodlerGAN has no language annotation. With text descriptions, in addition to part-based generative model, we can study how people compose concepts (e.g. \textit{large}$+$\textit{round}) and apply the same concepts to different semantic parts (e.g. \textit{large round eyes} and \textit{large round halo}).     
 
+
+
+\begin{figure*}[!htb]
+\begin{subfigure}{\textwidth}
+\centering
+\includegraphics[width=\linewidth]{data_collection/summary/circles_descriptions.png}  
+\end{subfigure}
+\caption{.}
+\label{datasummary.circles.varied_language}
+\end{figure*}
+
+Our face sketches contain 5 different parts, and angel sketches has 7 parts; there are 7 parts in Creative Birds and 16 parts in Creative Creatures. Again, we do not annotate for as many parts as DoodlerGAN if compared directly with their dataset. 
+However, in our dataset, every part in every sketch has at least 2 different language annotations describing the visual features, while DoodlerGAN has no language annotation. 
+With text descriptions, in addition to part-based generative model, we can study how to generate similar shapes from different text descriptions. In Figure \ref{datasummary.circles.varied_language}, we show how people describe \textit{circles} using various descriptors (the figure only contains a subset of ways describing circles).  
+In Figure \ref{datasummary.face.varied_language}, we show the variety of language in describing a simple smiley face. Similarly, an example of creative description of different parts in angel sketches is shown in Figure \ref{datasummary.angel.varied_language}.  
+
+
+\begin{figure*}[!htb]
+\begin{subfigure}{\textwidth}
+\centering
+\includegraphics[width=\linewidth]{data_collection/summary/smileyface_descriptions.png}  
+\caption{.}
+\label{datasummary.face.varied_language}
+\end{subfigure}
+\newline
+\begin{subfigure}{\textwidth}
+\centering
+\includegraphics[width=\linewidth]{data_collection/summary/angel_descriptions.png}  
+\caption{.}
+\label{datasummary.angel.varied_language}
+\end{subfigure}
+\caption{.}
+\label{datasummary.face_angel.varied_language}
+\end{figure*}
 % In general, we observe that compared to previous work that tend to have a fixed list of adjectives for each object parts, the descriptions in our dataset are free-form and non-constrainted. This characteristics is desirable and aligns with our goal to allow robot to collaborate smoothly with humans, since different people would describe the same things in very diverse ways. 
 
 % \subsection{Compare with SketchCUB Dataset}
@@ -98,6 +131,7 @@ line & 92 & 27 & 56 & 19 & 1 & 15 & 22 & 3 & 14 & 3 & 93 & 9\\
 \end{minipage}
 \end{table}
 
+Moreover, using this dataset, we can study how people compose concepts (e.g. \textit{large}$+$\textit{round}) and apply the same concepts to different semantic parts (e.g. \textit{large round eyes} and \textit{large round halo}).     
 We observe that face and angel sketches share 486 words in total, and for the 200 words that occur most frequently in the dataset (all used in at least 13 part descriptions), 182 are shared across the two categories. Therefore, we believe that the datasets would allow us to study how people use similar words when sketching different objects. Although we cannot conclude in this project, we have already found some examples of the meaning of descriptors varied across sketches, after examining a few words. Figure \ref{datasummary.spiky} shows an example. In this example, \textit{spiky} is used to mean either short hair in face sketches or pointy, edgy wings in angel sketches. Moreover, there is an implicit orientation change between the two categories of sketches: while \textit{spiky hair} implies ``spike'' in the vertical direction, the phrase, \textit{spiky wings}, implies jigsaws pointing out from the angel body, horizontally.   
 
 \begin{figure*}[!htb]
@@ -117,5 +151,3 @@ We observe that face and angel sketches share 486 words in total, and for the 20
 \caption{Left: face sketches whose hair descriptions contain the word \textit{spiky}. In faces, the word refers to short and coarse texture of hair. Right: angel sketches whose wing description contains the word \textit{spiky}, which is used to represent the pointy edges on wings.}
 \label{datasummary.spiky}
 \end{figure*}
-
-Moreover, 
