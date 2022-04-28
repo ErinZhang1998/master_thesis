@@ -26,36 +26,6 @@ Allado-McDowell, K.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
-Bau%
-\ \protect \BOthers {.}}{%
-Bau%
-\ \protect \BOthers {.}}{%
-{\protect \APACyear {2019}}%
-}]{%
-Bau:Ganpaint:2019}
-\APACinsertmetastar {%
-Bau:Ganpaint:2019}%
-\begin{APACrefauthors}%
-Bau, D.%
-, Strobelt, H.%
-, Peebles, W.%
-, Wulff, J.%
-, Zhou, B.%
-, Zhu, J.%
-\BCBL {}\ \BBA {} Torralba, A.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{2019}{}{}.
-\newblock
-{\BBOQ}\APACrefatitle {Semantic Photo Manipulation with a Generative Image
-  Prior} {Semantic photo manipulation with a generative image prior}.{\BBCQ}
-\newblock
-\APACjournalVolNumPages{ACM Transactions on Graphics (Proceedings of ACM
-  SIGGRAPH)}{38}{4}{}.
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
 Brown%
 \ \protect \BOthers {.}}{%
 Brown%
@@ -534,38 +504,6 @@ Ramesh, A.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
-Reed%
-\ \protect \BOthers {.}}{%
-Reed%
-\ \protect \BOthers {.}}{%
-{\protect \APACyear {2016}}%
-}]{%
-cGAN_text_image}
-\APACinsertmetastar {%
-cGAN_text_image}%
-\begin{APACrefauthors}%
-Reed, S.%
-, Akata, Z.%
-, Yan, X.%
-, Logeswaran, L.%
-, Schiele, B.%
-\BCBL {}\ \BBA {} Lee, H.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{2016}{}{}.
-\newblock
-\APACrefbtitle {Generative Adversarial Text to Image Synthesis.} {Generative
-  adversarial text to image synthesis.}
-\newblock
-\APACaddressPublisher{}{arXiv}.
-\newblock
-\begin{APACrefURL} \url{https://arxiv.org/abs/1605.05396} \end{APACrefURL}
-\newblock
-\begin{APACrefDOI} \doi{10.48550/ARXIV.1605.05396} \end{APACrefDOI}
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
 Sangkloy%
 , Burnell%
 , Ham%
@@ -633,134 +571,6 @@ Vaswani, A.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
-Wah%
-, Branson%
-, Welinder%
-, Perona%
-\BCBL {}\ \BBA {} Belongie%
-}{%
-Wah%
-\ \protect \BOthers {.}}{%
-{\protect \APACyear {2011}}%
-}]{%
-WahCUB_200_2011}
-\APACinsertmetastar {%
-WahCUB_200_2011}%
-\begin{APACrefauthors}%
-Wah, C.%
-, Branson, S.%
-, Welinder, P.%
-, Perona, P.%
-\BCBL {}\ \BBA {} Belongie, S.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{2011}{}{}.
-\newblock
-\APACrefbtitle {{The Caltech-UCSD Birds-200-2011 Dataset}} {{The Caltech-UCSD
-  Birds-200-2011 Dataset}}\ \APACbVolEdTR{}{\BTR{}\ \BNUM\ CNS-TR-2011-001}.
-\newblock
-\APACaddressInstitution{}{California Institute of Technology}.
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
-G.~Xu%
-, Kordjamshidi%
-\BCBL {}\ \BBA {} Chai%
-}{%
-G.~Xu%
-\ \protect \BOthers {.}}{%
-{\protect \APACyear {2021}}%
-}]{%
-joyce-chai-zscl}
-\APACinsertmetastar {%
-joyce-chai-zscl}%
-\begin{APACrefauthors}%
-Xu, G.%
-, Kordjamshidi, P.%
-\BCBL {}\ \BBA {} Chai, J\BPBI Y.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{2021}{}{}.
-\newblock
-\APACrefbtitle {Zero-Shot Compositional Concept Learning.} {Zero-shot
-  compositional concept learning.}
-\newblock
-\APACaddressPublisher{}{arXiv}.
-\newblock
-\begin{APACrefURL} \url{https://arxiv.org/abs/2107.05176} \end{APACrefURL}
-\newblock
-\begin{APACrefDOI} \doi{10.48550/ARXIV.2107.05176} \end{APACrefDOI}
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
-P.~Xu%
-\ \protect \BOthers {.}}{%
-P.~Xu%
-\ \protect \BOthers {.}}{%
-{\protect \APACyear {2020}}%
-}]{%
-sketchsurvey}
-\APACinsertmetastar {%
-sketchsurvey}%
-\begin{APACrefauthors}%
-Xu, P.%
-, Hospedales, T\BPBI M.%
-, Yin, Q.%
-, Song, Y\BHBI Z.%
-, Xiang, T.%
-\BCBL {}\ \BBA {} Wang, L.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{2020}{}{}.
-\newblock
-\APACrefbtitle {Deep Learning for Free-Hand Sketch: A Survey.} {Deep learning
-  for free-hand sketch: A survey.}
-\newblock
-\APACaddressPublisher{}{arXiv}.
-\newblock
-\begin{APACrefURL} \url{https://arxiv.org/abs/2001.02600} \end{APACrefURL}
-\newblock
-\begin{APACrefDOI} \doi{10.48550/ARXIV.2001.02600} \end{APACrefDOI}
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
-T.~Xu%
-\ \protect \BOthers {.}}{%
-T.~Xu%
-\ \protect \BOthers {.}}{%
-{\protect \APACyear {2017}}%
-}]{%
-attngan_paper}
-\APACinsertmetastar {%
-attngan_paper}%
-\begin{APACrefauthors}%
-Xu, T.%
-, Zhang, P.%
-, Huang, Q.%
-, Zhang, H.%
-, Gan, Z.%
-, Huang, X.%
-\BCBL {}\ \BBA {} He, X.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{2017}{}{}.
-\newblock
-\APACrefbtitle {AttnGAN: Fine-Grained Text to Image Generation with Attentional
-  Generative Adversarial Networks.} {Attngan: Fine-grained text to image
-  generation with attentional generative adversarial networks.}
-\newblock
-\APACaddressPublisher{}{arXiv}.
-\newblock
-\begin{APACrefURL} \url{https://arxiv.org/abs/1711.10485} \end{APACrefURL}
-\newblock
-\begin{APACrefDOI} \doi{10.48550/ARXIV.1711.10485} \end{APACrefDOI}
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
 Yu%
 \ \protect \BOthers {.}}{%
 Yu%
@@ -789,38 +599,6 @@ Yu, Q.%
   recognition (cvpr)}\ (\BPG~799-807).
 \newblock
 \begin{APACrefDOI} \doi{10.1109/CVPR.2016.93} \end{APACrefDOI}
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
-Yuan%
-\ \protect \BOthers {.}}{%
-Yuan%
-\ \protect \BOthers {.}}{%
-{\protect \APACyear {2021}}%
-}]{%
-sketchbirds}
-\APACinsertmetastar {%
-sketchbirds}%
-\begin{APACrefauthors}%
-Yuan, S.%
-, Dai, A.%
-, Yan, Z.%
-, Guo, Z.%
-, Liu, R.%
-\BCBL {}\ \BBA {} Chen, M.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{2021}{}{}.
-\newblock
-{\BBOQ}\APACrefatitle {SketchBird: Learning to Generate Bird Sketches from
-  Text} {Sketchbird: Learning to generate bird sketches from text}.{\BBCQ}
-\newblock
-\BIn{} \APACrefbtitle {2021 IEEE/CVF International Conference on Computer
-  Vision Workshops (ICCVW)} {2021 ieee/cvf international conference on computer
-  vision workshops (iccvw)}\ (\BPG~2443-2452).
-\newblock
-\begin{APACrefDOI} \doi{10.1109/ICCVW54120.2021.00277} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \end{thebibliography}

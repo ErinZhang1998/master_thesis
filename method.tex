@@ -1,63 +1,15 @@
-
-     
-
-\section{Task Definition} \label{modeling.task.def}
-\begin{figure*}[!htb]
-\begin{subfigure}{0.5\textwidth}
-    \centering
-    \includegraphics[width=0.5\linewidth]{modeling/angel340.png}
-    \caption{$t_1$: \textit{wide triangular body}}
-    \label{modeling.task.sketches.1}  
-\end{subfigure}
-\begin{subfigure}{0.5\textwidth}
-    \centering
-    \includegraphics[width=0.5\linewidth]{modeling/angel389.png}   
-    \caption{$t_2$: \textit{small rectangular body}}
-    \label{modeling.task.sketches.2}  
-\end{subfigure}
-\caption{Two angel sketches, $s_1$ on the left and $s_2$ on the right, and their part annotations, $t_1$ and $t_2$. The task is for CLIP to determine which sketch matches a given $t_j$.}
-\label{modeling.task.sketches}
-\end{figure*}
-
-% Since task should be method-independent, maybe mention that in this case we choose CLIP to do this task. This task can be done wtih any multimodal embeddings. 
-Given two sketches $(s_1,s_2)$ and their part annotations $(t_1,t_2)$, such as the pair shown in Figure \ref{modeling.task.sketches}, the task is to determine which sketch $t_j$ should be paired with.
-We use this task to evaluate the joint vision-language embedding space of CLIP, which is often used as part of the objective function for models that generate image from text; the objective function often involves maximizing the cosine similarity between the generated image and the provided text (or some variants engineered to work for the particular latent space of the generator used) \citep{clipDrawPaper,styleCLIPPaper,styleganNadaPaper,dalle2Paper}. 
-Through this task, we can study how well CLIP can recognize different visual concepts in sketches, and the experiments can help us determine if CLIP can be used in similar ways to guide part-based sketch generation from language. Moreover, since we give CLIP the same pairs that were given to the annotators, we can learn if CLIP can understand how people are using language to describe the visual features of the sketches.   
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~%
-%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~%
-%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~%
-%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~%
-%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~%
-%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~%
-%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~%
-%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~%
-%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~%
-%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~%
-%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~%
-%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~%
-%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~%
-%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~%
-%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~%
-%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~%
-%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~%
-%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~%
-%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~%
-%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~%
-%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Method}
-% Which package did we use? Why transformers?
+\section{Method} \label{modeling.method}
 CLIP stands for Contrastive Language-Image Pre-training, and it seeks to learn image representations that transfer to a wide range of downstream tasks such as image classification on datasets with a wide variety of source domains. To do so, it uses the task of pairing images with their corresponding captions for pre-training.   
 % the Vision Transformer \citep{visiontransformer} as the image encoder; \texttt{B} stands for \textit{Base} model, and \texttt{32} stands for $32 \times 32$ input patch size. 
 CLIP has two main parts: a text encoder and an image encoder, and both can be transformers. 
-To model our dataset, we fine-tune the pre-trained \texttt{ViT-B/32} CLIP model by leveraging the \texttt{Python} \texttt{clip} package. 
-In this section, we will first introduce the details of the CLIP contrastive objective. We will then introduce the transformer-based text and image encoders. 
+To model our dataset, we fine-tune the pre-trained \texttt{ViT-B/32} CLIP model using the \texttt{Python} \texttt{clip} package. 
+
+In this section, we will first introduce the details of the CLIP contrastive objective (Section \ref{clip.objective}). We will then introduce the pre-trained transformer-based text and image encoders in Section \ref{clip.text.encoder} and \ref{clip.image.encoder}, respectively. Lastly, in Section \ref{clip.finetune}, we explain how we preprocess sketches and texts for fine-tuning and how we use CLIP to perform the task in Section \ref{modeling.task.def}.
 
 \subsection{Contrastive Objective} \label{clip.objective}
 
 \begin{figure*}[!htb]
+\centering
 \includegraphics[width=0.7\linewidth]{modeling/CLIP.png}  
 \caption{CLIP uses contrastive instead of generative objective for pre-training to learn joint vision-language embeddings. This image is taken from Figure 1 in the original CLIP paper \citep{CLIPpaper}. Each grid contains the dot-product of normalized image,text features.}
 \label{modeling.clip.pretrainingobj}
@@ -65,7 +17,7 @@ In this section, we will first introduce the details of the CLIP contrastive obj
 
 Pre-training on an enormous amount of image-caption data with a contrastive objective, CLIP is able to learn robust vision-language joint embedding that allows it to perform on par with state-of-the-art (SOTA) models learnt with supervised objectives \citep{CLIPpaper}.  
 % It is difficult to predict the exact captions for an image, since there is usually a wide variety of text descriptions co-occuring with images, so instead CLIP turns to contrastive objectives and solves the problem of determining which text and image should be matched together. 
-During pre-training, for a batch of $N$ (text,image) pairs, CLIP obtains $N$ image features, $I_1,\dots,I_N$, and $N$ text features, $T_1,\dots,T_N$, from the encoders. 
+During pre-training, for a batch of $N$ (text, image) pairs, CLIP obtains $N$ image features, $I_1,\dots,I_N$, and $N$ text features, $T_1,\dots,T_N$, from the encoders. 
 It then calculates dot-product between each pair of normalized vectors, where there are $N \times N$ possible pairing in total, as shown in the grid in Figure \ref{modeling.clip.pretrainingobj}.
 This grid is a logit matrix $X$ of dimension $N\times N$ and $X_{ij} = I_i \cdot T_j$. 
 If we normalize the $i$-th row ($i \in [N]$) through softmax ($\frac{\exp\{ {X}_{i,i} \}}{ \sum_{j=1}^N \exp\{ {X}_{i,j}\}}$), we obtain a distribution over the captions representing the likelihood of pairing the $j$-th caption with the $i$-th image. 
@@ -115,7 +67,8 @@ In order to minimize the cross-entropy loss, the model has to increase the logit
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Text Encoder}
+
+\subsection{Text Encoder} \label{clip.text.encoder}
 
 \subsubsection*{Overview of Transformer Architecture}
 % \paragraph{Transformer: Attention is All You Need}
@@ -194,7 +147,8 @@ CLIP uses the ``Scaled Dot-Product Attention'' in \cite{attentionAllYouNeed}, il
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Vision Transformer}
+
+\subsection{Image Encoder} \label{clip.image.encoder}
 \begin{figure*}[!htb]
 \centering
 \includegraphics[width=0.7\linewidth]{modeling/visionTransformer.png}  
@@ -234,41 +188,6 @@ For the CLIP image encoder, layer normalization is applied to the input before p
 %~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~%
 %~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Fine-Tuning CLIP}
 
-We fine-tune CLIP with our dataset containing (sketch, part description) pairs. Our sketches come from the QuickDraw dataset \citep{ha2017neural}, and the semantic part annotations come from the SPG dataset \citep{spg_paper}. 
-% We will present how we pre-process the image data to fine-tune CLIP (\ref{sketch.preprocess}). Through data collection (Chapter \ref{dataChapter}), we obtained text descriptions of semantic parts provided by SPG, and we present how they are cleaned-up for fine-tuning in (\ref{text.preprocess}).   
-
-\subsubsection*{Sketch Pre-Processing}
-The QuickDraw sketches are stored in vector format: each sketch is composed of a sequence of $n$ strokes $S_i, i \in [n]$, and each stroke $S_i$ is a sequence of vectors $(\delta x,\delta y, p, l)$. 
-$\delta x$ and $\delta y$ are changes in the $x,y$ coordinates with respect to the previous point; for the first point, its coordinate is with respect to the point $(25,25)$. 
-All points are assumed to be drawn on a $256 \times 256$ canvas. 
-$p=1$ if the point is the last point in the current stroke, and $p=0$ otherwise. 
-The SPG dataset provides annotation for semantic segmentation of the sketches, and $l$ is an integer representing which semantic part the current point belongs to. For angels, $l$ is 
-% $$ for \textit{halo}, \textit{eyes}, \textit{nose}, \textit{mouth}, \textit{body}, \textit{outline of face}, \textit{wings}; for face, $\texttt{[PART NAME]}$ is one of \textit{eyes}, \textit{nose}, \textit{mouth}, \textit{hair}, \textit{outline of face}. 
-
-% We obtained the rendered sketches by using \texttt{Pycairo}, which is a Python module providing bindings for the cairo graphics library. We use a line width of $5$. After rendering, we manually examined the sketches and filter out face sketches that do not have a pair of eyes, a mouth and the face outline; we also filter out angel sketches that are incomplete or have all the parts merged together, possibly due to collection errors in SPG.  
-
-\subsubsection*{Text Pre-Processing} \label{text.preprocess}
-We used the \texttt{spacy} package to preprocess the text. \texttt{spacy} provides trained natural language processing pipeline and includes models for, for example, token-to-vector and part-of-speech tagging. We use the \texttt{en\_core\_web\_sm} pipeline and its lemmatizer to reduce words to their basic forms. Moreover, we lower-case all words and remove punctuation, a list of which is provided by \texttt{Python} \texttt{string} package, \texttt{string.punctuation}. We also remove words like \textit{shaped}, \textit{sized}, \textit{and}, \textit{like}, since they act like stop words and do not provide additional visual descriptions of the sketches. Text descriptions are also tokenized by CLIP's tokenizer before passing into CLIP text encoder.     
-
-
-% Metric used
-Given $n$ pairs of two sketches and two part annotations, the same pairs that were provided by the annotators, we calculate an accuracy-like metric:
-$$ acc = \frac{\sum_{k=1}^{n} \sum_{j=1}^2 \mathbbm{1}{(f(j) = j)}}{2n} $$
-
-% As mentioned above, our dataset has a small number of sketches: 572 face sketches and 787 angel sketches.  
-% How to use CLIP to do this task?
-Given $(s_1,s_2)$, we use CLIP image encoder (zero-shot/fine-tuned) $f_v$ to extract visual features for the two sketches,  $f_v(s_1) \in {R}^{512}$, and $f_v(s_2) \in {R}^{512}$. We then use the zero-shot/fine-tuned CLIP text encoder to extract the text features for the part descriptions, namely we fill in the template $t = \texttt{[ADJ] [PART NAME]}$, where $\texttt{[ADJ]}$ is filled with the adjective phrases annotations, and $\texttt{[PART NAME]}$ is the name of the part in the sketches. For angels, $\texttt{[PART NAME]}$ is one of \textit{halo}, \textit{eyes}, \textit{nose}, \textit{mouth}, \textit{body}, \textit{outline of face}, \textit{wings}; for face, $\texttt{[PART NAME]}$ is one of \textit{eyes}, \textit{nose}, \textit{mouth}, \textit{hair}, \textit{outline of face}. After filling in the above template, we obtain the part annotations for the two sketches $t_1,t_2$.  
-We obtain embeddings for the part annotations by encoding them through CLIP text encoder $f_t$: $f_t(t_1) \in {R}^{512}$, and $f_t(t_2) \in {R}^{512}$. We then calculate cosine similarity between all four pairs of $(f_v(s_i), f_t(t_j))$, $i,j \in [2]$, where consine similarity between two vectors $u,v$ is defined as $S_c(u,v) = \dfrac{u \cdot v}{\|u\| \|v\|}$. 
-\begin{equation}
-    \begin{split}
-        I_1, I_2 \\
-        T_1, T_2 \\
-        S_c(I_i,T_j) & = \dfrac{I_i \cdot T_j}{\|I_i\| \|T_j\|} \\
-        S_c(u,v) & = \dfrac{u \cdot v}{\|u\| \|v\|} \\
-        f(j) & = \max_{i} S_c(f_v(s_i), f_t(t_j)) \hspace{2em} i \in [2]
-    \end{split}
-\end{equation}
-Therefore, given that our entire pipeline is $f$, $f(j) \in [2]$ output which of the two sketches $t_j$ will be paired with, and $$f(j) = \max_{i} S_c(f_v(s_i), f_t(t_j)) \hspace{2em} i \in [2]$$.    
-
+\subsection{Fine-Tuning CLIP} \label{clip.finetune}
+\input{finetuning.tex}

@@ -1,0 +1,50 @@
+
+
+We fine-tune CLIP with our dataset containing (sketch, part description) pairs. Our sketches come from the QuickDraw dataset \citep{ha2017neural}, and the semantic part annotations come from the SPG dataset \citep{spg_paper}. We collected text descriptions from turkers for every part in face and angel sketches; details of the data collection process is in Section \ref{datav2}, and we summarize the dataset in Section \ref{datasummary}.  
+% We will present how we pre-process the image data to fine-tune CLIP (\ref{sketch.preprocess}). Through data collection (Chapter \ref{dataChapter}), we obtained text descriptions of semantic parts provided by SPG, and we present how they are cleaned-up for fine-tuning in (\ref{text.preprocess}).   
+
+\subsubsection*{Sketch Preprocessing} \label{sketch.preprocess}
+The QuickDraw sketches are stored in vector format: each sketch is composed of a sequence of $n$ strokes $S_i, i \in [n]$, and each stroke $S_i$ is a sequence of vectors $(\delta x,\delta y, p, l)$. 
+$\delta x$ and $\delta y$ are changes in the $x,y$ coordinates with respect to the previous point; for the first point, its coordinate is with respect to the point $(25,25)$. 
+All points are assumed to be drawn on a $256 \times 256$ canvas. 
+$p=1$ if the point is the last point in the current stroke, and $p=0$ otherwise. 
+The SPG dataset provides annotation for semantic segmentation of the sketches, and $l$ is an integer representing which semantic part the current point belongs to. For face sketches, the parts can be \textit{eyes}, \textit{nose}, \textit{mouth}, \textit{hair}, or \textit{outline of face}; for angel sketches, the parts can be \textit{halo}, \textit{eyes}, \textit{nose}, \textit{mouth}, \textit{body}, \textit{outline of face}, or \textit{wings}.
+% For angels, $l = 0$ if the point is part of the eyes.   
+% $$ for \textit{halo}, \textit{eyes}, \textit{nose}, \textit{mouth}, \textit{body}, \textit{outline of face}, \textit{wings}; for face, $\texttt{[PART NAME]}$ is one of \textit{eyes}, \textit{nose}, \textit{mouth}, \textit{hair}, \textit{outline of face}. 
+
+During training, we render the sketches from the vector format into PNG images using the python package \texttt{cairocffi}. To augment the data, we did: (1) sample stroke width uniformly from the range $[2.5,12.5]$; (2) rotate the sketches randomly by sampling an angle from the range $[-\frac{\pi}{4}, \frac{\pi}{4}]$; (3) scale the sketches with the scale factor sampled from the range $[0.75, 1.25]$; (4) translate the strokes vertically or horizontally with $0.15$ as the maximum absolute fraction translation.   
+% 'rotate' : [-1/4*180, 1/4*180],
+% 'trans' : [0.15, 0.15],
+% 'scale' : [0.75, 1.25],
+% 'open_clip' : False,
+% 'adamw' : False,
+% 'no_image_augment' : False,
+% We obtained the rendered sketches by using \texttt{Pycairo}, which is a Python module providing bindings for the cairo graphics library. We use a line width of $5$. After rendering, we manually examined the sketches and filter out face sketches that do not have a pair of eyes, a mouth and the face outline; we also filter out angel sketches that are incomplete or have all the parts merged together, possibly due to collection errors in SPG.  
+
+\subsubsection*{Text Preprocessing} \label{text.preprocess}
+We used the \texttt{spacy} package to preprocess the text. \texttt{spacy} provides trained natural language processing pipeline and includes models for, for example, token-to-vector and part-of-speech tagging. We use the \texttt{en\_core\_web\_sm} pipeline and its lemmatizer to reduce words to their basic forms. Moreover, we lower-case all words and remove punctuation, a list of which is provided by \texttt{Python} \texttt{string} package, \texttt{string.punctuation}. We also remove words like \textit{shaped}, \textit{sized}, \textit{and}, \textit{like}, since they act like stop words and do not provide additional visual descriptions of the sketches. Text descriptions are also tokenized by CLIP's tokenizer before passing into CLIP text encoder.     
+
+\subsubsection*{Fine-tuning Objective} \label{finetune.objective}
+We used the same loss function and model pipeline as the one used for pre-training CLIP, explained in details in Section \ref{clip.objective}. In this case, in each (image, text) pair, the \textit{image} is a sketch, and the \textit{text} is a description of one of the semantic parts in the sketch. Two examples are shown in Figure \ref{modeling.task.sketches}: through fine-tuning, CLIP should adjust its embedding space so that text feature for \textit{wide triangular body} and image feature for the sketch in Figure \ref{modeling.task.sketches.1} are close in cosine similarity.  
+
+% \subsubsection*{Evaluate CLIP}
+% We 
+
+% Given $N$ groups of 2 sketches and 2 part annotations (an example in Figure \ref{modeling.task.sketches}), the same pairs that were provided by the annotators, we calculate an accuracy-like metric:
+% $$ acc = \frac{\sum_{k=1}^{n} \sum_{j=1}^2 \mathbbm{1}{(f(j) = j)}}{2n} $$
+
+% % As mentioned above, our dataset has a small number of sketches: 572 face sketches and 787 angel sketches.  
+% % How to use CLIP to do this task?
+% Given $(s_1,s_2)$, we use CLIP image encoder (zero-shot/fine-tuned) $f_v$ to extract visual features for the two sketches,  $f_v(s_1) \in {R}^{512}$, and $f_v(s_2) \in {R}^{512}$. We then use the zero-shot/fine-tuned CLIP text encoder to extract the text features for the part descriptions, namely we fill in the template $t = \texttt{[ADJ] [PART NAME]}$, where $\texttt{[ADJ]}$ is filled with the adjective phrases annotations, and $\texttt{[PART NAME]}$ is the name of the part in the sketches. For angels, $\texttt{[PART NAME]}$ is one of \textit{halo}, \textit{eyes}, \textit{nose}, \textit{mouth}, \textit{body}, \textit{outline of face}, \textit{wings}; for face, $\texttt{[PART NAME]}$ is one of \textit{eyes}, \textit{nose}, \textit{mouth}, \textit{hair}, \textit{outline of face}. After filling in the above template, we obtain the part annotations for the two sketches $t_1,t_2$.  
+% We obtain embeddings for the part annotations by encoding them through CLIP text encoder $f_t$: $f_t(t_1) \in {R}^{512}$, and $f_t(t_2) \in {R}^{512}$. We then calculate cosine similarity between all four pairs of $(f_v(s_i), f_t(t_j))$, $i,j \in [2]$, where consine similarity between two vectors $u,v$ is defined as $S_c(u,v) = \dfrac{u \cdot v}{\|u\| \|v\|}$. 
+% \begin{equation}
+%     \begin{split}
+%         I_1, I_2 \\
+%         T_1, T_2 \\
+%         S_c(I_i,T_j) & = \dfrac{I_i \cdot T_j}{\|I_i\| \|T_j\|} \\
+%         S_c(u,v) & = \dfrac{u \cdot v}{\|u\| \|v\|} \\
+%         f(j) & = \max_{i} S_c(f_v(s_i), f_t(t_j)) \hspace{2em} i \in [2]
+%     \end{split}
+% \end{equation}
+% Therefore, given that our entire pipeline is $f$, $f(j) \in [2]$ output which of the two sketches $t_j$ will be paired with, and $$f(j) = \max_{i} S_c(f_v(s_i), f_t(t_j)) \hspace{2em} i \in [2]$$.    
+
