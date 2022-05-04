@@ -46,7 +46,7 @@ Number of contrasting pairs &
 559 & 114 & 8 & 80 & 733 & 785 & 781 \\
 \bottomrule
 \end{tabular}}
-\caption{Dataset statistics by sketch parts. The phrase \textit{contrasting pair} refers to a pair of sketches with contrasting features that are presented to the annotators for descriptions of their parts.}
+\caption{Dataset statistics by sketch parts. The phrase \textit{contrasting pair} refers to a pair of sketches with contrasting features that are presented to the annotators.}
 \label{table:dataset_stats_byparts}
 \end{center}
 \end{minipage}
@@ -54,7 +54,7 @@ Number of contrasting pairs &
 
 \begin{figure*}[!htb]
 \includegraphics[width=\linewidth]{dataset_image/word_freq_face.png}  
-\caption{Top 100 most frequent words in the dataset corpus.}
+\caption{Top 100 most frequent words in the dataset corpus. X-axis: number of descriptions containing the word.}
 \label{word_freq}
 \end{figure*}
 
@@ -62,9 +62,6 @@ In Table \ref{table:dataset_stats_byparts}, we present dataset statistics broken
 
 % \subsection{Compare with DoodlerGAN Dataset}
 The \textit{Creative Birds} and \textit{Creative Creatures} datasets collected by DoodlerGAN \citep{doodlerGAN} contain 2 categories, like ours, but there are 9k sketches in each category, and ours contains one tenth as many. Although we fall short on the number of sketches and the variety of sketching styles, we approach creativity from a completely different angle: we focus on how people compose similar basic shapes to create sketches of different categories and adapt similar language to describe different sketch parts, as explained in Section \ref{introductionChapter} and Figure \ref{introduction.composition}.  
-
-
-
 
 \begin{figure*}[!htb]
 \begin{subfigure}{\textwidth}
@@ -75,7 +72,7 @@ The \textit{Creative Birds} and \textit{Creative Creatures} datasets collected b
 \label{datasummary.circles.varied_language}
 \end{figure*}
 
-Our face sketches contain 5 different parts, and angel sketches has 7 parts; there are 7 parts in Creative Birds and 16 parts in Creative Creatures. Again, we do not annotate for as many parts as DoodlerGAN if compared directly with their dataset. 
+Our face sketches contain 5 different parts, and angel sketches have 7 parts; there are 7 parts in Creative Birds and 16 parts in Creative Creatures. Again, we do not annotate for as many parts as DoodlerGAN. 
 However, in our dataset, every part in every sketch has at least 2 different language annotations describing the visual features, while DoodlerGAN has no language annotation. 
 With text descriptions, in addition to part-based generative model, we can study how to generate similar shapes from different text descriptions. In Figure \ref{datasummary.circles.varied_language}, we show how people describe \textit{circles} using various descriptors (the figure only contains a subset of ways describing circles).  
 In Figure \ref{datasummary.face.varied_language}, we show the variety of language in describing a simple smiley face. Similarly, an example of creative description of different parts in angel sketches is shown in Figure \ref{datasummary.angel.varied_language}.  

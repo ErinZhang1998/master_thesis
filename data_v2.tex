@@ -2,13 +2,13 @@
 \subsection{Overview}
 In response to the pilot results, we reconsider the data collection pipeline. 
 We examined existing sketch datasets to see how their annotations could facilitate our data collection (dataset details are explained in Section \ref{relatedWorkChapter}).    
-To shorten the time spent on sketching, we no longer asked annotators to sketch and instead only asked them to describe sketches in the QuickDraw dataset. Although we were no longer able to design text prompts ourselves and collect creative sketches like the ones in the previous pilot, we solved the problem that it was difficult to understand how some sketches illustrate the give prompts. 
+To shorten the time spent on sketching, we no longer asked annotators to sketch and instead only asked them to describe sketches in the QuickDraw dataset. 
+Although we could no longer design text prompts ourselves and collect creative sketches like the ones in the previous pilot, we solved the problem that it was difficult to understand how some sketches illustrated the given prompts. 
 
-The most important objective that this dataset should fulfill is allowing us to study how sketches share similar semantic parts and descriptions that are adapted to be used for different objects. Therefore, we must resolve the issue that some text descriptions we collected in the pilot either did not describe everything drawn in a step or described more than what was drawn.  
+The most important objective that this dataset should fulfill is allowing us to study how sketches share similar semantic parts and descriptions that are adapted to be used for different objects. We must resolve the issue that some text descriptions in the pilot do not match the drawing.  
 % To solve this problem of misaligned text descriptions and drawings, 
-Therefore, we used semantic part annotations from the Sketch Perceptual Grouping (SPG) dataset, which provides semantic part labels for each stroke in $20,000$ sketches from the QuickDraw dataset. In this way, annotators did not need to spend time thinking about how to segment sketches into parts themselves. 
-
-Moreover, to help annotators coming up with creative ways to describe the semantic parts, in each task, we presented a pair of sketches with contrasting features, implicitly priming them to describe the visual differences. 
+Therefore, we use semantic part annotations from the Sketch Perceptual Grouping (SPG) dataset, which provides semantic part labels for each stroke in $20,000$ sketches from the QuickDraw dataset. In this way, annotators did not need to spend time thinking about how to segment sketches into parts themselves. 
+Moreover, to help annotators coming up with creative ways to describe the semantic parts, in each task, we present a pair of sketches with contrasting features, implicitly priming them to describe the visual differences. 
 % Between  and SketchSeg, both containing annotaiton for semantically meaningful parts in sketches, 
 % SPG annotates for QuickDraw sketches while SketchSeg collects its own sketches. We picked SPG, since it will be easier in the future to extend our datasets given the large QuickDraw reservoir of sketches. 
 % Moreover, SketchSeg dataset contains a \textit{fourleg} category that includes many different kinds of animals, such as horse, sheep, and cow, but the QuickDraw categories are more fine-grained, so form a model learning perspective, SPG will also be more generalizable.  
