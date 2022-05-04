@@ -1,34 +1,15 @@
-SketchBirds
-
 % In the space of sketch representation learning. After we have settled on human-robot collaborative sketching, we surveyed the field for existing sketch datasets and what they contain, what they lack, and what gap does our work fill. 
 Past works have learned sketch representations from a wide variety of tasks: sketch recognition, sketch generation from image, image generation from sketches, sketch retrieval of 3D objects, sketch retrieval of images, semantic segmentation of sketches, etc. 
 % Essentially, one can perform any tasks that are done on images and explore the techniques for sketches. 
 The survey paper by \citet{sketchsurvey} provides a comprehensive overview and systematic taxonomy of . 
+
 There is a wide range of tasks that can be done on sketches, both unimodal and multimodal, and, for each task, a large reservoir of deep learning methods used to solve the tasks. 
 \citet{sketchsurvey} gives a comprehensive review of the task taxonomy, summarized the unique challenges associated with each individual tasks, and evaluated the different deep learning methods on sketch recognition through a library \texttt{TorchSketch} the authors wrote, and it contains implementation for CNN, RNN, GNN, and TCN. The sections that are most relelvant to us are: sketch generation, sketch segmentation. Sketch generation because we are trying to learn a generative model. Sketch segmentation because we are trying to gain insight about how are semantically meaningful units discovered in sketches and what relationships do the parts have with the whole sketch.      
 Similar to images, sketches have hierarchical structure, and we 
 
-The hope is that we can leverage previous work on sketch representation learning to gain insights about sketches and how to learn good representations of them. What is unique about sketches compared to regular RGB images from, for example, ImageNet is that (1) sketches are abstract characterisation of the objects, and although humans can recognize and understand a sketch perfectly, they do not necessarily bear big resemblance to their image counterpart; therefore, methods that work well on RGB images, especially generative models like GAN that have successfully generated wide range of images from texts, a realm that we care about, it is not necessarily the case that they can generalize well to our dataset.  
+% The hope is that we can leverage previous work on sketch representation learning to gain insights about sketches and how to learn good representations of them. What is unique about sketches compared to regular RGB images from, for example, ImageNet is that (1) sketches are abstract characterisation of the objects, and although humans can recognize and understand a sketch perfectly, they do not necessarily bear big resemblance to their image counterpart; therefore, methods that work well on RGB images, especially generative models like GAN that have successfully generated wide range of images from texts, a realm that we care about, it is not necessarily the case that they can generalize well to our dataset.  
 
 
-
-
-In terms of exploring the multimodal sketch generation realm (text-to-sketch synthesis), a recent work is SketchBird \citep{sketchbirds}. This work, similar to ours, deal with the unique challenge of generating sketches from textual descriptions. They setup the task to mimic or as a counterpart to the classic text to image generation on the CUB dataset \citep{WahCUB_200_2011}. 
-This work is also representative of a line of work that is based on GAN, unique in the way that it is outputting sketches, closer to the domain that we are interested in.
-The line of text-to-image synthesis work begins with conditional GAN \citep{cGAN_text_image}, which also reports results on the CUB dataset. But what is slightly in lack for the dataset that SketchBirds collected  
-But to examine the line of GAN work, we can see that AttnGAN \citep{attngan_paper} (what SketchBirds is based upon or ) 
-One thing we are especially interested in is how these models are able to extract the text features, and how they fuse text features with image features. Moreover what loss is used to encourage the alignment between the image and text domain. 
-In SketchBirds, a bidirectional long short-term memory (Bi-LSTM) network is used as the text encoder. Inspired by AttnGAN, to extract text vectors that are visually aware, SketchBrids trains the text encoder with image-text pairs while minimizing the Deep Attentional Multimodal Similarity Model (DAMSM) loss, proposed in AttnGAN. This loss is calculated based on attention-driven text-image matching score, where matching is between two vectors, one is the vector representing a word in the sentence, and the other is a weighted sum of vectors of image regions, where the weight comes from a matrix of size $T\times 289$ ($T$ being the number words in the sentence, and $289$ being the number of image regions), calculated using dot-product similarity between word in the sentence and sub-region in the image. 
-It seems like from quite a few papers, such as \cite{joyce-chai-zscl}, fuse the visual and textual space by combining the visual features using weights calculated by dot-similarity between the two modality, or vice versa to achieve cross attention. \cite{joyce-chai-zscl} uses a LSTM+GloVE setup for the unimodal text embeddings.       
-
-The SketchCUB dataset collected by SketchBird contains sketches that are more similar to still-life portrait sketches and are very realistic, but sketches in the Quick,Draw! dataset are more similar to icons. This is due to how SketchCUB is transferred from RGB images in the CUB dataset by using open-source holistically-nested network (HED). The SketchCUB dataset contains
-200 bird categories with 10,843 images. It includes a training set with 8,326 images in 150 categories and a test set with 2,517 images in the remaining 50 categories.  
-
-What are some other ways that we can extract visually informed text embeddings. 
-
-StyleGAN-NADA: CLIP Guided Domain Adaptation of Image Generators
-
-Of course, there are other techniques to generate images from texts, namely, leverage large pretrained model such as GPT-3. GPT-3 and DALL-E are particular nowadays for researchers to replicate on their own and try to query the immense feature space for creative art pieces. However, the abstract art style work is not our focus, and while creativity is an interesting future direction, we emphasize the collaborative aspect more than creativity. 
 
 %%%%%%%%%%%% outputting basic semantically meaningful components
 In the larger realm of RGB images:

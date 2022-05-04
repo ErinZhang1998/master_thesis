@@ -1,6 +1,33 @@
 \begin{thebibliography}{}
 
 \bibitem [\protect \citeauthoryear {%
+Aksan%
+, Deselaers%
+, Tagliasacchi%
+\BCBL {}\ \BBA {} Hilliges%
+}{%
+Aksan%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2020}}%
+}]{%
+aksan2020cose}
+\APACinsertmetastar {%
+aksan2020cose}%
+\begin{APACrefauthors}%
+Aksan, E.%
+, Deselaers, T.%
+, Tagliasacchi, A.%
+\BCBL {}\ \BBA {} Hilliges, O.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2020}{}{}.
+\newblock
+\APACrefbtitle {CoSE: Compositional Stroke Embeddings.} {Cose: Compositional
+  stroke embeddings.}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Allado-McDowell%
 \ \BBA {} Okojie%
 }{%
@@ -56,6 +83,40 @@ Brown, T\BPBI B.%
 \begin{APACrefURL} \url{https://arxiv.org/abs/2005.14165} \end{APACrefURL}
 \newblock
 \begin{APACrefDOI} \doi{10.48550/ARXIV.2005.14165} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Chen%
+, Tu%
+, Yi%
+\BCBL {}\ \BBA {} Xu%
+}{%
+Chen%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2017}}%
+}]{%
+Sketchpix2seqPaper}
+\APACinsertmetastar {%
+Sketchpix2seqPaper}%
+\begin{APACrefauthors}%
+Chen, Y.%
+, Tu, S.%
+, Yi, Y.%
+\BCBL {}\ \BBA {} Xu, L.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2017}{}{}.
+\newblock
+\APACrefbtitle {Sketch-pix2seq: a Model to Generate Sketches of Multiple
+  Categories.} {Sketch-pix2seq: a model to generate sketches of multiple
+  categories.}
+\newblock
+\APACaddressPublisher{}{arXiv}.
+\newblock
+\begin{APACrefURL} \url{https://arxiv.org/abs/1709.04121} \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.48550/ARXIV.1709.04121} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -245,6 +306,66 @@ Ha, D.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Karras%
+\ \protect \BOthers {.}}{%
+Karras%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2019}}%
+}]{%
+styleGAN2Paper}
+\APACinsertmetastar {%
+styleGAN2Paper}%
+\begin{APACrefauthors}%
+Karras, T.%
+, Laine, S.%
+, Aittala, M.%
+, Hellsten, J.%
+, Lehtinen, J.%
+\BCBL {}\ \BBA {} Aila, T.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2019}{}{}.
+\newblock
+\APACrefbtitle {Analyzing and Improving the Image Quality of StyleGAN.}
+  {Analyzing and improving the image quality of stylegan.}
+\newblock
+\APACaddressPublisher{}{arXiv}.
+\newblock
+\begin{APACrefURL} \url{https://arxiv.org/abs/1912.04958} \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.48550/ARXIV.1912.04958} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Kim%
+\ \protect \BOthers {.}}{%
+Kim%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2019}}%
+}]{%
+kim2019codraw}
+\APACinsertmetastar {%
+kim2019codraw}%
+\begin{APACrefauthors}%
+Kim, J\BHBI H.%
+, Kitaev, N.%
+, Chen, X.%
+, Rohrbach, M.%
+, Zhang, B\BHBI T.%
+, Tian, Y.%
+\BDBL {}Parikh, D.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2019}{}{}.
+\newblock
+\APACrefbtitle {CoDraw: Collaborative Drawing as a Testbed for Grounded
+  Goal-driven Communication.} {Codraw: Collaborative drawing as a testbed for
+  grounded goal-driven communication.}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Li%
 \ \protect \BOthers {.}}{%
 Li%
@@ -275,6 +396,41 @@ Li, K.%
 \begin{APACrefURL} \url{https://arxiv.org/abs/1808.02312} \end{APACrefURL}
 \newblock
 \begin{APACrefDOI} \doi{10.48550/ARXIV.1808.02312} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Lin%
+, Fu%
+, Jiang%
+\BCBL {}\ \BBA {} Xue%
+}{%
+Lin%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2020}}%
+}]{%
+sketchBertPaper}
+\APACinsertmetastar {%
+sketchBertPaper}%
+\begin{APACrefauthors}%
+Lin, H.%
+, Fu, Y.%
+, Jiang, Y\BHBI G.%
+\BCBL {}\ \BBA {} Xue, X.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2020}{}{}.
+\newblock
+\APACrefbtitle {Sketch-BERT: Learning Sketch Bidirectional Encoder
+  Representation from Transformers by Self-supervised Learning of Sketch
+  Gestalt.} {Sketch-bert: Learning sketch bidirectional encoder representation
+  from transformers by self-supervised learning of sketch gestalt.}
+\newblock
+\APACaddressPublisher{}{arXiv}.
+\newblock
+\begin{APACrefURL} \url{https://arxiv.org/abs/2005.09159} \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.48550/ARXIV.2005.09159} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -504,6 +660,34 @@ Ramesh, A.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Ribeiro%
+, Bui%
+, Collomosse%
+\BCBL {}\ \BBA {} Ponti%
+}{%
+Ribeiro%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2020}}%
+}]{%
+ribeiro2020sketchformer}
+\APACinsertmetastar {%
+ribeiro2020sketchformer}%
+\begin{APACrefauthors}%
+Ribeiro, L\BPBI S\BPBI F.%
+, Bui, T.%
+, Collomosse, J.%
+\BCBL {}\ \BBA {} Ponti, M.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2020}{}{}.
+\newblock
+\APACrefbtitle {Sketchformer: Transformer-based Representation for Sketched
+  Structure.} {Sketchformer: Transformer-based representation for sketched
+  structure.}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Sangkloy%
 , Burnell%
 , Ham%
@@ -571,6 +755,101 @@ Vaswani, A.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Wah%
+, Branson%
+, Welinder%
+, Perona%
+\BCBL {}\ \BBA {} Belongie%
+}{%
+Wah%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2011}}%
+}]{%
+WahCUB_200_2011}
+\APACinsertmetastar {%
+WahCUB_200_2011}%
+\begin{APACrefauthors}%
+Wah, C.%
+, Branson, S.%
+, Welinder, P.%
+, Perona, P.%
+\BCBL {}\ \BBA {} Belongie, S.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2011}{}{}.
+\newblock
+\APACrefbtitle {{The Caltech-UCSD Birds-200-2011 Dataset}} {{The Caltech-UCSD
+  Birds-200-2011 Dataset}}\ \APACbVolEdTR{}{\BTR{}\ \BNUM\ CNS-TR-2011-001}.
+\newblock
+\APACaddressInstitution{}{California Institute of Technology}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Xie%
+\ \BBA {} Tu%
+}{%
+Xie%
+\ \BBA {} Tu%
+}{%
+{\protect \APACyear {2015}}%
+}]{%
+hedPaper}
+\APACinsertmetastar {%
+hedPaper}%
+\begin{APACrefauthors}%
+Xie, S.%
+\BCBT {}\ \BBA {} Tu, Z.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2015}{}{}.
+\newblock
+\APACrefbtitle {Holistically-Nested Edge Detection.} {Holistically-nested edge
+  detection.}
+\newblock
+\APACaddressPublisher{}{arXiv}.
+\newblock
+\begin{APACrefURL} \url{https://arxiv.org/abs/1504.06375} \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.48550/ARXIV.1504.06375} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Xu%
+\ \protect \BOthers {.}}{%
+Xu%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2017}}%
+}]{%
+attngan_paper}
+\APACinsertmetastar {%
+attngan_paper}%
+\begin{APACrefauthors}%
+Xu, T.%
+, Zhang, P.%
+, Huang, Q.%
+, Zhang, H.%
+, Gan, Z.%
+, Huang, X.%
+\BCBL {}\ \BBA {} He, X.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2017}{}{}.
+\newblock
+\APACrefbtitle {AttnGAN: Fine-Grained Text to Image Generation with Attentional
+  Generative Adversarial Networks.} {Attngan: Fine-grained text to image
+  generation with attentional generative adversarial networks.}
+\newblock
+\APACaddressPublisher{}{arXiv}.
+\newblock
+\begin{APACrefURL} \url{https://arxiv.org/abs/1711.10485} \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.48550/ARXIV.1711.10485} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Yu%
 \ \protect \BOthers {.}}{%
 Yu%
@@ -599,6 +878,38 @@ Yu, Q.%
   recognition (cvpr)}\ (\BPG~799-807).
 \newblock
 \begin{APACrefDOI} \doi{10.1109/CVPR.2016.93} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Yuan%
+\ \protect \BOthers {.}}{%
+Yuan%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2021}}%
+}]{%
+sketchbirds}
+\APACinsertmetastar {%
+sketchbirds}%
+\begin{APACrefauthors}%
+Yuan, S.%
+, Dai, A.%
+, Yan, Z.%
+, Guo, Z.%
+, Liu, R.%
+\BCBL {}\ \BBA {} Chen, M.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2021}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {SketchBird: Learning to Generate Bird Sketches from
+  Text} {Sketchbird: Learning to generate bird sketches from text}.{\BBCQ}
+\newblock
+\BIn{} \APACrefbtitle {2021 IEEE/CVF International Conference on Computer
+  Vision Workshops (ICCVW)} {2021 ieee/cvf international conference on computer
+  vision workshops (iccvw)}\ (\BPG~2443-2452).
+\newblock
+\begin{APACrefDOI} \doi{10.1109/ICCVW54120.2021.00277} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \end{thebibliography}
