@@ -1,8 +1,8 @@
-PWD /home/erinzhang/Documents/master_thesis
+PWD /Users/erinz/Documents/MasterThesis
 INPUT /usr/local/texlive/2022/texmf.cnf
 INPUT /usr/local/texlive/2022/texmf-dist/web2c/texmf.cnf
 INPUT /usr/local/texlive/2022/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT /home/erinzhang/Documents/master_thesis/main.tex
+INPUT /Users/erinz/Documents/MasterThesis/main.tex
 OUTPUT main.log
 INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/base/report.cls
 INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/base/report.cls

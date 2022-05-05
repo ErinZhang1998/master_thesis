@@ -18,24 +18,24 @@
 \contentsline {subsection}{\numberline {3.1.2}Interface Design}{10}{subsection.3.1.2}%
 \contentsline {subsubsection}{Main Task Interface}{10}{section*.14}%
 \contentsline {subsubsection}{Instruction and Requirement}{12}{section*.17}%
-\contentsline {subsubsection}{Qualification}{13}{section*.21}%
+\contentsline {subsubsection}{Qualification}{13}{section*.22}%
 \contentsline {subsection}{\numberline {3.1.3}Results}{14}{subsection.3.1.3}%
-\contentsline {section}{\numberline {3.2}Contrasting Sketch Text Dataset}{15}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}Overview}{15}{subsection.3.2.1}%
-\contentsline {subsection}{\numberline {3.2.2}Interface Design}{16}{subsection.3.2.2}%
-\contentsline {subsubsection}{Main Task Interface}{16}{section*.29}%
-\contentsline {subsubsection}{Instruction and Requirement}{16}{section*.30}%
-\contentsline {subsubsection}{Qualification}{17}{section*.34}%
-\contentsline {section}{\numberline {3.3}Dataset Summary}{17}{section.3.3}%
-\contentsline {chapter}{\numberline {4}Modeling}{33}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Task Definition}{33}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Method}{34}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}Contrastive Objective}{34}{subsection.4.2.1}%
-\contentsline {subsection}{\numberline {4.2.2}Text Encoder}{36}{subsection.4.2.2}%
-\contentsline {subsection}{\numberline {4.2.3}Image Encoder}{38}{subsection.4.2.3}%
-\contentsline {subsection}{\numberline {4.2.4}Fine-Tuning CLIP}{39}{subsection.4.2.4}%
-\contentsline {chapter}{\numberline {5}Results \& Analysis}{42}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Classification Experiment}{42}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Word Similarity Experiment}{44}{section.5.2}%
-\contentsline {chapter}{\numberline {6}Future Work}{47}{chapter.6}%
-\contentsline {chapter}{\numberline {A}Designing the Requirement Section for the Prompt-Guided Sketch Text Dataset}{49}{appendix.A}%
+\contentsline {section}{\numberline {3.2}Contrasting Sketch Text Dataset}{19}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Overview}{19}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Interface Design}{20}{subsection.3.2.2}%
+\contentsline {subsubsection}{Main Task Interface}{20}{section*.28}%
+\contentsline {subsubsection}{Instruction and Requirement}{21}{section*.31}%
+\contentsline {subsubsection}{Qualification}{25}{section*.35}%
+\contentsline {section}{\numberline {3.3}Dataset Summary}{26}{section.3.3}%
+\contentsline {chapter}{\numberline {4}Modeling}{31}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Task Definition}{31}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Method}{32}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Contrastive Objective}{32}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Text Encoder}{34}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.3}Image Encoder}{36}{subsection.4.2.3}%
+\contentsline {subsection}{\numberline {4.2.4}Fine-Tuning CLIP}{37}{subsection.4.2.4}%
+\contentsline {chapter}{\numberline {5}Results \& Analysis}{40}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Classification Experiment}{40}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Word Similarity Experiment}{42}{section.5.2}%
+\contentsline {chapter}{\numberline {6}Future Work}{45}{chapter.6}%
+\contentsline {chapter}{\numberline {A}Designing the Requirement Section}{47}{appendix.A}%

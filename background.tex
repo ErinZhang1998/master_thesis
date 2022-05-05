@@ -17,17 +17,18 @@ Instead of generating realistic art works from a wide variety of language like D
 An example is illustrated in Figure \ref{introduction.composition}: a triangle can be the sail of a boat, the cone of an ice-cream, the left/right ear of a cat, the roof of a house, the canopy of a tree, or the body of a mountain. The same triangle is adapted to become different parts in sketches of different objects. 
 While sketches contain much fewer details compared to their natural images counterparts, people are not any less creative when sketching. One could say that the abstractness allows for more creativity. 
 
-\begin{figure*}[!htb]
+Similarly, language descriptors can be composed to form new concepts applicable to different objects. For example, combining \textit{large} and \textit{round} or \textit{narrow} and \textit{oval} to describe different kinds of cat faces.
+Many other objects can be \textit{large round} or \textit{narrow oval}: angel halo, glasses, mirror, plate, necklace charm, table, etc.
+Moreover, there are multiple ways to describe the same sketch, depending on the person's viewpoint. \textit{What features does this cat sketch have?} (Figure \ref{introduction.cat.face}) Some people might pick up on its long pointy ears; others might notice its slightly edged chin, and there are still others that focus on the long whiskers curving upwards. People are likely to provide a variety of responses.  
+\begin{figure*}[!h]
 \centering
 \includegraphics[width=.3\linewidth]{introduction/catFace.png}  
 \caption{People are likely to provide a variety of descriptions when asked, \textit{``What features does this cat sketch have?''}.}
 \label{introduction.cat.face}
 \end{figure*}
-
-Similarly, language descriptors can be composed to form new concepts applicable to different objects. For example, combining \textit{large} and \textit{round} or \textit{narrow} and \textit{oval} to describe different kinds of cat faces.
-Many other objects can be \textit{large round} or \textit{narrow oval}: angel halo, glasses, mirror, plate, necklace charm, table, etc.
-Moreover, there are multiple ways to describe the same sketch, depending on the person's viewpoint. \textit{What features does this cat sketch have?} (Figure \ref{introduction.cat.face}) Some people might pick up on its long pointy ears; others might notice its slightly edged chin, and there are still others that focus on the long whiskers curving upwards. People are likely to provide a variety of responses.  
 % Word meanings shift depending on the context they are applied in. For example, the word \textit{large} in \textit{a large scoop of ice-cream} and \textit{a large cat face} implies size at different scales and conjure up different imagery. The \textit{large} scoop of ice-cream is probably oveflowing from the little cone underneath with the melting ice-cream dripping from the side, while the \textit{large} cat face implies a chubby round face compared to the cute pointy ears at the top.          
+
+
 
 We want to build systems that can compose basic shapes in a creative manner and understand how words are combined and adapted to describe different objects.  
 In this thesis, we are interested in semantic parts in sketches and how people describe them. For example, a face sketch may contain four semantic parts: eyes, nose, mouth, and face contour, that can be drawn using various geometric shapes with different features. After examining existing sketch datasets, we found that they do not contain either language annotations or semantic part annotations. We explain the details of related sketch datasets in Chapter \ref{relatedWorkChapter}. To fill the gap and study this reuse of abstract concepts, we construct a dataset of language annotated face and angel sketches. We elaborate on the data collection process in Chapter \ref{dataChapter}.  

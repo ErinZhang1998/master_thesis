@@ -7,7 +7,7 @@ For angel sketches, we annotate for the parts \textit{halo}, \textit{eyes}, \tex
 For face sketches, we annotate for the parts \textit{eyes}, \textit{nose}, \textit{mouth}, \textit{hair}, \textit{outline of face}. 
 
 
-\begin{table}[!htb]
+\begin{table}[!h]
 \begin{minipage}{1\textwidth}
 \begin{center}
 {\small
@@ -26,7 +26,7 @@ Number of sketches & 572 & 787 \\
 \end{minipage}
 \end{table}
 
-\begin{table}[!htb]
+\begin{table}[!h]
 \begin{minipage}{1\textwidth}
 \begin{center}
 {\small
@@ -52,7 +52,7 @@ Number of contrasting pairs &
 \end{minipage}
 \end{table}
 
-\begin{figure*}[!htb]
+\begin{figure*}[!h]
 \includegraphics[width=\linewidth]{dataset_image/word_freq_face.png}  
 \caption{Top 100 most frequent words in the dataset corpus. X-axis: number of descriptions containing the word.}
 \label{word_freq}
@@ -63,7 +63,7 @@ In Table \ref{table:dataset_stats_byparts}, we present dataset statistics broken
 % \subsection{Compare with DoodlerGAN Dataset}
 The \textit{Creative Birds} and \textit{Creative Creatures} datasets collected by DoodlerGAN \citep{doodlerGAN} contain 2 categories, like ours, but there are 9k sketches in each category, and ours contains one tenth as many. Although we fall short on the number of sketches and the variety of sketching styles, we approach creativity from a completely different angle: we focus on how people compose similar basic shapes to create sketches of different categories and adapt similar language to describe different sketch parts, as explained in Section \ref{introductionChapter} and Figure \ref{introduction.composition}.  
 
-\begin{figure*}[!htb]
+\begin{figure*}[!h]
 \begin{subfigure}{\textwidth}
 \centering
 \includegraphics[width=\linewidth]{data_collection/summary/circles_descriptions.png}  
@@ -78,7 +78,7 @@ With text descriptions, in addition to part-based generative model, we can study
 In Figure \ref{datasummary.face.varied_language}, we show the variety of language in describing a simple smiley face. Similarly, an example of creative description of different parts in angel sketches is shown in Figure \ref{datasummary.angel.varied_language}.  
 
 
-\begin{figure*}[!htb]
+\begin{figure*}[!h]
 \begin{subfigure}{\textwidth}
 \centering
 \includegraphics[width=\linewidth]{data_collection/summary/smileyface_descriptions.png}  
@@ -101,7 +101,7 @@ In Figure \ref{datasummary.face.varied_language}, we show the variety of languag
 % SketchCUB contains both sketch and language annotations \citep{sketchbirds}. However, it predetermines 312 binary attributes 
 
 
-\begin{table}[!htb]
+\begin{table}[!h]
 \begin{minipage}{1\textwidth}
 \begin{center}
 {\small
@@ -131,7 +131,7 @@ line & 92 & 27 & 56 & 19 & 1 & 15 & 22 & 3 & 14 & 3 & 93 & 9\\
 Moreover, using this dataset, we can study how people compose concepts (e.g. \textit{large}$+$\textit{round}) and apply the same concepts to different semantic parts (e.g. \textit{large round eyes} and \textit{large round halo}).     
 We observe that face and angel sketches share 486 words in total, and for the 200 words that occur most frequently in the dataset (all used in at least 13 part descriptions), 182 are shared across the two categories. Therefore, we believe that the datasets would allow us to study how people use similar words when sketching different objects. Although we cannot conclude in this project, we have already found some examples of the meaning of descriptors varied across sketches, after examining a few words. Figure \ref{datasummary.spiky} shows an example. In this example, \textit{spiky} is used to mean either short hair in face sketches or pointy, edgy wings in angel sketches. Moreover, there is an implicit orientation change between the two categories of sketches: while \textit{spiky hair} implies ``spike'' in the vertical direction, the phrase, \textit{spiky wings}, implies jigsaws pointing out from the angel body, horizontally.   
 
-\begin{figure*}[!htb]
+\begin{figure*}[!h]
 \begin{subfigure}{.5\textwidth}
 \centering
 \includegraphics[width=0.9\linewidth]{data_collection/summary/spikyface.png}  
@@ -148,3 +148,5 @@ We observe that face and angel sketches share 486 words in total, and for the 20
 \caption{Left: face sketches whose hair descriptions contain the word \textit{spiky}. In faces, the word refers to short and coarse texture of hair. Right: angel sketches whose wing description contains the word \textit{spiky}, which is used to represent the pointy edges on wings.}
 \label{datasummary.spiky}
 \end{figure*}
+
+Compare to the prompt-guided sketch text dataset, we no longer collect sketches that respond to prompts describing imaginary beings not in this world, such as \textit{evil moon}; instead, the sketches belong to some category, face and angel. Therefore, the sketches are not as creative as the ones we received in the previous version, such as the ones in Figure \ref{v1.sleepy}. Since we are interested in how language can guide part-based sketch generation, we chose the contrasting sketch text dataset to ensure alignment between sketches and their descriptions.       

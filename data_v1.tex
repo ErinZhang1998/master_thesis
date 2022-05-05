@@ -14,7 +14,7 @@ After deploying the pilot, we realized a few major problems with this design. Fi
 
 \subsubsection{Main Task Interface}
 
-\begin{figure*}[!htb]
+\begin{figure*}[!h]
 \begin{subfigure}{\textwidth}
     \centering
     \includegraphics[width=.75\linewidth]{data_collection/v1_empty_table.png}  
@@ -35,7 +35,7 @@ After deploying the pilot, we realized a few major problems with this design. Fi
 \label{v1.main_task.1}
 \end{figure*}
 
-\begin{figure*}[!htb]
+\begin{figure*}[!h]
 \begin{subfigure}{\textwidth}
 \centering
 \includegraphics[width=.8\linewidth]{data_collection/v1_before_delete.png}  
@@ -58,9 +58,9 @@ This design encourages turkers to decompose their drawings into semantically mea
 
 We encountered some difficulties when implementing the \textit{Delete} button. At the beginning, we treated erasing strokes as drawing the same strokes but in white; however, when strokes overlap each other, overwriting with white strokes breaks other strokes into segments. Therefore, we change the drawing canvas to use layers like Photoshop, so that deleting strokes would be the same as deleting an entire layer, leaving other strokes intact.   
 
-\subsubsection{Instruction and Requirement}
+\subsubsection{Instruction and Requirement} \label{v1.interface.requirement.section}
 
-\begin{figure*}[!htb]    
+\begin{figure*}[!h]    
 \includegraphics[width=\linewidth]{data_collection/v1_instruction.png} 
 \caption{The instruction section used in the prompt-guided sketch text dataset.}
 \label{v1.instruction}
@@ -80,16 +80,17 @@ The great variation in personal styles makes creative sketches fascinating to st
 
 We resorted to repeatedly testing the interface with lab mates to refine the requirements. The refinement process is explained in Appendix \ref{appendixDataV1Req}. 
 The requirements deployed in the final pilot is shown in Figure \ref{v1.requirement}.
-\textcolor{red}{\underline{Bad Example 2}} is shown in Figure \ref{v1.badeg} as an instance of the examples used in the final requirements. To view all the examples, refer to: \url{https://erinzhang1998.github.io/portfolio/amazon_anno}. 
+\textcolor{red}{\underline{Bad Example 2}} is shown in Figure \ref{v1.badeg.first} and \ref{v1.badeg} as an instance of the examples used in the final requirements. 
+To view all the examples, refer to: \url{https://erinzhang1998.github.io/portfolio/amazon_anno}. 
 
 
-\begin{figure*}[!htb]
+\begin{figure*}[!h]
 \includegraphics[width=\linewidth]{data_collection/v1_requirement.png}  
 \caption{Final version of the requirements. The \textcolor{red}{\underline{Bad Example}} links to counter-examples of the requirements, and \textcolor{green}{\underline{Good Example}} links to good examples. When turkers click on the links, they are directed to the examples illustrating the corresponding requirement. This design helps them to understand the requirements better and provides high-quality annotations}
 \label{v1.requirement}
 \end{figure*}
 
-\begin{figure*}[!htb]
+\begin{figure*}[!h]
 \begin{subfigure}{\textwidth}
 \centering
 \includegraphics[width=.8\linewidth]{data_collection/v1_badeg_1.png}  
@@ -99,7 +100,12 @@ The requirements deployed in the final pilot is shown in Figure \ref{v1.requirem
 \centering
 \includegraphics[width=.8\linewidth]{data_collection/v1_badeg_2.png}  
 \end{subfigure}
-\newline
+\caption{Step 1 and 2 of an example used to explain the requirements to turkers.}
+\label{v1.badeg.first}
+\end{figure*}
+
+\begin{figure*}[!h]
+% \ContinuedFloat
 \begin{subfigure}{\textwidth}
 \centering
 \includegraphics[width=.8\linewidth]{data_collection/v1_badeg_3.png}  
@@ -109,7 +115,7 @@ The requirements deployed in the final pilot is shown in Figure \ref{v1.requirem
 \centering
 \includegraphics[width=.8\linewidth]{data_collection/v1_badeg_4.png}  
 \end{subfigure}
-\caption{An example used to explain the requirements to turkers.}
+\caption{Step 3 and 4 of an example used to explain the requirements to turkers.}
 \label{v1.badeg}
 \end{figure*}
 

@@ -14,7 +14,18 @@ Moreover, to help annotators coming up with creative ways to describe the semant
 % Moreover, SketchSeg dataset contains a \textit{fourleg} category that includes many different kinds of animals, such as horse, sheep, and cow, but the QuickDraw categories are more fine-grained, so form a model learning perspective, SPG will also be more generalizable.  
 
 \subsection{Interface Design}
-\begin{figure*}[!htb]
+
+
+\subsubsection{Main Task Interface}
+When collecting the previous prompt-guided dataset, we relied on testing the interface with students in the lab to determine our design, but we observed performance differences between the students and turkers, such as amount of variety in the sketches, amount of time spent on the task, and common confusions related to understanding the requirements. 
+Therefore, when collecting the contrasting sketch text dataset, we deployed several pilots on AMT to design the new interface.  
+In Figure \ref{v2.main_task.1}, we show how the main task interface progressed from the first pilot to the final version used to collect the entire dataset. 
+
+To better study how similar words are used differently across sketches, we changed to collect adjective phrases (Figure \ref{v2.main_task.1.b}, \ref{v2.main_task.1.d}) from collecting whole sentences (Figure \ref{v2.main_task.1.a}).  
+We juxtaposed two sketches and highlighted the parts to be annotated in different colors to help annotators notice the contrasting features. 
+Moreover, this design expedited the annotation process, since it was easier for people to perform contrasting tasks than to generate descriptions from a single sketch. 
+
+\begin{figure*}[!h]
 \begin{subfigure}{\textwidth}
 \centering
 \includegraphics[width=.8\linewidth]{data_collection/version2/v2annofeb1.png}  
@@ -29,8 +40,8 @@ Moreover, to help annotators coming up with creative ways to describe the semant
 \label{v2.main_task.1.b}
 \end{subfigure}
 \end{figure*}
-
-\begin{figure*}[!htb]
+  
+\begin{figure*}[!h]
 \ContinuedFloat
 % \begin{subfigure}{\textwidth}
 % \centering
@@ -49,22 +60,13 @@ Moreover, to help annotators coming up with creative ways to describe the semant
 \label{v2.main_task.1}
 \end{figure*}
 
-
-
-\subsubsection{Main Task Interface}
-When collecting the previous prompt-guided dataset, we relied on testing the interface with students in the lab to determine our design, but we observed performance differences between the students and turkers, such as amount of variety in the sketches, amount of time spent on the task, and common confusions related to understanding the requirements. 
-Therefore, when collecting the contrasting sketch text dataset, we deployed several pilots on AMT to design the new interface.  
-In Figure \ref{v2.main_task.1}, we show how the main task interface progressed from the first pilot to the final version used to collect the entire dataset. 
-
-To better study how similar words are used differently across sketches, we changed to collect adjective phrases (Figure \ref{v2.main_task.1.b}, \ref{v2.main_task.1.d}) from collecting whole sentences (Figure \ref{v2.main_task.1.a}).  
-We juxtaposed two sketches and highlighted the parts to be annotated in different colors to help annotators notice the contrasting features. 
-Moreover, this design expedited the annotation process, since it was easier for people to perform contrasting tasks than to generate descriptions from a single sketch. 
-
+We chose the contrasting pairs by rendering each part in the sketches and encode the parts into image features using CLIP. For every part type, we iterate through the features and pair features that are the most distinct in terms of cosine distance. For example, to select a pair of sketches with contrasting \textit{body}, we render the strokes that depict the \textit{body} in all angel sketches; all these angel body sketches are encoded by CLIP, and pairs of bodies that are the most distinct are presented to the annotators in the format shown in Figure \ref{v2.main_task.1.d}.  
+  
 % At the beginning, we stated explicitly that annotators should describe the differences between the sketches (\textit{Describe differences} in \ref{v2.main_task.1.a} and \textit{Compared to Sketch 1/2} in \ref{v2.main_task.1.b}), but we received many annotations that contain comparative and superlatives, so we eventually only have a blank without any introductory phrases to overly emphasize that the goal of the tasks is to create a dataset of contrastive pairs of descriptions, and the juxtaposition is meant only as a mental hint to ease annotation.
 
 \subsubsection{Instruction and Requirement}
 
-\begin{figure*}[!htb]
+\begin{figure*}[!h]
 \centering
 \includegraphics[width=\linewidth]{data_collection/version2/v2annoPop.png}  
 \caption{A pop-up window containing examples of adjective phrases, used in collecting contrasting sketch text dataset in Section \ref{datav2}. It can be opened from the side panel by clicking on \textcolor{blue}{\it{some examples}}. Note that we used examples that are unrelated to our task on purpose, because annotators tended to repeat words in examples, so we tried to not bias them.}
@@ -77,14 +79,14 @@ However, in order to collect creative descriptions, we lifted restrictions on th
 Since we simplified the HIT from 3 sub-tasks, sketching for the prompt, segmenting the sketches, and describing each step, to only asking for part descriptions, the requirements are much easier to write. 
 We received less feedback from the annotators on being confused about the kind of sketches we wanted and the definition of semantic parts, which are now automatically highlighted in the sketches.   
 
-\begin{figure*}[!htb]
+\begin{figure*}[!h]
 \centering
 \includegraphics[width=\linewidth]{data_collection/version2/v2requirement.png}  
 \caption{Requirements used in collecting the contrasting sketch text dataset (Section \ref{datav2}).}
 \label{v2.requirement.1}
 \end{figure*}
 
-\begin{figure*}[!htb]
+\begin{figure*}[!h]
 \begin{subfigure}{\textwidth}
   \centering
   \includegraphics[width=0.8\linewidth]{data_collection/version2/v2example2.png}  
