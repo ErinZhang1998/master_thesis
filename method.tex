@@ -2,23 +2,22 @@
 CLIP stands for Contrastive Language-Image Pre-training, and it seeks to learn image representations that transfer to a wide range of downstream tasks such as image classification on datasets with a wide variety of source domains. To do so, it uses the task of pairing images with their corresponding captions for pre-training.   
 % the Vision Transformer \citep{visiontransformer} as the image encoder; \texttt{B} stands for \textit{Base} model, and \texttt{32} stands for $32 \times 32$ input patch size. 
 CLIP has two main parts: a text encoder and an image encoder, and both can be transformers. 
-To model our dataset, we fine-tune the pre-trained \texttt{ViT-B/32} CLIP model using the \texttt{Python} \texttt{clip} package. 
+To model our dataset, we fine-tune the pre-trained \texttt{ViT-B/32} CLIP model using the \texttt{clip} package \citep{CLIPpaper}. 
 
 In this section, we will first introduce the details of the CLIP contrastive objective (Section \ref{clip.objective}). We will then introduce the pre-trained transformer-based text and image encoders in Section \ref{clip.text.encoder} and \ref{clip.image.encoder}, respectively. Lastly, in Section \ref{clip.finetune}, we explain how we preprocess sketches and texts for fine-tuning and how we use CLIP to perform the task in Section \ref{modeling.task.def}.
 
 \subsection{Contrastive Objective} \label{clip.objective}
 
-\begin{figure*}[!htb]
-\centering
-\includegraphics[width=0.7\linewidth]{modeling/CLIP.png}  
-\caption{CLIP uses contrastive instead of generative objective for pre-training to learn joint vision-language embeddings. This image is taken from Figure 1 in the original CLIP paper \citep{CLIPpaper}. Each grid contains the dot-product of normalized image,text features.}
-\label{modeling.clip.pretrainingobj}
-\end{figure*}
-
-Pre-training on an enormous amount of image-caption data with a contrastive objective, CLIP is able to learn robust vision-language joint embedding that allows it to perform on par with state-of-the-art (SOTA) models learnt with supervised objectives \citep{CLIPpaper}.  
+Pre-trained on 400 million pairs of image-caption data with a contrastive objective, CLIP is able to learn robust vision-language joint embedding that allows it to perform on par with state-of-the-art (SOTA) models learnt with supervised objectives \citep{CLIPpaper}.  
 % It is difficult to predict the exact captions for an image, since there is usually a wide variety of text descriptions co-occuring with images, so instead CLIP turns to contrastive objectives and solves the problem of determining which text and image should be matched together. 
 During pre-training, for a batch of $N$ (text, image) pairs, CLIP obtains $N$ image features, $I_1,\dots,I_N$, and $N$ text features, $T_1,\dots,T_N$, from the encoders. 
 It then calculates dot-product between each pair of normalized vectors, where there are $N \times N$ possible pairing in total, as shown in the grid in Figure \ref{modeling.clip.pretrainingobj}.
+\begin{figure*}[h!]
+\centering
+\includegraphics[width=0.7\linewidth]{modeling/CLIP.png}  
+\caption{CLIP uses contrastive instead of generative objective for pre-training to learn joint vision-language embeddings. This image is taken from Figure 1 in the original CLIP paper \citep{CLIPpaper}. Each grid contains the dot-product of normalized image and text features.}
+\label{modeling.clip.pretrainingobj}
+\end{figure*}
 This grid is a logit matrix $X$ of dimension $N\times N$ and $X_{ij} = I_i \cdot T_j$. 
 If we normalize the $i$-th row ($i \in [N]$) through softmax ($\frac{\exp\{ {X}_{i,i} \}}{ \sum_{j=1}^N \exp\{ {X}_{i,j}\}}$), we obtain a distribution over the captions representing the likelihood of pairing the $j$-th caption with the $i$-th image. 
 Similarly, normalizing the $j$-th column through softmax gives a distribution over all the images of how likely an image pairs with the $j$-th caption. 
@@ -26,8 +25,8 @@ Similarly, normalizing the $j$-th column through softmax gives a distribution ov
 As explained in \cite{CLIPpaper}, we can treat each batch as containing $N$ visual concepts expressed through language.
 By normalizing the rows and columns into distributions, we perform classification over the $N$ captions for the images and classification over the $N$ images for the captions.  
 Moreover, we know that the ground-truth is pairing the $i$-th image with the $i$-th caption.   
-Therefore, for classification over captions, we have the ground-truth vector $Y_I$; for classification over images, we have the ground-truth vector $Y_T$, and we know: 
-$$Y_I = Y_T = \begin{bmatrix}1 & 2 & \cdots & N \end{bmatrix}^T $$ 
+Therefore, for classification over captions, we have the ground-truth vector $Y_I$; for classification over images, we have the ground-truth vector $Y_T$, and we know
+$Y_I = Y_T = \begin{bmatrix}1 & 2 & \cdots & N \end{bmatrix}^T $.
 Similar to standard multi-class classification, we can use cross-entropy loss as our objective function. The loss $L_I(X, Y)$ of selecting the correct caption for each image:
 \begin{equation} \label{cliploss.image}
 \begin{split}
@@ -72,7 +71,13 @@ In order to minimize the cross-entropy loss, the model has to increase the logit
 
 \subsubsection*{Overview of Transformer Architecture}
 % \paragraph{Transformer: Attention is All You Need}
-\begin{figure*}[!htb]
+The text encoder of CLIP is based on the transformer architecture introduced in \citet{attentionAllYouNeed}. Transformer relies only on self-attention mechanism to compute a representation for the input sequence. In this way, it alleviates the computation inefficiency and difficulty capturing long-range dependencies witnessed in recurrent layers.  
+
+Figure \ref{modeling.transformer.origEncoder} and \ref{modeling.attention} are the same figures used in \cite{attentionAllYouNeed} to illustrate the transformer architecture. In Figure \ref{modeling.transformer.origEncoder}, \cite{attentionAllYouNeed} gives an overview of the encoder architecture. Firstly, tokenized texts go through an embedding layer; the input embeddings are summed with learned position embeddings that inject information on order of the sequence. 
+% and incorporated modification suggested in \citet{Radford2019LanguageMA}
+The input is computed using Byte Pair Encoding (BPE) with a $49,152$ vocabulary. As explained in the GPT-2 paper, BPE, a sub-word tokenization scheme, strikes a good balance between word-level and character-level word embeddings, since one works well with common words and the other with rare sequences \citep{Radford2019LanguageMA}.
+
+\begin{figure*}[!h]
 \begin{subfigure}{0.5\textwidth}
     \centering
     \includegraphics[width=0.5\linewidth]{modeling/transformer.png}  
@@ -90,13 +95,7 @@ In order to minimize the cross-entropy loss, the model has to increase the logit
 \label{modeling.transformer}
 \end{figure*}
 
-The text encoder of CLIP is based on the transformer architecture introduced in \citet{attentionAllYouNeed}. Transformer relies only on self-attention mechanism to compute a representation for the input sequence. In this way, it alleviates the computation inefficiency and difficulty capturing long-range dependencies witnessed in recurrent layers.  
-
-Figure \ref{modeling.transformer.origEncoder} and \ref{modeling.attention} are the same figures used in \cite{attentionAllYouNeed} to illustrate the transformer architecture. In Figure \ref{modeling.transformer.origEncoder}, \cite{attentionAllYouNeed} gives an overview of the encoder architecture. Firstly, tokenized texts go through an embedding layer; the input embeddings are summed with learned position embeddings that inject information on order of the sequence. 
-% and incorporated modification suggested in \citet{Radford2019LanguageMA}
-The input is computed using Byte Pair Encoding (BPE) with a $49,152$ vocabulary. As explained in the GPT-2 paper, BPE, a sub-word tokenization scheme, strikes a good balance between word-level and character-level word embeddings, since one works well with common words and the other with rare sequences \citep{Radford2019LanguageMA}.
-
-\begin{figure*}[!htb]
+\begin{figure*}[h!]
 \begin{subfigure}{0.5\textwidth}
 \centering
 \includegraphics[width=.3\linewidth]{modeling/selfAttention.png}  
@@ -127,7 +126,7 @@ As illustrated in Figure \ref{modeling.attention}, given query, key, value matri
 
 $\text{ViT-B}/32$ uses a version with $h = 8$ attention heads, so $W_i^{Q}, W_i^{K} \in \mathbb{R}^{d_{model} \times d_k}$ and $W_i^{V} \in \mathbb{R}^{d_{model} \times d_v}$, where $d_k = d_v = \dfrac{d_{model}}{h} = \frac{512}{8} = 64$. 
 At the end of the multi-head attention mechanism, the weighted combination of values from each head is concatenated together and passed through a linear layer, represented here as $W^O \in \mathbb{R}^{(d_v \times h) \times d_v}$. 
-CLIP uses the ``Scaled Dot-Product Attention'' in \cite{attentionAllYouNeed}, illustrated in details in Figure \ref{modeling.attention}. The dot products between query and key determine the weights that are used to sum the values; in this way, we have a contextualized representation; compared to convolutions that use static kernels, attention weights are dynamic.   
+CLIP uses the ``Scaled Dot-Product Attention'' in \cite{attentionAllYouNeed}, illustrated in details in Figure \ref{modeling.attention}. The dot products between queries and keys determine the weights that are used to sum the values; in this way, we have a contextualized representation; compared to convolutions that use static kernels, attention weights are dynamic.   
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -147,23 +146,22 @@ CLIP uses the ``Scaled Dot-Product Attention'' in \cite{attentionAllYouNeed}, il
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 \subsection{Image Encoder} \label{clip.image.encoder}
-\begin{figure*}[!htb]
-\centering
-\includegraphics[width=0.7\linewidth]{modeling/visionTransformer.png}  
-\caption{Vision Transformer (ViT) architecture \citep{ViT}.}
-\label{modeling.visionTransformer}
-\end{figure*}
-
 The image encoder of CLIP uses Vision Transformer (ViT) introduced in \cite{ViT}. The architecture of ViT is based on the original transformer introduced in \cite{attentionAllYouNeed}. 
 In order to reuse the transformer model, ViT needs to first turn an image of size $H\times W \times C$, ($H$, $W$, $C$ stands for image height, width, channel size, respectively), into a sequence of ``tokens'', similar to the text input.  
 To do so, \cite{ViT} reshapes the image to size $N \times (P^2 \cdot C)$, where $N$ is the number of patches and $P$ the patch size; the reshaped image can be seen as a sequence of $N$ image tokens, each having a dimension of $P^2 \cdot C$. Each image token is then passed through a linear layer to be mapped to dimension $D$, similar to the model dimension $d_{model}$ earlier. 
 
 In the version of CLIP that we used, all input images have dimension $224\times 224$, the patch size $P = 32$, and the output of the initial embedding layers, MSA, FFN all have dimension $768$ ($D = 768$). 
-As explained in \cite{ViT}, before passing into the transformer, we also need to prepend a \texttt{[class]} token at the front the sequence, whose embedding at the last layer of the transformer will be used as the representation for the entire image. In this way, each image is represented as a sequence of $7\times 7 + 1 = 50$ tokens, illustrated as purple boxes in Figure \ref{modeling.visionTransformer}. The pink boxes that are right next to the patch embeddings represent position embeddings, with a similar function to encoder sequence order information as in the text transformer. 
+As explained in \cite{ViT}, before passing into the transformer, we also need to prepend a \texttt{[class]} token at the front of the sequence, whose embedding at the last layer of the transformer will be used as the representation for the entire image. In this way, each image is represented as a sequence of $7\times 7 + 1 = 50$ tokens, illustrated as pink boxes in Figure \ref{modeling.visionTransformer}. The purple boxes that are right next to the patch embeddings represent position embeddings, with a similar function to encoder sequence order information as in the text transformer. 
 For the CLIP image encoder, layer normalization is applied to the input before passing into the transformer and to the output at the last layer.
  
+
+\begin{figure*}[h!]
+\centering
+\includegraphics[width=0.7\linewidth]{modeling/visionTransformer.png}  
+\caption{Vision Transformer (ViT) architecture \citep{ViT}.}
+\label{modeling.visionTransformer}
+\end{figure*}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~%

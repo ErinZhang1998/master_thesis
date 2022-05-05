@@ -1,6 +1,6 @@
 
 
-We fine-tune CLIP with our dataset containing (sketch, part description) pairs. Our sketches come from the QuickDraw dataset \citep{ha2017neural}, and the semantic part annotations come from the SPG dataset \citep{spg_paper}. We collected text descriptions from turkers for every part in face and angel sketches; details of the data collection process is in Section \ref{datav2}, and we summarize the dataset in Section \ref{datasummary}.  
+We fine-tune CLIP with our dataset containing (sketch, part description) pairs. Our sketches come from the QuickDraw dataset \citep{ha2017neural}, and the semantic part annotations come from the SPG dataset \citep{spg_paper}. We collected text descriptions from turkers for every part in face and angel sketches; details of the data collection process are in Section \ref{datav2}, and we summarize the dataset in Section \ref{datasummary}.  
 % We will present how we pre-process the image data to fine-tune CLIP (\ref{sketch.preprocess}). Through data collection (Chapter \ref{dataChapter}), we obtained text descriptions of semantic parts provided by SPG, and we present how they are cleaned-up for fine-tuning in (\ref{text.preprocess}).   
 
 \subsubsection*{Sketch Preprocessing} \label{sketch.preprocess}
@@ -26,9 +26,12 @@ We used the spaCy package to preprocess the text \citep{spacy2}. spaCy provides 
 
 \subsubsection*{Fine-tuning Objective} \label{finetune.objective}
 We used the same loss function and model pipeline as the one used for pre-training CLIP, explained in details in Section \ref{clip.objective}. 
-In a batch of size $N$, we have $N$ pairs of sketch and description of one of the semantic parts in the sketch. For example, Figure \ref{modeling.task.sketches.1} is a pair of an angel sketch and the description \textit{wide triangular body} for the angel body.
-% in each (image, text) pair, the \textit{image} is a sketch, and the \textit{text} is a description of one of the semantic parts in the sketch. Two examples are shown in Figure \ref{modeling.task.sketches}: 
+In a batch of size $N$, we have $N$ pairs of sketch and description for one of the semantic parts in the sketch. 
+For example, Figure \ref{modeling.task.sketches.1} is a pair of an angel sketch and description for the angel body, \textit{wide triangular body}.
 Through fine-tuning, CLIP should adjust its embedding space so that text feature for \textit{wide triangular body} and image feature for the sketch in Figure \ref{modeling.task.sketches.1} are close in cosine similarity.  
+During fine-tuning, we tried batch size $N \in \{64,128\}$ 
+and learning rate $\alpha \in \{\num{1e-5}, \num{5e-6}, \num{2e-6}, \num{1e-6}, \num{7e-7}, \num{5e-7}, \num{1e-7}\}$. We present the best results in Chapter \ref{analysisChapter}. To see all plots and parameters used in fine-tuning, refer to our Weights \& Biases project page: \url{https://wandb.ai/erinz/clip-finetune/overview}.
+%  
 
 % \subsubsection*{Evaluate CLIP}
 % We 

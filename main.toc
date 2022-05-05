@@ -34,8 +34,8 @@
 \contentsline {subsection}{\numberline {4.2.2}Text Encoder}{34}{subsection.4.2.2}%
 \contentsline {subsection}{\numberline {4.2.3}Image Encoder}{36}{subsection.4.2.3}%
 \contentsline {subsection}{\numberline {4.2.4}Fine-Tuning CLIP}{37}{subsection.4.2.4}%
-\contentsline {chapter}{\numberline {5}Results \& Analysis}{40}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Classification Experiment}{40}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Word Similarity Experiment}{42}{section.5.2}%
-\contentsline {chapter}{\numberline {6}Future Work}{45}{chapter.6}%
-\contentsline {chapter}{\numberline {A}Designing the Requirement Section}{47}{appendix.A}%
+\contentsline {chapter}{\numberline {5}Results \& Analysis}{39}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Classification Experiment}{39}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Word Similarity Experiment}{41}{section.5.2}%
+\contentsline {chapter}{\numberline {6}Future Work}{44}{chapter.6}%
+\contentsline {chapter}{\numberline {A}Designing the Requirement Section}{46}{appendix.A}%

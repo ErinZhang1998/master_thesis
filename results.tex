@@ -3,7 +3,7 @@ In this chapter, we present experiment results and analysis to understand the la
 \begin{enumerate}
     \item CLIP, despite its large pre-trained corpus, cannot easily generalize to unseen category on the task of pairing sketches with their descriptions. 
     This indicates that the relationship between natural images and language cannot be easily translated to sketches and their descriptions. (Section \ref{results.acc})
-    \item Average cosine distance has increased between a pair of descriptors that are used by annotators to differentiate two sketches, suggesting that word embeddings extracted from the fine-tuned CLIP can better reflect the contrasting nature of these pairs, compared to BERT or pre-trained CLIP. (Section \ref{results.cosinesim})     
+    \item Average cosine distance has increased between a pair of descriptors that are used by annotators to differentiate two sketches, suggesting that word embeddings extracted from the fine-tuned CLIP can better reflect the contrasting nature of these pairs, compared to pre-trained CLIP. (Section \ref{results.cosinesim})     
 \end{enumerate}
 
 \section{Classification Experiment} \label{results.acc}
@@ -39,17 +39,20 @@ finetuned on face $+$ angel & 74.3 & 71.7 & 70.4 & 71.0 \\
 
 As explained in Section \ref{modeling.task.def}, annotators provide descriptions ($t_1,t_2$) to differentiate the two sketches ($s_1,s_2$) presented to them, and from this process, we have the ground-truth pairing of $(s_1,t_1)$ and $(s_2,t_2)$. We use CLIP to decide which sketch should be paired with description $t_j$, and the results are reported in Table \ref{results.clip.acc}. 
 
-Compare to the zero-shot performance, fine-tuning on a single category would increase performance significantly on the category: for face, accuracy increased $16.3\%$ on the test set after fine-tuning on face; performance increased $10.8\%$ on the angel test set after fine-tuning on angel. The increase demonstrates that CLIP has adapted its embedding space and has learnt to associate sketches with their part descriptions. 
+Compare to the zero-shot performance, fine-tuning on a single category would increase performance significantly on the category: for face, accuracy increased $16.3\%$ on the test set after fine-tuning on face; performance increased $10.8\%$ on the angel test set after fine-tuning on angel. The increase demonstrates that CLIP has adapted its embedding space and has learned to associate sketches with their part descriptions. 
 However, CLIP fine-tuned on a single category cannot generalize easily to unseen category: only $1.7\%$ increase on angel when fine-tuned on face, and $4.3\%$ increase on face when fine-tuned on angel.   
 The two categories share vocabulary, and similar shapes appear in the two categories, but CLIP does not generalize as easily as expected. Concepts like \textit{big} and \textit{small} appear in both categories, but it is not guaranteed that CLIP can recognize them in sketches from unseen category.  
 
-Transferring from angel to face results in slightly better performance compared to transferring from face to angel ($+4.3\%$ vs. $+1.7\%$). One likely explanation is that the angel category contains more sketches ($787$ vs. $572$) and a larger vocabulary ($1107$ vs. $833$), so CLIP performed better because it has seen more sketches and familarized itself with the domain, and it has learnt from a wider variety of ways that sketches can be described. A second explanation is that angels contain all face parts (\textit{eyes,nose,face outline,mouth}) except \textit{hair}, but face sketches do not contain \textit{body,wings}, and \textit{halo}, which are the most definitive features of angels. Therefore, CLIP, after learning how face parts are described through a few angel sketches that contain them, can recognize face sketches better. However, when it encounters angel sketches with unseen parts and new usage of words seen in the face category, it fail to transfer the learnt concepts to angels.         
+Transferring from angel to face results in slightly better performance compared to transferring from face to angel ($+4.3\%$ vs. $+1.7\%$). One likely explanation is that the angel category contains more sketches ($787$ vs. $572$) and a larger vocabulary ($1107$ vs. $833$), so CLIP performed better because it has seen more sketches and has familiarized itself with the domain, and it has learned from a wider variety of ways that sketches can be described. A second explanation is that angels contain all face parts (\textit{eyes, nose, face outline, mouth}) except \textit{hair}, but face sketches do not contain \textit{body, wings}, and \textit{halo}, which are the most definitive features of angels. Therefore, CLIP, after learning how face parts are described through a few angel sketches that contain them, can recognize face sketches better. However, when it encounters angel sketches with unseen parts and new usage of words seen in the face category, it fails to transfer the learned concepts to angels.         
 
-Fine-tuning on both categories results in slightly better performance than fine-tuning on a single category. CLIP has the capacity to learn how different words are used in both categories, but it cannot transfer the learnt concept across categories. Moreover, as explained in Section \ref{clip.objective}, CLIP uses words in the WordNet synsets to search for images to construct the datasets used for pre-training, and $88\%$ of all words in our datasets exist in WordNet, meaning that CLIP has seen them and how the visual concepts are demonstrated in images, but it cannot adapt the concepts to a different visual domain, sketches, without fine-tuning from sketches in both categories.        
+Fine-tuning on both categories results in slightly better performance than fine-tuning on a single category. CLIP has the capacity to learn how different words are used in both categories, but it cannot transfer the learned concept across categories. Moreover, CLIP uses words in the WordNet synsets to search for images to construct the datasets used for pre-training, and $88\%$ of all words in our datasets exist in WordNet, meaning that CLIP has seen them and how the visual concepts are demonstrated in images, but it cannot adapt the concepts to a different visual domain, sketches, without fine-tuning from sketches in both categories.        
 
 \section{Word Similarity Experiment} \label{results.cosinesim}
 
-\begin{figure*}[!htb]
+In order to learn more about how have relationships between word embeddings changed through fine-tuning, we use cosine similarity as a metric to measure how close two words are. During annotation, we present two sketches with contrasting parts (for example, a face with big eyes and another with small eyes, like Figure \ref{results.contrasting.sketches}) to the annotators and ask them for descriptions of the parts. We do not explicitly tell them that the eyes are different in sizes, yet it is highly likely that they would provide descriptors that can indicate this visual differences.  
+
+We extract all tuples of words from a pair of contrasting descriptions. In the case of Figure \ref{results.contrasting.sketches}, one annotator provide the descriptions \textit{large circular eyes} for the sketch on the left and \textit{tiny solid eyes} for the other; from these two descriptions, we can extract $4$ pairs of contrasting descriptors: (\textit{large, tiny}), (\textit{large, solid}), (\textit{circular, tiny}), and (\textit{circular, solid}). There are a total of $9,823$ pairs, and the top 20 most frequent pairs are shown in Table \ref{results.clip.top20.sim}. For example, the pair \textit{small} and \textit{large} are use $228$ times by annotators to contrast certain parts in the two sketches across face and angel sketches. 
+\begin{figure*}[!h]
 \begin{subfigure}{0.5\textwidth}
     \centering
     \includegraphics[width=0.5\linewidth]{results/contrasting_pair2_color_19.png}  
@@ -102,12 +105,12 @@ curve & small & 46 \\
 \end{minipage} 
 \end{table}
 
-In order to learn more about how have relationships between word embeddings changed through fine-tuning, we use cosine similarity as a metric to measure how close two words are. During annotation, we present two sketches with contrasting parts (for example, a face with big eyes and another with small eyes, like Figure \ref{results.contrasting.sketches}) to the annotators and ask them for descriptions of the parts. We do not explicitly tell them that the eyes are different in sizes, yet it is highly likely that they would provide descriptors that can indicate this visual differences.  
-We extract all tuples of words from a pair of contrasting descriptions. In the case of Figure \ref{results.contrasting.sketches}, one annotator provide the descriptions \textit{large circular eyes} for the sketch on the left and \textit{tiny solid eyes} for the other; from these two descriptions, we can extract $4$ pairs of contrasting descriptors: (\textit{large, tiny}), (\textit{large, solid}), (\textit{circular, tiny}), and (\textit{circular, solid}). There are a total of $9,823$ pairs, and the top 20 most frequent pairs are shown in Table \ref{results.clip.top20.sim}. For example, the pair \textit{small} and \textit{large} are use $228$ times by annotators to contrast certain parts in the two sketches across face and angel sketches. 
-We consider two words in each pair as ``antonyms'', because they are used to represent two \textit{opposite} visual concepts in the two sketches.   
+We consider two words in each pair as ``antonyms'', because they represent two \textit{opposite} visual concepts in the two sketches.   
 It is in cases like this that our common understanding of synonym and antonym falls short: (\textit{large, tiny}) might align with most people's idea of two words opposite in meaning, and (\textit{large, solid}) do not appear as antithesis of each other, but the pair is used for the purpose of differentiating the sketches. Therefore, from a pragmatic perspective, these words are antonyms in our dataset. 
 
-\begin{table}[htb!]
+After fine-tuning CLIP to learn to contrast sketches with these descriptions, we expect that the similarity between contrasting words to decrease. Indeed, as shown in Table \ref{results.wordsim}, we see a trend that as CLIP learns from more pairs of (sketch, part description) in our dataset, the word embeddings of contrasting words become dissimilar.
+
+\begin{table}[h!]
 \begin{minipage}{1\textwidth}
 \begin{center}
 {\small
@@ -128,17 +131,10 @@ finetuned on face $+$ angel & 0.691 \\
 \end{minipage} 
 \end{table}
 
-After fine-tuning CLIP to learn to contrast sketches with these descriptions, we expect that the similarity between contrasting words to decrease. Indeed, as shown in Table \ref{results.wordsim}, we see a trend that as CLIP learns from more pairs of (sketch, part description) in our dataset, the word embeddings of contrasting words become dissimilar.  
-
 Across the entire dataset, there are $\binom{1450}{2}$, about 1 million, pairs of words, whether they are used in contrasting descriptions or not, and $99.9\%$ of the pairs decreased in cosine similarity, from pre-trained CLIP to CLIP fine-tuned on face and angel sketches. One possible explanation is that we collected our data by presenting two sketches with contrasting features, but it could also be a general trend of CLIP fine-tuning on additional datasets, and we need future studies to give an definitive answer.
 
 We only see increase in cosine similarity in $824$ pairs of words. When we look at the top 20 pairs of words with the most increase in cosine similarity, we see that 18 pairs include the word \textit{slash}, which appears only once in our entire dataset. The increase is less than $0.06$, compared to a decrease of $0.65$ for the pair that has the largest decrease in similarity. If we only look at pairs of words that are among the 250 most frequent words, pairs whose cosine similarity has increased the most are \textit{arrow, smiley}, \textit{circle, arrow}, \textit{trilateral, triangular}. However, the increase is still too marginal, $\approx 0.02$, for us to conclude anything meaningful about the text embeddings of the fine-tuned CLIP model. 
 Therefore, we cannot provide reasons for the marginal increase, and it is likely to be a chance event due to rare occurrences.   
- 
-
-        
-
-
 
 % On average, in GLoVE, the distance between the contrastive words is 0.9. 
 % Compared to pre-trained CLIP, the average distance is 0.9. The two distance is roughly similar. 
