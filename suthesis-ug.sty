@@ -178,7 +178,7 @@ smaller print.
 
 
 \topmargin 0pt \headsep .5in
-\textheight 8.1in \textwidth 6in
+\textheight 8.5in \textwidth 6in
 
 % Disallow page breaks at hyphens (this will give some underfull vbox's,
 % so an alternative is to use \brokenpenalty=100 and manually search
@@ -225,16 +225,23 @@ smaller print.
         \thispagestyle{empty}%
         \null\vskip1in%
         \begin{center}
-                \huge\uppercase\expandafter{\@title}
+                \huge \bf \expandafter{\@title}
         \end{center}
-        \vfill
+        \vspace{5mm}
 \begin{center}
-\rm {\large \@author}\\
+        \rm {\huge \bf \@author}
+\end{center}
+\vfill
+\begin{center}
+{\large CMU-CS-22-111} \\
+{\large \@submitdate} \\
 \vspace{5mm}
 \large
+Computer Science Department \\
+School of Computer Science \\
 Carnegie Mellon University\\ 
 Pittsburgh, PA 15213 \\
-\rm  \@submitdate\\
+\rm  
 \end{center}
 \vfill
 \begin{center}
@@ -242,7 +249,7 @@ Pittsburgh, PA 15213 \\
 {\bf Thesis Committee}\\
 \rm Oliver Kroemer, {\it Co-chair} \\
 Yonatan Bisk, {\it Co-chair} \\
-Jean Oh, {\it Carnegie Mellon University} \\
+Jean Oh \\
 \end{center}
 \vspace{5mm}
 \begin{center}
@@ -250,7 +257,7 @@ Jean Oh, {\it Carnegie Mellon University} \\
 Submitted in partial fulfillment of the requirements for\\
 the degree of Master of Science in Computer Science.\\
 \expandafter{\@whichend}
-\end{center}\vskip.5in\newpage}
+\end{center}\vskip.5in\newpage\newpage}
 
 \newlength{\signaturespace}
 \setlength{\signaturespace}{.5in}
@@ -307,7 +314,9 @@ the degree of Master of Science in Computer Science.\\
 
 \def\afterpreface{\newpage
         \tableofcontents
-        \clearpage
+        \null
+        \newpage
+        % \clearpage
         \pagenumbering{arabic}
         \pagestyle{headings}
 }

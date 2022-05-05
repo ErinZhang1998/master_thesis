@@ -36,6 +36,7 @@
 \usepackage{hyperref}
 \usepackage{bbm}
 \usepackage[colorinlistoftodos]{todonotes}
+\usepackage{afterpage}
 \usepackage[%
 %   final%
 ]{pdfcomment}
@@ -52,6 +53,10 @@
   ]
 }
 
+\newcommand\blankpage{%
+  \null
+  \newpage}
+
 \hypersetup{colorlinks=false,
     linkbordercolor=red,
 }
@@ -61,7 +66,7 @@
 \dept{School of Computer Science}
 \begin{document}
 \setstretch{1.3}
-    \title{the Language of Sketches}
+    \title{The Language of Sketches}
 \author{Xiaoyu Zhang}
 \principaladvisor{Oliver Kroemer}
 \patitle{Assistant Professor}
@@ -71,12 +76,33 @@
 \copadept{Language Technology Institute, School of Computer Science}
 
 \beforepreface
+\null
+\thispagestyle{empty}%
+\addtocounter{page}{-1}%
+\vspace*{8in}
+\textbf{Keywords:} multimodal machine learning, creative AI, text-to-image synthesis, sketch generation, sketch data collection
+\newpage
+
 \prefacesection{Abstract}
 \input{abstract.tex}
 
+\afterpage{\blankpage}
+
+
 \prefacesection{Acknowledgements}
 \input{acknowledgement.tex}
-\afterpreface
+
+\afterpage{\blankpage}
+% \afterpreface
+
+\tableofcontents
+\null
+\newpage
+\afterpage{\blankpage}
+
+\clearpage
+\pagenumbering{arabic}
+\pagestyle{headings}
 
 \chapter{Introduction} \label{introductionChapter}
 \input{background}
