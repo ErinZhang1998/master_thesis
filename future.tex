@@ -1,15 +1,22 @@
 % The first question that we want to solve is what data should we collect in order to build a robot that can draw with humans? Inspired by drawing sessions created by Bob Ross, we have considered painting with robots and experimented briefly with oil painting on canvas with a Franka robot, but precise execution of brush strokes and the technical details surrounding manipulating brushes to create the desire scene are even very difficult for humans, and the focus of our research is to make a step towards human-robot collaboration on tasks, we do not want to be side-tracked by difficulties around robot control, which in itself is an extremely interesting problem that we wish to explore another time. 
-\begin{figure*}[!htb]
+
+Firstly, there are many creative uses of language in our dataset, and in future work, we want to investigate what categories of creative usage are there and quantify how many cases are in each category. 
+Most of our current characterization of the dataset are based on looking through a few examples in the datasets (there are a total of 11K!).
+As explained in Section \ref{datasummary}, since we did not limit what language annotators could use during data collection, the dataset contains a variety of ways of describing the same concept. For example, for a nose that looks similar to the one in Figure \ref{results.hookNose}, annotators describe it as \textit{hook-shaped}, \textit{c-shaped}, \textit{inverted j}, \textit{curved}, etc. We believe that this case is not the only one, and we want to quantify the diversity. In this way, we can evaluate how a multi-modal embedding space, such as the CLIP joint embedding, captures these relationships. Is the feature vector of the sketch collinear with the word features of every one of these words?          
+
+\begin{figure*}[!h]
 \centering
-\includegraphics[width=0.3\linewidth]{future/future_nose_variety_392.png}  
-\caption{.}
+\includegraphics[width=0.2\linewidth]{future/future_nose_variety_392.png}  
+\caption{For the nose in this face sketch, our dataset contains a variety of descriptions: \textit{hook-shaped}, \textit{c-shaped}, \textit{inverted j}, etc. We want to investigate how many of these creative usages are there in our dataset.}
 \label{results.hookNose}
 \end{figure*}
-There are many creative use of language in our dataset, and in follow-up work, we want to investigate what categories of creative usage are there and quantify how many cases are in each category. 
-Most of our current characterization of the dataset are based on looking through a few examples in the datasets (there are a total of 11K!).
-Since we did not put limits on what language annotators could use during data collection, such as specifying a fixed list of attributes for the annotators to choose from, the dataset contains a variety of ways of describing the same concept. For example, for a nose that looks similar to the one in Figure \ref{results.hookNose}, annotators describe it as \textit{hook-shaped}, \textit{c-shaped}, \textit{inverted j}, \textit{curved}, etc. We believe that this case is not the only one, and we want to quantify the diversity. In this way, we can evaluate how a multi-modal embedding space, such as the CLIP joint embedding, captures these relationships. Is the feature vector of the sketch collinear with the word features of every one of these words?          
 
-So far, we have observed that face and angel sketches share many visual concepts. These could be related to length (\textit{long,short}), size (\textit{big,small}), geometry (\textit{circular, triangular}), direction (\textit{horizontal, vertical}), and many more. We want to evaluate more thoroughly which concepts are shared and which ones are unique to each category. In this way, we can understand better the chalenges around generalizing CLIP to unseen categories, indicated by results in Section \ref{results.acc}. 
+Secondly, we have observed that face and angel sketches share many visual concepts. These could be related to length (\textit{long, short}), size (\textit{big, small}), geometry (\textit{circular, triangular}), direction (\textit{horizontal, vertical}), and many more. We want to evaluate more thoroughly which concepts are shared and which ones are unique to each category. In this way, we can understand better the challenges around generalizing CLIP to unseen categories, indicated by results in Section \ref{results.acc}.
+
+Lastly, we want to learn a generative model that can produce sketches in a part-based manner, guided by language instructions. For example, people have experimented with DALL-E and have generated a wide variety of interesting images from captions, including sketches \citep{dallePaper,dalle2Paper}. 
+However, none of the publicly available versions have the same power and cannot generate images as high-quality as those in the original DALL-E paper. 
+Therefore, we could try training it using public repository, such as \url{https://github.com/lucidrains/DALLE-pytorch}, on our dataset, since some people have successfully done so.
+Another approach is experimenting with some variants of GAN guided by CLIP objective, similar to the models presented in \cite{sketchbirds,styleganNadaPaper,styleGAN2Paper}.  
 
 
 
