@@ -1,12 +1,12 @@
 # Fdb version 3
-["bibtex main"] 1651716376 "main.aux" "main.bbl" "main" 1651716382
+["bibtex main"] 1651717633 "main.aux" "main.bbl" "main" 1651717915
   "/usr/local/texlive/2022/texmf-dist/bibtex/bst/apacite/apacite.bst" 1374530685 141073 9d7b79dbf9d91133318126032cff8c27 ""
-  "main.aux" 1651716382 39485 c3f5f2860fb1d650ddd36b836b295d07 "pdflatex"
-  "thesiscite.bib" 1651714730 22577 88e9a397e76d63525e92690c9696cd40 ""
+  "main.aux" 1651717915 39619 18c609c99bbd876769c93e818d9098af "pdflatex"
+  "thesiscite.bib" 1651717614 22836 b765249c083e5f4610ce2c7febe3f3aa ""
   (generated)
   "main.bbl"
   "main.blg"
-["pdflatex"] 1651716376 "/home/erinzhang/Documents/master_thesis/main.tex" "main.pdf" "main" 1651716382
+["pdflatex"] 1651717909 "/home/erinzhang/Documents/master_thesis/main.tex" "main.pdf" "main" 1651717915
   "/home/erinzhang/Documents/master_thesis/main.tex" 1651109338 2526 c8f2de2ec58c7b57e13378e8e51f3330 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/fontawesome5/fa5free2.enc" 1622837620 2906 e48aa7c95dea478a2e011bcb4f7878c9 ""
@@ -283,20 +283,20 @@
   "data_v2_qual.tex" 1651715890 2073 02ef4db308566b389249828251a4e0e7 ""
   "dataset_image/word_freq_face.png" 1649768908 49841 eefe708b66c8aa0fc8fa9d51861e9c96 ""
   "final_data.tex" 1651716370 9825 fa9566c47e24355c7868e2c9be4ffe90 ""
-  "finetuning.tex" 1651109338 6947 9159468bdeba0bd31b79bd34c2f4d03d ""
+  "finetuning.tex" 1651717909 7214 36ea66a907d9437dbb33445ded0ec518 ""
   "future.tex" 1650814309 3214 0a97f3846f5fac67ebd81d8a815ce70c ""
   "future/future_nose_variety_392.png" 1650772439 15398 e7c22f7d157c8c032b123ba473f45bb0 ""
   "introduction/catFace.png" 1650943995 16272 ed2e97105e6059d4c5bb4f4303932b4e ""
   "introduction/sketch_composition.png" 1650852965 16349 0dd32d1aea2ed9183258fbc44ad38b3b ""
-  "main.aux" 1651716382 39485 c3f5f2860fb1d650ddd36b836b295d07 "pdflatex"
-  "main.bbl" 1651716376 21020 6644be5185af8cf8db9ed59ae83ac8ff "bibtex main"
-  "main.out" 1651716382 3915 cd566b763a770ef110a7185906322a54 "pdflatex"
+  "main.aux" 1651717915 39619 18c609c99bbd876769c93e818d9098af "pdflatex"
+  "main.bbl" 1651717633 21682 c6af48b4d2a7c720e00b97d6374a67f0 "bibtex main"
+  "main.out" 1651717915 3915 cd566b763a770ef110a7185906322a54 "pdflatex"
   "main.tex" 1651109338 2526 c8f2de2ec58c7b57e13378e8e51f3330 ""
-  "main.toc" 1651716382 3054 0a0767a70acb2ad2858088588807f726 "pdflatex"
+  "main.toc" 1651717915 3054 cc5e6ea79248c35ed2d8594497a72b70 "pdflatex"
   "main.upa" 0 -1 0 "pdflatex"
   "main.upb" 0 -1 0 "pdflatex"
   "method.tex" 1651107448 14812 0c01814cc2770938ab8b1561335eae60 ""
-  "modeling.tex" 1651107511 76 9383ca536d8c80d2c3bfd53693026c50 ""
+  "modeling.tex" 1651716954 382 676595de11c18205740656a4e74d8e08 ""
   "modeling/CLIP.png" 1650817350 98972 893f433ed072f6d9979ab2d82c91817e ""
   "modeling/angel340.png" 1650505124 5703 f3fa2855772a1ab557cc21b7216085b2 ""
   "modeling/angel389.png" 1650505125 6609 88b1a13d457bdbc0570a51f0ee3b2a64 ""

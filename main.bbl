@@ -306,6 +306,34 @@ Ha, D.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Honnibal%
+\ \BBA {} Montani%
+}{%
+Honnibal%
+\ \BBA {} Montani%
+}{%
+{\protect \APACyear {2017}}%
+}]{%
+spacy2}
+\APACinsertmetastar {%
+spacy2}%
+\begin{APACrefauthors}%
+Honnibal, M.%
+\BCBT {}\ \BBA {} Montani, I.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2017}{}{}.
+\newblock
+\APACrefbtitle {{spaCy 2}: Natural language understanding with {B}loom
+  embeddings, convolutional neural networks and incremental parsing.} {{spaCy
+  2}: Natural language understanding with {B}loom embeddings, convolutional
+  neural networks and incremental parsing.}
+\newblock
+\APACrefnote{To appear}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Karras%
 \ \protect \BOthers {.}}{%
 Karras%

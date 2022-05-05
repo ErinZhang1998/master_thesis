@@ -34,8 +34,8 @@
 \contentsline {subsection}{\numberline {4.2.2}Text Encoder}{36}{subsection.4.2.2}%
 \contentsline {subsection}{\numberline {4.2.3}Image Encoder}{38}{subsection.4.2.3}%
 \contentsline {subsection}{\numberline {4.2.4}Fine-Tuning CLIP}{39}{subsection.4.2.4}%
-\contentsline {chapter}{\numberline {5}Results \& Analysis}{41}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Classification Experiment}{41}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Word Similarity Experiment}{43}{section.5.2}%
-\contentsline {chapter}{\numberline {6}Future Work}{46}{chapter.6}%
-\contentsline {chapter}{\numberline {A}Designing the Requirement Section for the Prompt-Guided Sketch Text Dataset}{48}{appendix.A}%
+\contentsline {chapter}{\numberline {5}Results \& Analysis}{42}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Classification Experiment}{42}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Word Similarity Experiment}{44}{section.5.2}%
+\contentsline {chapter}{\numberline {6}Future Work}{47}{chapter.6}%
+\contentsline {chapter}{\numberline {A}Designing the Requirement Section for the Prompt-Guided Sketch Text Dataset}{49}{appendix.A}%

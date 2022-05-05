@@ -161,16 +161,14 @@
 \citation{CLIPpaper}
 \citation{CLIPpaper}
 \citation{CLIPpaper}
-\citation{CLIPpaper}
 \@writefile{toc}{\contentsline {section}{\numberline {4.2}Method}{34}{section.4.2}\protected@file@percent }
 \newlabel{modeling.method}{{4.2}{34}{Method}{section.4.2}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.2.1}Contrastive Objective}{34}{subsection.4.2.1}\protected@file@percent }
 \newlabel{clip.objective}{{4.2.1}{34}{Contrastive Objective}{subsection.4.2.1}{}}
+\citation{CLIPpaper}
 \@writefile{lof}{\contentsline {figure}{\numberline {4.2}{\ignorespaces CLIP uses contrastive instead of generative objective for pre-training to learn joint vision-language embeddings. This image is taken from Figure 1 in the original CLIP paper \citep  {CLIPpaper}. Each grid contains the dot-product of normalized image,text features.\relax }}{35}{figure.caption.44}\protected@file@percent }
 \newlabel{modeling.clip.pretrainingobj}{{4.2}{35}{CLIP uses contrastive instead of generative objective for pre-training to learn joint vision-language embeddings. This image is taken from Figure 1 in the original CLIP paper \citep {CLIPpaper}. Each grid contains the dot-product of normalized image,text features.\relax }{figure.caption.44}{}}
 \newlabel{cliploss.image}{{4.1}{35}{Contrastive Objective}{equation.4.2.1}{}}
-\newlabel{cliploss.text}{{4.2}{35}{Contrastive Objective}{equation.4.2.2}{}}
-\newlabel{cliploss.all}{{4.3}{35}{Contrastive Objective}{equation.4.2.3}{}}
 \citation{attentionAllYouNeed}
 \citation{attentionAllYouNeed}
 \citation{CLIPpaper}
@@ -179,22 +177,24 @@
 \citation{attentionAllYouNeed}
 \citation{attentionAllYouNeed}
 \citation{Radford2019LanguageMA}
+\citation{attentionAllYouNeed}
+\citation{attentionAllYouNeed}
+\newlabel{cliploss.text}{{4.2}{36}{Contrastive Objective}{equation.4.2.2}{}}
+\newlabel{cliploss.all}{{4.3}{36}{Contrastive Objective}{equation.4.2.3}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.2.2}Text Encoder}{36}{subsection.4.2.2}\protected@file@percent }
 \newlabel{clip.text.encoder}{{4.2.2}{36}{Text Encoder}{subsection.4.2.2}{}}
-\newlabel{modeling.transformer.origEncoder}{{4.3a}{36}{Encoder architecture used in original Transformer paper; the figure is taken from Figure 1 in \cite {attentionAllYouNeed}.\relax }{figure.caption.46}{}}
-\newlabel{sub@modeling.transformer.origEncoder}{{a}{36}{Encoder architecture used in original Transformer paper; the figure is taken from Figure 1 in \cite {attentionAllYouNeed}.\relax }{figure.caption.46}{}}
-\newlabel{modeling.attention.clipEncoder}{{4.3b}{36}{Encoder architecture of CLIP \citep {CLIPpaper}.\relax }{figure.caption.46}{}}
-\newlabel{sub@modeling.attention.clipEncoder}{{b}{36}{Encoder architecture of CLIP \citep {CLIPpaper}.\relax }{figure.caption.46}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.3}{\ignorespaces Text encoder architecture: the text encoder is a transformer with stacked layers of self-attention and feed-forward network sublayers. The main implementation difference between the original Transformer (on the left) and the transformer implemented by CLIP is the placement of layer normalization.\relax }}{36}{figure.caption.46}\protected@file@percent }
-\newlabel{modeling.transformer}{{4.3}{36}{Text encoder architecture: the text encoder is a transformer with stacked layers of self-attention and feed-forward network sublayers. The main implementation difference between the original Transformer (on the left) and the transformer implemented by CLIP is the placement of layer normalization.\relax }{figure.caption.46}{}}
-\citation{attentionAllYouNeed}
-\citation{attentionAllYouNeed}
 \citation{attentionAllYouNeed}
 \citation{attentionAllYouNeed}
 \citation{CLIPpaper}
-\citation{attentionAllYouNeed}
+\newlabel{modeling.transformer.origEncoder}{{4.3a}{37}{Encoder architecture used in original Transformer paper; the figure is taken from Figure 1 in \cite {attentionAllYouNeed}.\relax }{figure.caption.46}{}}
+\newlabel{sub@modeling.transformer.origEncoder}{{a}{37}{Encoder architecture used in original Transformer paper; the figure is taken from Figure 1 in \cite {attentionAllYouNeed}.\relax }{figure.caption.46}{}}
+\newlabel{modeling.attention.clipEncoder}{{4.3b}{37}{Encoder architecture of CLIP \citep {CLIPpaper}.\relax }{figure.caption.46}{}}
+\newlabel{sub@modeling.attention.clipEncoder}{{b}{37}{Encoder architecture of CLIP \citep {CLIPpaper}.\relax }{figure.caption.46}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.3}{\ignorespaces Text encoder architecture: the text encoder is a transformer with stacked layers of self-attention and feed-forward network sublayers. The main implementation difference between the original Transformer (on the left) and the transformer implemented by CLIP is the placement of layer normalization.\relax }}{37}{figure.caption.46}\protected@file@percent }
+\newlabel{modeling.transformer}{{4.3}{37}{Text encoder architecture: the text encoder is a transformer with stacked layers of self-attention and feed-forward network sublayers. The main implementation difference between the original Transformer (on the left) and the transformer implemented by CLIP is the placement of layer normalization.\relax }{figure.caption.46}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {4.4}{\ignorespaces An illustration of the scaled dot-product attention on the left; on the right, an illustration of the multi-head self-attention mechanism (MSA) used in every layer of the transformer. Both figures are from the original Transformer paper \citep  {attentionAllYouNeed}.\relax }}{37}{figure.caption.47}\protected@file@percent }
 \newlabel{modeling.attention}{{4.4}{37}{An illustration of the scaled dot-product attention on the left; on the right, an illustration of the multi-head self-attention mechanism (MSA) used in every layer of the transformer. Both figures are from the original Transformer paper \citep {attentionAllYouNeed}.\relax }{figure.caption.47}{}}
+\citation{attentionAllYouNeed}
 \citation{attentionAllYouNeed}
 \citation{ViT}
 \citation{ViT}
@@ -204,55 +204,57 @@
 \newlabel{mha}{{4.4}{38}{Multi-Head Self-Attention}{equation.4.2.4}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.2.3}Image Encoder}{38}{subsection.4.2.3}\protected@file@percent }
 \newlabel{clip.image.encoder}{{4.2.3}{38}{Image Encoder}{subsection.4.2.3}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.5}{\ignorespaces Vision Transformer (ViT) architecture \citep  {ViT}.\relax }}{38}{figure.caption.49}\protected@file@percent }
-\newlabel{modeling.visionTransformer}{{4.5}{38}{Vision Transformer (ViT) architecture \citep {ViT}.\relax }{figure.caption.49}{}}
 \citation{ViT}
 \citation{ha2017neural}
 \citation{spg_paper}
+\citation{spg_paper}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.5}{\ignorespaces Vision Transformer (ViT) architecture \citep  {ViT}.\relax }}{39}{figure.caption.49}\protected@file@percent }
+\newlabel{modeling.visionTransformer}{{4.5}{39}{Vision Transformer (ViT) architecture \citep {ViT}.\relax }{figure.caption.49}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.2.4}Fine-Tuning CLIP}{39}{subsection.4.2.4}\protected@file@percent }
 \newlabel{clip.finetune}{{4.2.4}{39}{Fine-Tuning CLIP}{subsection.4.2.4}{}}
-\newlabel{sketch.preprocess}{{4.2.4}{39}{Sketch Preprocessing}{section*.50}{}}
+\citation{spacy2}
+\newlabel{sketch.preprocess}{{4.2.4}{40}{Sketch Preprocessing}{section*.50}{}}
 \newlabel{text.preprocess}{{4.2.4}{40}{Text Preprocessing}{section*.51}{}}
 \newlabel{finetune.objective}{{4.2.4}{40}{Fine-tuning Objective}{section*.52}{}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {5}Results \& Analysis}{41}{chapter.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {chapter}{\numberline {5}Results \& Analysis}{42}{chapter.5}\protected@file@percent }
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\newlabel{analysisChapter}{{5}{41}{Results \& Analysis}{chapter.5}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {5.1}Classification Experiment}{41}{section.5.1}\protected@file@percent }
-\newlabel{results.acc}{{5.1}{41}{Classification Experiment}{section.5.1}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {5.1}{\ignorespaces Accuracy (\%) of CLIP on choosing the correct sketch for a given text description from a pair of sketches. During annotation, the annotator is given the pair of sketches and provided descriptions of certain parts in the sketches for both sketches.\relax }}{42}{table.caption.53}\protected@file@percent }
-\newlabel{results.clip.acc}{{5.1}{42}{Accuracy (\%) of CLIP on choosing the correct sketch for a given text description from a pair of sketches. During annotation, the annotator is given the pair of sketches and provided descriptions of certain parts in the sketches for both sketches.\relax }{table.caption.53}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {5.2}Word Similarity Experiment}{43}{section.5.2}\protected@file@percent }
-\newlabel{results.cosinesim}{{5.2}{43}{Word Similarity Experiment}{section.5.2}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.1}{\ignorespaces An example pair of sketches with different eyes that was presented to annotators. We do not pre-define a list of attributes and ask the annotators to determine whether the sketches are different in these attributes; instead, we highlight the parts in colors and implicitly prompt them to pick up on the differences. As expected, most annotations naturally include the size and shape differences. From the descriptions, we can extract pairs of \textit  {antonyms} used to indicate opposite visual concepts. In this case, the annotation was \textit  {large circular eyes} for the sketch on the left and \textit  {tiny solid eyes} for the one on the right.\relax }}{43}{figure.caption.54}\protected@file@percent }
-\newlabel{results.contrasting.sketches}{{5.1}{43}{An example pair of sketches with different eyes that was presented to annotators. We do not pre-define a list of attributes and ask the annotators to determine whether the sketches are different in these attributes; instead, we highlight the parts in colors and implicitly prompt them to pick up on the differences. As expected, most annotations naturally include the size and shape differences. From the descriptions, we can extract pairs of \textit {antonyms} used to indicate opposite visual concepts. In this case, the annotation was \textit {large circular eyes} for the sketch on the left and \textit {tiny solid eyes} for the one on the right.\relax }{figure.caption.54}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {5.2}{\ignorespaces 20 pairs of descriptors most frequently used by annotators to differentiate parts in face and angel sketches. There are a total of 9823 pairs, and 7194, or $73.2\%$, pairs are used only once in the dataset.\relax }}{44}{table.caption.55}\protected@file@percent }
-\newlabel{results.clip.top20.sim}{{5.2}{44}{20 pairs of descriptors most frequently used by annotators to differentiate parts in face and angel sketches. There are a total of 9823 pairs, and 7194, or $73.2\%$, pairs are used only once in the dataset.\relax }{table.caption.55}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {5.3}{\ignorespaces Average cosine similarity.\relax }}{44}{table.caption.56}\protected@file@percent }
-\newlabel{results.wordsim}{{5.3}{44}{Average cosine similarity.\relax }{table.caption.56}{}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {6}Future Work}{46}{chapter.6}\protected@file@percent }
+\newlabel{analysisChapter}{{5}{42}{Results \& Analysis}{chapter.5}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.1}Classification Experiment}{42}{section.5.1}\protected@file@percent }
+\newlabel{results.acc}{{5.1}{42}{Classification Experiment}{section.5.1}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {5.1}{\ignorespaces Accuracy (\%) of CLIP on choosing the correct sketch for a given text description from a pair of sketches. During annotation, the annotator is given the pair of sketches and provided descriptions of certain parts in the sketches for both sketches.\relax }}{43}{table.caption.53}\protected@file@percent }
+\newlabel{results.clip.acc}{{5.1}{43}{Accuracy (\%) of CLIP on choosing the correct sketch for a given text description from a pair of sketches. During annotation, the annotator is given the pair of sketches and provided descriptions of certain parts in the sketches for both sketches.\relax }{table.caption.53}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.2}Word Similarity Experiment}{44}{section.5.2}\protected@file@percent }
+\newlabel{results.cosinesim}{{5.2}{44}{Word Similarity Experiment}{section.5.2}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.1}{\ignorespaces An example pair of sketches with different eyes that was presented to annotators. We do not pre-define a list of attributes and ask the annotators to determine whether the sketches are different in these attributes; instead, we highlight the parts in colors and implicitly prompt them to pick up on the differences. As expected, most annotations naturally include the size and shape differences. From the descriptions, we can extract pairs of \textit  {antonyms} used to indicate opposite visual concepts. In this case, the annotation was \textit  {large circular eyes} for the sketch on the left and \textit  {tiny solid eyes} for the one on the right.\relax }}{44}{figure.caption.54}\protected@file@percent }
+\newlabel{results.contrasting.sketches}{{5.1}{44}{An example pair of sketches with different eyes that was presented to annotators. We do not pre-define a list of attributes and ask the annotators to determine whether the sketches are different in these attributes; instead, we highlight the parts in colors and implicitly prompt them to pick up on the differences. As expected, most annotations naturally include the size and shape differences. From the descriptions, we can extract pairs of \textit {antonyms} used to indicate opposite visual concepts. In this case, the annotation was \textit {large circular eyes} for the sketch on the left and \textit {tiny solid eyes} for the one on the right.\relax }{figure.caption.54}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {5.2}{\ignorespaces 20 pairs of descriptors most frequently used by annotators to differentiate parts in face and angel sketches. There are a total of 9823 pairs, and 7194, or $73.2\%$, pairs are used only once in the dataset.\relax }}{45}{table.caption.55}\protected@file@percent }
+\newlabel{results.clip.top20.sim}{{5.2}{45}{20 pairs of descriptors most frequently used by annotators to differentiate parts in face and angel sketches. There are a total of 9823 pairs, and 7194, or $73.2\%$, pairs are used only once in the dataset.\relax }{table.caption.55}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {5.3}{\ignorespaces Average cosine similarity.\relax }}{45}{table.caption.56}\protected@file@percent }
+\newlabel{results.wordsim}{{5.3}{45}{Average cosine similarity.\relax }{table.caption.56}{}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {6}Future Work}{47}{chapter.6}\protected@file@percent }
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\newlabel{futureChapter}{{6}{46}{Future Work}{chapter.6}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {6.1}{\ignorespaces .\relax }}{46}{figure.caption.57}\protected@file@percent }
-\newlabel{results.hookNose}{{6.1}{46}{.\relax }{figure.caption.57}{}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {A}Designing the Requirement Section for the Prompt-Guided Sketch Text Dataset}{48}{appendix.A}\protected@file@percent }
+\newlabel{futureChapter}{{6}{47}{Future Work}{chapter.6}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6.1}{\ignorespaces .\relax }}{47}{figure.caption.57}\protected@file@percent }
+\newlabel{results.hookNose}{{6.1}{47}{.\relax }{figure.caption.57}{}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {A}Designing the Requirement Section for the Prompt-Guided Sketch Text Dataset}{49}{appendix.A}\protected@file@percent }
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\newlabel{appendixDataV1Req}{{A}{48}{Designing the Requirement Section for the Prompt-Guided Sketch Text Dataset}{appendix.A}{}}
-\newlabel{v1.requirement_1.1}{{A.1a}{49}{An example included in the first version of the requirements, explained in more details in item \ref {v1_requirement1_3}.\relax }{figure.caption.58}{}}
-\newlabel{sub@v1.requirement_1.1}{{a}{49}{An example included in the first version of the requirements, explained in more details in item \ref {v1_requirement1_3}.\relax }{figure.caption.58}{}}
-\newlabel{v1_requirement1_3}{{3}{49}{Designing the Requirement Section for the Prompt-Guided Sketch Text Dataset}{Item.7}{}}
-\newlabel{v1.requirement_1.2}{{A.1b}{50}{Unaligned drawing and text description.\relax }{figure.caption.59}{}}
-\newlabel{sub@v1.requirement_1.2}{{b}{50}{Unaligned drawing and text description.\relax }{figure.caption.59}{}}
-\newlabel{v1.requirement_1.3}{{A.1c}{50}{An example of misalignment: text description \textit {overflow} into multiple steps.\relax }{figure.caption.59}{}}
-\newlabel{sub@v1.requirement_1.3}{{c}{50}{An example of misalignment: text description \textit {overflow} into multiple steps.\relax }{figure.caption.59}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {A.1}{\ignorespaces Screenshots of counterexamples used in first version of the requirements in Version 1.\relax }}{50}{figure.caption.59}\protected@file@percent }
-\newlabel{v1.requirement_1}{{A.1}{50}{Screenshots of counterexamples used in first version of the requirements in Version 1.\relax }{figure.caption.59}{}}
+\newlabel{appendixDataV1Req}{{A}{49}{Designing the Requirement Section for the Prompt-Guided Sketch Text Dataset}{appendix.A}{}}
+\newlabel{v1.requirement_1.1}{{A.1a}{50}{An example included in the first version of the requirements, explained in more details in item \ref {v1_requirement1_3}.\relax }{figure.caption.58}{}}
+\newlabel{sub@v1.requirement_1.1}{{a}{50}{An example included in the first version of the requirements, explained in more details in item \ref {v1_requirement1_3}.\relax }{figure.caption.58}{}}
+\newlabel{v1_requirement1_3}{{3}{50}{Designing the Requirement Section for the Prompt-Guided Sketch Text Dataset}{Item.7}{}}
+\newlabel{v1.requirement_1.2}{{A.1b}{51}{Unaligned drawing and text description.\relax }{figure.caption.59}{}}
+\newlabel{sub@v1.requirement_1.2}{{b}{51}{Unaligned drawing and text description.\relax }{figure.caption.59}{}}
+\newlabel{v1.requirement_1.3}{{A.1c}{51}{An example of misalignment: text description \textit {overflow} into multiple steps.\relax }{figure.caption.59}{}}
+\newlabel{sub@v1.requirement_1.3}{{c}{51}{An example of misalignment: text description \textit {overflow} into multiple steps.\relax }{figure.caption.59}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {A.1}{\ignorespaces Screenshots of counterexamples used in first version of the requirements in Version 1.\relax }}{51}{figure.caption.59}\protected@file@percent }
+\newlabel{v1.requirement_1}{{A.1}{51}{Screenshots of counterexamples used in first version of the requirements in Version 1.\relax }{figure.caption.59}{}}
 \bibstyle{apacite}
 \bibdata{thesiscite}
-\@writefile{lof}{\contentsline {figure}{\numberline {A.2}{\ignorespaces Screenshots of counterexamples used in third version of the requirements.\relax }}{51}{figure.caption.60}\protected@file@percent }
-\newlabel{v1.requirement_3}{{A.2}{51}{Screenshots of counterexamples used in third version of the requirements.\relax }{figure.caption.60}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {A.2}{\ignorespaces Screenshots of counterexamples used in third version of the requirements.\relax }}{52}{figure.caption.60}\protected@file@percent }
+\newlabel{v1.requirement_3}{{A.2}{52}{Screenshots of counterexamples used in third version of the requirements.\relax }{figure.caption.60}{}}
 \bibcite{aksan2020cose}{{1}{{\APACyear {2020}}}{{Aksan\ \BOthers {.}}}{{Aksan, Deselaers, Tagliasacchi,{}\ \&{} Hilliges}}}
 \bibcite{allado-mcdowell_okojie_2020}{{2}{{\APACyear {2020}}}{{Allado-McDowell\ \&{} Okojie}}{{Allado-McDowell\ \&{} Okojie}}}
 \bibcite{gpt3}{{3}{{\APACyear {2020}}}{{Brown\ \BOthers {.}}}{{Brown\ \BOthers {.}}}}
@@ -263,24 +265,25 @@
 \bibcite{styleganNadaPaper}{{8}{{\APACyear {2021}}}{{Gal\ \BOthers {.}}}{{Gal, Patashnik, Maron, Chechik,{}\ \&{} Cohen-Or}}}
 \bibcite{doodlerGAN}{{9}{{\APACyear {2020}}}{{Ge\ \BOthers {.}}}{{Ge, Goswami, Zitnick,{}\ \&{} Parikh}}}
 \bibcite{ha2017neural}{{10}{{\APACyear {2017}}}{{Ha\ \&{} Eck}}{{Ha\ \&{} Eck}}}
-\bibcite{styleGAN2Paper}{{11}{{\APACyear {2019}}}{{Karras\ \BOthers {.}}}{{Karras\ \BOthers {.}}}}
-\bibcite{kim2019codraw}{{12}{{\APACyear {2019}}}{{Kim\ \BOthers {.}}}{{Kim\ \BOthers {.}}}}
-\bibcite{spg_paper}{{13}{{\APACyear {2018}}}{{Li\ \BOthers {.}}}{{Li\ \BOthers {.}}}}
-\bibcite{sketchBertPaper}{{14}{{\APACyear {2020}}}{{Lin\ \BOthers {.}}}{{Lin, Fu, Jiang,{}\ \&{} Xue}}}
-\bibcite{glidePaper}{{15}{{\APACyear {2021}}}{{Nichol\ \BOthers {.}}}{{Nichol\ \BOthers {.}}}}
-\bibcite{styleCLIPPaper}{{16}{{\APACyear {2021}}}{{Patashnik\ \BOthers {.}}}{{Patashnik, Wu, Shechtman, Cohen-Or,{}\ \&{} Lischinski}}}
-\bibcite{sketchsegDataset}{{17}{{\APACyear {2019}}}{{Qi\ \&{} Tan}}{{Qi\ \&{} Tan}}}
-\bibcite{CLIPpaper}{{18}{{\APACyear {2021}}}{{Radford\ \BOthers {.}}}{{Radford\ \BOthers {.}}}}
-\bibcite{Radford2019LanguageMA}{{19}{{\APACyear {2019}}}{{Radford\ \BOthers {.}}}{{Radford\ \BOthers {.}}}}
-\bibcite{dalle2Paper}{{20}{{\APACyear {2022}}}{{Ramesh\ \BOthers {.}}}{{Ramesh, Dhariwal, Nichol, Chu,{}\ \&{} Chen}}}
-\bibcite{dallePaper}{{21}{{\APACyear {2021}}}{{Ramesh\ \BOthers {.}}}{{Ramesh\ \BOthers {.}}}}
-\bibcite{ribeiro2020sketchformer}{{22}{{\APACyear {2020}}}{{Ribeiro\ \BOthers {.}}}{{Ribeiro, Bui, Collomosse,{}\ \&{} Ponti}}}
-\bibcite{sketchyDataset}{{23}{{\APACyear {2016}}}{{Sangkloy\ \BOthers {.}}}{{Sangkloy, Burnell, Ham,{}\ \&{} Hays}}}
-\bibcite{attentionAllYouNeed}{{24}{{\APACyear {2017}}}{{Vaswani\ \BOthers {.}}}{{Vaswani\ \BOthers {.}}}}
-\bibcite{WahCUB_200_2011}{{25}{{\APACyear {2011}}}{{Wah\ \BOthers {.}}}{{Wah, Branson, Welinder, Perona,{}\ \&{} Belongie}}}
-\bibcite{hedPaper}{{26}{{\APACyear {2015}}}{{Xie\ \&{} Tu}}{{Xie\ \&{} Tu}}}
-\bibcite{attngan_paper}{{27}{{\APACyear {2017}}}{{Xu\ \BOthers {.}}}{{Xu\ \BOthers {.}}}}
-\bibcite{qmulDataset}{{28}{{\APACyear {2016}}}{{Yu\ \BOthers {.}}}{{Yu\ \BOthers {.}}}}
-\bibcite{sketchbirds}{{29}{{\APACyear {2021}}}{{Yuan\ \BOthers {.}}}{{Yuan\ \BOthers {.}}}}
+\bibcite{spacy2}{{11}{{\APACyear {2017}}}{{Honnibal\ \&{} Montani}}{{Honnibal\ \&{} Montani}}}
+\bibcite{styleGAN2Paper}{{12}{{\APACyear {2019}}}{{Karras\ \BOthers {.}}}{{Karras\ \BOthers {.}}}}
+\bibcite{kim2019codraw}{{13}{{\APACyear {2019}}}{{Kim\ \BOthers {.}}}{{Kim\ \BOthers {.}}}}
+\bibcite{spg_paper}{{14}{{\APACyear {2018}}}{{Li\ \BOthers {.}}}{{Li\ \BOthers {.}}}}
+\bibcite{sketchBertPaper}{{15}{{\APACyear {2020}}}{{Lin\ \BOthers {.}}}{{Lin, Fu, Jiang,{}\ \&{} Xue}}}
+\bibcite{glidePaper}{{16}{{\APACyear {2021}}}{{Nichol\ \BOthers {.}}}{{Nichol\ \BOthers {.}}}}
+\bibcite{styleCLIPPaper}{{17}{{\APACyear {2021}}}{{Patashnik\ \BOthers {.}}}{{Patashnik, Wu, Shechtman, Cohen-Or,{}\ \&{} Lischinski}}}
+\bibcite{sketchsegDataset}{{18}{{\APACyear {2019}}}{{Qi\ \&{} Tan}}{{Qi\ \&{} Tan}}}
+\bibcite{CLIPpaper}{{19}{{\APACyear {2021}}}{{Radford\ \BOthers {.}}}{{Radford\ \BOthers {.}}}}
+\bibcite{Radford2019LanguageMA}{{20}{{\APACyear {2019}}}{{Radford\ \BOthers {.}}}{{Radford\ \BOthers {.}}}}
+\bibcite{dalle2Paper}{{21}{{\APACyear {2022}}}{{Ramesh\ \BOthers {.}}}{{Ramesh, Dhariwal, Nichol, Chu,{}\ \&{} Chen}}}
+\bibcite{dallePaper}{{22}{{\APACyear {2021}}}{{Ramesh\ \BOthers {.}}}{{Ramesh\ \BOthers {.}}}}
+\bibcite{ribeiro2020sketchformer}{{23}{{\APACyear {2020}}}{{Ribeiro\ \BOthers {.}}}{{Ribeiro, Bui, Collomosse,{}\ \&{} Ponti}}}
+\bibcite{sketchyDataset}{{24}{{\APACyear {2016}}}{{Sangkloy\ \BOthers {.}}}{{Sangkloy, Burnell, Ham,{}\ \&{} Hays}}}
+\bibcite{attentionAllYouNeed}{{25}{{\APACyear {2017}}}{{Vaswani\ \BOthers {.}}}{{Vaswani\ \BOthers {.}}}}
+\bibcite{WahCUB_200_2011}{{26}{{\APACyear {2011}}}{{Wah\ \BOthers {.}}}{{Wah, Branson, Welinder, Perona,{}\ \&{} Belongie}}}
+\bibcite{hedPaper}{{27}{{\APACyear {2015}}}{{Xie\ \&{} Tu}}{{Xie\ \&{} Tu}}}
+\bibcite{attngan_paper}{{28}{{\APACyear {2017}}}{{Xu\ \BOthers {.}}}{{Xu\ \BOthers {.}}}}
+\bibcite{qmulDataset}{{29}{{\APACyear {2016}}}{{Yu\ \BOthers {.}}}{{Yu\ \BOthers {.}}}}
+\bibcite{sketchbirds}{{30}{{\APACyear {2021}}}{{Yuan\ \BOthers {.}}}{{Yuan\ \BOthers {.}}}}
 \ulp@afterend
-\gdef \@abspage@last{59}
+\gdef \@abspage@last{60}
