@@ -6,7 +6,7 @@
 \contentsline {paragraph}{TU-Berlin}{4}{section*.6}%
 \contentsline {paragraph}{Datasets with Text Descriptions}{5}{section*.7}%
 \contentsline {paragraph}{QuickDraw Dataset}{5}{section*.8}%
-\contentsline {paragraph}{Datasets with Semantic Part Annotations}{6}{section*.9}%
+\contentsline {paragraph}{Datasets with Semantic Part Annotations}{5}{section*.9}%
 \contentsline {paragraph}{SketchCUB}{6}{section*.10}%
 \contentsline {section}{\numberline {2.2}Sketch Generation}{6}{section.2.2}%
 \contentsline {paragraph}{Sketch-RNN}{6}{section*.11}%

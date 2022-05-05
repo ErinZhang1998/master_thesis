@@ -1,20 +1,19 @@
 Creative AI, such as using deep learning models to generate paintings and music, has been a popular research domain.
 Since creative activities are hallmarks of human intelligence, numerous works have attempted to replicate the creative process on machines.
-For example, Pharmako-AI \citep{allado-mcdowell_okojie_2020} is a book co-written by K Allado-McDowell and GPT-3 \citep{gpt3} through exchanges between the human and the language model. 
+For example, Pharmako-AI \citep{allado-mcdowell_okojie_2020} is a book co-written by K Allado-McDowell and GPT-3 \citep{gpt3} through exchanges between the person and the language model. 
 Works like DALL-E, GLIDE, and DALL-E 2 tackle the problem of synthesizing images from short language descriptions, and these generative models have produced many imaginative and inspiring art pieces \citep{dallePaper,glidePaper,dalle2Paper}.
 These work are often motivated by the vision to create machines that can interact with people and augment human creativity.  
 Our work is driven by a similar vision: how can we build systems that can be creative like humans so that AI agents and people can participate in creative activities together and inspire each other. 
 %\pdfmarkupcomment[color=yellow]{N}{change this sentence}
 
-\begin{figure*}[!htb]
+Instead of generating realistic art works from a wide variety of language like DALL-E, we approach creativity from a different angle and investigate composing basic visual concepts in object sketches.
+An example is illustrated in Figure \ref{introduction.composition}: a triangle can be the sail of a boat, the cone of an ice-cream, the left/right ear of a cat, the roof of a house, the canopy of a tree, or the body of a mountain. The same triangle is adapted to become different parts in sketches of different objects. 
+\begin{figure*}[h!]
 \centering
 \includegraphics[width=.3\linewidth]{introduction/sketch_composition.png}  
 \caption{Triangle is adapted and composed with other shapes to create sketches of different objects. The objects are, from the top and in clockwise order: \textit{ice-cream, cat, house, pine tree, mountain}, and \textit{boat}.}
 \label{introduction.composition}
 \end{figure*}
-
-Instead of generating realistic art works from a wide variety of language like DALL-E, we approach creativity from a different angle and investigate composing basic visual concepts in object sketches.
-An example is illustrated in Figure \ref{introduction.composition}: a triangle can be the sail of a boat, the cone of an ice-cream, the left/right ear of a cat, the roof of a house, the canopy of a tree, or the body of a mountain. The same triangle is adapted to become different parts in sketches of different objects. 
 While sketches contain much fewer details compared to their natural images counterparts, people are not any less creative when sketching. One could say that the abstractness allows for more creativity. 
 
 Similarly, language descriptors can be composed to form new concepts applicable to different objects. For example, combining \textit{large} and \textit{round} or \textit{narrow} and \textit{oval} to describe different kinds of cat faces.
@@ -31,9 +30,9 @@ Moreover, there are multiple ways to describe the same sketch, depending on the 
 
 
 We want to build systems that can compose basic shapes in a creative manner and understand how words are combined and adapted to describe different objects.  
-In this thesis, we are interested in semantic parts in sketches and how people describe them. For example, a face sketch may contain four semantic parts: eyes, nose, mouth, and face contour, that can be drawn using various geometric shapes with different features. After examining existing sketch datasets, we found that they do not contain either language annotations or semantic part annotations. We explain the details of related sketch datasets in Chapter \ref{relatedWorkChapter}. To fill the gap and study this reuse of abstract concepts, we construct a dataset of language annotated face and angel sketches. We elaborate on the data collection process in Chapter \ref{dataChapter}.  
+In this thesis, we are interested in semantic parts in sketches and how people describe them. For example, a face sketch may contain four semantic parts: eyes, nose, mouth, and face contour, that can be drawn using various geometric shapes with different features. After examining existing sketch datasets, we found that they do not contain either language annotations or semantic part annotations. We explain the details of related sketch datasets in Chapter \ref{relatedWorkChapter}. To fill the gap and study this reuse of abstract concepts, we construct a dataset of language-annotated face and angel sketches. We elaborate on the data collection process in Chapter \ref{dataChapter}.  
 
-Moreover, we hope to understand the limits of current vision-language models, such as CLIP, or Contrastive Language-Image Pre-Training, which is trained on millions of image-text pairs. CLIP has been used extensively to provide a loss function for optimizing text-to-image synthesis models \citep{clipDrawPaper,dalle2Paper,styleganNadaPaper,styleCLIPPaper}. Despite the abundance of knowledge captured by CLIP's embedding space, we observed that CLIP, trained to associate natural images with their captions, has difficulty matching sketches from unseen categories with their part descriptions, suggesting that they might not understand that sketches from different categories are composed of parts different in semantics but share similar shapes and descriptions. We explain the details of CLIP and the fine-tuning process in Chapter \ref{modelingChapter}. We analyze CLIP's performance and changes in its text embeddings after fine-tuning on our dataset in Chapter \ref{analysisChapter}. 
+Moreover, we hope to understand the limits of current vision-language models, such as Contrastive Language-Image Pre-Training, or CLIP, which is trained on millions of image-text pairs. CLIP has been used extensively to provide a loss function for optimizing text-to-image synthesis models \citep{clipDrawPaper,dalle2Paper,styleganNadaPaper,styleCLIPPaper}. Despite the abundance of knowledge captured by CLIP's embedding space, we observed that CLIP, trained to associate natural images with their captions, has difficulty matching sketches from unseen categories with their part descriptions, suggesting that they might not understand that sketches from different categories are composed of parts different in semantics but share similar shapes and descriptions. We explain the details of CLIP and the fine-tuning process in Chapter \ref{modelingChapter}. We analyze CLIP's performance and changes in its text embeddings after fine-tuning on our dataset in Chapter \ref{analysisChapter}. 
 % For example, if we only train on face sketches and want to generalize performance to angel sketches that contain a new part, halo, CLIP does not recognize that \textit{circular face} and \textit{circular halos} are both circuls      
 
 % % [B] 
